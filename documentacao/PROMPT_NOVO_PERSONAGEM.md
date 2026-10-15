@@ -2,7 +2,7 @@
 
 Para usar, peça ao agente: **“Execute o fluxo de `documentacao/PROMPT_NOVO_PERSONAGEM.md`.”** Também é possível copiar o conteúdo abaixo para uma nova conversa na pasta deste projeto.
 
-Este prompt inicia a organização e o planejamento. As fases de produção ficam registradas no checklist; o estado de retomada fica em um `CHECKPOINT.md` próprio de cada personagem, para continuar o trabalho mesmo em outra conversa.
+Este prompt inicia a organização, cria um projeto Blender exclusivo e prepara o planejamento. As fases de produção ficam registradas no checklist; o estado de retomada fica em um `CHECKPOINT.md` próprio de cada personagem, para continuar o trabalho mesmo em outra conversa.
 
 ## Instruções para o agente
 
@@ -32,20 +32,44 @@ personagens/P00N_nome/
   referencia/
     LEIA-ME.md
   blender/
+    nome.blend
   backups/
   validacao/
   registros/
 ```
 
-Em pastas que continuarem vazias, use `.gitkeep` se necessário para que possam ser versionadas. Não crie modelos, exportações ou relatórios fictícios como preenchimento.
+Em pastas que continuarem vazias, use `.gitkeep` se necessário para que possam ser versionadas. `blender/nome.blend` é o projeto real a criar na próxima seção, com o nome de pasta calculado para o personagem. Não crie modelos, exportações ou relatórios fictícios como preenchimento; um projeto Blender vazio deve ser identificado como **“Projeto criado, aguardando modelo”**.
 
-Preencha `LEIA-ME.md` com identificador, nome, data local de criação, objetivo, estado inicial, links para a receita, checklist, checkpoint e referências, além de uma tabela de histórico. Dados ainda desconhecidos devem constar como **“A informar”**. Registre a inicialização documental como a primeira etapa, sem afirmar que houve modelagem, rig ou validação.
+Preencha `LEIA-ME.md` com identificador, nome, data local de criação, objetivo, estado inicial, caminho do projeto Blender, links para a receita, checklist, checkpoint e referências, além de uma tabela de histórico. Dados ainda desconhecidos devem constar como **“A informar”**. Registre a inicialização como a primeira etapa, distinguindo documentos criados, projeto salvo, modelo carregado e testes ainda não executados.
 
 Crie `CHECKPOINT.md` usando o [modelo de checkpoint](MODELO_CHECKPOINT_PERSONAGEM.md) e preencha os dados deste personagem. Esse arquivo deve existir desde a inicialização, mesmo enquanto faltam referências.
 
 Inclua um link para a ficha no índice `documentacao/README.md`, preservando as entradas existentes. Não altere arquivos de outros personagens.
 
-### 3. Solicitar as referências
+### 3. Criar o projeto Blender exclusivo
+
+Crie um arquivo **real e válido do Blender**, exclusivo deste personagem, em `personagens/P00N_nome/blender/nome.blend`, substituindo os identificadores pelo nome calculado. Essa criação faz parte da inicialização e não deve ficar apenas como uma tarefa futura no checklist.
+
+Antes de agir, confira se esse arquivo já existe. Se existir, trate como retomada: inspecione o projeto e o checkpoint e preserve o conteúdo; não substitua por um projeto vazio. Não use o projeto de outro personagem como destino nem copie Jake como modelo padrão.
+
+Use as ferramentas do Blender disponíveis. Prefira uma instância separada, inclusive execução em segundo plano pela CLI quando necessário, para criar ou preparar o arquivo sem substituir a cena que está aberta. Descubra o executável real do ambiente; não presuma o caminho usado no computador de desenvolvimento. Nunca use um comando de redefinição ou limpeza na sessão compartilhada para criar esse novo projeto. Se for necessário trocar o arquivo aberto, preserve primeiro qualquer trabalho não salvo e informe qual projeto será aberto. Se não puder preservar a sessão, mantenha a criação isolada e registre a limitação de abertura.
+
+Prepare o projeto conforme a entrada disponível:
+
+- **Ainda sem modelo ou apenas imagens:** crie uma cena vazia e salve o `.blend`, sem cubo de exemplo ou personagem inventado. Registre **“Projeto criado, aguardando modelo”**. Imagens continuam sendo referências; a criação da malha depende de uma etapa própria.
+- **Modelo em GLB, GLTF, FBX, OBJ ou outro formato suportado:** preserve o arquivo recebido em `referencia/`, importe uma cópia no projeto exclusivo e salve. Não aplique redimensionamento, remalhamento ou ajustes automáticos que alterem a geometria nesta inicialização.
+- **Modelo em `.blend`:** preserve o original em `referencia/` e prepare uma cópia de trabalho em `blender/nome.blend`, conservando objetos, rig, materiais e animações existentes. Não salve por cima do arquivo recebido.
+- **Mais de um possível modelo de entrada:** mantenha o projeto vazio e esclareça qual arquivo deve ser usado antes de importar ou combinar modelos.
+
+Se o modelo chegar depois da criação do projeto vazio, importe-o ou prepare sua cópia de trabalho nesse mesmo destino, sem criar outro personagem. Confirme antes que o projeto continua vazio; se já contiver trabalho, preserve-o e resolva a diferença com a entrada recebida antes de substituir qualquer conteúdo.
+
+Confira texturas e demais dependências do modelo. Preserve os originais e organize as cópias necessárias na pasta do personagem, usando caminhos relativos ou recursos incorporados quando apropriado. Registre arquivos ausentes; não declare materiais completos apenas porque o `.blend` foi salvo.
+
+Depois de salvar, confira a existência, tamanho e abertura do arquivo gravado em uma instância isolada do Blender. Confirme o caminho e se ele contém uma cena vazia ou o modelo esperado. Registre a ferramenta utilizada e o resultado em `LEIA-ME.md` e `CHECKPOINT.md`. Essa conferência valida o arquivo de projeto e o carregamento observado, não a preservação numérica da malha ou a aparência dos materiais, que têm fases próprias.
+
+Se não houver Blender acessível ou a criação falhar, continue com a documentação e o pedido de referências, mas deixe a tarefa de criação do projeto como **“Bloqueada”**, com o motivo e o próximo passo. Não gere um arquivo de texto com extensão `.blend`, nem marque um caminho planejado como projeto existente.
+
+### 4. Solicitar as referências
 
 Depois de criar as pastas, informe o **caminho real completo** de `referencia/` e peça:
 
@@ -59,7 +83,9 @@ Quando receber anexos, copie somente os arquivos efetivamente acessíveis para a
 
 Pergunte se há kart/veículo e quais partes precisam ser independentes apenas se isso não estiver claro nas referências ou no pedido. Enquanto aguarda os arquivos ou essa informação, prepare o checklist abaixo. Não dependa das referências para criar o planejamento inicial.
 
-### 4. Criar `CHECKLIST.md` por fases
+Quando o modelo 3D de entrada ficar definido e acessível, prepare e confira sua cópia no projeto exclusivo conforme a seção anterior, dentro do escopo da inicialização. Atualize o inventário, a ficha e o checkpoint antes de iniciar qualquer fase de alteração da malha.
+
+### 5. Criar `CHECKLIST.md` por fases
 
 Gere um checklist próprio para este personagem usando a receita atual como fonte. Use a base abaixo, acrescentando tarefas se a receita tiver evoluído. Substitua identificador, nome e caminhos pelos valores reais; não deixe campos de modelo sem preencher quando a informação já estiver disponível.
 
@@ -73,15 +99,18 @@ Use `[ ]` para tarefas pendentes e `[x]` somente para tarefas concluídas com ev
 - [ ] Criar as pastas e a ficha `LEIA-ME.md`.
 - [ ] Criar este checklist e o guia de referências.
 - [ ] Criar `CHECKPOINT.md` com o estado inicial e o próximo passo.
+- [ ] Criar ou retomar o projeto exclusivo em `blender/nome.blend`, preservando projetos e referências existentes.
+- [ ] Conferir o arquivo `.blend` salvo e registrar se está vazio ou com modelo carregado.
 - [ ] Registrar o personagem no índice da documentação.
 - [ ] Solicitar as referências e informar o caminho da pasta.
 
-Marque nesta fase apenas as ações de inicialização que você tiver acabado de executar. Solicitar referências não significa que elas foram recebidas.
+Marque nesta fase apenas as ações de inicialização que você tiver acabado de executar. Solicitar referências não significa que elas foram recebidas. Criar um projeto vazio não significa ter criado ou importado a malha do personagem.
 
 #### Fase 1 — Referências e escopo
 
 - [ ] Receber, inventariar e conferir os arquivos de referência acessíveis.
 - [ ] Identificar o modelo 3D de entrada ou registrar que ele ainda não existe.
+- [ ] Preparar e conferir uma cópia do modelo no `.blend` exclusivo quando o arquivo de entrada estiver disponível.
 - [ ] Definir aparência, veículo/acessórios, partes independentes e objetivo de entrega.
 - [ ] Se houver apenas imagens, planejar a obtenção ou criação da malha antes do rig; não considerar uma imagem como modelo pronto.
 - [ ] Registrar lacunas, dependências e o arquivo de entrada escolhido na ficha.
@@ -89,6 +118,7 @@ Marque nesta fase apenas as ações de inicialização que você tiver acabado d
 #### Fase 2 — Inspeção e preservação da entrada
 
 - [ ] Inspecionar o modelo no Blender MCP e conferir orientação, escala e partes existentes.
+- [ ] Confirmar que o arquivo de trabalho é o `.blend` exclusivo deste personagem e contém a entrada correta.
 - [ ] Levantar malhas, ilhas, pais, materiais, UVs, normais, modificadores, shape keys, grupos e animações.
 - [ ] Salvar uma cópia anterior à edição em `backups/`.
 - [ ] Registrar contagens, coordenadas, conectividade e atributos necessários à comparação.
@@ -168,13 +198,13 @@ A auditoria do Jake encontrou atraso de mola e tremor não compensado. Reutiliza
 
 Preserve os resultados históricos e seus hashes. Um teste de uma versão anterior não valida automaticamente o artefato modificado.
 
-### 5. Manter o estado em `CHECKPOINT.md`
+### 6. Manter o estado em `CHECKPOINT.md`
 
 O checkpoint é o resumo atual para retomada; o checklist mantém as tarefas e suas marcações, e os registros guardam o histórico detalhado. Não use o checkpoint para substituir relatórios ou duplicar todas as tarefas.
 
 Mantenha nele: identidade e pasta do personagem; data/hora local da atualização com fuso; objetivo e escopo informado pelo usuário; fase e tarefa atuais; último passo confirmado; arquivos de entrada e de trabalho; estado salvo ou não salvo das ferramentas; evidências de validação; decisões; pendências; pergunta ainda sem resposta, quando houver; e próximo passo concreto.
 
-Na inicialização, registre como concluídas somente as ações documentais realizadas. Se os arquivos ainda não chegaram, o estado deve ser **“Aguardando referências”**, com o caminho de `referencia/`, a solicitação já feita e a conferência dos anexos como próximo passo. Não registre inspeção de malha, backup de modelo ou testes como executados.
+Na inicialização, registre como concluídas somente as ações realizadas e verificadas. Inclua o caminho real do projeto, seu estado (**“Projeto criado, aguardando modelo”**, **“Modelo carregado”** ou **“Criação bloqueada”**), o arquivo de entrada quando houver e o resultado da conferência do `.blend` em disco. Se os arquivos ainda não chegaram, o estado geral deve ser **“Aguardando referências”**, com o caminho de `referencia/`, a solicitação já feita e a conferência dos anexos como próximo passo. Não registre inspeção completa da malha, backup de modelo ou testes de produção como executados apenas por ter criado ou aberto o projeto.
 
 Atualize o checkpoint depois de cada avanço relevante, conclusão de fase ou teste, ao encontrar um impedimento e antes de encerrar a resposta ou aguardar material do usuário. Preserve o último passo comprovado quando uma tentativa falhar e registre a falha separadamente. Faça a atualização junto ao checklist e à ficha para evitar estados contraditórios. Não reescreva o arquivo apenas porque o tempo passou.
 
@@ -182,11 +212,11 @@ Sempre que um artefato mudar, indique quais validações precisam ser refeitas. 
 
 Grave o estado completo sem apagar a última versão válida antes de terminar a escrita; quando possível, escreva um arquivo temporário na mesma pasta e substitua o checkpoint somente após conferir seu conteúdo. Não armazene credenciais ou outros segredos. O checkpoint é um retrato do último estado observado, não uma confirmação de que uma ferramenta ou processo continua aberto.
 
-### 6. Encerrar a inicialização e permitir retomada
+### 7. Encerrar a inicialização e permitir retomada
 
-Depois de criar os arquivos iniciais, apresente links para a ficha, o checklist e o checkpoint, o caminho das referências e a próxima ação concreta. Enquanto faltarem arquivos, mantenha o estado **“Aguardando referências”**. Quando chegarem, atualize o inventário e as tarefas correspondentes com o que foi realmente conferido.
+Depois de criar os arquivos iniciais, apresente links para a ficha, o checklist, o checkpoint e o `.blend` efetivamente criado, além do caminho das referências e da próxima ação concreta. Informe se o projeto está vazio, com o modelo carregado ou com criação bloqueada. Enquanto faltarem arquivos, mantenha o estado geral **“Aguardando referências”**. Quando chegarem, atualize o inventário e as tarefas correspondentes com o que foi realmente conferido.
 
-O pedido de inicialização autoriza criar a estrutura, solicitar/organizar as referências e preparar o planejamento. Não execute todas as fases de produção por interpretar o checklist como autorização. Se o usuário já tiver solicitado uma fase de produção, avance dentro desse escopo, sem pedir de novo autorização para etapas rotineiras já incluídas nele.
+O pedido de inicialização autoriza criar a estrutura, criar e conferir o projeto Blender exclusivo, solicitar/organizar as referências, preparar a cópia do modelo de entrada quando disponível e montar o planejamento. Não execute todas as fases de produção por interpretar o checklist como autorização. Se o usuário já tiver solicitado uma fase de produção, avance dentro desse escopo, sem pedir de novo autorização para etapas rotineiras já incluídas nele.
 
 Em uma retomada, leia primeiro `CHECKPOINT.md`, depois `CHECKLIST.md` e `LEIA-ME.md` do personagem. Confira a existência e a versão dos arquivos relevantes e consulte a ferramenta real antes de depender do estado de uma sessão anterior. Se houver divergência, registre o que mudou e ajuste o checkpoint antes de continuar; não repita automaticamente passos já comprovados nem confie em validações de uma versão antiga.
 
