@@ -1,0 +1,121 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/selecao_personagem.gd" id="1_g1ore"]
+[ext_resource type="Shader" path="res://shaders/quadriculado.gdshader" id="2_yr6a0"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gyirk"]
+sky_top_color = Color(0.32, 0.52, 0.85, 1)
+sky_horizon_color = Color(0.75, 0.83, 0.92, 1)
+ground_horizon_color = Color(0.75, 0.83, 0.92, 1)
+
+[sub_resource type="Sky" id="Sky_008lb"]
+sky_material = SubResource("ProceduralSkyMaterial_gyirk")
+
+[sub_resource type="Environment" id="Environment_kear3"]
+background_mode = 2
+sky = SubResource("Sky_008lb")
+ambient_light_source = 3
+tonemap_mode = 2
+fog_enabled = true
+fog_light_color = Color(0.75, 0.83, 0.92, 1)
+fog_density = 0.004
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_j0bx5"]
+render_priority = 0
+shader = ExtResource("2_yr6a0")
+shader_parameter/cor_a = null
+shader_parameter/cor_b = null
+shader_parameter/tamanho = 0.5
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_in5fv"]
+material = SubResource("ShaderMaterial_j0bx5")
+top_radius = 2.0
+bottom_radius = 2.2
+height = 0.3
+
+[node name="SelecaoPersonagem" type="Node3D" unique_id=1128401368]
+script = ExtResource("1_g1ore")
+
+[node name="Ambiente" type="WorldEnvironment" parent="." unique_id=1443971947]
+environment = SubResource("Environment_kear3")
+
+[node name="Sol" type="DirectionalLight3D" parent="." unique_id=1834060426]
+transform = Transform3D(0.81915206, 0.46984634, -0.32898995, 0, 0.57357645, 0.81915206, 0.57357645, -0.6710101, 0.46984634, 0, 0, 0)
+light_energy = 1.2
+shadow_enabled = true
+directional_shadow_max_distance = 60.0
+
+[node name="Pedestal" type="MeshInstance3D" parent="." unique_id=1877743834]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.15, 0)
+mesh = SubResource("CylinderMesh_in5fv")
+
+[node name="Vitrine" type="Node3D" parent="." unique_id=815572730]
+transform = Transform3D(-0.8660254, 0, -0.49999997, 0, 1, 0, 0.49999997, 0, -0.8660254, 0, 0, 0)
+
+[node name="Camera" type="Camera3D" parent="." unique_id=1080560194]
+transform = Transform3D(1, 0, 0, 0, 0.9702957, 0.2419219, 0, -0.2419219, 0.9702957, 0, 1.6, 3.6)
+fov = 50.0
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=738177312]
+
+[node name="Coluna" type="VBoxContainer" parent="UI" unique_id=1671689539]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 32.0
+offset_top = 24.0
+offset_right = -32.0
+offset_bottom = -32.0
+
+[node name="Titulo" type="Label" parent="UI/Coluna" unique_id=846203397]
+layout_mode = 2
+theme_override_font_sizes/font_size = 44
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.8)
+theme_override_constants/outline_size = 10
+text = "Escolha seu piloto"
+horizontal_alignment = 1
+
+[node name="Espaco" type="Control" parent="UI/Coluna" unique_id=1230332987]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Nome" type="Label" parent="UI/Coluna" unique_id=82485871]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+horizontal_alignment = 1
+
+[node name="Descricao" type="Label" parent="UI/Coluna" unique_id=326379436]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+horizontal_alignment = 1
+
+[node name="Botoes" type="HBoxContainer" parent="UI/Coluna" unique_id=1391029855]
+layout_mode = 2
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="Anterior" type="Button" parent="UI/Coluna/Botoes" unique_id=1825050497]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(64, 56)
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "◀"
+
+[node name="Jogar" type="Button" parent="UI/Coluna/Botoes" unique_id=1148702525]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200, 56)
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "Jogar"
+
+[node name="Proximo" type="Button" parent="UI/Coluna/Botoes" unique_id=32474727]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(64, 56)
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "▶"
