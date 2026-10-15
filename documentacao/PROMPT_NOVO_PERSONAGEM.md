@@ -52,7 +52,15 @@ Crie um arquivo **real e válido do Blender**, exclusivo deste personagem, em `p
 
 Antes de agir, confira se esse arquivo já existe. Se existir, trate como retomada: inspecione o projeto e o checkpoint e preserve o conteúdo; não substitua por um projeto vazio. Não use o projeto de outro personagem como destino nem copie Jake como modelo padrão.
 
-Use as ferramentas do Blender disponíveis. Prefira uma instância separada, inclusive execução em segundo plano pela CLI quando necessário, para criar ou preparar o arquivo sem substituir a cena que está aberta. Descubra o executável real do ambiente; não presuma o caminho usado no computador de desenvolvimento. Nunca use um comando de redefinição ou limpeza na sessão compartilhada para criar esse novo projeto. Se for necessário trocar o arquivo aberto, preserve primeiro qualquer trabalho não salvo e informe qual projeto será aberto. Se não puder preservar a sessão, mantenha a criação isolada e registre a limitação de abertura.
+**Execute tudo no Blender que já está aberto, pelo Blender MCP** (`execute_blender_code`, `get_objects_summary`, `render_viewport_to_path` e demais ferramentas da sessão conectada). Não abra outra instância nem rode o Blender em segundo plano pela CLI. Essa regra vale para esta seção e para todas as fases.
+
+1. Antes de agir, consulte a sessão: arquivo aberto (`bpy.data.filepath`), alterações não salvas (`bpy.data.is_dirty`), modo atual e objetos da cena.
+2. Se o arquivo aberto já for o `.blend` deste personagem, trabalhe nele diretamente.
+3. Se outro arquivo estiver aberto, salve primeiro o trabalho pendente dele. Se ele não tiver caminho ou se salvar puder sobrescrever algo importante, pergunte antes. Informe qual projeto será aberto e então troque na mesma sessão (`wm.open_mainfile`).
+4. Para criar um projeto novo, faça os mesmos cuidados do item 3. Depois crie a cena vazia na mesma sessão (`wm.read_homefile(use_empty=True)`), sem cubo, câmera ou luz de exemplo, e salve imediatamente no destino com `wm.save_as_mainfile`. Não use esse comando com trabalho não salvo na sessão.
+5. Se o Blender MCP não estiver conectado, não abra uma instância alternativa. Peça ao usuário que abra o Blender com o add-on MCP ativo e registre a tarefa como **“Bloqueada”** até a conexão voltar.
+
+Testes temporários (rotações, deslocamentos de vistas, cores de diagnóstico) devem ser desfeitos antes de salvar. Também podem ser feitos sem salvar e revertidos com `wm.revert_mainfile`. Para scripts pesados em malhas grandes, divida o trabalho em chamadas menores e devolva dados resumidos em vez de imprimir arrays inteiros.
 
 Prepare o projeto conforme a entrada disponível:
 
@@ -65,7 +73,7 @@ Se o modelo chegar depois da criação do projeto vazio, importe-o ou prepare su
 
 Confira texturas e demais dependências do modelo. Preserve os originais e organize as cópias necessárias na pasta do personagem, usando caminhos relativos ou recursos incorporados quando apropriado. Registre arquivos ausentes; não declare materiais completos apenas porque o `.blend` foi salvo.
 
-Depois de salvar, confira a existência, tamanho e abertura do arquivo gravado em uma instância isolada do Blender. Confirme o caminho e se ele contém uma cena vazia ou o modelo esperado. Registre a ferramenta utilizada e o resultado em `LEIA-ME.md` e `CHECKPOINT.md`. Essa conferência valida o arquivo de projeto e o carregamento observado, não a preservação numérica da malha ou a aparência dos materiais, que têm fases próprias.
+Depois de salvar, confira a existência e o tamanho do arquivo gravado. Para confirmar a abertura, recarregue-o do disco na própria sessão aberta (`wm.revert_mainfile` ou `wm.open_mainfile` com o mesmo caminho), sem abrir outra instância. Confirme o caminho e se ele contém uma cena vazia ou o modelo esperado. Registre a ferramenta utilizada e o resultado em `LEIA-ME.md` e `CHECKPOINT.md`. Essa conferência valida o arquivo de projeto e o carregamento observado, não a preservação numérica da malha ou a aparência dos materiais, que têm fases próprias.
 
 Se não houver Blender acessível ou a criação falhar, continue com a documentação e o pedido de referências, mas deixe a tarefa de criação do projeto como **“Bloqueada”**, com o motivo e o próximo passo. Não gere um arquivo de texto com extensão `.blend`, nem marque um caminho planejado como projeto existente.
 
@@ -81,7 +89,17 @@ Em `referencia/LEIA-ME.md`, explique onde colocar imagens, modelos e texturas e 
 
 Quando receber anexos, copie somente os arquivos efetivamente acessíveis para a pasta do personagem, preservando os originais e os nomes quando possível. Resolva colisões sem sobrescrever arquivos. Se um anexo não tiver caminho acessível, explique essa limitação e solicite a colocação do arquivo na pasta; não finja que a cópia foi feita.
 
-Pergunte se há kart/veículo e quais partes precisam ser independentes apenas se isso não estiver claro nas referências ou no pedido. Enquanto aguarda os arquivos ou essa informação, prepare o checklist abaixo. Não dependa das referências para criar o planejamento inicial.
+**Escopo padrão de todos os personagens.** Não pergunte o objetivo nem as partes independentes: todo personagem é um **piloto jogável de kart**, com a mesma estrutura do P001 — Jake:
+
+| Parte | Objeto / osso padrão | Conteúdo |
+| --- | --- | --- |
+| Cabeça | objeto `Cabeca`, controlado por `Head_Bone` | Rosto, cabelo, chapéu/boné e detalhes que acompanham a cabeça, incluindo a geometria do pescoço |
+| Pescoço | osso `Neck_Bone` | Controle intermediário entre torso e cabeça; o pivô da cabeça fica na base do pescoço |
+| Corpo | objeto `Corpo_Kart`, controlado por `Torso_Bone` | Corpo do piloto, carroceria do kart e acessórios fixos |
+| Rodas | objetos `Wheel_Front_Left`, `Wheel_Front_Right`, `Wheel_Rear_Left`, `Wheel_Rear_Right` | Uma malha exclusiva por roda, pivô no centro da roda; giro em todas e esterço nas dianteiras |
+| Raiz | armature `Personagem_Rig`, osso `Root_Bone` | Hierarquia `Root_Bone → Torso_Bone → Neck_Bone → Head_Bone` |
+
+Acessórios que não estejam nessa lista (antenas, hélices, móbiles, mamadeiras etc.) ficam no `Corpo_Kart` como parte fixa. Só pergunte sobre o escopo se o usuário pedir algo diferente ou se o modelo não tiver kart, cabeça ou quatro rodas identificáveis; nesse caso, registre a divergência. Enquanto aguarda os arquivos, prepare o checklist abaixo. Não dependa das referências para criar o planejamento inicial.
 
 Quando o modelo 3D de entrada ficar definido e acessível, prepare e confira sua cópia no projeto exclusivo conforme a seção anterior, dentro do escopo da inicialização. Atualize o inventário, a ficha e o checkpoint antes de iniciar qualquer fase de alteração da malha.
 
@@ -111,7 +129,7 @@ Marque nesta fase apenas as ações de inicialização que você tiver acabado d
 - [ ] Receber, inventariar e conferir os arquivos de referência acessíveis.
 - [ ] Identificar o modelo 3D de entrada ou registrar que ele ainda não existe.
 - [ ] Preparar e conferir uma cópia do modelo no `.blend` exclusivo quando o arquivo de entrada estiver disponível.
-- [ ] Definir aparência, veículo/acessórios, partes independentes e objetivo de entrega.
+- [ ] Registrar aparência e acessórios e confirmar que o modelo tem as partes do escopo padrão (cabeça/pescoço, corpo, kart e quatro rodas); registrar divergências.
 - [ ] Se houver apenas imagens, planejar a obtenção ou criação da malha antes do rig; não considerar uma imagem como modelo pronto.
 - [ ] Registrar lacunas, dependências e o arquivo de entrada escolhido na ficha.
 
@@ -130,7 +148,7 @@ Marque nesta fase apenas as ações de inicialização que você tiver acabado d
 - [ ] Separar a cabeça completa e seus detalhes por partes existentes, preservando a geometria.
 - [ ] Definir e realizar a separação entre personagem e veículo quando exigida pela entrega.
 - [ ] Identificar e separar as quatro rodas em objetos com malhas exclusivas, se houver kart.
-- [ ] Padronizar nomes e conferir frente, traseira, esquerda e direita do piloto.
+- [ ] Padronizar nomes conforme o escopo padrão (`Cabeca`, `Corpo_Kart`, `Wheel_*`) e conferir frente, traseira, esquerda e direita do piloto.
 - [ ] Conferir as partes isoladas e reunidas; registrar impedimentos e tentativas desfeitas.
 
 Não reutilize limites de coordenadas ou índices de ilhas do Jake. Se preservar a topologia for incompatível com o corte necessário, registre o impedimento e resolva o escopo antes de alterar a geometria.
@@ -139,7 +157,7 @@ Não reutilize limites de coordenadas ou índices de ilhas do Jake. Se preservar
 
 - [ ] Medir e posicionar o pivô da cabeça na base do pescoço deste personagem.
 - [ ] Medir os centros das rodas e registrar o critério geométrico adotado, quando aplicável.
-- [ ] Criar ou adaptar a hierarquia de ossos e os nomes dos controles.
+- [ ] Criar `Personagem_Rig` com a hierarquia padrão `Root_Bone → Torso_Bone → Neck_Bone → Head_Bone`.
 - [ ] Atribuir pesos rígidos exclusivos às partes que devem permanecer rígidas.
 - [ ] Definir o parentesco e os modificadores necessários, compensando as transformações.
 - [ ] Conferir ausência de vazamento de pesos, pivôs deslocados e influência duplicada.

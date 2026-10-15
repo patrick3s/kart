@@ -16,6 +16,156 @@ O que for exportado para o jogo fica em `jogo/personagens/<nome>/`, porque a God
 
 Primeiro personagem: [P001 — Jake](../personagens/P001_jake/LEIA-ME.md). A receita nasceu em **15/10/2026** a partir do preparo dele e foi separada da ficha do personagem na reorganização de **15/10/2026**.
 
+## 0. Prompt original deste chat para os próximos personagens
+
+O pedido abaixo deu origem à **primeira etapa de preparação e rig do P001 — Jake**. Ele fica registrado como prompt reutilizável para os próximos personagens que já tenham uma malha pronta e precisem de separação de cabeça, esqueleto, pesos rígidos e pivô, com preservação da geometria.
+
+### Pedido para copiar e reutilizar
+
+> Atue como um artista técnico sênior de 3D e especialista em Blender. Utilizando as ferramentas do **Blender MCP**, pegue a malha (mesh) existente do personagem e estruture o esqueleto e a separação de partes **sem alterar absolutamente nenhum vértice, proporção ou geometria da malha original** (a malha deve ser tratada como geometria estática intocável). Siga estas regras:
+>
+> 1. **Preservação Total da Geometria:** Não modifique o formato, a topologia ou o design do personagem. Apenas separe o que já existe em objetos distintos (se necessário) ou atribua os pesos corretos.
+> 2. **Isolamento de Cabeça e Corpo:** Separe fisicamente o objeto da **cabeça** em relação ao **corpo** (caso estejam unidos em uma única malha, faça um corte limpo na base do pescoço sem deformar o rosto ou o torso) para que sejam malhas independentes.
+> 3. **Rigging e Pesos (Vertex Groups):** Crie a Armature e aplique os pesos de forma limpa, garantindo que o osso da cabeça controle 100% da malha da cabeça e os ossos do torso controlem o corpo, sem vazamentos de peso que deformem o modelo.
+> 4. **Ponto de Pivô:** Ajuste a origem da cabeça na base do pescoço para rotações limpas.
+
+### Como usar o pedido em um novo personagem
+
+1. Informar o nome e o identificador do personagem, o arquivo de entrada e o objeto de malha a trabalhar. Usar a pasta própria descrita no início desta receita.
+2. Informar quais objetos são acessórios ou veículo e se precisam permanecer independentes. O prompt original não definiu controles separados para o kart; no primeiro rig, ele ficou no conjunto do corpo.
+3. Reutilizar o pedido acima e seguir os **Passos 1 a 6** desta receita: inspeção, backup, separação, pivô, esqueleto, pesos e validação. As animações do Passo 7 são uma etapa posterior, não uma exigência do pedido original.
+4. Medir novamente as partes, o pivô e os eixos do novo modelo. Não copiar coordenadas, índices de ilhas ou limites de altura do Jake como regra de seleção.
+5. Salvar o resultado, o relatório de validação e o registro detalhado na pasta do novo personagem. Referenciar esses arquivos no `LEIA-ME.md` dele e acrescentar à receita os aprendizados reutilizáveis.
+
+### Referência das quatro regras ao trabalho deste chat
+
+As evidências abaixo pertencem ao **rig inicial**, antes das animações e da separação posterior das rodas. Os registros posteriores continuam nas demais seções da receita e na ficha do P001.
+
+| Regra do pedido | O que foi feito no primeiro personagem | Documento de referência |
+| --- | --- | --- |
+| 1. Preservação total da geometria | Cópia anterior à edição, registro dos arrays originais e identificadores dos elementos; comparação de contagens, conectividade, UVs, flags de suavização, índices de materiais e coordenadas mundiais | [Preservação e rastreamento](../personagens/P001_jake/registros/registro-rig-personagem-2026-10-15.md#4-cópia-de-segurança-e-registro-da-geometria) e [validação numérica original](../personagens/P001_jake/validacao/validacao_rig.json) |
+| 2. Cabeça e corpo independentes | Separação de 86 ilhas existentes em `Cabeca`, com 160.046 vértices, e restante em `Corpo_Kart`, com 874.925; sem novo plano de corte ou fechamento do pescoço | [Seleção e separação da cabeça](../personagens/P001_jake/registros/registro-rig-personagem-2026-10-15.md#5-inspeção-e-identificação-da-cabeça) |
+| 3. Armature e pesos exclusivos | Criação de `Personagem_Rig`, com hierarquia raiz → torso → pescoço → cabeça; peso 1.0 de toda a cabeça em `Head_Bone` e de todo o conjunto corpo/kart em `Torso_Bone`, sem pesos automáticos ou envelopes | [Estrutura da armature](../personagens/P001_jake/registros/registro-rig-personagem-2026-10-15.md#8-armature-criada) e [atribuição dos pesos](../personagens/P001_jake/registros/registro-rig-personagem-2026-10-15.md#9-pesos-parentesco-e-modificadores) |
+| 4. Pivô na base do pescoço | Origem da cabeça e início de `Head_Bone` em `(0, -0.0625, 0.4375)` no espaço mundial; teste temporário de rotação de 25° com movimento medido do corpo igual a zero e restauração da pose | [Ajuste da origem](../personagens/P001_jake/registros/registro-rig-personagem-2026-10-15.md#7-origem-e-pivô-da-cabeça) e [teste de preservação](../personagens/P001_jake/registros/registro-rig-personagem-2026-10-15.md#10-validação-executada) |
+
+O [registro completo deste chat](../personagens/P001_jake/registros/registro-rig-personagem-2026-10-15.md) detalha também as tentativas intermediárias desfeitas e as limitações. O [manifesto histórico do rig](../personagens/P001_jake/validacao/manifesto-artefatos-rig.json) identifica os artefatos daquela etapa; seus hashes não identificam automaticamente o arquivo após trabalhos posteriores.
+
+### Cuidados para cumprir o pedido sem alterar o modelo
+
+- **Separação e corte:** para preservar a topologia, priorizar ilhas ou partes existentes. Um corte que cria vértices ou subdivide faces não pode ser apresentado como preservação exata da topologia. No primeiro personagem não foi necessário esse corte; se a nova malha não permitir a mesma estratégia, registrar o impedimento e a diferença em relação a esta receita.
+- **Origem e coordenadas:** mover a origem com compensação muda a representação local dos vértices. Conferir a forma e as posições no espaço mundial e informar o arredondamento medido. No rig inicial do Jake, o maior desvio mundial da malha-base da cabeça foi `7.450580596923828e-9` unidade, e o maior desvio avaliado em repouso foi `2.9802322387695312e-8`. Não registrar esses valores como deslocamento numérico absolutamente zero.
+- **Pesos:** conferir todos os vértices da cabeça, inclusive detalhes e acessórios que devam acompanhá-la. A rotação de teste deve manter o restante do modelo estável e não criar deformação interna da cabeça. Testar separadamente os outros controles que forem entregues.
+- **Resultado documentado:** registrar exatamente quais partes ficaram independentes, o que cada osso controla e o que foi testado. No rig inicial, corpo e kart ficaram unidos. A separação das rodas foi um trabalho posterior, fora do escopo deste prompt de referência.
+
+### Segundo prompt — rotação da cabeça para a direita
+
+Este pedido deu origem à etapa **P001.02 — animação da cabeça**, depois da preparação e do rig. O texto original solicitava a rotação e deixava os keyframes opcionais; o complemento abaixo tornou explícita a animação de ida e volta.
+
+#### Pedido original para copiar e reutilizar
+
+> Atue como um desenvolvedor técnico no Blender. Utilizando o **Blender MCP**, aplique uma rotação na cabeça do personagem para que ele olhe **para a direita**. Siga estas instruções:
+>
+> 1. **Alvo:** Selecione a malha da cabeça (ou o osso `Head_Bone` da Armature, caso esteja usando o esqueleto).
+> 2. **Rotação:** Gire a cabeça para a direita em relação à visão frontal do personagem (aproximadamente **30 a 45 graus** no eixo Z/local correto).
+> 3. **Preservação:** Garanta que a rotação seja feita suavemente sem deslocar o ponto de origem (pivot) do pescoço e sem deformar a malha do corpo.
+> 4. **Keyframe (Opcional):** Se estiver criando uma animação, insira um keyframe de rotação na posição inicial e outro na posição virada.
+
+#### Complemento enviado para animar o retorno
+
+> mais a cabeca deveria ir e voltar a posicao original na animacao
+
+Ao reutilizar o pedido para uma animação, incluir também esse complemento: o movimento deve ter **posição original → virada para a direita → retorno à posição original**, com transições suaves.
+
+#### Aplicação e referências do segundo prompt
+
+- **Alvo e eixo:** foi usado `Head_Bone` em `Personagem_Rig`. A inspeção mostrou que o eixo vertical correspondia ao **Y local do osso**, aproximadamente alinhado ao Z mundial; esse eixo deve ser conferido em cada novo personagem.
+- **Resultado:** primeiro foi aplicada uma pose estática de **+40°**; após o complemento, foi criada a ação `Cabeca_Direita_Ida_e_Volta`, com **0° → 40° → 0°** nos quadros **1 → 25 → 49**, interpolação Bézier e alças automáticas limitadas. A prévia repetia o intervalo de 1 a 49, sem modificador de ciclos na curva.
+- **Preservação:** nos quadros 1, 13, 25, 37 e 49, o deslocamento medido do pivô e a maior diferença por componente nos vértices avaliados do corpo foram `0.0`. Esses resultados pertencem à configuração daquela etapa, anterior à separação posterior das rodas.
+- **Duração:** a animação foi criada em 24 FPS, com dois segundos entre os keyframes inicial e final. Ao alterar o FPS, redistribuir os keyframes para manter a duração, conforme o [Passo 7](#passo-7--criar-uma-primeira-animação-simples).
+
+**Referências:** [rotação e eixo correto](../personagens/P001_jake/registros/registro-animacao-cabeca-2026-10-15.md#3-rotação-estática-de-40), [ação e keyframes de ida e volta](../personagens/P001_jake/registros/registro-animacao-cabeca-2026-10-15.md#4-animação-de-ida-e-volta), [verificações de preservação](../personagens/P001_jake/registros/registro-animacao-cabeca-2026-10-15.md#5-verificações-de-preservação) e [ficha e histórico do P001](../personagens/P001_jake/LEIA-ME.md).
+
+### Terceiro prompt — rotação da cabeça para a esquerda
+
+Este pedido deu origem à etapa **P001.04 — cabeça para a esquerda**, espelhando a animação anterior. É o **terceiro prompt prático** desta sequência; o identificador P001.03 corresponde à consolidação documental, e não a um novo movimento do personagem.
+
+#### Pedido original para copiar e reutilizar
+
+> Atue como um artista técnico sênior de 3D no Blender. Com base nas diretrizes de rig e estrutura já estabelecidas no arquivo **PERSONAGEM.md** (que contém a animação anterior da cabeça virando para a direita), utilize o **Blender MCP** para criar uma nova animação ou estado onde a cabeça do personagem se movimenta **para a esquerda**. Siga estritamente estas regras:
+>
+> 1. **Consistência com o PERSONAGEM.md:** Respeite a hierarquia de objetos, os nomes dos ossos (`Head_Bone` ou equivalentes) e os limites de rotação especificados no documento.
+> 2. **Espelhamento / Inversão:** Aplique uma rotação no sentido oposto (olhando para a esquerda do personagem, mantendo a mesma amplitude de graus usada no movimento para a direita).
+> 3. **Integridade da Malha:** Garanta que a rotação ocorra puramente a partir do ponto de pivô do pescoço, sem causar *stretching* (esticamento) ou deformação indesejada na geometria da cabeça ou do corpo.
+> 4. **Keyframe / Execução:** Insira os keyframes necessários na timeline do Blender de forma limpa, garantindo que o movimento seja fluido.
+
+O nome `PERSONAGEM.md` foi mantido no texto como referência histórica do pedido. Depois da reorganização, ao reutilizar este prompt, indicar a **ficha `LEIA-ME.md` do personagem** e o registro da animação para a direita. Para o Jake, consultar a [ficha do P001](../personagens/P001_jake/LEIA-ME.md) e o [registro da ação anterior](../personagens/P001_jake/registros/registro-animacao-cabeca-2026-10-15.md).
+
+#### Aplicação e referências do terceiro prompt
+
+- **Espelhamento:** a ação `Cabeca_Direita_Ida_e_Volta` foi duplicada como `Cabeca_Esquerda_Ida_e_Volta`, invertendo o sinal dos valores e das alças Bézier no canal Y local de `Head_Bone`. A ação original foi preservada e marcada para continuar salva mesmo sem estar ativa.
+- **Movimento entregue:** **0° → −40° → 0°** nos quadros **1 → 25 → 49**, com interpolação Bézier, alças automáticas limitadas e extrapolação constante. A cena estava em **30 FPS**, mantidos nesta etapa, com **1,6 segundo** entre o início e o retorno e prévia de 1 a 49.
+- **Preservação:** hierarquia, pivô do pescoço, pesos e malhas mantidos. O pivô e as matrizes dos demais ossos permaneceram iguais nos 49 quadros inteiros; o corpo não se moveu nas cinco amostras de geometria completa. A maior variação de comprimento das arestas da cabeça foi aproximadamente `3.61e-8` unidade, dentro da tolerância numérica de `2e-7`. Esses resultados pertencem à configuração dessa etapa, anterior à separação das rodas.
+- **Reutilização:** conferir a ação existente, a orientação e o eixo local no novo personagem antes de inverter o sinal. Preservar a ação de origem, o pivô, a amplitude e os tempos; validar também os quadros intermediários e registrar os resultados na pasta dele.
+
+**Referências:** [procedimento e verificações da animação para a esquerda](../personagens/P001_jake/registros/registro-animacao-cabeca-esquerda-2026-10-15.md), [relatório numérico](../personagens/P001_jake/validacao/validacao_animacao_cabeca_esquerda.json) e [ficha e histórico do P001](../personagens/P001_jake/LEIA-ME.md).
+
+### Quarto prompt — separação das quatro rodas
+
+Este pedido deu origem à etapa **P001.05 — rodas independentes**, após o rig e as animações da cabeça. O texto abaixo preserva o pedido original deste chat para reutilização em personagens com veículo.
+
+#### Pedido original para copiar e reutilizar
+
+> Atue como um artista técnico sênior de 3D e especialista em Blender. Utilizando as ferramentas do **Blender MCP**, pegue a malha do modelo do carro e separe as **quatro rodas** em **quatro objetos totalmente independentes**, seguindo estritamente estas regras:
+>
+> 1. **Preservação Absoluta da Malha:** Não modifique, redimensione, altere a topologia ou deforme a geometria de nenhuma das rodas. A malha de cada roda deve permanecer exatamente como foi modelada originalmente.
+> 2. **Isolamento Geométrico:** Separe fisicamente cada roda do corpo principal do carro (caso estejam unidas na mesma malha), fazendo um corte/desanexação limpa (*mesh separation*).
+> 3. **Pontos de Pivô (Origins):** Posicione o ponto de origem (*origin point*) de cada uma das quatro rodas exatamente no **centro geométrico de cada roda**, garantindo que futuros comandos de rotação (para girar ou esterçar) ocorram de forma perfeita e sem deslocamentos estranhos.
+> 4. **Organização e Nomenclatura:** Renomeie os quatro objetos de forma padronizada e limpa (ex: `Wheel_Front_Left`, `Wheel_Front_Right`, `Wheel_Rear_Left`, `Wheel_Rear_Right`) para facilitar a exportação para a Godot e o controle via script.
+
+#### Aplicação e referências do quarto prompt
+
+- **Separação:** as rodas do Jake foram isoladas por conjuntos completos de ilhas existentes de `Corpo_Kart`, sem criar, remover ou subdividir os elementos originais. Cada objeto `Wheel_*` recebeu uma malha exclusiva.
+- **Pivôs e lados:** foi adotado o centro da caixa delimitadora da geometria de cada roda (`ORIGIN_GEOMETRY`, `BOUNDS`). Neste modelo, a frente é **−Y**, a esquerda do piloto é **+X**, o giro usa **X local** e o esterço usa **Z local**. Conferir novamente a orientação e o critério de centro ao reutilizar o prompt.
+- **Rig existente:** as rodas mantiveram o acompanhamento de `Torso_Bone` por parentesco com compensação das transformações, sem o modificador Armature herdado. Continuam independentes como objetos e malhas, embora acompanhem o osso do torso.
+- **Validação:** todos os elementos originais foram encontrados exatamente uma vez entre o corpo restante e as quatro rodas; conectividade, UVs, materiais e dados codificados de normais foram preservados. Testes temporários de giro e esterço tiveram deslocamento medido do pivô igual a zero e foram restaurados. As tolerâncias numéricas e as amostras da animação estão no relatório.
+- **Reutilização:** salvar um backup, conferir pneus, aros, cubos e suspensão e priorizar ilhas existentes para cumprir a preservação de topologia. Registrar qualquer impedimento antes de usar um corte que crie vértices ou subdivida faces. A exportação e o controle na Godot exigem uma etapa própria de validação.
+
+**Referências:** [procedimento da separação das rodas](../personagens/P001_jake/registros/registro-rodas-independentes-2026-10-15.md), [relatório numérico](../personagens/P001_jake/validacao/verificacao_rodas_independentes.json) e [ficha e histórico do P001](../personagens/P001_jake/LEIA-ME.md).
+
+### Quinto prompt — jogo na Godot, rodas, suspensão e equilíbrio da cabeça
+
+O pedido abaixo foi usado para iniciar a configuração do jogo em `jogo/`. A auditoria **P001.07** executou a implementação existente e encontrou atendimento parcial: a cabeça compensa em regime estabilizado, mas o requisito de ficar **sempre** no lado oposto não é cumprido durante todas as transições e vibrações.
+
+#### Pedido original para copiar e reutilizar
+
+> Estou marcando a pasta do projeto. Dentro dela existem os arquivos 3D correspondentes aos personagens do jogo e o executável do Godot. Inicie a configuração de um jogo onde seja possível escolher um dos personagens e andar com ele em um cenário quadriculado.
+>
+> Use o CLI do Godot para fazer toda a configuração do projeto.
+>
+> A câmera deve ficar atrás do personagem e se mover dinamicamente.
+>
+> **Estrutura dos arquivos 3D:**
+>
+> - 4 objetos correspondem às rodas do carro
+> - 1 objeto corresponde ao corpo do carro
+> - 1 objeto corresponde ao personagem
+>
+> **Regras e Mecânicas:**
+>
+> 1. Todas as rodas precisam funcionar dinamicamente, girando enquanto o carro se movimenta.
+> 2. Faça uma simulação de suspensão e vibração: quando o carro fizer uma curva para a esquerda, a suspensão precisa pender para a direita (simulando inércia).
+> 3. Na estrutura de bones (ossos) do personagem (1 osso para o corpo e 1 osso para a cabeça), a cabeça deve sempre girar para o lado inverso da inclinação da suspensão (se o carro joga para um lado, a cabeça pende para o outro tentando equilibrar).
+
+#### Aplicação, validação e limites do quinto prompt
+
+- **Projeto existente:** seleção de Jake, pista com shader quadriculado, movimento arcade e câmera de perseguição em `jogo/`. Há somente um piloto cadastrado; a escolha entre pilotos diferentes ainda não foi validada.
+- **Rodas e suspensão:** as quatro rodas giram com velocidade e raio, invertem em ré e param quando a velocidade é zero. As dianteiras esterçam; a carroceria inclina para fora da curva por uma mola visual. Os pivôs das rodas permaneceram fixos nos testes isolados de inclinação.
+- **Cabeça:** a meta relativa é `−1,7 × rolagem`, com mola própria. Em uma curva constante sem ruído, o corpo estabilizou em cerca de **+6,875°** e a cabeça em **−4,812°** no espaço do esqueleto; a curva oposta inverteu os sinais. Porém, a 60 passos/s houve **18 quadros no mesmo lado** ao iniciar a curva e **15** ao inverter. A compensação ignora o tremor da carroceria, produzindo outras violações em reta. A palavra **sempre** permanece como requisito pendente, não como comportamento comprovado. **Atualização (T001, 15/10/2026):** a mecânica passou a usar a rolagem total (com o tremor) e uma faixa de oposição por quadro. Com isso, foram 0 quadros no mesmo lado no Dimi e no Jake (cópia do verificador), com 60 e 120 passos/s, com e sem ruído. Ver [T001](../jogo/tarefas/T001-cabeca-sempre-oposta.md).
+- **Estrutura real do Jake:** quatro malhas de roda, `Cabeca` e `Corpo_Kart`. O torso do piloto ainda está junto do carro; não há um objeto exclusivo para o personagem inteiro e outro exclusivo para o carro. O GLB tem quatro ossos; `Torso_Bone` e `Head_Bone` são os dois controles usados pela mecânica.
+- **Reutilização:** conferir a estrutura e os eixos do GLB importado, testar os dois sentidos, ré, parada, entrada e inversão de curva e vibração. Medir a inclinação global da cabeça, considerando a inclinação herdada do corpo. Definir se o efeito desejado admite atraso de mola ou exige oposição em todo quadro.
+
+**Referências:** [auditoria das regras na Godot](../personagens/P001_jake/registros/registro-validacao-godot-2026-10-15.md), [relatório da execução](../personagens/P001_jake/validacao/validacao_godot_jake.json), [verificador reproduzível](../jogo/ferramentas/validar_mecanicas_jake.gd) e [instruções do jogo](../jogo/LEIA-ME.md).
+
 ## 1. Receita para preparar outros personagens
 
 Esta é a **versão 1 da receita**, derivada do primeiro personagem. Ela é um procedimento documentado, ainda sem um script único de execução automática. Os passos abaixo devem ser adaptados à anatomia, à orientação e à estrutura de cada novo modelo.

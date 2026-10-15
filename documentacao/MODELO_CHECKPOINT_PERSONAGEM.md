@@ -41,7 +41,7 @@ Preencha cada estado após conferir o arquivo. Só crie um link quando o destino
 | Referências recebidas | A informar | Aguardando arquivos |
 | Modelo de entrada | A informar | Ainda não identificado |
 | Arquivo de trabalho | `blender/{{SLUG}}.blend` | {{ESTADO_REAL_DO_ARQUIVO_DE_TRABALHO}} |
-| Conferência do `.blend` em disco | {{EVIDENCIA_EXISTENTE_OU_NAO_EXECUTADA}} | {{RESULTADO_DA_ABERTURA_ISOLADA}} |
+| Conferência do `.blend` em disco | {{EVIDENCIA_EXISTENTE_OU_NAO_EXECUTADA}} | {{RESULTADO_DA_RECARGA_NA_SESSAO_ABERTA}} |
 | Backup do modelo | A informar | Ainda não criado |
 | Exportação para o jogo | A informar | Ainda não criada |
 | Última validação | A informar | Ainda não executada |

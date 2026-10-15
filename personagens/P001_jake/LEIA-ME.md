@@ -29,8 +29,9 @@ O trabalho registrado começou com uma malha já existente na cena. **Não foi d
 | P001.04 — Cabeça para a esquerda | Cópia da ação da direita com inversão de sinal da rotação Y local: 0° → −40° → 0°, nos quadros 1/25/49; rig e geometria preservados | [Registro da animação para a esquerda](registros/registro-animacao-cabeca-esquerda-2026-10-15.md) e [validação numérica](validacao/validacao_animacao_cabeca_esquerda.json) |
 | P001.05 — Rodas independentes | Separação das quatro rodas por ilhas existentes, malhas exclusivas, origens no centro dos limites geométricos e parentesco com `Torso_Bone` para preservar o acompanhamento do rig | [Registro da separação das rodas](registros/registro-rodas-independentes-2026-10-15.md) e [validação numérica](validacao/verificacao_rodas_independentes.json); modelo e evidências no commit local `e2a2848` |
 | P001.06 — Pasta própria do personagem | Arquivos do Jake reunidos em `personagens/P001_jake/` (`.blend` renomeado de `kart_modular_rig.blend` para `blender/jake.blend`); receita genérica separada em `documentacao/RECEITA_PERSONAGEM.md`; links atualizados. Geometria, rig e animações não foram alterados | Esta ficha e a [receita](../../documentacao/RECEITA_PERSONAGEM.md) |
+| P001.07 — Auditoria do jogo na Godot | Execução do menu, movimento, câmera, rodas, suspensão e poses globais da cabeça. Rodas e compensação estabilizada verificadas; regra de cabeça sempre oposta falha durante transições e tremor. Mecânica existente preservada | [Registro da auditoria](registros/registro-validacao-godot-2026-10-15.md), [relatório](validacao/validacao_godot_jake.json) e [quinto prompt na receita](../../documentacao/RECEITA_PERSONAGEM.md#quinto-prompt--jogo-na-godot-rodas-suspensão-e-equilíbrio-da-cabeça) |
 
-As seis entradas são de **15/10/2026**. A terceira etapa é documental e não modifica o modelo, os pesos ou a animação. A quarta acrescenta a ação da esquerda; a quinta separa as rodas, preservando o acompanhamento da animação existente.
+As sete entradas são de **15/10/2026**. A terceira etapa é documental e não modifica o modelo, os pesos ou a animação. A quarta acrescenta a ação da esquerda; a quinta separa as rodas, preservando o acompanhamento da animação existente. A sétima audita a implementação posterior em `jogo/`, sem alterar sua mecânica.
 
 ## Resultado de referência do rig original — P001.01
 
@@ -113,3 +114,11 @@ Nos quadros **1, 8, 17, 29 e 49**, a diferença máxima das posições mundiais 
 O modelo, o backup anterior à separação e o relatório foram incluídos no **commit local `e2a2848`**. Este registro textual complementa essa entrega em um commit documental posterior, junto ao índice e aos registros referenciados da evolução do personagem. Não houve exportação ou validação na Godot nesta etapa.
 
 Procedimento, contagens por objeto e limites: [registro detalhado das rodas](registros/registro-rodas-independentes-2026-10-15.md). Evidências: [relatório JSON](validacao/verificacao_rodas_independentes.json). Cópia anterior: [backup das rodas](backups/kart_antes_separar_rodas_20261015_134523.blend).
+
+## P001.07 — Regras do Jake na Godot
+
+Auditoria em **15/10/2026**, pela CLI da Godot **4.7.2**, usando os scripts reais e o GLB de `jogo/personagens/jake/`. Foram executados o menu de Jake, a entrada na pista, aceleração e curva; também foram testados giro/reversão/parada das quatro rodas, esterço dianteiro, inclinação da carroceria e poses globais dos ossos em curvas e vibração.
+
+**Resultado parcial:** as rodas, a inclinação para fora da curva após estabilizar e a câmera dinâmica passaram nas medições realizadas. A cabeça compensa no lado oposto em regime estabilizado, mas **não fica sempre oposta**: sem ruído, a 60 passos/s houve 18 quadros no mesmo lado ao iniciar a curva e 15 ao inverter. O tremor da carroceria também não entra na compensação. A estrutura importada mantém torso e veículo unidos em `Corpo_Kart`, com a cabeça em `Cabeca`; há quatro ossos no GLB e dois usados pela mecânica. Há somente um piloto cadastrado.
+
+A auditoria foi executada sem janela e não valida a aparência renderizada. Nenhuma correção da mecânica foi aplicada. O [quinto prompt da receita](../../documentacao/RECEITA_PERSONAGEM.md#quinto-prompt--jogo-na-godot-rodas-suspensão-e-equilíbrio-da-cabeça) preserva o pedido original; o [registro detalhado](registros/registro-validacao-godot-2026-10-15.md) e o [relatório JSON](validacao/validacao_godot_jake.json) distinguem os resultados e as pendências.

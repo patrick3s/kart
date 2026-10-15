@@ -5,16 +5,24 @@
 Cada personagem tem uma pasta própria em [`personagens/`](../personagens/) com tudo que pertence a ele: ficha e histórico (`LEIA-ME.md`), referências, `.blend`, backups, validações e registros detalhados.
 
 - [P001 — Jake](../personagens/P001_jake/LEIA-ME.md): ficha, histórico de etapas e arquivos do primeiro personagem. Novas etapas do Jake são resumidas ali.
+- [P002 — Dimi](../personagens/P002_dimi/LEIA-ME.md): ficha, [checklist](../personagens/P002_dimi/CHECKLIST.md) e [checkpoint](../personagens/P002_dimi/CHECKPOINT.md). Inicializado e entregue em 15/10/2026: Fases 0 a 9 concluídas. Jogável ao lado do Jake, com a cabeça sempre oposta corrigida pela [T001](../jogo/tarefas/T001-cabeca-sempre-oposta.md); ver o [resumo da entrega](../personagens/P002_dimi/LEIA-ME.md#resumo-da-entrega).
 - [Iniciar um novo personagem](PROMPT_NOVO_PERSONAGEM.md): prompt que pergunta o nome, cria as pastas e um projeto Blender exclusivo, solicita referências e gera checklist por fases e `CHECKPOINT.md` para manter o estado e retomar o trabalho. Inclui um [modelo de checkpoint](MODELO_CHECKPOINT_PERSONAGEM.md).
-- [Receita de personagem](RECEITA_PERSONAGEM.md): procedimento genérico e estrutura de pasta para preparar os próximos personagens.
+- [Receita de personagem](RECEITA_PERSONAGEM.md): procedimento genérico e estrutura de pasta para preparar os próximos personagens. Inclui o [prompt original deste chat](RECEITA_PERSONAGEM.md#0-prompt-original-deste-chat-para-os-próximos-personagens), com as quatro regras de preservação, separação, pesos e pivô, além das referências ao primeiro rig.
 
 As seções abaixo registram as etapas do P001 em ordem cronológica inversa. Os documentos e evidências citados estão na pasta do personagem.
+
+## Jogo na Godot — validação em 15/10/2026
+
+- [Auditoria das regras do Jake — P001.07](../personagens/P001_jake/registros/registro-validacao-godot-2026-10-15.md): execução do menu, movimento, rodas, suspensão, câmera e equilíbrio da cabeça. [Relatório numérico](../personagens/P001_jake/validacao/validacao_godot_jake.json).
+- [Prompt original do jogo](RECEITA_PERSONAGEM.md#quinto-prompt--jogo-na-godot-rodas-suspensão-e-equilíbrio-da-cabeça) e [instruções de execução](../jogo/LEIA-ME.md).
+
+O resultado é **parcial**: a cabeça compensa após estabilizar, mas não fica sempre oposta nas transições e no tremor. Há somente um piloto cadastrado, e o torso continua unido ao carro em `Corpo_Kart`. A auditoria mede a execução sem janela; a aparência renderizada não foi verificada.
 
 ## Rodas independentes — 15/10/2026
 
 - [Separação das quatro rodas — P001.05](../personagens/P001_jake/registros/registro-rodas-independentes-2026-10-15.md): método, nomes dos objetos, pivôs, preservação da geometria e acompanhamento do rig. [Validação numérica](../personagens/P001_jake/validacao/verificacao_rodas_independentes.json).
 
-Após esta etapa, o modelo tem seis malhas: `Cabeca`, `Corpo_Kart` e quatro objetos `Wheel_*`, cada roda com malha exclusiva. As rodas acompanham `Torso_Bone` por parentesco e têm pivôs próprios. O modelo, o relatório e o backup estão no commit local `e2a2848`; esta documentação textual é posterior a ele. A exportação e o controle na Godot ainda não foram validados.
+Após esta etapa, o modelo tem seis malhas: `Cabeca`, `Corpo_Kart` e quatro objetos `Wheel_*`, cada roda com malha exclusiva. As rodas acompanham `Torso_Bone` por parentesco e têm pivôs próprios no Blender. O modelo, o relatório e o backup estão no commit local `e2a2848`; esta documentação textual é posterior a ele. A exportação e o controle na Godot não tinham sido validados naquela etapa; a auditoria posterior P001.07 está registrada acima.
 
 ## Animação da cabeça — 15/10/2026
 
