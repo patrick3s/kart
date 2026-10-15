@@ -2,7 +2,7 @@
 
 Para usar, peça ao agente: **“Execute o fluxo de `documentacao/PROMPT_NOVO_PERSONAGEM.md`.”** Também é possível copiar o conteúdo abaixo para uma nova conversa na pasta deste projeto.
 
-Este prompt inicia a organização e o planejamento. As fases de produção ficam registradas no checklist para execução posterior, conforme o trabalho solicitado.
+Este prompt inicia a organização e o planejamento. As fases de produção ficam registradas no checklist; o estado de retomada fica em um `CHECKPOINT.md` próprio de cada personagem, para continuar o trabalho mesmo em outra conversa.
 
 ## Instruções para o agente
 
@@ -28,6 +28,7 @@ Crie a estrutura abaixo, substituindo `P00N` e `nome` pelos valores calculados:
 personagens/P00N_nome/
   LEIA-ME.md
   CHECKLIST.md
+  CHECKPOINT.md
   referencia/
     LEIA-ME.md
   blender/
@@ -38,7 +39,9 @@ personagens/P00N_nome/
 
 Em pastas que continuarem vazias, use `.gitkeep` se necessário para que possam ser versionadas. Não crie modelos, exportações ou relatórios fictícios como preenchimento.
 
-Preencha `LEIA-ME.md` com identificador, nome, data local de criação, objetivo, estado inicial, links para a receita, checklist e referências, além de uma tabela de histórico. Dados ainda desconhecidos devem constar como **“A informar”**. Registre a inicialização documental como a primeira etapa, sem afirmar que houve modelagem, rig ou validação.
+Preencha `LEIA-ME.md` com identificador, nome, data local de criação, objetivo, estado inicial, links para a receita, checklist, checkpoint e referências, além de uma tabela de histórico. Dados ainda desconhecidos devem constar como **“A informar”**. Registre a inicialização documental como a primeira etapa, sem afirmar que houve modelagem, rig ou validação.
+
+Crie `CHECKPOINT.md` usando o [modelo de checkpoint](MODELO_CHECKPOINT_PERSONAGEM.md) e preencha os dados deste personagem. Esse arquivo deve existir desde a inicialização, mesmo enquanto faltam referências.
 
 Inclua um link para a ficha no índice `documentacao/README.md`, preservando as entradas existentes. Não altere arquivos de outros personagens.
 
@@ -69,6 +72,7 @@ Use `[ ]` para tarefas pendentes e `[x]` somente para tarefas concluídas com ev
 - [ ] Confirmar o nome de exibição e reservar o identificador único.
 - [ ] Criar as pastas e a ficha `LEIA-ME.md`.
 - [ ] Criar este checklist e o guia de referências.
+- [ ] Criar `CHECKPOINT.md` com o estado inicial e o próximo passo.
 - [ ] Registrar o personagem no índice da documentação.
 - [ ] Solicitar as referências e informar o caminho da pasta.
 
@@ -164,10 +168,28 @@ A auditoria do Jake encontrou atraso de mola e tremor não compensado. Reutiliza
 
 Preserve os resultados históricos e seus hashes. Um teste de uma versão anterior não valida automaticamente o artefato modificado.
 
-### 5. Encerrar a inicialização e permitir retomada
+### 5. Manter o estado em `CHECKPOINT.md`
 
-Depois de criar os arquivos iniciais, apresente links para a ficha e o checklist, o caminho das referências e a próxima ação concreta. Enquanto faltarem arquivos, mantenha o estado **“Aguardando referências”**. Quando chegarem, atualize o inventário e as tarefas correspondentes com o que foi realmente conferido.
+O checkpoint é o resumo atual para retomada; o checklist mantém as tarefas e suas marcações, e os registros guardam o histórico detalhado. Não use o checkpoint para substituir relatórios ou duplicar todas as tarefas.
+
+Mantenha nele: identidade e pasta do personagem; data/hora local da atualização com fuso; objetivo e escopo informado pelo usuário; fase e tarefa atuais; último passo confirmado; arquivos de entrada e de trabalho; estado salvo ou não salvo das ferramentas; evidências de validação; decisões; pendências; pergunta ainda sem resposta, quando houver; e próximo passo concreto.
+
+Na inicialização, registre como concluídas somente as ações documentais realizadas. Se os arquivos ainda não chegaram, o estado deve ser **“Aguardando referências”**, com o caminho de `referencia/`, a solicitação já feita e a conferência dos anexos como próximo passo. Não registre inspeção de malha, backup de modelo ou testes como executados.
+
+Atualize o checkpoint depois de cada avanço relevante, conclusão de fase ou teste, ao encontrar um impedimento e antes de encerrar a resposta ou aguardar material do usuário. Preserve o último passo comprovado quando uma tentativa falhar e registre a falha separadamente. Faça a atualização junto ao checklist e à ficha para evitar estados contraditórios. Não reescreva o arquivo apenas porque o tempo passou.
+
+Sempre que um artefato mudar, indique quais validações precisam ser refeitas. Registre caminhos relativos à pasta do personagem e links para evidências existentes; inclua revisão/hash do artefato quando medidos. Distinga arquivo salvo, cena aberta com alterações não salvas e recurso importado na Godot. Se a ferramenta não puder ser consultada, escreva **“Não verificado nesta atualização”**.
+
+Grave o estado completo sem apagar a última versão válida antes de terminar a escrita; quando possível, escreva um arquivo temporário na mesma pasta e substitua o checkpoint somente após conferir seu conteúdo. Não armazene credenciais ou outros segredos. O checkpoint é um retrato do último estado observado, não uma confirmação de que uma ferramenta ou processo continua aberto.
+
+### 6. Encerrar a inicialização e permitir retomada
+
+Depois de criar os arquivos iniciais, apresente links para a ficha, o checklist e o checkpoint, o caminho das referências e a próxima ação concreta. Enquanto faltarem arquivos, mantenha o estado **“Aguardando referências”**. Quando chegarem, atualize o inventário e as tarefas correspondentes com o que foi realmente conferido.
 
 O pedido de inicialização autoriza criar a estrutura, solicitar/organizar as referências e preparar o planejamento. Não execute todas as fases de produção por interpretar o checklist como autorização. Se o usuário já tiver solicitado uma fase de produção, avance dentro desse escopo, sem pedir de novo autorização para etapas rotineiras já incluídas nele.
 
-Em uma retomada, leia primeiro `LEIA-ME.md` e `CHECKLIST.md` do personagem. Continue da fase pendente pertinente ao pedido, preservando o trabalho existente. Atualize checklist, ficha, evidências e próximo passo ao concluir cada fase. Não marque uma fase como concluída apenas porque existe um script, um arquivo ou uma previsão de resultado.
+Em uma retomada, leia primeiro `CHECKPOINT.md`, depois `CHECKLIST.md` e `LEIA-ME.md` do personagem. Confira a existência e a versão dos arquivos relevantes e consulte a ferramenta real antes de depender do estado de uma sessão anterior. Se houver divergência, registre o que mudou e ajuste o checkpoint antes de continuar; não repita automaticamente passos já comprovados nem confie em validações de uma versão antiga.
+
+Se um personagem anterior ainda não tiver checkpoint, crie-o a partir da ficha, checklist, arquivos e evidências disponíveis, identificando o que não pôde ser verificado. Não reinicie o personagem nem invente resultados para preencher lacunas.
+
+Continue da fase pendente pertinente ao pedido atual, preservando o trabalho existente. O escopo resumido no checkpoint é contexto histórico; não amplia a solicitação atual nem concede autorizações por si só. Atualize checklist, ficha, evidências e próximo passo ao concluir cada fase. Não marque uma fase como concluída apenas porque existe um script, um arquivo ou uma previsão de resultado.

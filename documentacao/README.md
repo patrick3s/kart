@@ -5,7 +5,7 @@
 Cada personagem tem uma pasta própria em [`personagens/`](../personagens/) com tudo que pertence a ele: ficha e histórico (`LEIA-ME.md`), referências, `.blend`, backups, validações e registros detalhados.
 
 - [P001 — Jake](../personagens/P001_jake/LEIA-ME.md): ficha, histórico de etapas e arquivos do primeiro personagem. Novas etapas do Jake são resumidas ali.
-- [Iniciar um novo personagem](PROMPT_NOVO_PERSONAGEM.md): prompt que pergunta o nome, cria a estrutura de pastas, solicita referências e gera um checklist por fases a partir da receita.
+- [Iniciar um novo personagem](PROMPT_NOVO_PERSONAGEM.md): prompt que pergunta o nome, cria a estrutura de pastas, solicita referências e gera checklist por fases e `CHECKPOINT.md` para manter o estado e retomar o trabalho. Inclui um [modelo de checkpoint](MODELO_CHECKPOINT_PERSONAGEM.md).
 - [Receita de personagem](RECEITA_PERSONAGEM.md): procedimento genérico e estrutura de pasta para preparar os próximos personagens.
 
 As seções abaixo registram as etapas do P001 em ordem cronológica inversa. Os documentos e evidências citados estão na pasta do personagem.
