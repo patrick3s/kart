@@ -1,0 +1,61 @@
+{
+  "backup": "/Users/patricksoares/Documents/jogos/kart/rigging/kart_antes_do_rig_20261015_120547.blend",
+  "original_counts": {
+    "vertices": 1034971,
+    "edges": 3002354,
+    "faces": 1968221,
+    "corners": 5904663
+  },
+  "objects": [
+    {
+      "name": "Cabeca",
+      "vertices": 160046,
+      "faces": 305705,
+      "max_world_coordinate_delta": 7.450580596923828e-09,
+      "max_evaluated_rest_delta": 2.9802322387695312e-08,
+      "edge_connectivity_preserved": true,
+      "corner_vertex_mapping_preserved": true,
+      "face_sizes_preserved": true,
+      "face_corner_mapping_preserved": true,
+      "uvs_exactly_preserved": true,
+      "smooth_flags_preserved": true,
+      "material_indices_preserved": true,
+      "exclusive_group": true,
+      "weight_1_violations": 0
+    },
+    {
+      "name": "Corpo_Kart",
+      "vertices": 874925,
+      "faces": 1662516,
+      "max_world_coordinate_delta": 0.0,
+      "max_evaluated_rest_delta": 2.9802322387695312e-08,
+      "edge_connectivity_preserved": true,
+      "corner_vertex_mapping_preserved": true,
+      "face_sizes_preserved": true,
+      "face_corner_mapping_preserved": true,
+      "uvs_exactly_preserved": true,
+      "smooth_flags_preserved": true,
+      "material_indices_preserved": true,
+      "exclusive_group": true,
+      "weight_1_violations": 0
+    }
+  ],
+  "head_pivot_world": [
+    0.0,
+    -0.0625,
+    0.4375
+  ],
+  "rig": "Personagem_Rig",
+  "body_scope": "Conjunto original corpo e kart, mantido rigido no Torso_Bone.",
+  "vertices_all_original_ids_once": true,
+  "edges_all_original_ids_once": true,
+  "faces_all_original_ids_once": true,
+  "corners_all_original_ids_once": true,
+  "head_rotation_test": {
+    "degrees": 25,
+    "body_max_movement": 0.0,
+    "head_max_error_from_rigid_transform": 3.374527435262564e-08,
+    "head_max_movement": 0.08840443938970566
+  },
+  "pose_restored": true
+}

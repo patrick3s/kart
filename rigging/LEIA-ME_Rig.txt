@@ -1,0 +1,34 @@
+RIG RIGIDO COM GEOMETRIA PRESERVADA
+
+OBJETOS
+Cabeca: geometria original de rosto, boca, pescoco e bone.
+Corpo_Kart: restante da malha original; corpo e kart permanecem no mesmo objeto rigido.
+Personagem_Rig: armature criada para os dois conjuntos rigidos.
+
+CONTROLES (Modo de Pose)
+Head_Bone: gira somente a cabeca, com 100% de peso em todos os seus vertices.
+Torso_Bone: controla o conjunto corpo/kart e a hierarquia da cabeca.
+Neck_Bone: controle intermediario entre torso e cabeca.
+Root_Bone: controla o conjunto completo.
+
+PIVO
+Origem da Cabeca e inicio de Head_Bone coincidem na base do pescoco:
+(0, -0.0625, 0.4375), em coordenadas mundiais.
+
+PRESERVACAO
+Separacao pelas ilhas e faces existentes, sem remalha, cortes adicionais, preenchimentos,
+decimacao, suavizacao geometrica ou alteracao do design.
+Todos os 1.034.971 vertices, 3.002.354 arestas e 1.968.221 faces foram preservados.
+UVs, materiais e conectividade das faces verificados por identificadores originais.
+Os atributos rig_original_* permitem rastrear cada elemento ate a malha original.
+A mudanca de origem compensa as coordenadas locais para manter a forma mundial.
+Diferenca maxima mundial da cabeca: 7.4505805969e-9 unidade.
+Diferenca maxima avaliada em repouso: 2.9802322388e-8 unidade (precisao numerica).
+
+TESTE
+Rotacao temporaria de 25 graus na cabeca: movimento do corpo/kart = 0.
+A pose original foi restaurada. Nenhum keyframe foi criado.
+
+ARQUIVOS
+Copia anterior e registro original: pasta rigging/.
+Relatorio verificavel: rigging/validacao_rig.json.

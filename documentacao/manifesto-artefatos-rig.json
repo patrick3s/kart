@@ -1,0 +1,32 @@
+{
+  "data_documentacao": "2026-10-15",
+  "origem": "Arquivos existentes no disco ao produzir a documentacao desta conversa.",
+  "observacao": "Os hashes identificam estas versoes dos arquivos; nao substituem a validacao geometrica registrada em rigging/validacao_rig.json.",
+  "artefatos": [
+    {
+      "caminho_relativo_ao_projeto": "kart_modular_rig.blend",
+      "tamanho_bytes": 114219317,
+      "sha256": "8db3ff0c8f071e1d8086d043f35029c9f86360a2fecb335afccceb6c0ec7bdce"
+    },
+    {
+      "caminho_relativo_ao_projeto": "rigging/kart_antes_do_rig_20261015_120547.blend",
+      "tamanho_bytes": 80817837,
+      "sha256": "6f61bdbe6b6e6278b38ea69c972a7b79aa60227638e15b3aab8da4e2b4bf60e8"
+    },
+    {
+      "caminho_relativo_ao_projeto": "rigging/geometria_original.npz",
+      "tamanho_bytes": 32618525,
+      "sha256": "ff165785b8390061c51de5f9386f30766f7515287df10fbf116e953c5f344b60"
+    },
+    {
+      "caminho_relativo_ao_projeto": "rigging/validacao_rig.json",
+      "tamanho_bytes": 1886,
+      "sha256": "e7d7eff6515a16687be12d5cf953c258c5ab5989c3fc7022e21f125390b46dc8"
+    },
+    {
+      "caminho_relativo_ao_projeto": "rigging/LEIA-ME_Rig.txt",
+      "tamanho_bytes": 1533,
+      "sha256": "3a008a356d508a07c7b5e73173ae229b6dcee599f9c3cac48f44b202af05264b"
+    }
+  ]
+}
