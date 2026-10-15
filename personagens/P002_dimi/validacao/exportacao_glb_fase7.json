@@ -1,0 +1,41 @@
+{
+ "arquivo_blend": "/Users/patricksoares/Documents/jogos/kart/personagens/P002_dimi/blender/dimi.blend",
+ "blender": "5.2.2 LTS",
+ "destino": "/Users/patricksoares/Documents/jogos/kart/jogo/personagens/dimi/dimi_kart.glb",
+ "opcoes": {
+  "export_format": "GLB",
+  "use_selection": false,
+  "use_visible": false,
+  "export_yup": true,
+  "export_apply": false,
+  "export_texcoords": true,
+  "export_normals": true,
+  "export_tangents": false,
+  "export_attributes": false,
+  "export_extras": false,
+  "export_materials": "EXPORT",
+  "export_image_format": "AUTO",
+  "export_vertex_color": "NONE",
+  "export_skins": true,
+  "export_def_bones": false,
+  "export_rest_position_armature": true,
+  "export_leaf_bone": false,
+  "export_animations": true,
+  "export_animation_mode": "ACTIONS",
+  "export_anim_slide_to_zero": true,
+  "export_force_sampling": true,
+  "export_reset_pose_bones": true,
+  "export_optimize_animation_size": true,
+  "export_morph": false,
+  "export_lights": false,
+  "export_cameras": false,
+  "export_draco_mesh_compression_enable": false
+ },
+ "bytes": 76802648,
+ "sha256": "2b25281baee6a9bd1f123267bd2a3278ba426a2c2a177a725d4cb8e7e606258b",
+ "blend_sujo_apos": false,
+ "estado_restaurado": [
+  true,
+  true
+ ]
+}

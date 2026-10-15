@@ -1,0 +1,793 @@
+{
+ "grade": 160,
+ "janela_m": 0.22,
+ "alvo": [
+  0.0,
+  -0.010498046875,
+  0.4753125011920929
+ ],
+ "vistas": {
+  "lado_esq": [
+   3.0,
+   0.0,
+   0.20000000298023224
+  ],
+  "lado_dir": [
+   -3.0,
+   0.0,
+   0.20000000298023224
+  ],
+  "frente": [
+   0.0,
+   -3.0,
+   0.30000001192092896
+  ],
+  "jogo": [
+   0.0,
+   3.4000000953674316,
+   1.399999976158142
+  ],
+  "jogo_curva_esq": [
+   1.5,
+   3.0999999046325684,
+   1.399999976158142
+  ],
+  "jogo_curva_dir": [
+   -1.5,
+   3.0999999046325684,
+   1.399999976158142
+  ]
+ },
+ "angulos": {
+  "0": {
+   "lado_esq": {
+    "raios": 25600,
+    "cabeca_frente": 11064,
+    "cabeca_interior": 0,
+    "corpo_frente": 11679,
+    "corpo_interior": 0,
+    "vazio": 2857
+   },
+   "lado_dir": {
+    "raios": 25600,
+    "cabeca_frente": 11345,
+    "cabeca_interior": 0,
+    "corpo_frente": 11394,
+    "corpo_interior": 0,
+    "vazio": 2861
+   },
+   "frente": {
+    "raios": 25600,
+    "cabeca_frente": 13587,
+    "cabeca_interior": 0,
+    "corpo_frente": 12013,
+    "corpo_interior": 0,
+    "vazio": 0
+   },
+   "jogo": {
+    "raios": 25600,
+    "cabeca_frente": 13912,
+    "cabeca_interior": 0,
+    "corpo_frente": 11688,
+    "corpo_interior": 0,
+    "vazio": 0
+   },
+   "jogo_curva_esq": {
+    "raios": 25600,
+    "cabeca_frente": 15481,
+    "cabeca_interior": 0,
+    "corpo_frente": 9973,
+    "corpo_interior": 0,
+    "vazio": 146
+   },
+   "jogo_curva_dir": {
+    "raios": 25600,
+    "cabeca_frente": 15380,
+    "cabeca_interior": 0,
+    "corpo_frente": 10131,
+    "corpo_interior": 0,
+    "vazio": 89
+   }
+  },
+  "10": {
+   "lado_esq": {
+    "raios": 25600,
+    "cabeca_frente": 11312,
+    "cabeca_interior": 76,
+    "corpo_frente": 11485,
+    "corpo_interior": 4,
+    "vazio": 2723
+   },
+   "lado_dir": {
+    "raios": 25600,
+    "cabeca_frente": 11403,
+    "cabeca_interior": 56,
+    "corpo_frente": 11361,
+    "corpo_interior": 64,
+    "vazio": 2716
+   },
+   "frente": {
+    "raios": 25600,
+    "cabeca_frente": 13551,
+    "cabeca_interior": 0,
+    "corpo_frente": 12034,
+    "corpo_interior": 15,
+    "vazio": 0
+   },
+   "jogo": {
+    "raios": 25600,
+    "cabeca_frente": 13776,
+    "cabeca_interior": 0,
+    "corpo_frente": 11824,
+    "corpo_interior": 0,
+    "vazio": 0
+   },
+   "jogo_curva_esq": {
+    "raios": 25600,
+    "cabeca_frente": 14588,
+    "cabeca_interior": 2,
+    "corpo_frente": 10536,
+    "corpo_interior": 2,
+    "vazio": 472
+   },
+   "jogo_curva_dir": {
+    "raios": 25600,
+    "cabeca_frente": 16212,
+    "cabeca_interior": 0,
+    "corpo_frente": 9388,
+    "corpo_interior": 0,
+    "vazio": 0
+   }
+  },
+  "-10": {
+   "lado_esq": {
+    "raios": 25600,
+    "cabeca_frente": 11035,
+    "cabeca_interior": 170,
+    "corpo_frente": 11636,
+    "corpo_interior": 47,
+    "vazio": 2712
+   },
+   "lado_dir": {
+    "raios": 25600,
+    "cabeca_frente": 11529,
+    "cabeca_interior": 8,
+    "corpo_frente": 11344,
+    "corpo_interior": 8,
+    "vazio": 2711
+   },
+   "frente": {
+    "raios": 25600,
+    "cabeca_frente": 13539,
+    "cabeca_interior": 0,
+    "corpo_frente": 12043,
+    "corpo_interior": 18,
+    "vazio": 0
+   },
+   "jogo": {
+    "raios": 25600,
+    "cabeca_frente": 13833,
+    "cabeca_interior": 0,
+    "corpo_frente": 11767,
+    "corpo_interior": 0,
+    "vazio": 0
+   },
+   "jogo_curva_esq": {
+    "raios": 25600,
+    "cabeca_frente": 16039,
+    "cabeca_interior": 0,
+    "corpo_frente": 9561,
+    "corpo_interior": 0,
+    "vazio": 0
+   },
+   "jogo_curva_dir": {
+    "raios": 25600,
+    "cabeca_frente": 14577,
+    "cabeca_interior": 0,
+    "corpo_frente": 10688,
+    "corpo_interior": 14,
+    "vazio": 321
+   }
+  },
+  "15": {
+   "lado_esq": {
+    "raios": 25600,
+    "cabeca_frente": 11459,
+    "cabeca_interior": 71,
+    "corpo_frente": 11402,
+    "corpo_interior": 16,
+    "vazio": 2652
+   },
+   "lado_dir": {
+    "raios": 25600,
+    "cabeca_frente": 11437,
+    "cabeca_interior": 114,
+    "corpo_frente": 11341,
+    "corpo_interior": 70,
+    "vazio": 2638
+   },
+   "frente": {
+    "raios": 25600,
+    "cabeca_frente": 13489,
+    "cabeca_interior": 2,
+    "corpo_frente": 12085,
+    "corpo_interior": 24,
+    "vazio": 0
+   },
+   "jogo": {
+    "raios": 25600,
+    "cabeca_frente": 13615,
+    "cabeca_interior": 0,
+    "corpo_frente": 11985,
+    "corpo_interior": 0,
+    "vazio": 0
+   },
+   "jogo_curva_esq": {
+    "raios": 25600,
+    "cabeca_frente": 14151,
+    "cabeca_interior": 8,
+    "corpo_frente": 10758,
+    "corpo_interior": 27,
+    "vazio": 656
+   },
+   "jogo_curva_dir": {
+    "raios": 25600,
+    "cabeca_frente": 16411,
+    "cabeca_interior": 0,
+    "corpo_frente": 9189,
+    "corpo_interior": 0,
+    "vazio": 0
+   }
+  },
+  "-15": {
+   "lado_esq": {
+    "raios": 25600,
+    "cabeca_frente": 11042,
+    "cabeca_interior": 246,
+    "corpo_frente": 11613,
+    "corpo_interior": 63,
+    "vazio": 2636
+   },
+   "lado_dir": {
+    "raios": 25600,
+    "cabeca_frente": 11624,
+    "cabeca_interior": 5,
+    "corpo_frente": 11325,
+    "corpo_interior": 15,
+    "vazio": 2631
+   },
+   "frente": {
+    "raios": 25600,
+    "cabeca_frente": 13482,
+    "cabeca_interior": 0,
+    "corpo_frente": 12094,
+    "corpo_interior": 24,
+    "vazio": 0
+   },
+   "jogo": {
+    "raios": 25600,
+    "cabeca_frente": 13678,
+    "cabeca_interior": 0,
+    "corpo_frente": 11922,
+    "corpo_interior": 0,
+    "vazio": 0
+   },
+   "jogo_curva_esq": {
+    "raios": 25600,
+    "cabeca_frente": 16141,
+    "cabeca_interior": 0,
+    "corpo_frente": 9459,
+    "corpo_interior": 0,
+    "vazio": 0
+   },
+   "jogo_curva_dir": {
+    "raios": 25600,
+    "cabeca_frente": 14196,
+    "cabeca_interior": 4,
+    "corpo_frente": 10864,
+    "corpo_interior": 58,
+    "vazio": 478
+   }
+  },
+  "20": {
+   "lado_esq": {
+    "raios": 25600,
+    "cabeca_frente": 11555,
+    "cabeca_interior": 41,
+    "corpo_frente": 11367,
+    "corpo_interior": 36,
+    "vazio": 2601
+   },
+   "lado_dir": {
+    "raios": 25600,
+    "cabeca_frente": 11469,
+    "cabeca_interior": 177,
+    "corpo_frente": 11327,
+    "corpo_interior": 70,
+    "vazio": 2557
+   },
+   "frente": {
+    "raios": 25600,
+    "cabeca_frente": 13377,
+    "cabeca_interior": 2,
+    "corpo_frente": 12185,
+    "corpo_interior": 36,
+    "vazio": 0
+   },
+   "jogo": {
+    "raios": 25600,
+    "cabeca_frente": 13380,
+    "cabeca_interior": 0,
+    "corpo_frente": 12217,
+    "corpo_interior": 0,
+    "vazio": 3
+   },
+   "jogo_curva_esq": {
+    "raios": 25600,
+    "cabeca_frente": 13741,
+    "cabeca_interior": 18,
+    "corpo_frente": 10967,
+    "corpo_interior": 23,
+    "vazio": 851
+   },
+   "jogo_curva_dir": {
+    "raios": 25600,
+    "cabeca_frente": 16554,
+    "cabeca_interior": 0,
+    "corpo_frente": 9046,
+    "corpo_interior": 0,
+    "vazio": 0
+   }
+  },
+  "-20": {
+   "lado_esq": {
+    "raios": 25600,
+    "cabeca_frente": 11052,
+    "cabeca_interior": 308,
+    "corpo_frente": 11601,
+    "corpo_interior": 68,
+    "vazio": 2571
+   },
+   "lado_dir": {
+    "raios": 25600,
+    "cabeca_frente": 11680,
+    "cabeca_interior": 3,
+    "corpo_frente": 11312,
+    "corpo_interior": 20,
+    "vazio": 2585
+   },
+   "frente": {
+    "raios": 25600,
+    "cabeca_frente": 13368,
+    "cabeca_interior": 0,
+    "corpo_frente": 12176,
+    "corpo_interior": 56,
+    "vazio": 0
+   },
+   "jogo": {
+    "raios": 25600,
+    "cabeca_frente": 13443,
+    "cabeca_interior": 0,
+    "corpo_frente": 12157,
+    "corpo_interior": 0,
+    "vazio": 0
+   },
+   "jogo_curva_esq": {
+    "raios": 25600,
+    "cabeca_frente": 16214,
+    "cabeca_interior": 0,
+    "corpo_frente": 9386,
+    "corpo_interior": 0,
+    "vazio": 0
+   },
+   "jogo_curva_dir": {
+    "raios": 25600,
+    "cabeca_frente": 13829,
+    "cabeca_interior": 11,
+    "corpo_frente": 11040,
+    "corpo_interior": 59,
+    "vazio": 661
+   }
+  },
+  "25": {
+   "lado_esq": {
+    "raios": 25600,
+    "cabeca_frente": 11676,
+    "cabeca_interior": 29,
+    "corpo_frente": 11332,
+    "corpo_interior": 31,
+    "vazio": 2532
+   },
+   "lado_dir": {
+    "raios": 25600,
+    "cabeca_frente": 11492,
+    "cabeca_interior": 238,
+    "corpo_frente": 11305,
+    "corpo_interior": 67,
+    "vazio": 2498
+   },
+   "frente": {
+    "raios": 25600,
+    "cabeca_frente": 13147,
+    "cabeca_interior": 10,
+    "corpo_frente": 12379,
+    "corpo_interior": 64,
+    "vazio": 0
+   },
+   "jogo": {
+    "raios": 25600,
+    "cabeca_frente": 12875,
+    "cabeca_interior": 0,
+    "corpo_frente": 12604,
+    "corpo_interior": 0,
+    "vazio": 121
+   },
+   "jogo_curva_esq": {
+    "raios": 25600,
+    "cabeca_frente": 13367,
+    "cabeca_interior": 25,
+    "corpo_frente": 11175,
+    "corpo_interior": 17,
+    "vazio": 1016
+   },
+   "jogo_curva_dir": {
+    "raios": 25600,
+    "cabeca_frente": 16642,
+    "cabeca_interior": 0,
+    "corpo_frente": 8958,
+    "corpo_interior": 0,
+    "vazio": 0
+   }
+  },
+  "-25": {
+   "lado_esq": {
+    "raios": 25600,
+    "cabeca_frente": 11081,
+    "cabeca_interior": 371,
+    "corpo_frente": 11561,
+    "corpo_interior": 73,
+    "vazio": 2514
+   },
+   "lado_dir": {
+    "raios": 25600,
+    "cabeca_frente": 11759,
+    "cabeca_interior": 3,
+    "corpo_frente": 11292,
+    "corpo_interior": 25,
+    "vazio": 2521
+   },
+   "frente": {
+    "raios": 25600,
+    "cabeca_frente": 13257,
+    "cabeca_interior": 4,
+    "corpo_frente": 12254,
+    "corpo_interior": 85,
+    "vazio": 0
+   },
+   "jogo": {
+    "raios": 25600,
+    "cabeca_frente": 12978,
+    "cabeca_interior": 0,
+    "corpo_frente": 12552,
+    "corpo_interior": 0,
+    "vazio": 70
+   },
+   "jogo_curva_esq": {
+    "raios": 25600,
+    "cabeca_frente": 16243,
+    "cabeca_interior": 0,
+    "corpo_frente": 9357,
+    "corpo_interior": 0,
+    "vazio": 0
+   },
+   "jogo_curva_dir": {
+    "raios": 25600,
+    "cabeca_frente": 13450,
+    "cabeca_interior": 17,
+    "corpo_frente": 11238,
+    "corpo_interior": 44,
+    "vazio": 851
+   }
+  },
+  "30": {
+   "lado_esq": {
+    "raios": 25600,
+    "cabeca_frente": 11777,
+    "cabeca_interior": 21,
+    "corpo_frente": 11314,
+    "corpo_interior": 13,
+    "vazio": 2475
+   },
+   "lado_dir": {
+    "raios": 25600,
+    "cabeca_frente": 11528,
+    "cabeca_interior": 305,
+    "corpo_frente": 11264,
+    "corpo_interior": 57,
+    "vazio": 2446
+   },
+   "frente": {
+    "raios": 25600,
+    "cabeca_frente": 12992,
+    "cabeca_interior": 13,
+    "corpo_frente": 12504,
+    "corpo_interior": 91,
+    "vazio": 0
+   },
+   "jogo": {
+    "raios": 25600,
+    "cabeca_frente": 12483,
+    "cabeca_interior": 0,
+    "corpo_frente": 12847,
+    "corpo_interior": 0,
+    "vazio": 270
+   },
+   "jogo_curva_esq": {
+    "raios": 25600,
+    "cabeca_frente": 13085,
+    "cabeca_interior": 27,
+    "corpo_frente": 11409,
+    "corpo_interior": 4,
+    "vazio": 1075
+   },
+   "jogo_curva_dir": {
+    "raios": 25600,
+    "cabeca_frente": 16672,
+    "cabeca_interior": 0,
+    "corpo_frente": 8928,
+    "corpo_interior": 0,
+    "vazio": 0
+   }
+  },
+  "-30": {
+   "lado_esq": {
+    "raios": 25600,
+    "cabeca_frente": 11112,
+    "cabeca_interior": 455,
+    "corpo_frente": 11499,
+    "corpo_interior": 56,
+    "vazio": 2478
+   },
+   "lado_dir": {
+    "raios": 25600,
+    "cabeca_frente": 11833,
+    "cabeca_interior": 5,
+    "corpo_frente": 11266,
+    "corpo_interior": 20,
+    "vazio": 2476
+   },
+   "frente": {
+    "raios": 25600,
+    "cabeca_frente": 13136,
+    "cabeca_interior": 12,
+    "corpo_frente": 12338,
+    "corpo_interior": 114,
+    "vazio": 0
+   },
+   "jogo": {
+    "raios": 25600,
+    "cabeca_frente": 12606,
+    "cabeca_interior": 0,
+    "corpo_frente": 12820,
+    "corpo_interior": 14,
+    "vazio": 160
+   },
+   "jogo_curva_esq": {
+    "raios": 25600,
+    "cabeca_frente": 16213,
+    "cabeca_interior": 0,
+    "corpo_frente": 9387,
+    "corpo_interior": 0,
+    "vazio": 0
+   },
+   "jogo_curva_dir": {
+    "raios": 25600,
+    "cabeca_frente": 13148,
+    "cabeca_interior": 31,
+    "corpo_frente": 11415,
+    "corpo_interior": 61,
+    "vazio": 945
+   }
+  },
+  "35": {
+   "lado_esq": {
+    "raios": 25600,
+    "cabeca_frente": 11965,
+    "cabeca_interior": 9,
+    "corpo_frente": 11286,
+    "corpo_interior": 0,
+    "vazio": 2340
+   },
+   "lado_dir": {
+    "raios": 25600,
+    "cabeca_frente": 11664,
+    "cabeca_interior": 359,
+    "corpo_frente": 11214,
+    "corpo_interior": 52,
+    "vazio": 2311
+   },
+   "frente": {
+    "raios": 25600,
+    "cabeca_frente": 12814,
+    "cabeca_interior": 27,
+    "corpo_frente": 12640,
+    "corpo_interior": 119,
+    "vazio": 0
+   },
+   "jogo": {
+    "raios": 25600,
+    "cabeca_frente": 12097,
+    "cabeca_interior": 0,
+    "corpo_frente": 13064,
+    "corpo_interior": 0,
+    "vazio": 439
+   },
+   "jogo_curva_esq": {
+    "raios": 25600,
+    "cabeca_frente": 12821,
+    "cabeca_interior": 26,
+    "corpo_frente": 11623,
+    "corpo_interior": 13,
+    "vazio": 1117
+   },
+   "jogo_curva_dir": {
+    "raios": 25600,
+    "cabeca_frente": 16621,
+    "cabeca_interior": 0,
+    "corpo_frente": 8979,
+    "corpo_interior": 0,
+    "vazio": 0
+   }
+  },
+  "-35": {
+   "lado_esq": {
+    "raios": 25600,
+    "cabeca_frente": 11238,
+    "cabeca_interior": 528,
+    "corpo_frente": 11406,
+    "corpo_interior": 35,
+    "vazio": 2393
+   },
+   "lado_dir": {
+    "raios": 25600,
+    "cabeca_frente": 11928,
+    "cabeca_interior": 6,
+    "corpo_frente": 11249,
+    "corpo_interior": 15,
+    "vazio": 2402
+   },
+   "frente": {
+    "raios": 25600,
+    "cabeca_frente": 12963,
+    "cabeca_interior": 23,
+    "corpo_frente": 12467,
+    "corpo_interior": 147,
+    "vazio": 0
+   },
+   "jogo": {
+    "raios": 25600,
+    "cabeca_frente": 12263,
+    "cabeca_interior": 0,
+    "corpo_frente": 13026,
+    "corpo_interior": 36,
+    "vazio": 275
+   },
+   "jogo_curva_esq": {
+    "raios": 25600,
+    "cabeca_frente": 16116,
+    "cabeca_interior": 0,
+    "corpo_frente": 9484,
+    "corpo_interior": 0,
+    "vazio": 0
+   },
+   "jogo_curva_dir": {
+    "raios": 25600,
+    "cabeca_frente": 12923,
+    "cabeca_interior": 42,
+    "corpo_frente": 11563,
+    "corpo_interior": 75,
+    "vazio": 997
+   }
+  },
+  "40": {
+   "lado_esq": {
+    "raios": 25600,
+    "cabeca_frente": 12178,
+    "cabeca_interior": 7,
+    "corpo_frente": 11254,
+    "corpo_interior": 0,
+    "vazio": 2161
+   },
+   "lado_dir": {
+    "raios": 25600,
+    "cabeca_frente": 11937,
+    "cabeca_interior": 411,
+    "corpo_frente": 11150,
+    "corpo_interior": 47,
+    "vazio": 2055
+   },
+   "frente": {
+    "raios": 25600,
+    "cabeca_frente": 12618,
+    "cabeca_interior": 41,
+    "corpo_frente": 12797,
+    "corpo_interior": 144,
+    "vazio": 0
+   },
+   "jogo": {
+    "raios": 25600,
+    "cabeca_frente": 11720,
+    "cabeca_interior": 1,
+    "corpo_frente": 13259,
+    "corpo_interior": 0,
+    "vazio": 620
+   },
+   "jogo_curva_esq": {
+    "raios": 25600,
+    "cabeca_frente": 12548,
+    "cabeca_interior": 20,
+    "corpo_frente": 11768,
+    "corpo_interior": 93,
+    "vazio": 1171
+   },
+   "jogo_curva_dir": {
+    "raios": 25600,
+    "cabeca_frente": 16497,
+    "cabeca_interior": 0,
+    "corpo_frente": 9103,
+    "corpo_interior": 0,
+    "vazio": 0
+   }
+  },
+  "-40": {
+   "lado_esq": {
+    "raios": 25600,
+    "cabeca_frente": 11461,
+    "cabeca_interior": 575,
+    "corpo_frente": 11348,
+    "corpo_interior": 13,
+    "vazio": 2203
+   },
+   "lado_dir": {
+    "raios": 25600,
+    "cabeca_frente": 12078,
+    "cabeca_interior": 8,
+    "corpo_frente": 11227,
+    "corpo_interior": 12,
+    "vazio": 2275
+   },
+   "frente": {
+    "raios": 25600,
+    "cabeca_frente": 12736,
+    "cabeca_interior": 47,
+    "corpo_frente": 12645,
+    "corpo_interior": 172,
+    "vazio": 0
+   },
+   "jogo": {
+    "raios": 25600,
+    "cabeca_frente": 11955,
+    "cabeca_interior": 4,
+    "corpo_frente": 13194,
+    "corpo_interior": 33,
+    "vazio": 414
+   },
+   "jogo_curva_esq": {
+    "raios": 25600,
+    "cabeca_frente": 15951,
+    "cabeca_interior": 0,
+    "corpo_frente": 9649,
+    "corpo_interior": 0,
+    "vazio": 0
+   },
+   "jogo_curva_dir": {
+    "raios": 25600,
+    "cabeca_frente": 12689,
+    "cabeca_interior": 35,
+    "corpo_frente": 11738,
+    "corpo_interior": 75,
+    "vazio": 1063
+   }
+  }
+ }
+}

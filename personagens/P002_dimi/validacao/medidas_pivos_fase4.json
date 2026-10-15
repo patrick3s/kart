@@ -1,0 +1,234 @@
+{
+ "grade_arredondamento_m": 0.000244140625,
+ "arquivo": "/Users/patricksoares/Documents/jogos/kart/personagens/P002_dimi/blender/dimi.blend",
+ "cabeca": {
+  "cabeca_z_min": 0.4148712158203125,
+  "toco_pescoco": {
+   "vertices": 557,
+   "centro_caixa": [
+    -0.0016765426844358444,
+    -0.009941771626472473,
+    0.43518948554992676
+   ],
+   "media": [
+    -0.004480148143619065,
+    -0.011286683447067116,
+    0.4425392146598501
+   ],
+   "min": [
+    -0.03361509367823601,
+    -0.01818658784031868,
+    0.4154014587402344
+   ],
+   "max": [
+    0.03026200830936432,
+    -0.0016969554126262665,
+    0.45497751235961914
+   ]
+  },
+  "queixo_z_min_no_plano_x0": 0.45726102590560913,
+  "gola_furo_por_altura": {
+   "0.44": {
+    "furo_x": [
+     -0.0012600250774994493,
+     0.0003190213756170124
+    ]
+   },
+   "0.45": {
+    "furo_x": [
+     -0.0024862121790647507,
+     0.020500199869275093
+    ]
+   },
+   "0.46": {
+    "furo_x": [
+     -0.04135511815547943,
+     0.02685929834842682
+    ]
+   },
+   "0.47": {
+    "furo_x": [
+     -0.060295090079307556,
+     0.06171037256717682
+    ]
+   }
+  },
+  "pivo_adotado": [
+   0.0,
+   -0.010498046875,
+   0.4453125
+  ]
+ },
+ "rodas": {
+  "Wheel_Front_Left": {
+   "criterio": "círculo de mínimos quadrados no plano YZ ajustado ao contorno externo da banda de rodagem (setores de 5°, sem picos de bolinhas); X no meio da banda",
+   "centro_medido": [
+    0.3159943222999573,
+    -0.2500346926153786,
+    0.12801427176300254
+   ],
+   "raio": 0.12979627385223053,
+   "residuo_desvio_padrao": 0.0008489114009611818,
+   "residuo_max": 0.002682135384974471,
+   "setores_usados": 65,
+   "setores_descartados_graus": [
+    150,
+    155,
+    160,
+    170,
+    175,
+    180,
+    185
+   ],
+   "x_banda": [
+    0.2869568467140198,
+    0.3450317978858948
+   ],
+   "z_min_malha": 0.0,
+   "centro_caixa_comparacao": [
+    0.2976685166358948,
+    -0.25616835802793503,
+    0.12880708277225494
+   ],
+   "diferenca_caixa_menos_ajuste": [
+    -0.0183258056640625,
+    -0.006133665412556444,
+    0.0007928110092524088
+   ],
+   "pivo_adotado": [
+    0.31591796875,
+    -0.25,
+    0.1279296875
+   ]
+  },
+  "Wheel_Front_Right": {
+   "criterio": "círculo de mínimos quadrados no plano YZ ajustado ao contorno externo da banda de rodagem (setores de 5°, sem picos de bolinhas); X no meio da banda",
+   "centro_medido": [
+    -0.3164672255516052,
+    -0.2501463180469469,
+    0.12798791535192025
+   ],
+   "raio": 0.12983624985065467,
+   "residuo_desvio_padrao": 0.0008261087304792437,
+   "residuo_max": 0.0028004234576772535,
+   "setores_usados": 68,
+   "setores_descartados_graus": [
+    135,
+    140,
+    145,
+    150
+   ],
+   "x_banda": [
+    -0.3461303114891052,
+    -0.2868041396141052
+   ],
+   "z_min_malha": 3.0517578125e-05,
+   "centro_caixa_comparacao": [
+    -0.300620973110199,
+    -0.25002676621079445,
+    0.12880706787109375
+   ],
+   "diferenca_caixa_menos_ajuste": [
+    0.01584625244140625,
+    0.00011955183615247611,
+    0.0008191525191734994
+   ],
+   "pivo_adotado": [
+    -0.31640625,
+    -0.250244140625,
+    0.1279296875
+   ]
+  },
+  "Wheel_Rear_Left": {
+   "criterio": "círculo de mínimos quadrados no plano YZ ajustado ao contorno externo da banda de rodagem (setores de 5°, sem picos de bolinhas); X no meio da banda",
+   "centro_medido": [
+    0.3199005126953125,
+    0.22863668226653042,
+    0.12800422861429547
+   ],
+   "raio": 0.12955590029803882,
+   "residuo_desvio_padrao": 0.0008485464427576538,
+   "residuo_max": 0.002498026377001028,
+   "setores_usados": 48,
+   "setores_descartados_graus": [
+    0,
+    5,
+    10,
+    25,
+    30,
+    35,
+    100,
+    105,
+    110,
+    115,
+    120,
+    125,
+    130,
+    135,
+    140,
+    145,
+    150,
+    165,
+    170,
+    175,
+    180,
+    185,
+    190,
+    355
+   ],
+   "x_banda": [
+    0.29058837890625,
+    0.349212646484375
+   ],
+   "z_min_malha": 3.0517578125e-05,
+   "centro_caixa_comparacao": [
+    0.301788330078125,
+    0.2281951978802681,
+    0.13421630859375
+   ],
+   "diferenca_caixa_menos_ajuste": [
+    -0.0181121826171875,
+    -0.00044148438626231967,
+    0.006212079979454527
+   ],
+   "pivo_adotado": [
+    0.31982421875,
+    0.228515625,
+    0.1279296875
+   ]
+  },
+  "Wheel_Rear_Right": {
+   "criterio": "círculo de mínimos quadrados no plano YZ ajustado ao contorno externo da banda de rodagem (setores de 5°, sem picos de bolinhas); X no meio da banda",
+   "centro_medido": [
+    -0.3201141357421875,
+    0.22847244437459088,
+    0.1278444852038292
+   ],
+   "raio": 0.12969221287207192,
+   "residuo_desvio_padrao": 0.0008931829142428141,
+   "residuo_max": 0.002791015147629361,
+   "setores_usados": 72,
+   "setores_descartados_graus": [],
+   "x_banda": [
+    -0.34967041015625,
+    -0.290557861328125
+   ],
+   "z_min_malha": 6.103515625e-05,
+   "centro_caixa_comparacao": [
+    -0.30811309814453125,
+    0.22862237319350243,
+    0.1288757175207138
+   ],
+   "diferenca_caixa_menos_ajuste": [
+    0.01200103759765625,
+    0.0001499288189115433,
+    0.001031232316884595
+   ],
+   "pivo_adotado": [
+    -0.320068359375,
+    0.228515625,
+    0.1279296875
+   ]
+  }
+ }
+}
