@@ -1,0 +1,207 @@
+{
+  "date": "2026-10-15",
+  "blender_version": "5.2.2 LTS",
+  "file": "/Users/patricksoares/Documents/jogos/kart/kart_modular_rig.blend",
+  "backup": "rigging/kart_antes_animacao_esquerda_20261015.blend",
+  "action": "Cabeca_Esquerda_Ida_e_Volta",
+  "source_action": "Cabeca_Direita_Ida_e_Volta",
+  "source_action_unchanged": true,
+  "source_fake_user": true,
+  "curve": [
+    {
+      "path": "pose.bones[\"Head_Bone\"].rotation_euler",
+      "index": 1,
+      "extrapolation": "CONSTANT",
+      "keys": [
+        {
+          "co": [
+            1.0,
+            -0.0
+          ],
+          "left": [
+            -7.0,
+            -0.0
+          ],
+          "right": [
+            9.0,
+            -0.0
+          ],
+          "interpolation": "BEZIER",
+          "left_type": "AUTO_CLAMPED",
+          "right_type": "AUTO_CLAMPED"
+        },
+        {
+          "co": [
+            25.0,
+            -0.6981316804885864
+          ],
+          "left": [
+            17.0,
+            -0.6981316804885864
+          ],
+          "right": [
+            33.0,
+            -0.6981316804885864
+          ],
+          "interpolation": "BEZIER",
+          "left_type": "AUTO_CLAMPED",
+          "right_type": "AUTO_CLAMPED"
+        },
+        {
+          "co": [
+            49.0,
+            -0.0
+          ],
+          "left": [
+            41.0,
+            -0.0
+          ],
+          "right": [
+            57.0,
+            -0.0
+          ],
+          "interpolation": "BEZIER",
+          "left_type": "AUTO_CLAMPED",
+          "right_type": "AUTO_CLAMPED"
+        }
+      ]
+    }
+  ],
+  "fps": 30,
+  "fps_base": 1.0,
+  "preview": [
+    1,
+    49
+  ],
+  "scene_range": [
+    1,
+    250
+  ],
+  "duration_between_first_last_keys_seconds": 1.6,
+  "pivot_world": [
+    0.0,
+    -0.0625,
+    0.4375
+  ],
+  "forward_world_at_frame_25": [
+    -0.6427876353263855,
+    -0.7660444974899292,
+    -6.972419086537229e-09
+  ],
+  "weights": {
+    "Cabeca": {
+      "vertices": 160046,
+      "invalid_weights": 0,
+      "group": "Head_Bone"
+    },
+    "Corpo_Kart": {
+      "vertices": 874925,
+      "invalid_weights": 0,
+      "group": "Torso_Bone"
+    }
+  },
+  "geometry_sha256_before": {
+    "Cabeca": "5e3a3dae04479f7765557c46c9c27e80f9c7faef69dfde978a56ef25694940a9",
+    "Corpo_Kart": "0cc10f51ab3707ed93ea7585975505acbc89bcad01c48f6466aafcb871f8cffa"
+  },
+  "geometry_sha256_after": {
+    "Cabeca": "5e3a3dae04479f7765557c46c9c27e80f9c7faef69dfde978a56ef25694940a9",
+    "Corpo_Kart": "0cc10f51ab3707ed93ea7585975505acbc89bcad01c48f6466aafcb871f8cffa"
+  },
+  "samples_full_evaluated_geometry": [
+    {
+      "frame": 1,
+      "angle_degrees": 0.0,
+      "pivot_displacement": 0.0,
+      "body_max_component_error": 0.0,
+      "head_rigid_transform_max_component_error": 3.166496753692627e-08,
+      "head_max_edge_length_error": 0.0,
+      "rotation_singular_values": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "frame": 13,
+      "angle_degrees": -19.99999941818584,
+      "pivot_displacement": 0.0,
+      "body_max_component_error": 0.0,
+      "head_rigid_transform_max_component_error": 3.3326241322129135e-08,
+      "head_max_edge_length_error": 3.598079269186323e-08,
+      "rotation_singular_values": [
+        1.000000059814119,
+        1.000000003016064,
+        0.9999999719701266
+      ]
+    },
+    {
+      "frame": 25,
+      "angle_degrees": -39.99999883637168,
+      "pivot_displacement": 0.0,
+      "body_max_component_error": 0.0,
+      "head_rigid_transform_max_component_error": 3.494387468272464e-08,
+      "head_max_edge_length_error": 3.606600965273821e-08,
+      "rotation_singular_values": [
+        1.0000000654454668,
+        1.0000000023060256,
+        0.9999999262255295
+      ]
+    },
+    {
+      "frame": 37,
+      "angle_degrees": -19.99999941818584,
+      "pivot_displacement": 0.0,
+      "body_max_component_error": 0.0,
+      "head_rigid_transform_max_component_error": 3.3326241322129135e-08,
+      "head_max_edge_length_error": 3.598079269186323e-08,
+      "rotation_singular_values": [
+        1.000000059814119,
+        1.000000003016064,
+        0.9999999719701266
+      ]
+    },
+    {
+      "frame": 49,
+      "angle_degrees": -0.0,
+      "pivot_displacement": 0.0,
+      "body_max_component_error": 0.0,
+      "head_rigid_transform_max_component_error": 3.166496753692627e-08,
+      "head_max_edge_length_error": 0.0,
+      "rotation_singular_values": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "all_integer_frames_1_to_49_maxima": {
+    "pivot_displacement": 0.0,
+    "other_bone_matrix_error": 0.0,
+    "object_matrix_error": 0.0,
+    "head_location_error": 0.0,
+    "head_scale_error": 0.0
+  },
+  "curve_sample_count": 481,
+  "mirror_max_radians_error": 0.0,
+  "sampled_angle_range_degrees": [
+    -39.99999883637168,
+    -0.0
+  ],
+  "numeric_geometry_tolerance": 2e-07,
+  "validation_passed": true,
+  "scope": "Geometria avaliada completa nos quadros 1,13,25,37,49; matrizes nos 49 quadros inteiros; curva em 481 amostras. Sem exportação de vídeo.",
+  "saved_blend_bytes": 114220618,
+  "saved_frame": 25,
+  "saved_action": "Cabeca_Esquerda_Ida_e_Volta",
+  "visual_inspection": "Viewport inspecionada na ação direita e na ação esquerda, ambas no quadro 25; cabeça gira no sentido oposto, corpo/kart visualmente estáveis.",
+  "disk_library_readback": {
+    "method": "Leitura de cópia temporária idêntica do arquivo salvo, sem importar datablocks",
+    "actions": [
+      "Cabeca_Esquerda_Ida_e_Volta",
+      "Cabeca_Direita_Ida_e_Volta"
+    ],
+    "required_objects_present": true
+  },
+  "standalone_cli_check": "Indisponível: servidor MCP sem caminho do executável Blender. Conteúdo do arquivo salvo conferido por leitura de biblioteca no Blender conectado."
+}
