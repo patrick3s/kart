@@ -1,10 +1,10 @@
 # P001.04 — Cabeça para a esquerda
 
-Executada em **15/10/2026**, pelo **Blender MCP**, no Blender 5.2.2 LTS. Referência central: [PERSONAGEM.md](PERSONAGEM.md).
+Executada em **15/10/2026**, pelo **Blender MCP**, no Blender 5.2.2 LTS. Referência central: [ficha do personagem](../LEIA-ME.md).
 
 ## Resultado salvo
 
-Arquivo: [kart_modular_rig.blend](../kart_modular_rig.blend). Nova ação ativa: **`Cabeca_Esquerda_Ida_e_Volta`**. A ação **`Cabeca_Direita_Ida_e_Volta`** foi preservada integralmente e marcada com `use_fake_user` para continuar salva quando não estiver ativa. A nova ação também tem retenção ativada.
+Arquivo: [kart_modular_rig.blend](../blender/jake.blend). Nova ação ativa: **`Cabeca_Esquerda_Ida_e_Volta`**. A ação **`Cabeca_Direita_Ida_e_Volta`** foi preservada integralmente e marcada com `use_fake_user` para continuar salva quando não estiver ativa. A nova ação também tem retenção ativada.
 
 | Quadro | Y local de `Head_Bone` | Estado |
 | ---: | ---: | --- |
@@ -19,7 +19,7 @@ Apenas `pose.bones["Head_Bone"].rotation_euler`, índice 1, é animado. Modo Eul
 ## Procedimento
 
 1. Leitura do `PERSONAGEM.md` e do registro anterior, seguida de inspeção real de objetos, ossos, transformações, ações, keyframes, FPS, prévia, modificadores e pesos pelo MCP.
-2. Cópia da cena aberta antes da edição: [kart_antes_animacao_esquerda_20261015.blend](../rigging/kart_antes_animacao_esquerda_20261015.blend). A cópia inclui os 30 FPS e o estado aberto anterior, sem trocar o caminho do arquivo principal.
+2. Cópia da cena aberta antes da edição: [kart_antes_animacao_esquerda_20261015.blend](../backups/kart_antes_animacao_esquerda_20261015.blend). A cópia inclui os 30 FPS e o estado aberto anterior, sem trocar o caminho do arquivo principal.
 3. Conferência visual da ação da direita no quadro 25. A documentação anterior estabelece +40° como direita; o novo movimento usa −40° no mesmo eixo. A direção frontal medida na pose esquerda foi aproximadamente `(-0.642788, -0.766044, 0)`, oposta em X à pose direita documentada.
 4. Duplicação da ação existente, invertendo o sinal dos valores dos keyframes e das coordenadas verticais de suas alças Bézier. Os tempos, os tipos de alça e a suavização permanecem iguais. Nenhuma nova restrição de rotação foi acrescentada.
 5. Ativação da ação esquerda, validação numérica, inspeção visual no quadro 25 e salvamento do arquivo principal. Nenhum objeto, osso, origem, peso ou vértice foi editado.
@@ -30,7 +30,7 @@ Hierarquia mantida: `Root_Bone` → `Torso_Bone` → `Neck_Bone` → `Head_Bone`
 
 Pivô mundial mantido em **`(0, -0.0625, 0.4375)`**, na base do pescoço. `Cabeca` permanece com 160.046 vértices e 305.705 faces, todos com peso 1,0 exclusivo em `Head_Bone`. `Corpo_Kart` permanece com 874.925 vértices e 1.662.516 faces, todos com peso 1,0 exclusivo em `Torso_Bone`. Ambos continuam filhos de `Personagem_Rig`, com o modificador `Rig_Rigido_Sem_Deformacao`.
 
-O relatório [validacao_animacao_cabeca_esquerda.json](../rigging/validacao_animacao_cabeca_esquerda.json) contém as medições completas.
+O relatório [validacao_animacao_cabeca_esquerda.json](../validacao/validacao_animacao_cabeca_esquerda.json) contém as medições completas.
 
 | Verificação | Abrangência | Maior diferença |
 | --- | --- | ---: |

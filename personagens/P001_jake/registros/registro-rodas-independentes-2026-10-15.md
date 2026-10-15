@@ -1,12 +1,12 @@
 # P001.05 — Separação das quatro rodas do kart
 
-Data: **15/10/2026**. Personagem: **P001 — Jake**. Registro central: [PERSONAGEM.md](PERSONAGEM.md#p00105--separação-das-quatro-rodas).
+Data: **15/10/2026**. Personagem: **P001 — Jake**. Registro central: [ficha do personagem](../LEIA-ME.md#p00105--separação-das-quatro-rodas).
 
 ## Pedido e resultado
 
 Separar as quatro rodas do carro em objetos independentes, preservando sua geometria e topologia, centralizar as origens e padronizar os nomes para futuro controle na Godot.
 
-O trabalho foi realizado na cena aberta com o **Blender MCP** e salvo em [kart_modular_rig.blend](../kart_modular_rig.blend). Cada roda possui seu próprio objeto e datablock de malha, com um único usuário. A frente do modelo é **−Y**; os lados são os do piloto, com **+X à esquerda**.
+O trabalho foi realizado na cena aberta com o **Blender MCP** e salvo em [kart_modular_rig.blend](../blender/jake.blend). Cada roda possui seu próprio objeto e datablock de malha, com um único usuário. A frente do modelo é **−Y**; os lados são os do piloto, com **+X à esquerda**.
 
 | Objeto | Vértices | Faces |
 | --- | ---: | ---: |
@@ -22,7 +22,7 @@ O trabalho foi realizado na cena aberta com o **Blender MCP** e salvo em [kart_m
 ## Procedimento executado
 
 1. Inspecionar a cena, o objeto `Corpo_Kart`, o modificador Armature, as transformações, os grupos, os atributos de rastreamento e as ilhas conectadas.
-2. Salvar uma cópia do estado aberto antes da edição: [kart_antes_separar_rodas_20261015_134523.blend](../rigging/kart_antes_separar_rodas_20261015_134523.blend).
+2. Salvar uma cópia do estado aberto antes da edição: [kart_antes_separar_rodas_20261015_134523.blend](../backups/kart_antes_separar_rodas_20261015_134523.blend).
 3. Identificar as rodas entre as **752 ilhas** de `Corpo_Kart`, usando limites espaciais e projeções da geometria para conferir pneus, aros e conexões com os eixos. Esses limites são específicos deste modelo.
 4. Selecionar conjuntos completos de ilhas e usar separação de malha por seleção para criar cada objeto. Não houve subdivisão, remalhamento, corte de faces, tampa, redimensionamento ou deformação das rodas.
 5. Nomear os objetos conforme a tabela e suas malhas com o sufixo `_Mesh`.
@@ -36,7 +36,7 @@ O trabalho foi realizado na cena aberta com o **Blender MCP** e salvo em [kart_m
 
 O centro adotado é o **centro da caixa delimitadora de toda a geometria atribuída a cada roda**. Não corresponde a uma média ponderada pela densidade de vértices nem a um novo ajuste manual de eixo mecânico. Os conjuntos preservam as ilhas completas, incluindo pequenas conexões já pertencentes a elas.
 
-As coordenadas abaixo estão no espaço de referência anterior ao deslocamento do rig. As coordenadas mundiais observadas também estão no [relatório JSON](../rigging/verificacao_rodas_independentes.json).
+As coordenadas abaixo estão no espaço de referência anterior ao deslocamento do rig. As coordenadas mundiais observadas também estão no [relatório JSON](../validacao/verificacao_rodas_independentes.json).
 
 | Objeto | X | Y | Z |
 | --- | ---: | ---: | ---: |
@@ -49,7 +49,7 @@ O giro usa **X local** e o esterço usa **Z local**. As quatro rodas são objeto
 
 ## Verificações e evidências
 
-O relatório [verificacao_rodas_independentes.json](../rigging/verificacao_rodas_independentes.json) registra:
+O relatório [verificacao_rodas_independentes.json](../validacao/verificacao_rodas_independentes.json) registra:
 
 - Presença de cada elemento original exatamente uma vez na partição: **874.925 vértices, 2.536.689 arestas, 1.662.516 faces e 4.987.548 cantos**. Não houve perda ou duplicação de elementos.
 - Erro **zero** ao reconstruir as coordenadas originais a partir das malhas recentradas; conectividade de arestas, vértices por canto, tamanhos de polígonos e pertencimento de cantos às faces preservados.

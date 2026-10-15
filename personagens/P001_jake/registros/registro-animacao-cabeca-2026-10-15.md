@@ -4,7 +4,7 @@ Data: **15/10/2026**, no fuso de São Paulo.
 
 Projeto: `/Users/patricksoares/Documents/jogos/kart`.
 
-Arquivo trabalhado e salvo: [`kart_modular_rig.blend`](../kart_modular_rig.blend).
+Arquivo trabalhado e salvo: [`kart_modular_rig.blend`](../blender/jake.blend).
 
 Este documento registra os pedidos, as operações, as verificações e as orientações deste chat. O rig e a separação das malhas já existiam quando esta conversa começou; sua criação está descrita no [registro anterior](registro-rig-personagem-2026-10-15.md). Esse registro anterior descreve uma etapa histórica, em que ainda não havia keyframes.
 
