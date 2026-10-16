@@ -9,6 +9,10 @@ Cada personagem tem uma pasta própria em [`personagens/`](../personagens/) com 
 - [Iniciar um novo personagem](PROMPT_NOVO_PERSONAGEM.md): prompt que pergunta o nome, cria as pastas e um projeto Blender exclusivo, solicita referências e gera checklist por fases e `CHECKPOINT.md` para manter o estado e retomar o trabalho. Inclui um [modelo de checkpoint](MODELO_CHECKPOINT_PERSONAGEM.md).
 - [Receita de personagem](RECEITA_PERSONAGEM.md): procedimento genérico e estrutura de pasta para preparar os próximos personagens. Inclui o [prompt original deste chat](RECEITA_PERSONAGEM.md#0-prompt-original-deste-chat-para-os-próximos-personagens), com as quatro regras de preservação, separação, pesos e pivô, além das referências ao primeiro rig.
 
+## Pistas
+
+- [Estrutura das pistas](../pistas/LEIA-ME.md): modelo de pastas para referências, Blender, texturas, backups, validações e registros. Recursos finais ficam em `jogo/pistas/`.
+
 As seções abaixo registram as etapas do P001 em ordem cronológica inversa. Os documentos e evidências citados estão na pasta do personagem.
 
 ## Jogo na Godot — validação em 15/10/2026
