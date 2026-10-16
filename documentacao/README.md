@@ -11,7 +11,11 @@ Cada personagem tem uma pasta própria em [`personagens/`](../personagens/) com 
 
 ## Pistas
 
-- [Estrutura das pistas](../pistas/LEIA-ME.md): modelo de pastas para referências, Blender, texturas, backups, validações e registros. Recursos finais ficam em `jogo/pistas/`.
+- [Iniciar, produzir ou retomar uma pista](PROMPT_NOVA_PISTA.md): prompt com projeto Blender exclusivo via MCP, referências preservadas, dez fases e estado para outra conversa.
+- [Receita de pistas](RECEITA_PISTA.md): modelagem, exportação, materiais, colisões, menu, eixo real para IA, preservação e validação; baseada na integração da PI001.
+- [Modelo de checkpoint de pista](MODELO_CHECKPOINT_PISTA.md) e [checklist por fases](../pistas/_modelo/CHECKLIST.md): estado atual, critérios, evidências e próximo passo.
+- [Estrutura das pistas](../pistas/LEIA-ME.md): ficha, checklist, checkpoint, referências, Blender, texturas, backups, validações e registros. Recursos finais ficam em `jogo/pistas/`.
+- [PI001 — Primeira pista](../pistas/PI001_primeira_pista/LEIA-ME.md): referência concreta do fluxo; [checkpoint](../pistas/PI001_primeira_pista/CHECKPOINT.md) e [relatório de integração jogável](../pistas/PI001_primeira_pista/validacao/integracao_20261016/RELATORIO.md).
 
 As seções abaixo registram as etapas do P001 em ordem cronológica inversa. Os documentos e evidências citados estão na pasta do personagem.
 
