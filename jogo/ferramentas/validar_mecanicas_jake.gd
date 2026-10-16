@@ -125,6 +125,7 @@ func _executar() -> void:
 	current_scene = menu
 	await process_frame
 	relatorio.selecao = {"nome_exibido": menu.nome.text, "botao_jogar": menu.jogar != null, "troca_visivel": menu.anterior.visible}
+	root.get_node("Jogo").quantidade_adversarios = 0  # mede o piloto sem adversários
 	menu._jogar()
 	await scene_changed
 	await physics_frame

@@ -18,7 +18,9 @@ Controles: **W/↑** acelera · **S/↓** freia e dá ré · **A/D ou ←/→** 
 | `personagens/dimi/dimi_kart.glb` | Exportado de `../personagens/P002_dimi/blender/dimi.blend` (pose de repouso + ações `Cabeca_Direita/Esquerda_Ida_e_Volta`) |
 | `personagens/dimi/dimi.tres` | Ficha do Dimi: raio das rodas 0,1297 (medido na banda, sem as bolinhas) e teto da cabeça de 25° |
 | `scripts/jogo.gd` | Autoload `Jogo`: catálogo de pilotos e escolha atual |
-| `scripts/kart.gd` | Direção arcade (`CharacterBody3D`) |
+| `scripts/kart.gd` | Direção arcade (`CharacterBody3D`) e choques com impulso, empurrão lateral e rodada |
+| `scripts/kart_ia.gd` | `KartIA`: adversário do computador (circuito, desvio por raios, ré ao enroscar, perseguição) |
+| `scripts/efeitos.gd` | Faíscas das batidas |
 | `scripts/visual_kart.gd` | Rodas (giro + esterço), suspensão por mola, vibração e compensação da cabeça |
 | `scripts/camera_perseguicao.gd` | Câmera atrás do kart, dinâmica |
 | `ferramentas/construir_cenas.gd` | Gera `cenas/*.tscn` pela linha de comando |
@@ -37,6 +39,14 @@ Regenerar as cenas:
 - Rodas saem do `Torso_Bone` em tempo de execução e ficam no chão; giram por `velocidade / raio` e as dianteiras esterçam. O raio vem de `raio_rodas` na ficha ou, se for zero, da caixa da malha.
 - Suspensão: `Torso_Bone` rola conforme a aceleração lateral (`giro × velocidade`). Curva para a esquerda → carroceria pende para a direita; acelerar levanta o bico, frear o abaixa. Vibração por ruído cresce com a velocidade.
 - Cabeça: `Head_Bone` busca `-1,7 ×` a rolagem total (com o tremor) em relação ao corpo, com mola própria. Em todo quadro, a inclinação global da cabeça fica do lado oposto ao corpo, entre 0,2 e 1,0 vez a inclinação dele (`oposicao_minima_cabeca`/`oposicao_maxima_cabeca`). Depois vem o limite `giro_maximo_cabeca`, quando a ficha informa. Ver [T001](tarefas/T001-cabeca-sempre-oposta.md).
+
+## Adversários e colisões
+
+- `pista.gd` cria `Jogo.quantidade_adversarios` karts `KartIA` (padrão 5) em volta da arena, primeiro com os pilotos que o jogador não escolheu. Um em cada três corre na contramão, numa faixa mais aberta. Velocidade máxima, massa e agressividade variam entre eles.
+- A IA segue um circuito ondulado de raio 60 m e desvia de blocos, muros e karts com três raios à frente. Se acelerar sem sair do lugar por 1 s, dá ré esterçando ao contrário. A cada 2–4 s sorteia se persegue o kart mais próximo à frente, mirando onde ele vai estar; desiste depois de bater nele ou após 5 s.
+- Choque entre karts: impulso pela normal do contato com massa e restituição (`restituicao_karts`, separação mínima de 3 m/s). A parte longitudinal muda `velocidade`; a lateral vira `empurrao`, que some conforme a `aderencia`. O ponto de contato gera `rodada` (giro em Y). Muros e blocos também quicam acima de 4 m/s.
+- Efeitos: faíscas no ponto de contato, solavanco de rolagem, arfagem e pulo na suspensão (`VisualKart.impacto`) e tremor da câmera (`Kart.tremor`).
+- As ferramentas de validação e captura zeram `quantidade_adversarios` para medir o piloto sozinho.
 
 ## Validação das regras — 15/10/2026
 

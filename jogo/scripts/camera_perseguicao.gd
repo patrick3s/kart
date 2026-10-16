@@ -13,6 +13,8 @@ extends Camera3D
 @export var fov_base := 68.0
 @export var fov_extra := 14.0
 @export var acompanhamento_rolagem := 0.15
+## Deslocamento máximo (m) quando o kart leva uma batida forte.
+@export var tremor_batida := 0.35
 
 var _giro := 0.0
 var _fator := 0.0
@@ -30,7 +32,10 @@ func _physics_process(delta: float) -> void:
 	_posicionar()
 	var vis := alvo.visual
 	rotate_object_local(Vector3.BACK, -vis.rolagem * acompanhamento_rolagem)
-	h_offset = vis.vibracao * 2.0 * sin(Time.get_ticks_msec() * 0.05)
+	var t := Time.get_ticks_msec() * 0.001
+	var batida := tremor_batida * alvo.tremor * alvo.tremor
+	h_offset = vis.vibracao * 2.0 * sin(t * 50.0) + batida * sin(t * 71.0)
+	v_offset = batida * 0.7 * sin(t * 89.0 + 1.3)
 	fov = fov_base + fov_extra * _fator
 
 

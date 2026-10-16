@@ -243,6 +243,7 @@ func _executar() -> void:
 	selecao.apos_anterior = menu.nome.text
 	selecao.indice_escolhido = jogo.indice_escolhido
 	relatorio.selecao = selecao
+	root.get_node("Jogo").quantidade_adversarios = 0  # mede o piloto sem adversários
 	menu._jogar()
 	await scene_changed
 	await physics_frame

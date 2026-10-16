@@ -31,6 +31,11 @@ extends Node3D
 ## Fração máxima: limita o quanto a cabeça pode passar do lado oposto. Faz a cabeça
 ## cruzar o centro junto com o corpo, sem saltar de um lado para o outro.
 @export var oposicao_maxima_cabeca := 1.0
+@export_group("Impacto")
+## Rad/s de rolagem e arfagem por m/s de impulso recebido numa batida.
+@export var ganho_impacto := 0.15
+## Altura do pulo (unidades do modelo) por m/s de impulso.
+@export var salto_impacto := 0.004
 @export_group("Rodas")
 @export var esterco_maximo := deg_to_rad(28.0)
 
@@ -44,6 +49,8 @@ var _cabeca := 0.0
 var _vel_cabeca := 0.0
 var _limite_cabeca := 0.0
 var _tempo := 0.0
+var _pulo := 0.0
+var _vel_pulo := 0.0
 var _esqueleto: Skeleton3D
 var _osso_corpo := -1
 var _osso_cabeca := -1
@@ -111,7 +118,12 @@ func atualizar(delta: float, velocidade: float, giro: float, aceleracao: float, 
 	var rolagem_total := rolagem + tremor
 	var giro_corpo := Basis(Vector3.BACK, rolagem_total) * Basis(Vector3.RIGHT, arfagem)
 	_girar_osso(_osso_corpo, giro_corpo)
-	_esqueleto.set_bone_pose_position(_osso_corpo, _esqueleto.get_bone_rest(_osso_corpo).origin + Vector3(0, salto, 0))
+	_vel_pulo += (-rigidez * 1.5 * _pulo - amortecimento * 0.8 * _vel_pulo) * delta
+	_pulo += _vel_pulo * delta
+	if _pulo < 0.0:
+		_pulo = 0.0
+		_vel_pulo = maxf(_vel_pulo, 0.0)
+	_esqueleto.set_bone_pose_position(_osso_corpo, _esqueleto.get_bone_rest(_osso_corpo).origin + Vector3(0, salto + _pulo, 0))
 
 	# A cabeça busca o lado inverso da inclinação total (com o tremor), com um
 	# pequeno atraso de mola. A cabeça herda a inclinação do corpo, então a global
@@ -137,6 +149,16 @@ func atualizar(delta: float, velocidade: float, giro: float, aceleracao: float, 
 		malha.rotate_x(velocidade / scale.x / roda.raio * delta)
 		if roda.dianteira:
 			roda.pivo.rotation.y = esterco * esterco_maximo
+
+
+## Solavanco de uma batida. impulso: m/s no espaço do kart (frente = -Z, direita = +X).
+## Empurrado para a direita, a carroceria fica para trás e pende para a esquerda;
+## empurrado para trás (batida de frente), o bico mergulha.
+func impacto(impulso: Vector3) -> void:
+	var limite := 3.0
+	_vel_rolagem += clampf(-ganho_impacto * impulso.x, -limite, limite)
+	_vel_arfagem += clampf(ganho_impacto * impulso.z, -limite, limite)
+	_vel_pulo += minf(impulso.length() * salto_impacto * 10.0, 0.6)
 
 
 ## Aplica uma rotação expressa no espaço do esqueleto em torno da origem do osso.

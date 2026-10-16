@@ -48,6 +48,7 @@ func _executar() -> void:
 	for i in range(30):
 		await process_frame
 	await _salvar("menu_dimi")
+	root.get_node("Jogo").quantidade_adversarios = 0  # mede o piloto sem adversários
 	menu._jogar()
 	await scene_changed
 	var pista := current_scene
