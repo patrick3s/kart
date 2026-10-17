@@ -4,6 +4,7 @@ extends Node
 var personagens: Array[DefinicaoPersonagem] = [
 	preload("res://personagens/jake/jake.tres"),
 	preload("res://personagens/dimi/dimi.tres"),
+	preload("res://personagens/bryan/bryan.tres"),
 ]
 var indice_escolhido := 0
 ## Karts do computador na pista. As ferramentas de validação zeram para medir o piloto sozinho.

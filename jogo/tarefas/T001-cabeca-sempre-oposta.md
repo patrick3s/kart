@@ -126,6 +126,10 @@ O verificador do Jake **regrava** `personagens/P001_jake/validacao/validacao_god
 | `jogo/ferramentas/capturar_vistas_dimi.gd` | `d8b4297f…1ee285b` (parâmetro `--pasta=` e detecção do pico pela troca de sinal) |
 | `personagens/P002_dimi/validacao/validacao_mecanicas_t001.json` | `d44b0a55…2b55` |
 
+### Novo piloto — P003 Bryan (16/10/2026)
+
+Com o `visual_kart.gd` desta tarefa, sem alteração, o verificador do Bryan mediu 0 quadros no mesmo lado em todos os casos, e todas as conclusões passaram ([relatório](../../personagens/P003_bryan/validacao/validacao_mecanicas_fase8.json), [registro](../../personagens/P003_bryan/registros/registro-fase8-jogavel-2026-10-16.md)).
+
 ### Pendente
 
 - Atualizar a documentação e o relatório do Jake (P001), se autorizado.

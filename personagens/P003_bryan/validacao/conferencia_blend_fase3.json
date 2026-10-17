@@ -1,0 +1,196 @@
+{
+ "arquivo": "/Users/patricksoares/Documents/jogos/kart/personagens/P003_bryan/blender/bryan.blend",
+ "sujo": false,
+ "objetos": [
+  {
+   "nome": "Cabeca",
+   "dados": "Cabeca",
+   "v": 41982,
+   "f": 80608,
+   "loc": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "esc": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pai": null,
+   "mods": [],
+   "mats": [
+    "tripo_material_1db849c3-8e37-4423-b45a-4dcd0d8abf93"
+   ]
+  },
+  {
+   "nome": "Corpo_Kart",
+   "dados": "Corpo_Kart",
+   "v": 771146,
+   "f": 1439415,
+   "loc": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "esc": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pai": null,
+   "mods": [],
+   "mats": [
+    "tripo_material_1db849c3-8e37-4423-b45a-4dcd0d8abf93"
+   ]
+  },
+  {
+   "nome": "Wheel_Front_Left",
+   "dados": "Wheel_Front_Left",
+   "v": 41998,
+   "f": 80611,
+   "loc": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "esc": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pai": null,
+   "mods": [],
+   "mats": [
+    "tripo_material_1db849c3-8e37-4423-b45a-4dcd0d8abf93"
+   ]
+  },
+  {
+   "nome": "Wheel_Front_Right",
+   "dados": "Wheel_Front_Right",
+   "v": 42702,
+   "f": 81386,
+   "loc": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "esc": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pai": null,
+   "mods": [],
+   "mats": [
+    "tripo_material_1db849c3-8e37-4423-b45a-4dcd0d8abf93"
+   ]
+  },
+  {
+   "nome": "Wheel_Rear_Left",
+   "dados": "Wheel_Rear_Left",
+   "v": 45724,
+   "f": 87392,
+   "loc": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "esc": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pai": null,
+   "mods": [],
+   "mats": [
+    "tripo_material_1db849c3-8e37-4423-b45a-4dcd0d8abf93"
+   ]
+  },
+  {
+   "nome": "Wheel_Rear_Right",
+   "dados": "Wheel_Rear_Right",
+   "v": 44498,
+   "f": 85189,
+   "loc": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "esc": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pai": null,
+   "mods": [],
+   "mats": [
+    "tripo_material_1db849c3-8e37-4423-b45a-4dcd0d8abf93"
+   ]
+  }
+ ],
+ "materiais": [
+  "tripo_material_1db849c3-8e37-4423-b45a-4dcd0d8abf93"
+ ],
+ "acoes": 0,
+ "armatures": 0,
+ "total_v": 988050,
+ "total_f": 1854601,
+ "imagens": [
+  {
+   "nome": "bryan_basecolor.jpg",
+   "empacotada": true,
+   "tam": [
+    4096,
+    4096
+   ]
+  },
+  {
+   "nome": "bryan_normal.png",
+   "empacotada": true,
+   "tam": [
+    4096,
+    4096
+   ]
+  },
+  {
+   "nome": "bryan_rm.jpg",
+   "empacotada": true,
+   "tam": [
+    4096,
+    4096
+   ]
+  }
+ ],
+ "faltando": []
+}
