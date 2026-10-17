@@ -17,6 +17,11 @@ Cada personagem tem uma pasta própria em [`personagens/`](../personagens/) com 
 - [Estrutura das pistas](../pistas/LEIA-ME.md): ficha, checklist, checkpoint, referências, Blender, texturas, backups, validações e registros. Recursos finais ficam em `jogo/pistas/`.
 - [PI001 — Primeira pista](../pistas/PI001_primeira_pista/LEIA-ME.md): referência concreta do fluxo; [checkpoint](../pistas/PI001_primeira_pista/CHECKPOINT.md) e [relatório de integração jogável](../pistas/PI001_primeira_pista/validacao/integracao_20261016/RELATORIO.md).
 
+## Ambiente
+
+- [Modelos reutilizáveis de ambiente](../ambiente/modelos/LEIA-ME.md): pastas para barreiras/guarda-corpos, obstáculos, árvores e túneis; modelo de organização e [destino das exportações Godot](../jogo/ambiente/modelos/LEIA-ME.md).
+- [Referências de ambiente](../ambiente/LEIA-ME.md): iluminação, céu e textura usadas como referência para todos os pilotos e pistas, com inventário. Criada em 16/10/2026. Primeiro arquivo: HDRI de céu parcialmente nublado, aplicado como [céu da pista e do menu](../ambiente/LEIA-ME.md#céu-no-jogo); a cópia usada pelo jogo fica em `jogo/ambiente/`.
+
 As seções abaixo registram as etapas do P001 em ordem cronológica inversa. Os documentos e evidências citados estão na pasta do personagem.
 
 ## Jogo na Godot — validação em 15/10/2026

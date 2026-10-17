@@ -34,10 +34,9 @@ func _filho(pai: Node, no: Node, nome: String) -> Node:
 
 
 func _ambiente(pai: Node) -> void:
-	var ceu := ProceduralSkyMaterial.new()
-	ceu.sky_top_color = Color(0.32, 0.52, 0.85)
-	ceu.sky_horizon_color = Color(0.75, 0.83, 0.92)
-	ceu.ground_horizon_color = Color(0.75, 0.83, 0.92)
+	# HDRI "Kloofendal 48d Partly Cloudy (Pure Sky)", referência em ambiente/referencia/ceu/.
+	var ceu := PanoramaSkyMaterial.new()
+	ceu.panorama = load("res://ambiente/kloofendal_48d_partly_cloudy_puresky_4k.exr")
 	var sky := Sky.new()
 	sky.sky_material = ceu
 	var amb := Environment.new()
@@ -46,14 +45,17 @@ func _ambiente(pai: Node) -> void:
 	amb.ambient_light_source = Environment.AMBIENT_SOURCE_SKY
 	amb.tonemap_mode = Environment.TONE_MAPPER_FILMIC
 	amb.fog_enabled = true
-	amb.fog_light_color = Color(0.75, 0.83, 0.92)
+	# Cor média da faixa do horizonte no HDRI; a neblina não cobre o céu.
+	amb.fog_light_color = Color(0.4361, 0.4685, 0.5671).linear_to_srgb()
 	amb.fog_density = 0.004
+	amb.fog_sky_affect = 0.0
 	var we := WorldEnvironment.new()
 	we.environment = amb
 	_filho(pai, we, "Ambiente")
 
+	# Altura (47,9°) e direção do sol medidas no HDRI; renderizado, o sol do céu fica a < 0,5° desta luz.
 	var sol := DirectionalLight3D.new()
-	sol.rotation_degrees = Vector3(-55, -35, 0)
+	sol.rotation_degrees = Vector3(-47.9, -34.3, 0)
 	sol.light_energy = 1.2
 	sol.shadow_enabled = true
 	sol.directional_shadow_max_distance = 60.0
