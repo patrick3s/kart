@@ -1,0 +1,395 @@
+{
+ "bytes": 78265000,
+ "sha256": "b51c51a5d8a0bafbd1a2a87ee0e1eb2b43e4e3e82842db72d040573d48bea9e4",
+ "asset": {
+  "generator": "Khronos glTF Blender I/O v5.2.40",
+  "version": "2.0"
+ },
+ "nos": [
+  {
+   "nome": "Head_Bone",
+   "filhos": [],
+   "malha": false,
+   "skin": false,
+   "t": [
+    -3.3287508860446735e-10,
+    0.056640658527612686,
+    -7.842114513323395e-09
+   ]
+  },
+  {
+   "nome": "Neck_Bone",
+   "filhos": [
+    "Head_Bone"
+   ],
+   "malha": false,
+   "skin": false,
+   "t": [
+    0,
+    0.20073778927326202,
+    -8.672941476106644e-09
+   ]
+  },
+  {
+   "nome": "Wheel_Front_Left",
+   "filhos": [],
+   "malha": true,
+   "skin": false,
+   "t": [
+    0.24643374979496002,
+    -0.22744734585285187,
+    0.21176905930042267
+   ]
+  },
+  {
+   "nome": "Wheel_Front_Right",
+   "filhos": [],
+   "malha": true,
+   "skin": false,
+   "t": [
+    -0.2732807993888855,
+    -0.2074626386165619,
+    0.19865070283412933
+   ]
+  },
+  {
+   "nome": "Wheel_Rear_Left",
+   "filhos": [],
+   "malha": true,
+   "skin": false,
+   "t": [
+    0.26722511649131775,
+    -0.026319682598114014,
+    -0.31444165110588074
+   ]
+  },
+  {
+   "nome": "Wheel_Rear_Right",
+   "filhos": [],
+   "malha": true,
+   "skin": false,
+   "t": [
+    -0.25151729583740234,
+    -0.006741178222000599,
+    -0.3279365599155426
+   ]
+  },
+  {
+   "nome": "Torso_Bone",
+   "filhos": [
+    "Neck_Bone",
+    "Wheel_Front_Left",
+    "Wheel_Front_Right",
+    "Wheel_Rear_Left",
+    "Wheel_Rear_Right"
+   ],
+   "malha": false,
+   "skin": false,
+   "t": [
+    0,
+    0.16943359375,
+    0
+   ]
+  },
+  {
+   "nome": "Root_Bone",
+   "filhos": [
+    "Torso_Bone"
+   ],
+   "malha": false,
+   "skin": false,
+   "t": [
+    0,
+    0.08056640625,
+    0
+   ]
+  },
+  {
+   "nome": "Cabeca",
+   "filhos": [],
+   "malha": true,
+   "skin": true,
+   "t": null
+  },
+  {
+   "nome": "Corpo_Kart",
+   "filhos": [],
+   "malha": true,
+   "skin": true,
+   "t": null
+  },
+  {
+   "nome": "Personagem_Rig",
+   "filhos": [
+    "Cabeca",
+    "Corpo_Kart",
+    "Root_Bone"
+   ],
+   "malha": false,
+   "skin": false,
+   "t": null
+  }
+ ],
+ "skins": [
+  {
+   "nome": "Personagem_Rig",
+   "juntas": [
+    "Root_Bone",
+    "Torso_Bone",
+    "Neck_Bone",
+    "Head_Bone"
+   ]
+  }
+ ],
+ "triangulos": {
+  "Wheel_Front_Left": 80611,
+  "Wheel_Front_Right": 81386,
+  "Wheel_Rear_Left": 87392,
+  "Wheel_Rear_Right": 85189,
+  "Cabeca": 80608,
+  "Corpo_Kart": 1439415
+ },
+ "triangulos_total": 1854601,
+ "materiais": [
+  "tripo_material_1db849c3-8e37-4423-b45a-4dcd0d8abf93"
+ ],
+ "imagens_sha256": {
+  "bryan_normal": "3831547ec9e928783544f6993ac7573bb432ea4b77418f6281569b53e7623396",
+  "bryan_basecolor": "3fe7ee02b4c5562b217580d9172fd30d195f35afbeb5943c7f4a4f1accec2a5e",
+  "bryan_rm": "8d404a8e0bc7d46f7189110021575d4dc48721a211fe59c2de57a0667efb817a"
+ },
+ "animacoes": {
+  "Cabeca_Direita_Ida_e_Volta": [
+   {
+    "alvo": "Root_Bone.translation",
+    "interp": "STEP",
+    "chaves": 2,
+    "t": [
+     0.0,
+     2.0
+    ]
+   },
+   {
+    "alvo": "Root_Bone.rotation",
+    "interp": "STEP",
+    "chaves": 2,
+    "t": [
+     0.0,
+     2.0
+    ]
+   },
+   {
+    "alvo": "Root_Bone.scale",
+    "interp": "STEP",
+    "chaves": 2,
+    "t": [
+     0.0,
+     2.0
+    ]
+   },
+   {
+    "alvo": "Torso_Bone.translation",
+    "interp": "STEP",
+    "chaves": 2,
+    "t": [
+     0.0,
+     2.0
+    ]
+   },
+   {
+    "alvo": "Torso_Bone.rotation",
+    "interp": "STEP",
+    "chaves": 2,
+    "t": [
+     0.0,
+     2.0
+    ]
+   },
+   {
+    "alvo": "Torso_Bone.scale",
+    "interp": "STEP",
+    "chaves": 2,
+    "t": [
+     0.0,
+     2.0
+    ]
+   },
+   {
+    "alvo": "Neck_Bone.translation",
+    "interp": "STEP",
+    "chaves": 2,
+    "t": [
+     0.0,
+     2.0
+    ]
+   },
+   {
+    "alvo": "Neck_Bone.rotation",
+    "interp": "STEP",
+    "chaves": 2,
+    "t": [
+     0.0,
+     2.0
+    ]
+   },
+   {
+    "alvo": "Neck_Bone.scale",
+    "interp": "STEP",
+    "chaves": 2,
+    "t": [
+     0.0,
+     2.0
+    ]
+   },
+   {
+    "alvo": "Head_Bone.translation",
+    "interp": "STEP",
+    "chaves": 2,
+    "t": [
+     0.0,
+     2.0
+    ]
+   },
+   {
+    "alvo": "Head_Bone.rotation",
+    "interp": "LINEAR",
+    "chaves": 49,
+    "t": [
+     0.0,
+     2.0
+    ],
+    "y_graus": [
+     -1.0672170578144923e-07,
+     -25.000002483270272,
+     -1.0672170578144923e-07
+    ],
+    "xz_max": 2.9802322387695312e-08
+   },
+   {
+    "alvo": "Head_Bone.scale",
+    "interp": "STEP",
+    "chaves": 2,
+    "t": [
+     0.0,
+     2.0
+    ]
+   }
+  ],
+  "Cabeca_Esquerda_Ida_e_Volta": [
+   {
+    "alvo": "Root_Bone.translation",
+    "interp": "STEP",
+    "chaves": 2,
+    "t": [
+     0.0,
+     2.0
+    ]
+   },
+   {
+    "alvo": "Root_Bone.rotation",
+    "interp": "STEP",
+    "chaves": 2,
+    "t": [
+     0.0,
+     2.0
+    ]
+   },
+   {
+    "alvo": "Root_Bone.scale",
+    "interp": "STEP",
+    "chaves": 2,
+    "t": [
+     0.0,
+     2.0
+    ]
+   },
+   {
+    "alvo": "Torso_Bone.translation",
+    "interp": "STEP",
+    "chaves": 2,
+    "t": [
+     0.0,
+     2.0
+    ]
+   },
+   {
+    "alvo": "Torso_Bone.rotation",
+    "interp": "STEP",
+    "chaves": 2,
+    "t": [
+     0.0,
+     2.0
+    ]
+   },
+   {
+    "alvo": "Torso_Bone.scale",
+    "interp": "STEP",
+    "chaves": 2,
+    "t": [
+     0.0,
+     2.0
+    ]
+   },
+   {
+    "alvo": "Neck_Bone.translation",
+    "interp": "STEP",
+    "chaves": 2,
+    "t": [
+     0.0,
+     2.0
+    ]
+   },
+   {
+    "alvo": "Neck_Bone.rotation",
+    "interp": "STEP",
+    "chaves": 2,
+    "t": [
+     0.0,
+     2.0
+    ]
+   },
+   {
+    "alvo": "Neck_Bone.scale",
+    "interp": "STEP",
+    "chaves": 2,
+    "t": [
+     0.0,
+     2.0
+    ]
+   },
+   {
+    "alvo": "Head_Bone.translation",
+    "interp": "STEP",
+    "chaves": 2,
+    "t": [
+     0.0,
+     2.0
+    ]
+   },
+   {
+    "alvo": "Head_Bone.rotation",
+    "interp": "LINEAR",
+    "chaves": 49,
+    "t": [
+     0.0,
+     2.0
+    ],
+    "y_graus": [
+     -1.0672170578144923e-07,
+     25.000002483270272,
+     -1.0672170578144923e-07
+    ],
+    "xz_max": 2.9802322387695312e-08
+   },
+   {
+    "alvo": "Head_Bone.scale",
+    "interp": "STEP",
+    "chaves": 2,
+    "t": [
+     0.0,
+     2.0
+    ]
+   }
+  ]
+ }
+}

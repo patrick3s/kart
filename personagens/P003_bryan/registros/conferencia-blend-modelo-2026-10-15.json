@@ -1,0 +1,21 @@
+{
+  "personagem": "P003 — Bryan",
+  "data": "2026-10-15T19:15-03:00",
+  "ferramenta": "Blender MCP (execute_blender_code) na sessão já aberta, Blender 5.2.2 LTS",
+  "sessao_antes": {"filepath": "blender/bryan.blend", "is_dirty": false, "objetos": [], "malhas": 0, "materiais": 0, "imagens": 0},
+  "entrada": {"arquivo": "referencia/bryan.glb", "sha256": "14fcb6a44f1cae912567202e9da60795f11dce96bdf879dde041ee8d1d6cfcf2", "gerador": "Tripo", "vertices_glb": 986320, "triangulos_glb": 1854601, "extensoes": ["KHR_materials_volume", "FB_ngon_encoding"]},
+  "operacoes": ["import_scene.gltf(referencia/bryan.glb) com opções padrão, sem transformações extras", "wm.save_mainfile()", "wm.revert_mainfile()"],
+  "arquivo": "blender/bryan.blend",
+  "tamanho_bytes": 79276145,
+  "sha256": "f116458b74812705a7c8acca87bbc127763bb69f9a062dc539de44d4c43201ef",
+  "apos_recarga": {
+    "is_dirty": false,
+    "objetos": [{"nome": "tripo_node_1db849c3-8e37-4423-b45a-4dcd0d8abf93", "tipo": "MESH", "pai": null, "loc": [0, 0, 0], "rot": [0, 0, 0], "escala": [1, 1, 1], "vertices": 986320, "faces": 1854601, "arestas": 2839751, "loops": 5563803, "uv": ["UVMap"], "modificadores": [], "dimensoes": [0.66412353515625, 0.9795837998390198, 0.77069091796875], "bbox_min": [-0.332061767578125, -0.4897918999195099, 0.0], "bbox_max": [0.332061767578125, 0.4897918999195099, 0.77069091796875]}],
+    "materiais": ["tripo_material_1db849c3-8e37-4423-b45a-4dcd0d8abf93"],
+    "imagens": [{"nome": "bryan_basecolor.jpg", "tamanho": [4096, 4096], "empacotada": true}, {"nome": "bryan_normal.png", "tamanho": [4096, 4096], "empacotada": true}, {"nome": "bryan_rm.jpg", "tamanho": [4096, 4096], "empacotada": true}],
+    "arquivos_ausentes": [],
+    "armatures": 0, "acoes": 0, "fps": 24
+  },
+  "resultado": "Modelo carregado",
+  "limites": "Valida o arquivo salvo e o carregamento observado (contagens iguais às do GLB). Não valida a preservação numérica dos vértices nem a aparência dos materiais; orientação ainda não conferida (Fase 2)."
+}

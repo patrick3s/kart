@@ -1,0 +1,250 @@
+{
+  "arquivo": "/Users/patricksoares/Documents/jogos/kart/kart_modular_rig.blend",
+  "backup": "/Users/patricksoares/Documents/jogos/kart/rigging/kart_antes_separar_rodas_20261015_134523.blend",
+  "criterio_pivo": "Centro da caixa delimitadora da geometria de cada roda, BOUNDS; tolerancia numerica float32.",
+  "convencao": "Frente -Y; esquerda do piloto +X; giro no X local e esterco no Z local.",
+  "objetos": [
+    {
+      "nome": "Wheel_Front_Right",
+      "malha": "Wheel_Front_Right_Mesh",
+      "usuarios_malha": 1,
+      "vertices": 54282,
+      "faces": 104530,
+      "origem_mundo": [
+        -0.28064459562301636,
+        -0.2604427635669708,
+        0.16385513544082642
+      ],
+      "origem_referencia": [
+        -0.2538298964500427,
+        -0.26035311818122864,
+        0.1022796630859375
+      ],
+      "pai": "Personagem_Rig",
+      "osso_pai": "Torso_Bone"
+    },
+    {
+      "nome": "Wheel_Front_Left",
+      "malha": "Wheel_Front_Left_Mesh",
+      "usuarios_malha": 1,
+      "vertices": 52726,
+      "faces": 102418,
+      "origem_mundo": [
+        0.2066066563129425,
+        -0.2604350745677948,
+        0.16412217915058136
+      ],
+      "origem_referencia": [
+        0.23342135548591614,
+        -0.2603454291820526,
+        0.10254670679569244
+      ],
+      "pai": "Personagem_Rig",
+      "osso_pai": "Torso_Bone"
+    },
+    {
+      "nome": "Wheel_Rear_Right",
+      "malha": "Wheel_Rear_Right_Mesh",
+      "usuarios_malha": 1,
+      "vertices": 67642,
+      "faces": 131660,
+      "origem_mundo": [
+        -0.3320133686065674,
+        0.19832797348499298,
+        0.18086865544319153
+      ],
+      "origem_referencia": [
+        -0.30519866943359375,
+        0.19841761887073517,
+        0.11929319053888321
+      ],
+      "pai": "Personagem_Rig",
+      "osso_pai": "Torso_Bone"
+    },
+    {
+      "nome": "Wheel_Rear_Left",
+      "malha": "Wheel_Rear_Left_Mesh",
+      "usuarios_malha": 1,
+      "vertices": 67616,
+      "faces": 131736,
+      "origem_mundo": [
+        0.28007006645202637,
+        0.1982136219739914,
+        0.18054825067520142
+      ],
+      "origem_referencia": [
+        0.306884765625,
+        0.19830326735973358,
+        0.1189727708697319
+      ],
+      "pai": "Personagem_Rig",
+      "osso_pai": "Torso_Bone"
+    }
+  ],
+  "preservacao_malha": {
+    "original_totals": {
+      "vertices": 874925,
+      "edges": 2536689,
+      "faces": 1662516,
+      "corners": 4987548
+    },
+    "all_original_elements_exactly_once": {
+      "POINT": true,
+      "EDGE": true,
+      "FACE": true,
+      "CORNER": true
+    },
+    "parts": [
+      {
+        "object": "Corpo_Kart",
+        "max_vertex_error_rest": 0.0,
+        "edge_topology_identical": true,
+        "corner_vertices_identical": true,
+        "polygon_sizes_identical": true,
+        "corner_face_membership_identical": true,
+        "attributes_identical": {
+          "UVMap": true,
+          "custom_normal": true,
+          "sharp_face": true
+        },
+        "material_index_identical": true,
+        "use_smooth_identical": true,
+        "origin_center_error": null
+      },
+      {
+        "object": "Wheel_Front_Right",
+        "max_vertex_error_rest": 0.0,
+        "edge_topology_identical": true,
+        "corner_vertices_identical": true,
+        "polygon_sizes_identical": true,
+        "corner_face_membership_identical": true,
+        "attributes_identical": {
+          "UVMap": true,
+          "custom_normal": true,
+          "sharp_face": true
+        },
+        "material_index_identical": true,
+        "use_smooth_identical": true,
+        "origin_center_error": 1.666000468656264e-08
+      },
+      {
+        "object": "Wheel_Front_Left",
+        "max_vertex_error_rest": 0.0,
+        "edge_topology_identical": true,
+        "corner_vertices_identical": true,
+        "polygon_sizes_identical": true,
+        "corner_face_membership_identical": true,
+        "attributes_identical": {
+          "UVMap": true,
+          "custom_normal": true,
+          "sharp_face": true
+        },
+        "material_index_identical": true,
+        "use_smooth_identical": true,
+        "origin_center_error": 1.0536712127723509e-08
+      },
+      {
+        "object": "Wheel_Rear_Right",
+        "max_vertex_error_rest": 0.0,
+        "edge_topology_identical": true,
+        "corner_vertices_identical": true,
+        "polygon_sizes_identical": true,
+        "corner_face_membership_identical": true,
+        "attributes_identical": {
+          "UVMap": true,
+          "custom_normal": true,
+          "sharp_face": true
+        },
+        "material_index_identical": true,
+        "use_smooth_identical": true,
+        "origin_center_error": 7.450580596923828e-09
+      },
+      {
+        "object": "Wheel_Rear_Left",
+        "max_vertex_error_rest": 0.0,
+        "edge_topology_identical": true,
+        "corner_vertices_identical": true,
+        "polygon_sizes_identical": true,
+        "corner_face_membership_identical": true,
+        "attributes_identical": {
+          "UVMap": true,
+          "custom_normal": true,
+          "sharp_face": true
+        },
+        "material_index_identical": true,
+        "use_smooth_identical": true,
+        "origin_center_error": 7.450580596923828e-09
+      }
+    ],
+    "max_vertex_error_rest": 0.0
+  },
+  "animacao": [
+    {
+      "frame": 1,
+      "max_world_vertex_error": 5.960464477539063e-08,
+      "max_pivot_world_error": 3.332000986233652e-08
+    },
+    {
+      "frame": 8,
+      "max_world_vertex_error": 5.960464477539063e-08,
+      "max_pivot_world_error": 3.332000986233652e-08
+    },
+    {
+      "frame": 17,
+      "max_world_vertex_error": 5.960464477539063e-08,
+      "max_pivot_world_error": 3.332000986233652e-08
+    },
+    {
+      "frame": 29,
+      "max_world_vertex_error": 5.960464477539063e-08,
+      "max_pivot_world_error": 3.332000986233652e-08
+    },
+    {
+      "frame": 49,
+      "max_world_vertex_error": 5.960464477539063e-08,
+      "max_pivot_world_error": 3.332000986233652e-08
+    }
+  ],
+  "testes_rotacao_restaurados": [
+    {
+      "object": "Wheel_Front_Right",
+      "axis": "X",
+      "pivot_drift": 0.0
+    },
+    {
+      "object": "Wheel_Front_Right",
+      "axis": "Z",
+      "pivot_drift": 0.0
+    },
+    {
+      "object": "Wheel_Front_Left",
+      "axis": "X",
+      "pivot_drift": 0.0
+    },
+    {
+      "object": "Wheel_Front_Left",
+      "axis": "Z",
+      "pivot_drift": 0.0
+    },
+    {
+      "object": "Wheel_Rear_Right",
+      "axis": "X",
+      "pivot_drift": 0.0
+    },
+    {
+      "object": "Wheel_Rear_Right",
+      "axis": "Z",
+      "pivot_drift": 0.0
+    },
+    {
+      "object": "Wheel_Rear_Left",
+      "axis": "X",
+      "pivot_drift": 0.0
+    },
+    {
+      "object": "Wheel_Rear_Left",
+      "axis": "Z",
+      "pivot_drift": 0.0
+    }
+  ]
+}

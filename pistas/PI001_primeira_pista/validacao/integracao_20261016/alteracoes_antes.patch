@@ -1,0 +1,1203 @@
+diff --git a/documentacao/README.md b/documentacao/README.md
+index 0caa233..8a6648a 100644
+--- a/documentacao/README.md
++++ b/documentacao/README.md
+@@ -6,6 +6,7 @@ Cada personagem tem uma pasta própria em [`personagens/`](../personagens/) com
+ 
+ - [P001 — Jake](../personagens/P001_jake/LEIA-ME.md): ficha, histórico de etapas e arquivos do primeiro personagem. Novas etapas do Jake são resumidas ali.
+ - [P002 — Dimi](../personagens/P002_dimi/LEIA-ME.md): ficha, [checklist](../personagens/P002_dimi/CHECKLIST.md) e [checkpoint](../personagens/P002_dimi/CHECKPOINT.md). Inicializado e entregue em 15/10/2026: Fases 0 a 9 concluídas. Jogável ao lado do Jake, com a cabeça sempre oposta corrigida pela [T001](../jogo/tarefas/T001-cabeca-sempre-oposta.md); ver o [resumo da entrega](../personagens/P002_dimi/LEIA-ME.md#resumo-da-entrega).
++- [P003 — Bryan](../personagens/P003_bryan/LEIA-ME.md): ficha, [checklist](../personagens/P003_bryan/CHECKLIST.md) e [checkpoint](../personagens/P003_bryan/CHECKPOINT.md). Inicializado em 15/10/2026; todas as fases concluídas em 16/10/2026 (jogável no catálogo; [entrega](../personagens/P003_bryan/registros/registro-fase9-entrega-2026-10-16.md)).
+ - [Iniciar um novo personagem](PROMPT_NOVO_PERSONAGEM.md): prompt que pergunta o nome, cria as pastas e um projeto Blender exclusivo, solicita referências e gera checklist por fases e `CHECKPOINT.md` para manter o estado e retomar o trabalho. Inclui um [modelo de checkpoint](MODELO_CHECKPOINT_PERSONAGEM.md).
+ - [Receita de personagem](RECEITA_PERSONAGEM.md): procedimento genérico e estrutura de pasta para preparar os próximos personagens. Inclui o [prompt original deste chat](RECEITA_PERSONAGEM.md#0-prompt-original-deste-chat-para-os-próximos-personagens), com as quatro regras de preservação, separação, pesos e pivô, além das referências ao primeiro rig.
+ 
+@@ -13,6 +14,10 @@ Cada personagem tem uma pasta própria em [`personagens/`](../personagens/) com
+ 
+ - [Estrutura das pistas](../pistas/LEIA-ME.md): modelo de pastas para referências, Blender, texturas, backups, validações e registros. Recursos finais ficam em `jogo/pistas/`.
+ 
++## Ambiente
++
++- [Referências de ambiente](../ambiente/LEIA-ME.md): iluminação, céu e textura usadas como referência para todos os pilotos e pistas, com inventário. Criada em 16/10/2026. Primeiro arquivo: HDRI de céu parcialmente nublado, aplicado como [céu da pista e do menu](../ambiente/LEIA-ME.md#céu-no-jogo); a cópia usada pelo jogo fica em `jogo/ambiente/`.
++
+ As seções abaixo registram as etapas do P001 em ordem cronológica inversa. Os documentos e evidências citados estão na pasta do personagem.
+ 
+ ## Jogo na Godot — validação em 15/10/2026
+diff --git a/jogo/LEIA-ME.md b/jogo/LEIA-ME.md
+index e195abc..cad88ac 100644
+--- a/jogo/LEIA-ME.md
++++ b/jogo/LEIA-ME.md
+@@ -17,16 +17,22 @@ Controles: **W/↑** acelera · **S/↓** freia e dá ré · **A/D ou ←/→**
+ | `personagens/jake/jake.tres` | Ficha do piloto (`DefinicaoPersonagem`) |
+ | `personagens/dimi/dimi_kart.glb` | Exportado de `../personagens/P002_dimi/blender/dimi.blend` (pose de repouso + ações `Cabeca_Direita/Esquerda_Ida_e_Volta`) |
+ | `personagens/dimi/dimi.tres` | Ficha do Dimi: raio das rodas 0,1297 (medido na banda, sem as bolinhas) e teto da cabeça de 25° |
++| `personagens/bryan/bryan_kart.glb` | Exportado de `../personagens/P003_bryan/blender/bryan.blend` (pose de repouso + ações `Cabeca_Direita/Esquerda_Ida_e_Volta`) |
++| `personagens/bryan/bryan.tres` | Ficha do Bryan: raio das rodas 0,1196 (média dos quatro medidos na banda, sem o preenchimento do para-lama) e teto da cabeça de 25° |
++| `ambiente/kloofendal_48d_partly_cloudy_puresky_4k.exr` | Céu HDRI da pista e do menu (cópia de `../ambiente/referencia/ceu/`; ver [ambiente](../ambiente/LEIA-ME.md#céu-no-jogo)) |
+ | `scripts/jogo.gd` | Autoload `Jogo`: catálogo de pilotos e escolha atual |
+ | `scripts/kart.gd` | Direção arcade (`CharacterBody3D`) e choques com impulso, empurrão lateral e rodada |
+ | `scripts/kart_ia.gd` | `KartIA`: adversário do computador (circuito, desvio por raios, ré ao enroscar, perseguição) |
+ | `scripts/efeitos.gd` | Faíscas das batidas |
+ | `scripts/visual_kart.gd` | Rodas (giro + esterço), suspensão por mola, vibração e compensação da cabeça |
+ | `scripts/camera_perseguicao.gd` | Câmera atrás do kart, dinâmica |
+-| `ferramentas/construir_cenas.gd` | Gera `cenas/*.tscn` pela linha de comando |
++| `ferramentas/construir_cenas.gd` | Gera `cenas/*.tscn` pela linha de comando, inclusive céu HDRI, neblina e sol (`_ambiente()`) |
+ | `ferramentas/validar_mecanicas_dimi.gd` | Fase 8 do Dimi: escolha entre pilotos, movimento, frenagem, ré, câmera, rodas, suspensão e cabeça |
+ | `ferramentas/capturar_vistas_dimi.gd` | Imagens renderizadas do menu e da pista com o Dimi (precisa de janela) |
+ | `ferramentas/inspecionar_importacao_dimi.gd` | Confere o GLB importado do Dimi contra o Blender (ossos, pivôs, rodas, malhas, animações) |
++| `ferramentas/inspecionar_importacao_bryan.gd` | Confere o GLB importado do Bryan contra o Blender |
++| `ferramentas/validar_mecanicas_bryan.gd` | Fase 8 do Bryan: catálogo com três pilotos, troca no menu, movimento, câmera, rodas e apoio, suspensão e cabeça |
++| `ferramentas/capturar_vistas_bryan.gd` | Imagens renderizadas do menu e da pista com o Bryan, com vistas fechadas da lateral e da nuca (precisa de janela) |
+ 
+ Regenerar as cenas:
+ 
+@@ -78,6 +84,15 @@ Grava [importacao_godot_fase7.json](../personagens/P002_dimi/validacao/importaca
+ 
+ Gravam [validacao_mecanicas_fase8.json](../personagens/P002_dimi/validacao/validacao_mecanicas_fase8.json) e as imagens em [vistas_fase8/](../personagens/P002_dimi/registros/vistas_fase8/). Com dois pilotos, a troca no menu passou a ser testada. Passaram escolha, movimento, frenagem, ré, câmera, rodas e suspensão, além da cabeça oposta em regime estabilizado. A cabeça oposta em **todo** quadro falha como no Jake: 18 quadros na entrada da curva e 15 na inversão. Corrigido depois pela tarefa [T001](tarefas/T001-cabeca-sempre-oposta.md): 0 quadros no mesmo lado nos dois pilotos. A auditoria do Jake acima descreve os scripts antes dos campos `raio_rodas`/`giro_maximo_cabeca`; com esses campos em zero, os resultados dele foram reproduzidos sem diferença. Ver o [registro](../personagens/P002_dimi/registros/registro-fase8-jogavel-2026-10-15.md).
+ 
++## Validação das mecânicas do Bryan — 16/10/2026
++
++```bash
++/Applications/Godot.app/Contents/MacOS/Godot --headless --path . --fixed-fps 60 --script res://ferramentas/validar_mecanicas_bryan.gd
++/Applications/Godot.app/Contents/MacOS/Godot --path . --fixed-fps 60 --script res://ferramentas/capturar_vistas_bryan.gd
++```
++
++Gravam [validacao_mecanicas_fase8.json](../personagens/P003_bryan/validacao/validacao_mecanicas_fase8.json) e as imagens em [vistas_fase8/](../personagens/P003_bryan/registros/vistas_fase8/). Todas as conclusões passaram, inclusive a cabeça oposta em todo quadro (0 quadros no mesmo lado a 60 e 120 passos/s, com e sem ruído) e o teto de 25°. Com três pilotos, `validar_mecanicas_dimi.gd` reprova `catalogo_jake_e_dimi` e `selecao_troca_e_volta`, porque espera exatamente dois; as mecânicas do Dimi continuam iguais. Ver o [registro](../personagens/P003_bryan/registros/registro-fase8-jogavel-2026-10-16.md).
++
+ ## Novo personagem
+ 
+ Exportar o GLB com a mesma estrutura (osso de corpo, osso de cabeça, quatro malhas de roda com origem no centro, frente em −Y no Blender), criar outra ficha `.tres` e acrescentá-la em `scripts/jogo.gd`. Os nomes de ossos e rodas podem ser trocados na ficha.
+diff --git a/jogo/cenas/pista.tscn b/jogo/cenas/pista.tscn
+index a820d04..2af2f36 100644
+--- a/jogo/cenas/pista.tscn
++++ b/jogo/cenas/pista.tscn
+@@ -1,609 +1,609 @@
+ [gd_scene format=3]
+ 
+-[ext_resource type="Script" path="res://scripts/pista.gd" id="1_4nqss"]
+-[ext_resource type="Shader" path="res://shaders/quadriculado.gdshader" id="2_piqm0"]
+-[ext_resource type="PackedScene" path="res://cenas/kart.tscn" id="3_q3u4u"]
+-[ext_resource type="Script" path="res://scripts/kart.gd" id="4_h60rv"]
+-[ext_resource type="Script" path="res://scripts/camera_perseguicao.gd" id="5_vxc1a"]
++[ext_resource type="Script" path="res://scripts/pista.gd" id="1_piqm0"]
++[ext_resource type="Texture2D" path="res://ambiente/kloofendal_48d_partly_cloudy_puresky_4k.exr" id="2_q3u4u"]
++[ext_resource type="Shader" path="res://shaders/quadriculado.gdshader" id="3_h60rv"]
++[ext_resource type="PackedScene" path="res://cenas/kart.tscn" id="4_vxc1a"]
++[ext_resource type="Script" path="res://scripts/kart.gd" id="5_e8aik"]
++[ext_resource type="Script" path="res://scripts/camera_perseguicao.gd" id="6_34nja"]
+ 
+-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_e8aik"]
+-sky_top_color = Color(0.32, 0.52, 0.85, 1)
+-sky_horizon_color = Color(0.75, 0.83, 0.92, 1)
+-ground_horizon_color = Color(0.75, 0.83, 0.92, 1)
++[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_kncw2"]
++panorama = ExtResource("2_q3u4u")
+ 
+-[sub_resource type="Sky" id="Sky_34nja"]
+-sky_material = SubResource("ProceduralSkyMaterial_e8aik")
++[sub_resource type="Sky" id="Sky_4evx4"]
++sky_material = SubResource("PanoramaSkyMaterial_kncw2")
+ 
+-[sub_resource type="Environment" id="Environment_kncw2"]
++[sub_resource type="Environment" id="Environment_br2lc"]
+ background_mode = 2
+-sky = SubResource("Sky_34nja")
++sky = SubResource("Sky_4evx4")
+ ambient_light_source = 3
+ tonemap_mode = 2
+ fog_enabled = true
+-fog_light_color = Color(0.75, 0.83, 0.92, 1)
++fog_light_color = Color(0.6915863, 0.71421564, 0.77793413, 1)
+ fog_density = 0.004
++fog_sky_affect = 0.0
+ 
+-[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_4evx4"]
++[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_wg0ja"]
+ 
+-[sub_resource type="ShaderMaterial" id="ShaderMaterial_br2lc"]
++[sub_resource type="ShaderMaterial" id="ShaderMaterial_t14k7"]
+ render_priority = 0
+-shader = ExtResource("2_piqm0")
++shader = ExtResource("3_h60rv")
+ shader_parameter/cor_a = null
+ shader_parameter/cor_b = null
+ shader_parameter/tamanho = null
+ 
+-[sub_resource type="PlaneMesh" id="PlaneMesh_wg0ja"]
+-material = SubResource("ShaderMaterial_br2lc")
++[sub_resource type="PlaneMesh" id="PlaneMesh_va1es"]
++material = SubResource("ShaderMaterial_t14k7")
+ size = Vector2(800, 800)
+ 
+-[sub_resource type="BoxShape3D" id="BoxShape3D_t14k7"]
++[sub_resource type="BoxShape3D" id="BoxShape3D_0wm4x"]
+ size = Vector3(200, 2, 1)
+ 
+-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_va1es"]
++[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fb0ku"]
+ albedo_color = Color(0.85, 0.3, 0.25, 1)
+ 
+-[sub_resource type="BoxMesh" id="BoxMesh_0wm4x"]
+-material = SubResource("StandardMaterial3D_va1es")
++[sub_resource type="BoxMesh" id="BoxMesh_n1hc2"]
++material = SubResource("StandardMaterial3D_fb0ku")
+ size = Vector3(200, 2, 1)
+ 
+-[sub_resource type="BoxShape3D" id="BoxShape3D_fb0ku"]
++[sub_resource type="BoxShape3D" id="BoxShape3D_4bxf8"]
+ size = Vector3(200, 2, 1)
+ 
+-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n1hc2"]
++[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pff3k"]
+ albedo_color = Color(0.85, 0.3, 0.25, 1)
+ 
+-[sub_resource type="BoxMesh" id="BoxMesh_4bxf8"]
+-material = SubResource("StandardMaterial3D_n1hc2")
++[sub_resource type="BoxMesh" id="BoxMesh_bvioh"]
++material = SubResource("StandardMaterial3D_pff3k")
+ size = Vector3(200, 2, 1)
+ 
+-[sub_resource type="BoxShape3D" id="BoxShape3D_pff3k"]
++[sub_resource type="BoxShape3D" id="BoxShape3D_o2lli"]
+ size = Vector3(1, 2, 200)
+ 
+-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bvioh"]
++[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v238b"]
+ albedo_color = Color(0.85, 0.3, 0.25, 1)
+ 
+-[sub_resource type="BoxMesh" id="BoxMesh_o2lli"]
+-material = SubResource("StandardMaterial3D_bvioh")
++[sub_resource type="BoxMesh" id="BoxMesh_5xbua"]
++material = SubResource("StandardMaterial3D_v238b")
+ size = Vector3(1, 2, 200)
+ 
+-[sub_resource type="BoxShape3D" id="BoxShape3D_v238b"]
++[sub_resource type="BoxShape3D" id="BoxShape3D_1611a"]
+ size = Vector3(1, 2, 200)
+ 
+-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5xbua"]
++[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tl732"]
+ albedo_color = Color(0.85, 0.3, 0.25, 1)
+ 
+-[sub_resource type="BoxMesh" id="BoxMesh_1611a"]
+-material = SubResource("StandardMaterial3D_5xbua")
++[sub_resource type="BoxMesh" id="BoxMesh_kk1g5"]
++material = SubResource("StandardMaterial3D_tl732")
+ size = Vector3(1, 2, 200)
+ 
+-[sub_resource type="BoxShape3D" id="BoxShape3D_tl732"]
++[sub_resource type="BoxShape3D" id="BoxShape3D_tojyd"]
+ size = Vector3(2, 2.7808864, 2)
+ 
+-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kk1g5"]
++[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xn4lj"]
+ albedo_color = Color(0.4166058, 0.40499997, 0.9, 1)
+ 
+-[sub_resource type="BoxMesh" id="BoxMesh_tojyd"]
+-material = SubResource("StandardMaterial3D_kk1g5")
++[sub_resource type="BoxMesh" id="BoxMesh_2v0yu"]
++material = SubResource("StandardMaterial3D_xn4lj")
+ size = Vector3(2, 2.7808864, 2)
+ 
+-[sub_resource type="BoxShape3D" id="BoxShape3D_xn4lj"]
++[sub_resource type="BoxShape3D" id="BoxShape3D_kug6o"]
+ size = Vector3(2, 0.90567464, 2)
+ 
+-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2v0yu"]
++[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ueqof"]
+ albedo_color = Color(0.81148636, 0.9, 0.40499997, 1)
+ 
+-[sub_resource type="BoxMesh" id="BoxMesh_kug6o"]
+-material = SubResource("StandardMaterial3D_2v0yu")
++[sub_resource type="BoxMesh" id="BoxMesh_v3yy2"]
++material = SubResource("StandardMaterial3D_ueqof")
+ size = Vector3(2, 0.90567464, 2)
+ 
+-[sub_resource type="BoxShape3D" id="BoxShape3D_ueqof"]
++[sub_resource type="BoxShape3D" id="BoxShape3D_ekyln"]
+ size = Vector3(2, 0.8896816, 2)
+ 
+-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v3yy2"]
++[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tq2t8"]
+ albedo_color = Color(0.40499997, 0.9, 0.50893855, 1)
+ 
+-[sub_resource type="BoxMesh" id="BoxMesh_ekyln"]
+-material = SubResource("StandardMaterial3D_v3yy2")
++[sub_resource type="BoxMesh" id="BoxMesh_gstlx"]
++material = SubResource("StandardMaterial3D_tq2t8")
+ size = Vector3(2, 0.8896816, 2)
+ 
+-[sub_resource type="BoxShape3D" id="BoxShape3D_tq2t8"]
++[sub_resource type="BoxShape3D" id="BoxShape3D_jmtjk"]
+ size = Vector3(2, 1.9593995, 2)
+ 
+-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gstlx"]
++[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lqhpl"]
+ albedo_color = Color(0.8946361, 0.40499997, 0.9, 1)
+ 
+-[sub_resource type="BoxMesh" id="BoxMesh_jmtjk"]
+-material = SubResource("StandardMaterial3D_gstlx")
++[sub_resource type="BoxMesh" id="BoxMesh_lkps5"]
++material = SubResource("StandardMaterial3D_lqhpl")
+ size = Vector3(2, 1.9593995, 2)
+ 
+-[sub_resource type="BoxShape3D" id="BoxShape3D_lqhpl"]
++[sub_resource type="BoxShape3D" id="BoxShape3D_4660n"]
+ size = Vector3(2, 2.1582584, 2)
+ 
+-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lkps5"]
++[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u88ye"]
+ albedo_color = Color(0.40499997, 0.77453786, 0.9, 1)
+ 
+-[sub_resource type="BoxMesh" id="BoxMesh_4660n"]
+-material = SubResource("StandardMaterial3D_lkps5")
++[sub_resource type="BoxMesh" id="BoxMesh_gpa5d"]
++material = SubResource("StandardMaterial3D_u88ye")
+ size = Vector3(2, 2.1582584, 2)
+ 
+-[sub_resource type="BoxShape3D" id="BoxShape3D_u88ye"]
++[sub_resource type="BoxShape3D" id="BoxShape3D_ajb2u"]
+ size = Vector3(2, 2.2882059, 2)
+ 
+-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gpa5d"]
++[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i1518"]
+ albedo_color = Color(0.43148705, 0.9, 0.40499997, 1)
+ 
+-[sub_resource type="BoxMesh" id="BoxMesh_ajb2u"]
+-material = SubResource("StandardMaterial3D_gpa5d")
++[sub_resource type="BoxMesh" id="BoxMesh_rqyql"]
++material = SubResource("StandardMaterial3D_i1518")
+ size = Vector3(2, 2.2882059, 2)
+ 
+-[sub_resource type="BoxShape3D" id="BoxShape3D_i1518"]
++[sub_resource type="BoxShape3D" id="BoxShape3D_u5ddi"]
+ size = Vector3(2, 0.85497445, 2)
+ 
+-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rqyql"]
++[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cuvo6"]
+ albedo_color = Color(0.40499997, 0.55741084, 0.9, 1)
+ 
+-[sub_resource type="BoxMesh" id="BoxMesh_u5ddi"]
+-material = SubResource("StandardMaterial3D_rqyql")
++[sub_resource type="BoxMesh" id="BoxMesh_s14w5"]
++material = SubResource("StandardMaterial3D_cuvo6")
+ size = Vector3(2, 0.85497445, 2)
+ 
+-[sub_resource type="BoxShape3D" id="BoxShape3D_cuvo6"]
++[sub_resource type="BoxShape3D" id="BoxShape3D_56qdw"]
+ size = Vector3(2, 1.5120163, 2)
+ 
+-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s14w5"]
++[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t6kfy"]
+ albedo_color = Color(0.40499997, 0.636668, 0.9, 1)
+ 
+-[sub_resource type="BoxMesh" id="BoxMesh_56qdw"]
+-material = SubResource("StandardMaterial3D_s14w5")
++[sub_resource type="BoxMesh" id="BoxMesh_1cr7y"]
++material = SubResource("StandardMaterial3D_t6kfy")
+ size = Vector3(2, 1.5120163, 2)
+ 
+-[sub_resource type="BoxShape3D" id="BoxShape3D_t6kfy"]
++[sub_resource type="BoxShape3D" id="BoxShape3D_l60ny"]
+ size = Vector3(2, 1.8498595, 2)
+ 
+-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1cr7y"]
++[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ylwle"]
+ albedo_color = Color(0.40499997, 0.9, 0.44543642, 1)
+ 
+-[sub_resource type="BoxMesh" id="BoxMesh_l60ny"]
+-material = SubResource("StandardMaterial3D_1cr7y")
++[sub_resource type="BoxMesh" id="BoxMesh_u2xiu"]
++material = SubResource("StandardMaterial3D_ylwle")
+ size = Vector3(2, 1.8498595, 2)
+ 
+-[sub_resource type="BoxShape3D" id="BoxShape3D_ylwle"]
++[sub_resource type="BoxShape3D" id="BoxShape3D_cxme4"]
+ size = Vector3(2, 1.4759849, 2)
+ 
+-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u2xiu"]
++[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6nkr5"]
+ albedo_color = Color(0.45021012, 0.9, 0.40499997, 1)
+ 
+-[sub_resource type="BoxMesh" id="BoxMesh_cxme4"]
+-material = SubResource("StandardMaterial3D_u2xiu")
++[sub_resource type="BoxMesh" id="BoxMesh_ed0k8"]
++material = SubResource("StandardMaterial3D_6nkr5")
+ size = Vector3(2, 1.4759849, 2)
+ 
+-[sub_resource type="BoxShape3D" id="BoxShape3D_6nkr5"]
++[sub_resource type="BoxShape3D" id="BoxShape3D_8111j"]
+ size = Vector3(2, 2.9238718, 2)
+ 
+-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ed0k8"]
++[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tyjf1"]
+ albedo_color = Color(0.9, 0.8069362, 0.40499997, 1)
+ 
+-[sub_resource type="BoxMesh" id="BoxMesh_8111j"]
+-material = SubResource("StandardMaterial3D_ed0k8")
++[sub_resource type="BoxMesh" id="BoxMesh_h8dfj"]
++material = SubResource("StandardMaterial3D_tyjf1")
+ size = Vector3(2, 2.9238718, 2)
+ 
+-[sub_resource type="BoxShape3D" id="BoxShape3D_tyjf1"]
++[sub_resource type="BoxShape3D" id="BoxShape3D_qj0t8"]
+ size = Vector3(2, 2.9068139, 2)
+ 
+-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h8dfj"]
++[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j3lxb"]
+ albedo_color = Color(0.4210456, 0.9, 0.40499997, 1)
+ 
+-[sub_resource type="BoxMesh" id="BoxMesh_qj0t8"]
+-material = SubResource("StandardMaterial3D_h8dfj")
++[sub_resource type="BoxMesh" id="BoxMesh_ox8x6"]
++material = SubResource("StandardMaterial3D_j3lxb")
+ size = Vector3(2, 2.9068139, 2)
+ 
+-[sub_resource type="BoxShape3D" id="BoxShape3D_j3lxb"]
++[sub_resource type="BoxShape3D" id="BoxShape3D_c847m"]
+ size = Vector3(2, 0.91652507, 2)
+ 
+-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ox8x6"]
++[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_00lc5"]
+ albedo_color = Color(0.9, 0.40499997, 0.7699856, 1)
+ 
+-[sub_resource type="BoxMesh" id="BoxMesh_c847m"]
+-material = SubResource("StandardMaterial3D_ox8x6")
++[sub_resource type="BoxMesh" id="BoxMesh_8tuip"]
++material = SubResource("StandardMaterial3D_00lc5")
+ size = Vector3(2, 0.91652507, 2)
+ 
+-[sub_resource type="BoxShape3D" id="BoxShape3D_00lc5"]
++[sub_resource type="BoxShape3D" id="BoxShape3D_l2b71"]
+ size = Vector3(2, 1.0663435, 2)
+ 
+-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8tuip"]
++[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6mv3f"]
+ albedo_color = Color(0.55431676, 0.40499997, 0.9, 1)
+ 
+-[sub_resource type="BoxMesh" id="BoxMesh_l2b71"]
+-material = SubResource("StandardMaterial3D_8tuip")
++[sub_resource type="BoxMesh" id="BoxMesh_jlagd"]
++material = SubResource("StandardMaterial3D_6mv3f")
+ size = Vector3(2, 1.0663435, 2)
+ 
+-[sub_resource type="BoxShape3D" id="BoxShape3D_6mv3f"]
++[sub_resource type="BoxShape3D" id="BoxShape3D_gabwv"]
+ size = Vector3(2, 0.95715165, 2)
+ 
+-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jlagd"]
++[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ig8t7"]
+ albedo_color = Color(0.55127025, 0.40499997, 0.9, 1)
+ 
+-[sub_resource type="BoxMesh" id="BoxMesh_gabwv"]
+-material = SubResource("StandardMaterial3D_jlagd")
++[sub_resource type="BoxMesh" id="BoxMesh_ii8d0"]
++material = SubResource("StandardMaterial3D_ig8t7")
+ size = Vector3(2, 0.95715165, 2)
+ 
+-[sub_resource type="BoxShape3D" id="BoxShape3D_ig8t7"]
++[sub_resource type="BoxShape3D" id="BoxShape3D_clpha"]
+ size = Vector3(2, 1.6066027, 2)
+ 
+-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ii8d0"]
++[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k7mjh"]
+ albedo_color = Color(0.7790101, 0.40499997, 0.9, 1)
+ 
+-[sub_resource type="BoxMesh" id="BoxMesh_clpha"]
+-material = SubResource("StandardMaterial3D_ii8d0")
++[sub_resource type="BoxMesh" id="BoxMesh_p6dxd"]
++material = SubResource("StandardMaterial3D_k7mjh")
+ size = Vector3(2, 1.6066027, 2)
+ 
+-[sub_resource type="BoxShape3D" id="BoxShape3D_k7mjh"]
++[sub_resource type="BoxShape3D" id="BoxShape3D_evtgq"]
+ size = Vector3(2, 1.1927954, 2)
+ 
+-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p6dxd"]
++[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yrkpl"]
+ albedo_color = Color(0.40499997, 0.9, 0.88791895, 1)
+ 
+-[sub_resource type="BoxMesh" id="BoxMesh_evtgq"]
+-material = SubResource("StandardMaterial3D_p6dxd")
++[sub_resource type="BoxMesh" id="BoxMesh_jo212"]
++material = SubResource("StandardMaterial3D_yrkpl")
+ size = Vector3(2, 1.1927954, 2)
+ 
+-[sub_resource type="BoxShape3D" id="BoxShape3D_yrkpl"]
++[sub_resource type="BoxShape3D" id="BoxShape3D_mlpyv"]
+ size = Vector3(2, 2.4490724, 2)
+ 
+-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jo212"]
++[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vkix6"]
+ albedo_color = Color(0.9, 0.40499997, 0.632443, 1)
+ 
+-[sub_resource type="BoxMesh" id="BoxMesh_mlpyv"]
+-material = SubResource("StandardMaterial3D_jo212")
++[sub_resource type="BoxMesh" id="BoxMesh_l3hkx"]
++material = SubResource("StandardMaterial3D_vkix6")
+ size = Vector3(2, 2.4490724, 2)
+ 
+-[sub_resource type="BoxShape3D" id="BoxShape3D_vkix6"]
++[sub_resource type="BoxShape3D" id="BoxShape3D_0pykk"]
+ size = Vector3(2, 2.5377352, 2)
+ 
+-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l3hkx"]
++[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i0rdk"]
+ albedo_color = Color(0.9, 0.5608204, 0.40499997, 1)
+ 
+-[sub_resource type="BoxMesh" id="BoxMesh_0pykk"]
+-material = SubResource("StandardMaterial3D_l3hkx")
++[sub_resource type="BoxMesh" id="BoxMesh_7d5ym"]
++material = SubResource("StandardMaterial3D_i0rdk")
+ size = Vector3(2, 2.5377352, 2)
+ 
+-[sub_resource type="BoxShape3D" id="BoxShape3D_i0rdk"]
++[sub_resource type="BoxShape3D" id="BoxShape3D_7p778"]
+ size = Vector3(2, 1.0214196, 2)
+ 
+-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7d5ym"]
++[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ygshd"]
+ albedo_color = Color(0.40499997, 0.9, 0.5095278, 1)
+ 
+-[sub_resource type="BoxMesh" id="BoxMesh_7p778"]
+-material = SubResource("StandardMaterial3D_7d5ym")
++[sub_resource type="BoxMesh" id="BoxMesh_eijba"]
++material = SubResource("StandardMaterial3D_ygshd")
+ size = Vector3(2, 1.0214196, 2)
+ 
+-[sub_resource type="BoxShape3D" id="BoxShape3D_ygshd"]
++[sub_resource type="BoxShape3D" id="BoxShape3D_7jjkb"]
+ size = Vector3(2, 2.5535815, 2)
+ 
+-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eijba"]
++[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bfq75"]
+ albedo_color = Color(0.9, 0.40499997, 0.5514168, 1)
+ 
+-[sub_resource type="BoxMesh" id="BoxMesh_7jjkb"]
+-material = SubResource("StandardMaterial3D_eijba")
++[sub_resource type="BoxMesh" id="BoxMesh_jr8cl"]
++material = SubResource("StandardMaterial3D_bfq75")
+ size = Vector3(2, 2.5535815, 2)
+ 
+-[sub_resource type="BoxShape3D" id="BoxShape3D_bfq75"]
++[sub_resource type="BoxShape3D" id="BoxShape3D_i6teh"]
+ size = Vector3(2, 1.7429366, 2)
+ 
+-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jr8cl"]
++[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_14p7b"]
+ albedo_color = Color(0.49385592, 0.9, 0.40499997, 1)
+ 
+-[sub_resource type="BoxMesh" id="BoxMesh_i6teh"]
+-material = SubResource("StandardMaterial3D_jr8cl")
++[sub_resource type="BoxMesh" id="BoxMesh_udmiw"]
++material = SubResource("StandardMaterial3D_14p7b")
+ size = Vector3(2, 1.7429366, 2)
+ 
+-[sub_resource type="BoxShape3D" id="BoxShape3D_14p7b"]
++[sub_resource type="BoxShape3D" id="BoxShape3D_ug360"]
+ size = Vector3(2, 2.8147388, 2)
+ 
+-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_udmiw"]
++[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pxmq6"]
+ albedo_color = Color(0.9, 0.40499997, 0.6142849, 1)
+ 
+-[sub_resource type="BoxMesh" id="BoxMesh_ug360"]
+-material = SubResource("StandardMaterial3D_udmiw")
++[sub_resource type="BoxMesh" id="BoxMesh_sp6k7"]
++material = SubResource("StandardMaterial3D_pxmq6")
+ size = Vector3(2, 2.8147388, 2)
+ 
+-[sub_resource type="BoxShape3D" id="BoxShape3D_pxmq6"]
++[sub_resource type="BoxShape3D" id="BoxShape3D_8sgh0"]
+ size = Vector3(2, 1.5471717, 2)
+ 
+-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sp6k7"]
++[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pti38"]
+ albedo_color = Color(0.9, 0.8715027, 0.40499997, 1)
+ 
+-[sub_resource type="BoxMesh" id="BoxMesh_8sgh0"]
+-material = SubResource("StandardMaterial3D_sp6k7")
++[sub_resource type="BoxMesh" id="BoxMesh_2o26v"]
++material = SubResource("StandardMaterial3D_pti38")
+ size = Vector3(2, 1.5471717, 2)
+ 
+-[node name="Pista" type="Node3D" unique_id=287139029]
+-script = ExtResource("1_4nqss")
++[node name="Pista" type="Node3D" unique_id=1588527096]
++script = ExtResource("1_piqm0")
+ 
+-[node name="Ambiente" type="WorldEnvironment" parent="." unique_id=1740889834]
+-environment = SubResource("Environment_kncw2")
++[node name="Ambiente" type="WorldEnvironment" parent="." unique_id=269412797]
++environment = SubResource("Environment_br2lc")
+ 
+-[node name="Sol" type="DirectionalLight3D" parent="." unique_id=125697934]
+-transform = Transform3D(0.81915206, 0.46984634, -0.32898995, 0, 0.57357645, 0.81915206, 0.57357645, -0.6710101, 0.46984634, 0, 0, 0)
++[node name="Sol" type="DirectionalLight3D" parent="." unique_id=1860536193]
++transform = Transform3D(0.8260983, 0.4181227, -0.37780285, 0, 0.6704266, 0.74197584, 0.56352603, -0.612945, 0.5538383, 0, 0, 0)
+ light_energy = 1.2
+ shadow_enabled = true
+ directional_shadow_max_distance = 60.0
+ 
+-[node name="Chao" type="StaticBody3D" parent="." unique_id=1929408447]
++[node name="Chao" type="StaticBody3D" parent="." unique_id=512026765]
+ 
+-[node name="Colisao" type="CollisionShape3D" parent="Chao" unique_id=185862702]
+-shape = SubResource("WorldBoundaryShape3D_4evx4")
++[node name="Colisao" type="CollisionShape3D" parent="Chao" unique_id=1698787987]
++shape = SubResource("WorldBoundaryShape3D_wg0ja")
+ 
+-[node name="Piso" type="MeshInstance3D" parent="Chao" unique_id=1954213636]
+-mesh = SubResource("PlaneMesh_wg0ja")
++[node name="Piso" type="MeshInstance3D" parent="Chao" unique_id=1690142578]
++mesh = SubResource("PlaneMesh_va1es")
+ 
+-[node name="Muros" type="Node3D" parent="." unique_id=256993979]
++[node name="Muros" type="Node3D" parent="." unique_id=681724224]
+ 
+-[node name="Norte" type="StaticBody3D" parent="Muros" unique_id=1313004713]
++[node name="Norte" type="StaticBody3D" parent="Muros" unique_id=244845270]
+ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -100)
+ 
+-[node name="Colisao" type="CollisionShape3D" parent="Muros/Norte" unique_id=396023175]
+-shape = SubResource("BoxShape3D_t14k7")
++[node name="Colisao" type="CollisionShape3D" parent="Muros/Norte" unique_id=1908809803]
++shape = SubResource("BoxShape3D_0wm4x")
+ 
+-[node name="Malha" type="MeshInstance3D" parent="Muros/Norte" unique_id=1463518074]
+-mesh = SubResource("BoxMesh_0wm4x")
++[node name="Malha" type="MeshInstance3D" parent="Muros/Norte" unique_id=789721862]
++mesh = SubResource("BoxMesh_n1hc2")
+ 
+-[node name="Sul" type="StaticBody3D" parent="Muros" unique_id=1305820564]
++[node name="Sul" type="StaticBody3D" parent="Muros" unique_id=367342394]
+ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 100)
+ 
+-[node name="Colisao" type="CollisionShape3D" parent="Muros/Sul" unique_id=1419214709]
+-shape = SubResource("BoxShape3D_fb0ku")
++[node name="Colisao" type="CollisionShape3D" parent="Muros/Sul" unique_id=859299391]
++shape = SubResource("BoxShape3D_4bxf8")
+ 
+-[node name="Malha" type="MeshInstance3D" parent="Muros/Sul" unique_id=613931671]
+-mesh = SubResource("BoxMesh_4bxf8")
++[node name="Malha" type="MeshInstance3D" parent="Muros/Sul" unique_id=1837393330]
++mesh = SubResource("BoxMesh_bvioh")
+ 
+-[node name="Leste" type="StaticBody3D" parent="Muros" unique_id=1526600783]
++[node name="Leste" type="StaticBody3D" parent="Muros" unique_id=1775981898]
+ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100, 1, 0)
+ 
+-[node name="Colisao" type="CollisionShape3D" parent="Muros/Leste" unique_id=119430045]
+-shape = SubResource("BoxShape3D_pff3k")
++[node name="Colisao" type="CollisionShape3D" parent="Muros/Leste" unique_id=1019079692]
++shape = SubResource("BoxShape3D_o2lli")
+ 
+-[node name="Malha" type="MeshInstance3D" parent="Muros/Leste" unique_id=1546629578]
+-mesh = SubResource("BoxMesh_o2lli")
++[node name="Malha" type="MeshInstance3D" parent="Muros/Leste" unique_id=2140912785]
++mesh = SubResource("BoxMesh_5xbua")
+ 
+-[node name="Oeste" type="StaticBody3D" parent="Muros" unique_id=371234181]
++[node name="Oeste" type="StaticBody3D" parent="Muros" unique_id=1864632620]
+ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -100, 1, 0)
+ 
+-[node name="Colisao" type="CollisionShape3D" parent="Muros/Oeste" unique_id=1529614236]
+-shape = SubResource("BoxShape3D_v238b")
++[node name="Colisao" type="CollisionShape3D" parent="Muros/Oeste" unique_id=1070047697]
++shape = SubResource("BoxShape3D_1611a")
+ 
+-[node name="Malha" type="MeshInstance3D" parent="Muros/Oeste" unique_id=377193123]
+-mesh = SubResource("BoxMesh_1611a")
++[node name="Malha" type="MeshInstance3D" parent="Muros/Oeste" unique_id=955518915]
++mesh = SubResource("BoxMesh_kk1g5")
+ 
+-[node name="Blocos" type="Node3D" parent="." unique_id=1164246916]
++[node name="Blocos" type="Node3D" parent="." unique_id=990052324]
+ 
+-[node name="Bloco0" type="StaticBody3D" parent="Blocos" unique_id=816798563]
++[node name="Bloco0" type="StaticBody3D" parent="Blocos" unique_id=477479546]
+ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.643814, 1.3904432, 35.201897)
+ 
+-[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco0" unique_id=1006249717]
+-shape = SubResource("BoxShape3D_tl732")
++[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco0" unique_id=949459222]
++shape = SubResource("BoxShape3D_tojyd")
+ 
+-[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco0" unique_id=454541950]
+-mesh = SubResource("BoxMesh_tojyd")
++[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco0" unique_id=1207079068]
++mesh = SubResource("BoxMesh_2v0yu")
+ 
+-[node name="Bloco1" type="StaticBody3D" parent="Blocos" unique_id=320717174]
++[node name="Bloco1" type="StaticBody3D" parent="Blocos" unique_id=2142497800]
+ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.05432, 0.45283732, 43.46617)
+ 
+-[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco1" unique_id=555567795]
+-shape = SubResource("BoxShape3D_xn4lj")
++[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco1" unique_id=510892302]
++shape = SubResource("BoxShape3D_kug6o")
+ 
+-[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco1" unique_id=1012245343]
+-mesh = SubResource("BoxMesh_kug6o")
++[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco1" unique_id=1875142264]
++mesh = SubResource("BoxMesh_v3yy2")
+ 
+-[node name="Bloco2" type="StaticBody3D" parent="Blocos" unique_id=555359397]
++[node name="Bloco2" type="StaticBody3D" parent="Blocos" unique_id=1793779329]
+ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.69394, 0.4448408, -20.055054)
+ 
+-[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco2" unique_id=418267081]
+-shape = SubResource("BoxShape3D_ueqof")
++[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco2" unique_id=1932173044]
++shape = SubResource("BoxShape3D_ekyln")
+ 
+-[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco2" unique_id=1990060843]
+-mesh = SubResource("BoxMesh_ekyln")
++[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco2" unique_id=388979708]
++mesh = SubResource("BoxMesh_gstlx")
+ 
+-[node name="Bloco3" type="StaticBody3D" parent="Blocos" unique_id=2103615691]
++[node name="Bloco3" type="StaticBody3D" parent="Blocos" unique_id=1705987681]
+ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.555313, 0.97969973, 13.465889)
+ 
+-[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco3" unique_id=531599460]
+-shape = SubResource("BoxShape3D_tq2t8")
++[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco3" unique_id=1069845840]
++shape = SubResource("BoxShape3D_jmtjk")
+ 
+-[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco3" unique_id=1936767863]
+-mesh = SubResource("BoxMesh_jmtjk")
++[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco3" unique_id=69103888]
++mesh = SubResource("BoxMesh_lkps5")
+ 
+-[node name="Bloco4" type="StaticBody3D" parent="Blocos" unique_id=1335152007]
++[node name="Bloco4" type="StaticBody3D" parent="Blocos" unique_id=477554415]
+ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7106018, 1.0791292, 77.840454)
+ 
+-[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco4" unique_id=722663877]
+-shape = SubResource("BoxShape3D_lqhpl")
++[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco4" unique_id=1143738259]
++shape = SubResource("BoxShape3D_4660n")
+ 
+-[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco4" unique_id=2084987132]
+-mesh = SubResource("BoxMesh_4660n")
++[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco4" unique_id=1288096174]
++mesh = SubResource("BoxMesh_gpa5d")
+ 
+-[node name="Bloco5" type="StaticBody3D" parent="Blocos" unique_id=310962320]
++[node name="Bloco5" type="StaticBody3D" parent="Blocos" unique_id=710271832]
+ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.982697, 1.1441029, -19.944023)
+ 
+-[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco5" unique_id=1020625445]
+-shape = SubResource("BoxShape3D_u88ye")
++[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco5" unique_id=1190232687]
++shape = SubResource("BoxShape3D_ajb2u")
+ 
+-[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco5" unique_id=1078269183]
+-mesh = SubResource("BoxMesh_ajb2u")
++[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco5" unique_id=1646264074]
++mesh = SubResource("BoxMesh_rqyql")
+ 
+-[node name="Bloco6" type="StaticBody3D" parent="Blocos" unique_id=993347393]
++[node name="Bloco6" type="StaticBody3D" parent="Blocos" unique_id=1438333033]
+ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.948425, 0.42748722, 53.089066)
+ 
+-[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco6" unique_id=511986903]
+-shape = SubResource("BoxShape3D_i1518")
++[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco6" unique_id=15429845]
++shape = SubResource("BoxShape3D_u5ddi")
+ 
+-[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco6" unique_id=1530988842]
+-mesh = SubResource("BoxMesh_u5ddi")
++[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco6" unique_id=1791433295]
++mesh = SubResource("BoxMesh_s14w5")
+ 
+-[node name="Bloco7" type="StaticBody3D" parent="Blocos" unique_id=2123772756]
++[node name="Bloco7" type="StaticBody3D" parent="Blocos" unique_id=827810379]
+ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 71.79794, 0.75600815, -67.65918)
+ 
+-[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco7" unique_id=836405771]
+-shape = SubResource("BoxShape3D_cuvo6")
++[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco7" unique_id=135265932]
++shape = SubResource("BoxShape3D_56qdw")
+ 
+-[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco7" unique_id=1573561390]
+-mesh = SubResource("BoxMesh_56qdw")
++[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco7" unique_id=753333002]
++mesh = SubResource("BoxMesh_1cr7y")
+ 
+-[node name="Bloco8" type="StaticBody3D" parent="Blocos" unique_id=1548042478]
++[node name="Bloco8" type="StaticBody3D" parent="Blocos" unique_id=414548573]
+ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.290886, 0.92492974, -82.28458)
+ 
+-[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco8" unique_id=998405202]
+-shape = SubResource("BoxShape3D_t6kfy")
++[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco8" unique_id=757687036]
++shape = SubResource("BoxShape3D_l60ny")
+ 
+-[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco8" unique_id=520226680]
+-mesh = SubResource("BoxMesh_l60ny")
++[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco8" unique_id=238041160]
++mesh = SubResource("BoxMesh_u2xiu")
+ 
+-[node name="Bloco9" type="StaticBody3D" parent="Blocos" unique_id=590447765]
++[node name="Bloco9" type="StaticBody3D" parent="Blocos" unique_id=1378633904]
+ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52.553436, 0.73799247, -77.397675)
+ 
+-[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco9" unique_id=1674616257]
+-shape = SubResource("BoxShape3D_ylwle")
++[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco9" unique_id=1509853805]
++shape = SubResource("BoxShape3D_cxme4")
+ 
+-[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco9" unique_id=1806339038]
+-mesh = SubResource("BoxMesh_cxme4")
++[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco9" unique_id=132792467]
++mesh = SubResource("BoxMesh_ed0k8")
+ 
+-[node name="Bloco10" type="StaticBody3D" parent="Blocos" unique_id=521008428]
++[node name="Bloco10" type="StaticBody3D" parent="Blocos" unique_id=780696784]
+ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.485046, 1.4619359, -5.1723557)
+ 
+-[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco10" unique_id=1719091122]
+-shape = SubResource("BoxShape3D_6nkr5")
++[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco10" unique_id=1740208127]
++shape = SubResource("BoxShape3D_8111j")
+ 
+-[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco10" unique_id=1553261208]
+-mesh = SubResource("BoxMesh_8111j")
++[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco10" unique_id=1251022736]
++mesh = SubResource("BoxMesh_h8dfj")
+ 
+-[node name="Bloco11" type="StaticBody3D" parent="Blocos" unique_id=541476538]
++[node name="Bloco11" type="StaticBody3D" parent="Blocos" unique_id=1934763237]
+ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.19424, 1.4534069, -58.000557)
+ 
+-[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco11" unique_id=124010022]
+-shape = SubResource("BoxShape3D_tyjf1")
++[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco11" unique_id=1270260772]
++shape = SubResource("BoxShape3D_qj0t8")
+ 
+-[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco11" unique_id=1821207596]
+-mesh = SubResource("BoxMesh_qj0t8")
++[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco11" unique_id=1970158222]
++mesh = SubResource("BoxMesh_ox8x6")
+ 
+-[node name="Bloco12" type="StaticBody3D" parent="Blocos" unique_id=1326596010]
++[node name="Bloco12" type="StaticBody3D" parent="Blocos" unique_id=1808806961]
+ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -68.47991, 0.45826253, -31.332592)
+ 
+-[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco12" unique_id=2021149429]
+-shape = SubResource("BoxShape3D_j3lxb")
++[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco12" unique_id=959384771]
++shape = SubResource("BoxShape3D_c847m")
+ 
+-[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco12" unique_id=1217329457]
+-mesh = SubResource("BoxMesh_c847m")
++[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco12" unique_id=1202443226]
++mesh = SubResource("BoxMesh_8tuip")
+ 
+-[node name="Bloco13" type="StaticBody3D" parent="Blocos" unique_id=65139725]
++[node name="Bloco13" type="StaticBody3D" parent="Blocos" unique_id=1396820928]
+ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63.71116, 0.5331718, 84.82936)
+ 
+-[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco13" unique_id=1537184716]
+-shape = SubResource("BoxShape3D_00lc5")
++[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco13" unique_id=1186400818]
++shape = SubResource("BoxShape3D_l2b71")
+ 
+-[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco13" unique_id=2061930096]
+-mesh = SubResource("BoxMesh_l2b71")
++[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco13" unique_id=2135437187]
++mesh = SubResource("BoxMesh_jlagd")
+ 
+-[node name="Bloco14" type="StaticBody3D" parent="Blocos" unique_id=1364867446]
++[node name="Bloco14" type="StaticBody3D" parent="Blocos" unique_id=1542337033]
+ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67.35443, 0.47857583, 34.30153)
+ 
+-[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco14" unique_id=599375689]
+-shape = SubResource("BoxShape3D_6mv3f")
++[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco14" unique_id=308545862]
++shape = SubResource("BoxShape3D_gabwv")
+ 
+-[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco14" unique_id=456739334]
+-mesh = SubResource("BoxMesh_gabwv")
++[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco14" unique_id=1205867795]
++mesh = SubResource("BoxMesh_ii8d0")
+ 
+-[node name="Bloco15" type="StaticBody3D" parent="Blocos" unique_id=860899930]
++[node name="Bloco15" type="StaticBody3D" parent="Blocos" unique_id=485674571]
+ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.135895, 0.80330133, -20.859383)
+ 
+-[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco15" unique_id=1952074830]
+-shape = SubResource("BoxShape3D_ig8t7")
++[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco15" unique_id=1033566488]
++shape = SubResource("BoxShape3D_clpha")
+ 
+-[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco15" unique_id=1562960650]
+-mesh = SubResource("BoxMesh_clpha")
++[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco15" unique_id=1210118598]
++mesh = SubResource("BoxMesh_p6dxd")
+ 
+-[node name="Bloco16" type="StaticBody3D" parent="Blocos" unique_id=434904112]
++[node name="Bloco16" type="StaticBody3D" parent="Blocos" unique_id=2127764431]
+ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54.895996, 0.5963977, -51.784718)
+ 
+-[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco16" unique_id=1508898001]
+-shape = SubResource("BoxShape3D_k7mjh")
++[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco16" unique_id=1752717538]
++shape = SubResource("BoxShape3D_evtgq")
+ 
+-[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco16" unique_id=3111681]
+-mesh = SubResource("BoxMesh_evtgq")
++[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco16" unique_id=578541740]
++mesh = SubResource("BoxMesh_jo212")
+ 
+-[node name="Bloco17" type="StaticBody3D" parent="Blocos" unique_id=684814729]
++[node name="Bloco17" type="StaticBody3D" parent="Blocos" unique_id=1584226351]
+ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.790695, 1.2245362, 40.355263)
+ 
+-[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco17" unique_id=310643311]
+-shape = SubResource("BoxShape3D_yrkpl")
++[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco17" unique_id=1919942301]
++shape = SubResource("BoxShape3D_mlpyv")
+ 
+-[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco17" unique_id=1416451126]
+-mesh = SubResource("BoxMesh_mlpyv")
++[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco17" unique_id=1597839592]
++mesh = SubResource("BoxMesh_l3hkx")
+ 
+-[node name="Bloco18" type="StaticBody3D" parent="Blocos" unique_id=1010105029]
++[node name="Bloco18" type="StaticBody3D" parent="Blocos" unique_id=1647521467]
+ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.214569, 1.2688676, -0.42434692)
+ 
+-[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco18" unique_id=405541522]
+-shape = SubResource("BoxShape3D_vkix6")
++[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco18" unique_id=1186049247]
++shape = SubResource("BoxShape3D_0pykk")
+ 
+-[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco18" unique_id=1022660801]
+-mesh = SubResource("BoxMesh_0pykk")
++[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco18" unique_id=554445371]
++mesh = SubResource("BoxMesh_7d5ym")
+ 
+-[node name="Bloco19" type="StaticBody3D" parent="Blocos" unique_id=365846299]
++[node name="Bloco19" type="StaticBody3D" parent="Blocos" unique_id=2012471205]
+ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74.86937, 0.5107098, -49.30216)
+ 
+-[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco19" unique_id=418361706]
+-shape = SubResource("BoxShape3D_i0rdk")
++[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco19" unique_id=1974819862]
++shape = SubResource("BoxShape3D_7p778")
+ 
+-[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco19" unique_id=785091769]
+-mesh = SubResource("BoxMesh_7p778")
++[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco19" unique_id=1684748754]
++mesh = SubResource("BoxMesh_eijba")
+ 
+-[node name="Bloco20" type="StaticBody3D" parent="Blocos" unique_id=1369917467]
++[node name="Bloco20" type="StaticBody3D" parent="Blocos" unique_id=1787665848]
+ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74.43616, 1.2767907, 16.816559)
+ 
+-[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco20" unique_id=1911180281]
+-shape = SubResource("BoxShape3D_ygshd")
++[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco20" unique_id=329939403]
++shape = SubResource("BoxShape3D_7jjkb")
+ 
+-[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco20" unique_id=236244115]
+-mesh = SubResource("BoxMesh_7jjkb")
++[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco20" unique_id=599832458]
++mesh = SubResource("BoxMesh_jr8cl")
+ 
+-[node name="Bloco21" type="StaticBody3D" parent="Blocos" unique_id=2127258885]
++[node name="Bloco21" type="StaticBody3D" parent="Blocos" unique_id=1224455309]
+ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67.53693, 0.8714683, 70.87396)
+ 
+-[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco21" unique_id=1141643759]
+-shape = SubResource("BoxShape3D_bfq75")
++[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco21" unique_id=2071063872]
++shape = SubResource("BoxShape3D_i6teh")
+ 
+-[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco21" unique_id=1847952525]
+-mesh = SubResource("BoxMesh_i6teh")
++[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco21" unique_id=674879599]
++mesh = SubResource("BoxMesh_udmiw")
+ 
+-[node name="Bloco22" type="StaticBody3D" parent="Blocos" unique_id=362704510]
++[node name="Bloco22" type="StaticBody3D" parent="Blocos" unique_id=2084434591]
+ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.165779, 1.4073694, 42.696144)
+ 
+-[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco22" unique_id=1562882039]
+-shape = SubResource("BoxShape3D_14p7b")
++[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco22" unique_id=1788371772]
++shape = SubResource("BoxShape3D_ug360")
+ 
+-[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco22" unique_id=298858696]
+-mesh = SubResource("BoxMesh_ug360")
++[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco22" unique_id=932360351]
++mesh = SubResource("BoxMesh_sp6k7")
+ 
+-[node name="Bloco23" type="StaticBody3D" parent="Blocos" unique_id=1059347365]
++[node name="Bloco23" type="StaticBody3D" parent="Blocos" unique_id=940395165]
+ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.805473, 0.77358586, -15.200691)
+ 
+-[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco23" unique_id=606497629]
+-shape = SubResource("BoxShape3D_pxmq6")
++[node name="Colisao" type="CollisionShape3D" parent="Blocos/Bloco23" unique_id=831607722]
++shape = SubResource("BoxShape3D_8sgh0")
+ 
+-[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco23" unique_id=856548119]
+-mesh = SubResource("BoxMesh_8sgh0")
++[node name="Malha" type="MeshInstance3D" parent="Blocos/Bloco23" unique_id=526958429]
++mesh = SubResource("BoxMesh_2o26v")
+ 
+-[node name="Kart" type="CharacterBody3D" parent="." unique_id=529751155 instance=ExtResource("3_q3u4u")]
++[node name="Kart" type="CharacterBody3D" parent="." unique_id=902471015 instance=ExtResource("4_vxc1a")]
+ floor_snap_length = 0.3
+-script = ExtResource("4_h60rv")
++script = ExtResource("5_e8aik")
+ 
+-[node name="Camera" type="Camera3D" parent="." unique_id=308542385 node_paths=PackedStringArray("alvo")]
++[node name="Camera" type="Camera3D" parent="." unique_id=1808225409 node_paths=PackedStringArray("alvo")]
+ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 5)
+-script = ExtResource("5_vxc1a")
++script = ExtResource("6_34nja")
+ alvo = NodePath("../Kart")
+ 
+-[node name="HUD" type="CanvasLayer" parent="." unique_id=284789856]
++[node name="HUD" type="CanvasLayer" parent="." unique_id=1647454441]
+ 
+-[node name="Velocimetro" type="Label" parent="HUD" unique_id=1524944745]
++[node name="Velocimetro" type="Label" parent="HUD" unique_id=284722677]
+ unique_name_in_owner = true
+ anchors_preset = 3
+ anchor_left = 1.0
+@@ -620,7 +620,7 @@ theme_override_font_sizes/font_size = 40
+ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+ theme_override_constants/outline_size = 8
+ 
+-[node name="Ajuda" type="Label" parent="HUD" unique_id=1156888313]
++[node name="Ajuda" type="Label" parent="HUD" unique_id=468170688]
+ offset_left = 16.0
+ offset_top = 12.0
+ offset_right = 16.0
+diff --git a/jogo/cenas/selecao_personagem.tscn b/jogo/cenas/selecao_personagem.tscn
+index c614bec..ee4d582 100644
+--- a/jogo/cenas/selecao_personagem.tscn
++++ b/jogo/cenas/selecao_personagem.tscn
+@@ -1,64 +1,64 @@
+ [gd_scene format=3]
+ 
+-[ext_resource type="Script" path="res://scripts/selecao_personagem.gd" id="1_g1ore"]
+-[ext_resource type="Shader" path="res://shaders/quadriculado.gdshader" id="2_yr6a0"]
++[ext_resource type="Script" path="res://scripts/selecao_personagem.gd" id="1_yr6a0"]
++[ext_resource type="Texture2D" path="res://ambiente/kloofendal_48d_partly_cloudy_puresky_4k.exr" id="2_gyirk"]
++[ext_resource type="Shader" path="res://shaders/quadriculado.gdshader" id="3_008lb"]
+ 
+-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gyirk"]
+-sky_top_color = Color(0.32, 0.52, 0.85, 1)
+-sky_horizon_color = Color(0.75, 0.83, 0.92, 1)
+-ground_horizon_color = Color(0.75, 0.83, 0.92, 1)
++[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_kear3"]
++panorama = ExtResource("2_gyirk")
+ 
+-[sub_resource type="Sky" id="Sky_008lb"]
+-sky_material = SubResource("ProceduralSkyMaterial_gyirk")
++[sub_resource type="Sky" id="Sky_j0bx5"]
++sky_material = SubResource("PanoramaSkyMaterial_kear3")
+ 
+-[sub_resource type="Environment" id="Environment_kear3"]
++[sub_resource type="Environment" id="Environment_in5fv"]
+ background_mode = 2
+-sky = SubResource("Sky_008lb")
++sky = SubResource("Sky_j0bx5")
+ ambient_light_source = 3
+ tonemap_mode = 2
+ fog_enabled = true
+-fog_light_color = Color(0.75, 0.83, 0.92, 1)
++fog_light_color = Color(0.6915863, 0.71421564, 0.77793413, 1)
+ fog_density = 0.004
++fog_sky_affect = 0.0
+ 
+-[sub_resource type="ShaderMaterial" id="ShaderMaterial_j0bx5"]
++[sub_resource type="ShaderMaterial" id="ShaderMaterial_ks2n3"]
+ render_priority = 0
+-shader = ExtResource("2_yr6a0")
++shader = ExtResource("3_008lb")
+ shader_parameter/cor_a = null
+ shader_parameter/cor_b = null
+ shader_parameter/tamanho = 0.5
+ 
+-[sub_resource type="CylinderMesh" id="CylinderMesh_in5fv"]
+-material = SubResource("ShaderMaterial_j0bx5")
++[sub_resource type="CylinderMesh" id="CylinderMesh_wr6dm"]
++material = SubResource("ShaderMaterial_ks2n3")
+ top_radius = 2.0
+ bottom_radius = 2.2
+ height = 0.3
+ 
+-[node name="SelecaoPersonagem" type="Node3D" unique_id=1128401368]
+-script = ExtResource("1_g1ore")
++[node name="SelecaoPersonagem" type="Node3D" unique_id=1661891403]
++script = ExtResource("1_yr6a0")
+ 
+-[node name="Ambiente" type="WorldEnvironment" parent="." unique_id=1443971947]
+-environment = SubResource("Environment_kear3")
++[node name="Ambiente" type="WorldEnvironment" parent="." unique_id=826857934]
++environment = SubResource("Environment_in5fv")
+ 
+-[node name="Sol" type="DirectionalLight3D" parent="." unique_id=1834060426]
+-transform = Transform3D(0.81915206, 0.46984634, -0.32898995, 0, 0.57357645, 0.81915206, 0.57357645, -0.6710101, 0.46984634, 0, 0, 0)
++[node name="Sol" type="DirectionalLight3D" parent="." unique_id=1597351288]
++transform = Transform3D(0.8260983, 0.4181227, -0.37780285, 0, 0.6704266, 0.74197584, 0.56352603, -0.612945, 0.5538383, 0, 0, 0)
+ light_energy = 1.2
+ shadow_enabled = true
+ directional_shadow_max_distance = 60.0
+ 
+-[node name="Pedestal" type="MeshInstance3D" parent="." unique_id=1877743834]
++[node name="Pedestal" type="MeshInstance3D" parent="." unique_id=273423557]
+ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.15, 0)
+-mesh = SubResource("CylinderMesh_in5fv")
++mesh = SubResource("CylinderMesh_wr6dm")
+ 
+-[node name="Vitrine" type="Node3D" parent="." unique_id=815572730]
++[node name="Vitrine" type="Node3D" parent="." unique_id=1945424555]
+ transform = Transform3D(-0.8660254, 0, -0.49999997, 0, 1, 0, 0.49999997, 0, -0.8660254, 0, 0, 0)
+ 
+-[node name="Camera" type="Camera3D" parent="." unique_id=1080560194]
++[node name="Camera" type="Camera3D" parent="." unique_id=1559012435]
+ transform = Transform3D(1, 0, 0, 0, 0.9702957, 0.2419219, 0, -0.2419219, 0.9702957, 0, 1.6, 3.6)
+ fov = 50.0
+ 
+-[node name="UI" type="CanvasLayer" parent="." unique_id=738177312]
++[node name="UI" type="CanvasLayer" parent="." unique_id=1482076023]
+ 
+-[node name="Coluna" type="VBoxContainer" parent="UI" unique_id=1671689539]
++[node name="Coluna" type="VBoxContainer" parent="UI" unique_id=2080443675]
+ anchors_preset = 15
+ anchor_right = 1.0
+ anchor_bottom = 1.0
+@@ -67,7 +67,7 @@ offset_top = 24.0
+ offset_right = -32.0
+ offset_bottom = -32.0
+ 
+-[node name="Titulo" type="Label" parent="UI/Coluna" unique_id=846203397]
++[node name="Titulo" type="Label" parent="UI/Coluna" unique_id=631327943]
+ layout_mode = 2
+ theme_override_font_sizes/font_size = 44
+ theme_override_colors/font_outline_color = Color(0, 0, 0, 0.8)
+@@ -75,11 +75,11 @@ theme_override_constants/outline_size = 10
+ text = "Escolha seu piloto"
+ horizontal_alignment = 1
+ 
+-[node name="Espaco" type="Control" parent="UI/Coluna" unique_id=1230332987]
++[node name="Espaco" type="Control" parent="UI/Coluna" unique_id=389878520]
+ layout_mode = 2
+ size_flags_vertical = 3
+ 
+-[node name="Nome" type="Label" parent="UI/Coluna" unique_id=82485871]
++[node name="Nome" type="Label" parent="UI/Coluna" unique_id=573720372]
+ unique_name_in_owner = true
+ layout_mode = 2
+ theme_override_font_sizes/font_size = 36
+@@ -87,33 +87,33 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+ theme_override_constants/outline_size = 8
+ horizontal_alignment = 1
+ 
+-[node name="Descricao" type="Label" parent="UI/Coluna" unique_id=326379436]
++[node name="Descricao" type="Label" parent="UI/Coluna" unique_id=1333725867]
+ unique_name_in_owner = true
+ layout_mode = 2
+ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+ theme_override_constants/outline_size = 6
+ horizontal_alignment = 1
+ 
+-[node name="Botoes" type="HBoxContainer" parent="UI/Coluna" unique_id=1391029855]
++[node name="Botoes" type="HBoxContainer" parent="UI/Coluna" unique_id=668222571]
+ layout_mode = 2
+ theme_override_constants/separation = 16
+ alignment = 1
+ 
+-[node name="Anterior" type="Button" parent="UI/Coluna/Botoes" unique_id=1825050497]
++[node name="Anterior" type="Button" parent="UI/Coluna/Botoes" unique_id=551891865]
+ unique_name_in_owner = true
+ custom_minimum_size = Vector2(64, 56)
+ layout_mode = 2
+ theme_override_font_sizes/font_size = 26
+ text = "◀"
+ 
+-[node name="Jogar" type="Button" parent="UI/Coluna/Botoes" unique_id=1148702525]
++[node name="Jogar" type="Button" parent="UI/Coluna/Botoes" unique_id=106572340]
+ unique_name_in_owner = true
+ custom_minimum_size = Vector2(200, 56)
+ layout_mode = 2
+ theme_override_font_sizes/font_size = 26
+ text = "Jogar"
+ 
+-[node name="Proximo" type="Button" parent="UI/Coluna/Botoes" unique_id=32474727]
++[node name="Proximo" type="Button" parent="UI/Coluna/Botoes" unique_id=274980071]
+ unique_name_in_owner = true
+ custom_minimum_size = Vector2(64, 56)
+ layout_mode = 2
+diff --git a/jogo/ferramentas/construir_cenas.gd b/jogo/ferramentas/construir_cenas.gd
+index 21a4dec..fcf7914 100644
+--- a/jogo/ferramentas/construir_cenas.gd
++++ b/jogo/ferramentas/construir_cenas.gd
+@@ -34,10 +34,9 @@ func _filho(pai: Node, no: Node, nome: String) -> Node:
+ 
+ 
+ func _ambiente(pai: Node) -> void:
+-	var ceu := ProceduralSkyMaterial.new()
+-	ceu.sky_top_color = Color(0.32, 0.52, 0.85)
+-	ceu.sky_horizon_color = Color(0.75, 0.83, 0.92)
+-	ceu.ground_horizon_color = Color(0.75, 0.83, 0.92)
++	# HDRI "Kloofendal 48d Partly Cloudy (Pure Sky)", referência em ambiente/referencia/ceu/.
++	var ceu := PanoramaSkyMaterial.new()
++	ceu.panorama = load("res://ambiente/kloofendal_48d_partly_cloudy_puresky_4k.exr")
+ 	var sky := Sky.new()
+ 	sky.sky_material = ceu
+ 	var amb := Environment.new()
+@@ -46,14 +45,17 @@ func _ambiente(pai: Node) -> void:
+ 	amb.ambient_light_source = Environment.AMBIENT_SOURCE_SKY
+ 	amb.tonemap_mode = Environment.TONE_MAPPER_FILMIC
+ 	amb.fog_enabled = true
+-	amb.fog_light_color = Color(0.75, 0.83, 0.92)
++	# Cor média da faixa do horizonte no HDRI; a neblina não cobre o céu.
++	amb.fog_light_color = Color(0.4361, 0.4685, 0.5671).linear_to_srgb()
+ 	amb.fog_density = 0.004
++	amb.fog_sky_affect = 0.0
+ 	var we := WorldEnvironment.new()
+ 	we.environment = amb
+ 	_filho(pai, we, "Ambiente")
+ 
++	# Altura (47,9°) e direção do sol medidas no HDRI; renderizado, o sol do céu fica a < 0,5° desta luz.
+ 	var sol := DirectionalLight3D.new()
+-	sol.rotation_degrees = Vector3(-55, -35, 0)
++	sol.rotation_degrees = Vector3(-47.9, -34.3, 0)
+ 	sol.light_energy = 1.2
+ 	sol.shadow_enabled = true
+ 	sol.directional_shadow_max_distance = 60.0
+diff --git a/jogo/scripts/jogo.gd b/jogo/scripts/jogo.gd
+index afa4f7b..aa43af9 100644
+--- a/jogo/scripts/jogo.gd
++++ b/jogo/scripts/jogo.gd
+@@ -4,6 +4,7 @@ extends Node
+ var personagens: Array[DefinicaoPersonagem] = [
+ 	preload("res://personagens/jake/jake.tres"),
+ 	preload("res://personagens/dimi/dimi.tres"),
++	preload("res://personagens/bryan/bryan.tres"),
+ ]
+ var indice_escolhido := 0
+ ## Karts do computador na pista. As ferramentas de validação zeram para medir o piloto sozinho.
+diff --git a/jogo/tarefas/T001-cabeca-sempre-oposta.md b/jogo/tarefas/T001-cabeca-sempre-oposta.md
+index 2e62c40..247e145 100644
+--- a/jogo/tarefas/T001-cabeca-sempre-oposta.md
++++ b/jogo/tarefas/T001-cabeca-sempre-oposta.md
+@@ -126,6 +126,10 @@ O verificador do Jake **regrava** `personagens/P001_jake/validacao/validacao_god
+ | `jogo/ferramentas/capturar_vistas_dimi.gd` | `d8b4297f…1ee285b` (parâmetro `--pasta=` e detecção do pico pela troca de sinal) |
+ | `personagens/P002_dimi/validacao/validacao_mecanicas_t001.json` | `d44b0a55…2b55` |
+ 
++### Novo piloto — P003 Bryan (16/10/2026)
++
++Com o `visual_kart.gd` desta tarefa, sem alteração, o verificador do Bryan mediu 0 quadros no mesmo lado em todos os casos, e todas as conclusões passaram ([relatório](../../personagens/P003_bryan/validacao/validacao_mecanicas_fase8.json), [registro](../../personagens/P003_bryan/registros/registro-fase8-jogavel-2026-10-16.md)).
++
+ ### Pendente
+ 
+ - Atualizar a documentação e o relatório do Jake (P001), se autorizado.

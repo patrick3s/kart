@@ -1,0 +1,390 @@
+{
+ "arquivo": "/Users/patricksoares/Documents/jogos/kart/personagens/P002_dimi/blender/dimi.blend",
+ "arquivo_sujo_no_inicio": false,
+ "backup_referencia": "/Users/patricksoares/Documents/jogos/kart/personagens/P002_dimi/backups/dimi_antes_fase3_20261015_162824.blend",
+ "tolerancia_m": 1e-06,
+ "partes": {
+  "Cabeca": {
+   "v": 93155,
+   "e": 269837,
+   "f": 176764,
+   "cantos": 530292,
+   "dados_exclusivos": true,
+   "co_mundo_base_max_desvio": 7.450580596923828e-09,
+   "arestas_iguais": true,
+   "cantos_vertices_iguais": true,
+   "faces_inicio_ordem_iguais": true,
+   "uv_camadas": [
+    "UVMap"
+   ],
+   "uv_iguais": true,
+   "suavizacao_igual": true,
+   "material_indices_iguais": true,
+   "material_slots": [
+    "tripo_material_e9d2c8b0-6721-4488-b079-0d0338a98d93"
+   ],
+   "custom_normal_igual_backup": true,
+   "sharp_face_igual_backup": true,
+   "sharp_edge_igual_backup": true,
+   "normais_canto_max_desvio_npz": 0.0003966689109802246,
+   "normais_canto_max_angulo_graus": 0.027594189460312748,
+   "normais_canto_acima_1e-4": 323,
+   "atributos": [
+    "UVMap",
+    "custom_normal",
+    "position",
+    "rig_original_corner",
+    "rig_original_edge",
+    "rig_original_face",
+    "rig_original_vertex",
+    "sharp_face"
+   ],
+   "shape_keys": false,
+   "ok": true
+  },
+  "Corpo_Kart": {
+   "v": 672481,
+   "e": 1938683,
+   "f": 1266983,
+   "cantos": 3800949,
+   "dados_exclusivos": true,
+   "co_mundo_base_max_desvio": 0.0,
+   "arestas_iguais": true,
+   "cantos_vertices_iguais": true,
+   "faces_inicio_ordem_iguais": true,
+   "uv_camadas": [
+    "UVMap"
+   ],
+   "uv_iguais": true,
+   "suavizacao_igual": true,
+   "material_indices_iguais": true,
+   "material_slots": [
+    "tripo_material_e9d2c8b0-6721-4488-b079-0d0338a98d93"
+   ],
+   "custom_normal_igual_backup": true,
+   "sharp_face_igual_backup": true,
+   "sharp_edge_igual_backup": true,
+   "normais_canto_max_desvio_npz": 0.0,
+   "normais_canto_max_angulo_graus": 0.029031606039812755,
+   "normais_canto_acima_1e-4": 0,
+   "atributos": [
+    "UVMap",
+    "custom_normal",
+    "position",
+    "rig_original_corner",
+    "rig_original_edge",
+    "rig_original_face",
+    "rig_original_vertex",
+    "sharp_face"
+   ],
+   "shape_keys": false,
+   "ok": true
+  },
+  "Wheel_Front_Left": {
+   "v": 58232,
+   "e": 168492,
+   "f": 110318,
+   "cantos": 330954,
+   "dados_exclusivos": true,
+   "co_mundo_base_max_desvio": 2.9802322387695312e-08,
+   "arestas_iguais": true,
+   "cantos_vertices_iguais": true,
+   "faces_inicio_ordem_iguais": true,
+   "uv_camadas": [
+    "UVMap"
+   ],
+   "uv_iguais": true,
+   "suavizacao_igual": true,
+   "material_indices_iguais": true,
+   "material_slots": [
+    "tripo_material_e9d2c8b0-6721-4488-b079-0d0338a98d93"
+   ],
+   "custom_normal_igual_backup": true,
+   "sharp_face_igual_backup": true,
+   "sharp_edge_igual_backup": true,
+   "normais_canto_max_desvio_npz": 0.00020313262939453125,
+   "normais_canto_max_angulo_graus": 0.025477702534797524,
+   "normais_canto_acima_1e-4": 28,
+   "atributos": [
+    "UVMap",
+    "custom_normal",
+    "position",
+    "rig_original_corner",
+    "rig_original_edge",
+    "rig_original_face",
+    "rig_original_vertex"
+   ],
+   "shape_keys": false,
+   "ok": true
+  },
+  "Wheel_Front_Right": {
+   "v": 56941,
+   "e": 164894,
+   "f": 108004,
+   "cantos": 324012,
+   "dados_exclusivos": true,
+   "co_mundo_base_max_desvio": 2.9802322387695312e-08,
+   "arestas_iguais": true,
+   "cantos_vertices_iguais": true,
+   "faces_inicio_ordem_iguais": true,
+   "uv_camadas": [
+    "UVMap"
+   ],
+   "uv_iguais": true,
+   "suavizacao_igual": true,
+   "material_indices_iguais": true,
+   "material_slots": [
+    "tripo_material_e9d2c8b0-6721-4488-b079-0d0338a98d93"
+   ],
+   "custom_normal_igual_backup": true,
+   "sharp_face_igual_backup": true,
+   "sharp_edge_igual_backup": true,
+   "normais_canto_max_desvio_npz": 0.00022974610328674316,
+   "normais_canto_max_angulo_graus": 0.02523512188091938,
+   "normais_canto_acima_1e-4": 48,
+   "atributos": [
+    "UVMap",
+    "custom_normal",
+    "position",
+    "rig_original_corner",
+    "rig_original_edge",
+    "rig_original_face",
+    "rig_original_vertex"
+   ],
+   "shape_keys": false,
+   "ok": true
+  },
+  "Wheel_Rear_Left": {
+   "v": 60989,
+   "e": 177865,
+   "f": 116908,
+   "cantos": 350724,
+   "dados_exclusivos": true,
+   "co_mundo_base_max_desvio": 2.9802322387695312e-08,
+   "arestas_iguais": true,
+   "cantos_vertices_iguais": true,
+   "faces_inicio_ordem_iguais": true,
+   "uv_camadas": [
+    "UVMap"
+   ],
+   "uv_iguais": true,
+   "suavizacao_igual": true,
+   "material_indices_iguais": true,
+   "material_slots": [
+    "tripo_material_e9d2c8b0-6721-4488-b079-0d0338a98d93"
+   ],
+   "custom_normal_igual_backup": true,
+   "sharp_face_igual_backup": true,
+   "sharp_edge_igual_backup": true,
+   "normais_canto_max_desvio_npz": 6.90072774887085e-05,
+   "normais_canto_max_angulo_graus": 0.028265463756787755,
+   "normais_canto_acima_1e-4": 0,
+   "atributos": [
+    "UVMap",
+    "custom_normal",
+    "position",
+    "rig_original_corner",
+    "rig_original_edge",
+    "rig_original_face",
+    "rig_original_vertex"
+   ],
+   "shape_keys": false,
+   "ok": true
+  },
+  "Wheel_Rear_Right": {
+   "v": 53679,
+   "e": 156021,
+   "f": 102377,
+   "cantos": 307131,
+   "dados_exclusivos": true,
+   "co_mundo_base_max_desvio": 2.9802322387695312e-08,
+   "arestas_iguais": true,
+   "cantos_vertices_iguais": true,
+   "faces_inicio_ordem_iguais": true,
+   "uv_camadas": [
+    "UVMap"
+   ],
+   "uv_iguais": true,
+   "suavizacao_igual": true,
+   "material_indices_iguais": true,
+   "material_slots": [
+    "tripo_material_e9d2c8b0-6721-4488-b079-0d0338a98d93"
+   ],
+   "custom_normal_igual_backup": true,
+   "sharp_face_igual_backup": true,
+   "sharp_edge_igual_backup": true,
+   "normais_canto_max_desvio_npz": 0.00010898709297180176,
+   "normais_canto_max_angulo_graus": 0.02646423203326238,
+   "normais_canto_acima_1e-4": 5,
+   "atributos": [
+    "UVMap",
+    "custom_normal",
+    "position",
+    "rig_original_corner",
+    "rig_original_edge",
+    "rig_original_face",
+    "rig_original_vertex"
+   ],
+   "shape_keys": false,
+   "ok": true
+  }
+ },
+ "malha_avaliada": {
+  "Cabeca": {
+   "contagens_iguais_base": true,
+   "arestas_iguais_base": true,
+   "cantos_iguais_base": true,
+   "uv_iguais_npz": true,
+   "co_mundo_avaliado_max_desvio_npz": 5.960464477539063e-08,
+   "normais_canto_avaliadas_max_desvio_npz": 0.0003948211669921875
+  },
+  "Corpo_Kart": {
+   "contagens_iguais_base": true,
+   "arestas_iguais_base": true,
+   "cantos_iguais_base": true,
+   "uv_iguais_npz": true,
+   "co_mundo_avaliado_max_desvio_npz": 5.960464477539063e-08,
+   "normais_canto_avaliadas_max_desvio_npz": 0.0009319484233856201
+  },
+  "Wheel_Front_Left": {
+   "contagens_iguais_base": true,
+   "arestas_iguais_base": true,
+   "cantos_iguais_base": true,
+   "uv_iguais_npz": true,
+   "co_mundo_avaliado_max_desvio_npz": 2.9802322387695312e-08,
+   "normais_canto_avaliadas_max_desvio_npz": 0.00020313262939453125
+  },
+  "Wheel_Front_Right": {
+   "contagens_iguais_base": true,
+   "arestas_iguais_base": true,
+   "cantos_iguais_base": true,
+   "uv_iguais_npz": true,
+   "co_mundo_avaliado_max_desvio_npz": 2.9802322387695312e-08,
+   "normais_canto_avaliadas_max_desvio_npz": 0.00022974610328674316
+  },
+  "Wheel_Rear_Left": {
+   "contagens_iguais_base": true,
+   "arestas_iguais_base": true,
+   "cantos_iguais_base": true,
+   "uv_iguais_npz": true,
+   "co_mundo_avaliado_max_desvio_npz": 2.9802322387695312e-08,
+   "normais_canto_avaliadas_max_desvio_npz": 6.90072774887085e-05
+  },
+  "Wheel_Rear_Right": {
+   "contagens_iguais_base": true,
+   "arestas_iguais_base": true,
+   "cantos_iguais_base": true,
+   "uv_iguais_npz": true,
+   "co_mundo_avaliado_max_desvio_npz": 2.9802322387695312e-08,
+   "normais_canto_avaliadas_max_desvio_npz": 0.00010898709297180176
+  }
+ },
+ "texturas": {
+  "Dimi_basecolor.jpg": {
+   "tamanho": [
+    4096,
+    4096
+   ],
+   "colorspace": "sRGB",
+   "empacotada": true,
+   "sha256": "22e9e752a944c10bbfec40e7e08ad6fd002fb6b15fc20ca6f07e83d1af995a4d",
+   "igual_backup": true
+  },
+  "Dimi_normal.png": {
+   "tamanho": [
+    4096,
+    4096
+   ],
+   "colorspace": "Non-Color",
+   "empacotada": true,
+   "sha256": "c27e3e533ad427e5eebacd503df010fb916cd4b7d87412456e5cd4076935985a",
+   "igual_backup": true
+  },
+  "Dimi_rm.jpg": {
+   "tamanho": [
+    4096,
+    4096
+   ],
+   "colorspace": "Non-Color",
+   "empacotada": true,
+   "sha256": "2e73e607da09d2e6d4fbeebdef34eaff1f71fa1e7fea85863eea2a49e7146801",
+   "igual_backup": true
+  }
+ },
+ "teste_combinado": {
+  "Cabeca": {
+   "erro_vs_composicao_esperada": 1.296291274321959e-07,
+   "movimento_max": 0.29598506167531013
+  },
+  "Corpo_Kart": {
+   "erro_vs_composicao_esperada": 1.0109574022365564e-07,
+   "movimento_max": 0.34415723383426666
+  },
+  "Wheel_Front_Left": {
+   "erro_vs_composicao_esperada": 4.05159035210545e-08,
+   "movimento_max": 0.2891233316722972
+  },
+  "Wheel_Front_Right": {
+   "erro_vs_composicao_esperada": 9.142842927190031e-09,
+   "movimento_max": 0.1204028862852895
+  },
+  "Wheel_Rear_Left": {
+   "erro_vs_composicao_esperada": 1.4057638608733214e-08,
+   "movimento_max": 0.12396150061110811
+  },
+  "Wheel_Rear_Right": {
+   "erro_vs_composicao_esperada": 3.0973158260394484e-08,
+   "movimento_max": 0.23908773634070002
+  },
+  "pivo_cabeca_vs_fim_neck": 0.0,
+  "pivo_cabeca_vs_torso_aplicado": 3.0719530773294423e-08,
+  "centros_rodas_vs_torso_aplicado": 4.470348358154297e-08,
+  "ok": true
+ },
+ "backup_tem_sharp": [
+  true,
+  true
+ ],
+ "texturas_ok": true,
+ "material": {
+  "nomes": [
+   "tripo_material_e9d2c8b0-6721-4488-b079-0d0338a98d93"
+  ],
+  "imagens_nos_nos": [
+   "Dimi_basecolor.jpg",
+   "Dimi_normal.png",
+   "Dimi_rm.jpg"
+  ],
+  "ligacoes": [
+   "Image Texture.001.Color->Separate Color.Color",
+   "Image Texture.002.Color->Normal Map.Color",
+   "Image Texture.Color->Principled BSDF.Base Color",
+   "Normal Map.Normal->Principled BSDF.Normal",
+   "Principled BSDF.BSDF->Material Output.Surface",
+   "Separate Color.Blue->Principled BSDF.Metallic",
+   "Separate Color.Green->Principled BSDF.Roughness"
+  ],
+  "ligacoes_iguais_backup": true
+ },
+ "material_ok": true,
+ "cada_v_original_uma_vez": true,
+ "cada_e_original_uma_vez": true,
+ "cada_f_original_uma_vez": true,
+ "cada_l_original_uma_vez": true,
+ "totais": {
+  "v": 995477,
+  "e": 2875792,
+  "f": 1881354,
+  "l": 5644062
+ },
+ "totais_originais": {
+  "v": 995477,
+  "e": 2875792,
+  "f": 1881354,
+  "l": 5644062
+ },
+ "totais_iguais": true,
+ "anexos_removidos": true,
+ "restaurado_apos_teste": true,
+ "tudo_ok": true
+}

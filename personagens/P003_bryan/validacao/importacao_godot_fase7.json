@@ -1,0 +1,456 @@
+{
+	"animacoes": {
+		"Cabeca_Direita_Ida_e_Volta": {
+			"cabeca": [
+				{
+					"segundos": 0.0,
+					"x_graus": 0.00000341509458500638,
+					"y_graus": -0.000000106721705781449,
+					"z_graus": 0.00000000000000318055619807017
+				},
+				{
+					"segundos": 0.25,
+					"x_graus": 0.00000340716080585343,
+					"y_graus": -3.90625007312741,
+					"z_graus": -0.000000232650323284383
+				},
+				{
+					"segundos": 0.5,
+					"x_graus": 0.00000333414300547602,
+					"y_graus": -12.5000009170266,
+					"z_graus": -0.00000073916182397187
+				},
+				{
+					"segundos": 0.75,
+					"x_graus": 0.00000318625830656269,
+					"y_graus": -21.0937449307367,
+					"z_graus": -0.0000012290752311098
+				},
+				{
+					"segundos": 1.0,
+					"x_graus": 0.00000309512691649665,
+					"y_graus": -25.0000035416005,
+					"z_graus": -0.0000014432814669075
+				},
+				{
+					"segundos": 1.25,
+					"x_graus": 0.00000318625830656269,
+					"y_graus": -21.0937449307367,
+					"z_graus": -0.0000012290752311098
+				},
+				{
+					"segundos": 1.5,
+					"x_graus": 0.00000333414300547602,
+					"y_graus": -12.5000009170266,
+					"z_graus": -0.00000073916182397187
+				},
+				{
+					"segundos": 1.75,
+					"x_graus": 0.00000340716080585343,
+					"y_graus": -3.90624836558011,
+					"z_graus": -0.000000232650221506633
+				},
+				{
+					"segundos": 2.0,
+					"x_graus": 0.00000341509458500638,
+					"y_graus": -0.000000106721705781449,
+					"z_graus": 0.00000000000000318055619807017
+				}
+			],
+			"duracao": 2.0,
+			"loop": 0,
+			"trilhas": [
+				{
+					"caminho": "Personagem_Rig/Skeleton3D:Head_Bone",
+					"chaves": 49,
+					"tipo": 2
+				}
+			]
+		},
+		"Cabeca_Esquerda_Ida_e_Volta": {
+			"cabeca": [
+				{
+					"segundos": 0.0,
+					"x_graus": 0.00000341509458500638,
+					"y_graus": -0.000000106721705781449,
+					"z_graus": 0.00000000000000318055619807017
+				},
+				{
+					"segundos": 0.25,
+					"x_graus": 0.00000340716080585343,
+					"y_graus": 3.90625007312741,
+					"z_graus": 0.000000232650323284383
+				},
+				{
+					"segundos": 0.5,
+					"x_graus": 0.00000333414300547602,
+					"y_graus": 12.5000009170266,
+					"z_graus": 0.00000073916182397187
+				},
+				{
+					"segundos": 0.75,
+					"x_graus": 0.00000318625830656269,
+					"y_graus": 21.0937449307367,
+					"z_graus": 0.0000012290752311098
+				},
+				{
+					"segundos": 1.0,
+					"x_graus": 0.00000309512691649665,
+					"y_graus": 25.0000035416005,
+					"z_graus": 0.0000014432814669075
+				},
+				{
+					"segundos": 1.25,
+					"x_graus": 0.00000318625830656269,
+					"y_graus": 21.0937449307367,
+					"z_graus": 0.0000012290752311098
+				},
+				{
+					"segundos": 1.5,
+					"x_graus": 0.00000333414300547602,
+					"y_graus": 12.5000009170266,
+					"z_graus": 0.00000073916182397187
+				},
+				{
+					"segundos": 1.75,
+					"x_graus": 0.00000340716080585343,
+					"y_graus": 3.90624836558011,
+					"z_graus": 0.000000232650221506633
+				},
+				{
+					"segundos": 2.0,
+					"x_graus": 0.00000341509458500638,
+					"y_graus": -0.000000106721705781449,
+					"z_graus": 0.00000000000000318055619807017
+				}
+			],
+			"duracao": 2.0,
+			"loop": 0,
+			"trilhas": [
+				{
+					"caminho": "Personagem_Rig/Skeleton3D:Head_Bone",
+					"chaves": 49,
+					"tipo": 2
+				}
+			]
+		}
+	},
+	"animacoes_ok": true,
+	"arvore": [
+		{
+			"caminho": ".",
+			"classe": "Node3D"
+		},
+		{
+			"caminho": "Personagem_Rig",
+			"classe": "Node3D"
+		},
+		{
+			"caminho": "Personagem_Rig/Skeleton3D",
+			"classe": "Skeleton3D"
+		},
+		{
+			"caminho": "Personagem_Rig/Skeleton3D/Torso_Bone",
+			"classe": "BoneAttachment3D"
+		},
+		{
+			"caminho": "Personagem_Rig/Skeleton3D/Torso_Bone/Wheel_Front_Left",
+			"classe": "MeshInstance3D"
+		},
+		{
+			"caminho": "Personagem_Rig/Skeleton3D/Torso_Bone/Wheel_Front_Right",
+			"classe": "MeshInstance3D"
+		},
+		{
+			"caminho": "Personagem_Rig/Skeleton3D/Torso_Bone/Wheel_Rear_Left",
+			"classe": "MeshInstance3D"
+		},
+		{
+			"caminho": "Personagem_Rig/Skeleton3D/Torso_Bone/Wheel_Rear_Right",
+			"classe": "MeshInstance3D"
+		},
+		{
+			"caminho": "Personagem_Rig/Skeleton3D/Cabeca",
+			"classe": "MeshInstance3D"
+		},
+		{
+			"caminho": "Personagem_Rig/Skeleton3D/Corpo_Kart",
+			"classe": "MeshInstance3D"
+		},
+		{
+			"caminho": "Personagem_Rig/Skeleton3D/@PhysicalBoneSimulator3D@2",
+			"classe": "PhysicalBoneSimulator3D"
+		},
+		{
+			"caminho": "AnimationPlayer",
+			"classe": "AnimationPlayer"
+		}
+	],
+	"autoplay": "",
+	"esqueletos": 1,
+	"godot": "4.7.2-stable (official)",
+	"hierarquia_ok": true,
+	"malhas": {
+		"Cabeca": {
+			"aabb_tamanho": [
+				0.174247741699219,
+				0.239471435546875,
+				0.212355136871338
+			],
+			"classe_pai": "Skeleton3D",
+			"materiais": [
+				{
+					"albedo": "res://personagens/bryan/bryan_kart_bryan_basecolor.jpg",
+					"classe": "StandardMaterial3D",
+					"metallic": "res://personagens/bryan/bryan_kart_bryan_rm.jpg",
+					"nome": "tripo_material_1db849c3-8e37-4423-b45a-4dcd0d8abf93",
+					"normal": "res://personagens/bryan/bryan_kart_bryan_normal.png",
+					"roughness": "res://personagens/bryan/bryan_kart_bryan_rm.jpg"
+				}
+			],
+			"origem_modelo": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"pai": "Personagem_Rig/Skeleton3D",
+			"skin": true,
+			"triangulos": 80608,
+			"triangulos_blender": 80608,
+			"vertices_godot": 41982
+		},
+		"Corpo_Kart": {
+			"aabb_tamanho": [
+				0.602996826171875,
+				0.714996337890625,
+				0.97958379983902
+			],
+			"classe_pai": "Skeleton3D",
+			"materiais": [
+				{
+					"albedo": "res://personagens/bryan/bryan_kart_bryan_basecolor.jpg",
+					"classe": "StandardMaterial3D",
+					"metallic": "res://personagens/bryan/bryan_kart_bryan_rm.jpg",
+					"nome": "tripo_material_1db849c3-8e37-4423-b45a-4dcd0d8abf93",
+					"normal": "res://personagens/bryan/bryan_kart_bryan_normal.png",
+					"roughness": "res://personagens/bryan/bryan_kart_bryan_rm.jpg"
+				}
+			],
+			"origem_modelo": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"pai": "Personagem_Rig/Skeleton3D",
+			"skin": true,
+			"triangulos": 1439415,
+			"triangulos_blender": 1439415,
+			"vertices_godot": 771669
+		},
+		"Wheel_Front_Left": {
+			"aabb_tamanho": [
+				0.18083193898201,
+				0.24925234913826,
+				0.25225830078125
+			],
+			"classe_pai": "BoneAttachment3D",
+			"desvio_origem_do_blender": 0.0000000477069939108787,
+			"materiais": [
+				{
+					"albedo": "res://personagens/bryan/bryan_kart_bryan_basecolor.jpg",
+					"classe": "StandardMaterial3D",
+					"metallic": "res://personagens/bryan/bryan_kart_bryan_rm.jpg",
+					"nome": "tripo_material_1db849c3-8e37-4423-b45a-4dcd0d8abf93",
+					"normal": "res://personagens/bryan/bryan_kart_bryan_normal.png",
+					"roughness": "res://personagens/bryan/bryan_kart_bryan_rm.jpg"
+				}
+			],
+			"origem_modelo": [
+				0.260253936052322,
+				0.119384735822678,
+				0.269287139177322
+			],
+			"pai": "Personagem_Rig/Skeleton3D/Torso_Bone",
+			"raio_visual_kart": 0.126129150390625,
+			"skin": false,
+			"triangulos": 80611,
+			"triangulos_blender": 80611,
+			"vertices_godot": 42002
+		},
+		"Wheel_Front_Right": {
+			"aabb_tamanho": [
+				0.17982479929924,
+				0.248977661132812,
+				0.253952026367188
+			],
+			"classe_pai": "BoneAttachment3D",
+			"desvio_origem_do_blender": 0.0000000477069939108787,
+			"materiais": [
+				{
+					"albedo": "res://personagens/bryan/bryan_kart_bryan_basecolor.jpg",
+					"classe": "StandardMaterial3D",
+					"metallic": "res://personagens/bryan/bryan_kart_bryan_rm.jpg",
+					"nome": "tripo_material_1db849c3-8e37-4423-b45a-4dcd0d8abf93",
+					"normal": "res://personagens/bryan/bryan_kart_bryan_normal.png",
+					"roughness": "res://personagens/bryan/bryan_kart_bryan_rm.jpg"
+				}
+			],
+			"origem_modelo": [
+				-0.260009795427322,
+				0.119872987270355,
+				0.26953125
+			],
+			"pai": "Personagem_Rig/Skeleton3D/Torso_Bone",
+			"raio_visual_kart": 0.126976013183594,
+			"skin": false,
+			"triangulos": 81386,
+			"triangulos_blender": 81386,
+			"vertices_godot": 42709
+		},
+		"Wheel_Rear_Left": {
+			"aabb_tamanho": [
+				0.182632446289062,
+				0.249603271484375,
+				0.246383681893349
+			],
+			"classe_pai": "BoneAttachment3D",
+			"desvio_origem_do_blender": 0.0000000636577865975596,
+			"materiais": [
+				{
+					"albedo": "res://personagens/bryan/bryan_kart_bryan_basecolor.jpg",
+					"classe": "StandardMaterial3D",
+					"metallic": "res://personagens/bryan/bryan_kart_bryan_rm.jpg",
+					"nome": "tripo_material_1db849c3-8e37-4423-b45a-4dcd0d8abf93",
+					"normal": "res://personagens/bryan/bryan_kart_bryan_normal.png",
+					"roughness": "res://personagens/bryan/bryan_kart_bryan_rm.jpg"
+				}
+			],
+			"origem_modelo": [
+				0.259765625,
+				0.120361328125,
+				-0.294433653354645
+			],
+			"pai": "Personagem_Rig/Skeleton3D/Torso_Bone",
+			"raio_visual_kart": 0.124801635742188,
+			"skin": false,
+			"triangulos": 87392,
+			"triangulos_blender": 87392,
+			"vertices_godot": 45728
+		},
+		"Wheel_Rear_Right": {
+			"aabb_tamanho": [
+				0.181945785880089,
+				0.249374359846115,
+				0.246582046151161
+			],
+			"classe_pai": "BoneAttachment3D",
+			"desvio_origem_do_blender": 0.0000000702886353565191,
+			"materiais": [
+				{
+					"albedo": "res://personagens/bryan/bryan_kart_bryan_basecolor.jpg",
+					"classe": "StandardMaterial3D",
+					"metallic": "res://personagens/bryan/bryan_kart_bryan_rm.jpg",
+					"nome": "tripo_material_1db849c3-8e37-4423-b45a-4dcd0d8abf93",
+					"normal": "res://personagens/bryan/bryan_kart_bryan_normal.png",
+					"roughness": "res://personagens/bryan/bryan_kart_bryan_rm.jpg"
+				}
+			],
+			"origem_modelo": [
+				-0.259521514177322,
+				0.120361298322678,
+				-0.294433653354645
+			],
+			"pai": "Personagem_Rig/Skeleton3D/Torso_Bone",
+			"raio_visual_kart": 0.124687179923058,
+			"skin": false,
+			"triangulos": 85189,
+			"triangulos_blender": 85189,
+			"vertices_godot": 44501
+		}
+	},
+	"modelo": "res://personagens/bryan/bryan_kart.glb",
+	"montagem_visual_kart": {
+		"ok": true,
+		"osso_cabeca": 3,
+		"osso_corpo": 1,
+		"raio_medido_fase4": {
+			"Wheel_Front_Left": 0.11926,
+			"Wheel_Front_Right": 0.11948,
+			"Wheel_Rear_Left": 0.11982,
+			"Wheel_Rear_Right": 0.11991
+		},
+		"rodas": [
+			{
+				"dianteira": true,
+				"raio": 0.126129150390625,
+				"roda": "Wheel_Front_Left"
+			},
+			{
+				"dianteira": true,
+				"raio": 0.126976013183594,
+				"roda": "Wheel_Front_Right"
+			},
+			{
+				"dianteira": false,
+				"raio": 0.124801635742188,
+				"roda": "Wheel_Rear_Left"
+			},
+			{
+				"dianteira": false,
+				"raio": 0.124687179923058,
+				"roda": "Wheel_Rear_Right"
+			}
+		]
+	},
+	"ossos": {
+		"Head_Bone": {
+			"desvio_do_blender": 0.0000000333232641480663,
+			"indice": 3,
+			"origem_modelo": [
+				-0.00756835890933871,
+				0.494140654802322,
+				-0.0712890774011612
+			],
+			"pai": "Neck_Bone",
+			"pose_igual_repouso": true
+		},
+		"Neck_Bone": {
+			"desvio_do_blender": 0.000000000931322574615479,
+			"indice": 2,
+			"origem_modelo": [
+				-0.00756835844367743,
+				0.4375,
+				-0.0712890625
+			],
+			"pai": "Torso_Bone",
+			"pose_igual_repouso": true
+		},
+		"Root_Bone": {
+			"desvio_do_blender": 0.0,
+			"indice": 0,
+			"origem_modelo": [
+				0.0,
+				0.08056640625,
+				0.0
+			],
+			"pai": "",
+			"pose_igual_repouso": true
+		},
+		"Torso_Bone": {
+			"desvio_do_blender": 0.0,
+			"indice": 1,
+			"origem_modelo": [
+				0.0,
+				0.25,
+				0.0
+			],
+			"pai": "Root_Bone",
+			"pose_igual_repouso": true
+		}
+	},
+	"ossos_desvio_max": 0.0000000333232641480663,
+	"partes_ok": true,
+	"tolerancia_m": 0.00001,
+	"triangulos_total": 1854601,
+	"tudo_ok": true
+}

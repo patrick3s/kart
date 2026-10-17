@@ -1,0 +1,314 @@
+{
+ "arquivo": "/Users/patricksoares/Documents/jogos/kart/personagens/P002_dimi/blender/dimi.blend",
+ "backup": "backups/dimi_antes_fase3_20261015_162824.blend",
+ "partes": {
+  "Cabeca": {
+   "v": 93155,
+   "e": 269837,
+   "f": 176764,
+   "cantos": 530292,
+   "ilhas": 83,
+   "ilhas_conforme_rotulo": true,
+   "co_mundo_max_desvio": 0.0,
+   "arestas_iguais": true,
+   "cantos_vertices_iguais": true,
+   "faces_inicio_ordem_iguais": true,
+   "uv_iguais": true,
+   "suavizacao_igual": true,
+   "material_igual": true,
+   "custom_normal_igual_backup": true,
+   "sharp_face_igual": true,
+   "sharp_edge_igual": true,
+   "normais_canto_max_desvio_npz": 0.0,
+   "matriz_mundo_identidade": true,
+   "pai": null,
+   "modificadores": [],
+   "dados_exclusivos": true,
+   "bbox_min": [
+    -0.1478,
+    -0.1091,
+    0.4149
+   ],
+   "bbox_max": [
+    0.1472,
+    0.1629,
+    0.7072
+   ],
+   "centro_bbox": [
+    -0.0003,
+    0.0269,
+    0.561
+   ]
+  },
+  "Corpo_Kart": {
+   "v": 672481,
+   "e": 1938683,
+   "f": 1266983,
+   "cantos": 3800949,
+   "ilhas": 781,
+   "ilhas_conforme_rotulo": true,
+   "co_mundo_max_desvio": 0.0,
+   "arestas_iguais": true,
+   "cantos_vertices_iguais": true,
+   "faces_inicio_ordem_iguais": true,
+   "uv_iguais": true,
+   "suavizacao_igual": true,
+   "material_igual": true,
+   "custom_normal_igual_backup": true,
+   "sharp_face_igual": true,
+   "sharp_edge_igual": true,
+   "normais_canto_max_desvio_npz": 0.0,
+   "matriz_mundo_identidade": true,
+   "pai": null,
+   "modificadores": [],
+   "dados_exclusivos": true,
+   "bbox_min": [
+    -0.325,
+    -0.4902,
+    0.0769
+   ],
+   "bbox_max": [
+    0.3332,
+    0.4902,
+    0.9138
+   ],
+   "centro_bbox": [
+    0.0041,
+    0.0,
+    0.4954
+   ]
+  },
+  "Wheel_Front_Left": {
+   "v": 58232,
+   "e": 168492,
+   "f": 110318,
+   "cantos": 330954,
+   "ilhas": 58,
+   "ilhas_conforme_rotulo": true,
+   "co_mundo_max_desvio": 0.0,
+   "arestas_iguais": true,
+   "cantos_vertices_iguais": true,
+   "faces_inicio_ordem_iguais": true,
+   "uv_iguais": true,
+   "suavizacao_igual": true,
+   "material_igual": true,
+   "custom_normal_igual_backup": true,
+   "sharp_face_igual": true,
+   "sharp_edge_igual": true,
+   "normais_canto_max_desvio_npz": 0.0,
+   "matriz_mundo_identidade": true,
+   "pai": null,
+   "modificadores": [],
+   "dados_exclusivos": true,
+   "bbox_min": [
+    0.2299,
+    -0.3933,
+    0.0
+   ],
+   "bbox_max": [
+    0.3654,
+    -0.119,
+    0.2576
+   ],
+   "centro_bbox": [
+    0.2977,
+    -0.2562,
+    0.1288
+   ]
+  },
+  "Wheel_Front_Right": {
+   "v": 56941,
+   "e": 164894,
+   "f": 108004,
+   "cantos": 324012,
+   "ilhas": 51,
+   "ilhas_conforme_rotulo": true,
+   "co_mundo_max_desvio": 0.0,
+   "arestas_iguais": true,
+   "cantos_vertices_iguais": true,
+   "faces_inicio_ordem_iguais": true,
+   "uv_iguais": true,
+   "suavizacao_igual": true,
+   "material_igual": true,
+   "custom_normal_igual_backup": true,
+   "sharp_face_igual": true,
+   "sharp_edge_igual": true,
+   "normais_canto_max_desvio_npz": 0.0,
+   "matriz_mundo_identidade": true,
+   "pai": null,
+   "modificadores": [],
+   "dados_exclusivos": true,
+   "bbox_min": [
+    -0.3651,
+    -0.381,
+    0.0
+   ],
+   "bbox_max": [
+    -0.2361,
+    -0.119,
+    0.2576
+   ],
+   "centro_bbox": [
+    -0.3006,
+    -0.25,
+    0.1288
+   ]
+  },
+  "Wheel_Rear_Left": {
+   "v": 60989,
+   "e": 177865,
+   "f": 116908,
+   "cantos": 350724,
+   "ilhas": 32,
+   "ilhas_conforme_rotulo": true,
+   "co_mundo_max_desvio": 0.0,
+   "arestas_iguais": true,
+   "cantos_vertices_iguais": true,
+   "faces_inicio_ordem_iguais": true,
+   "uv_iguais": true,
+   "suavizacao_igual": true,
+   "material_igual": true,
+   "custom_normal_igual_backup": true,
+   "sharp_face_igual": true,
+   "sharp_edge_igual": true,
+   "normais_canto_max_desvio_npz": 0.0,
+   "matriz_mundo_identidade": true,
+   "pai": null,
+   "modificadores": [],
+   "dados_exclusivos": true,
+   "bbox_min": [
+    0.2319,
+    0.0853,
+    0.0
+   ],
+   "bbox_max": [
+    0.3716,
+    0.3711,
+    0.2684
+   ],
+   "centro_bbox": [
+    0.3018,
+    0.2282,
+    0.1342
+   ]
+  },
+  "Wheel_Rear_Right": {
+   "v": 53679,
+   "e": 156021,
+   "f": 102377,
+   "cantos": 307131,
+   "ilhas": 35,
+   "ilhas_conforme_rotulo": true,
+   "co_mundo_max_desvio": 0.0,
+   "arestas_iguais": true,
+   "cantos_vertices_iguais": true,
+   "faces_inicio_ordem_iguais": true,
+   "uv_iguais": true,
+   "suavizacao_igual": true,
+   "material_igual": true,
+   "custom_normal_igual_backup": true,
+   "sharp_face_igual": true,
+   "sharp_edge_igual": true,
+   "normais_canto_max_desvio_npz": 0.0,
+   "matriz_mundo_identidade": true,
+   "pai": null,
+   "modificadores": [],
+   "dados_exclusivos": true,
+   "bbox_min": [
+    -0.3716,
+    0.0977,
+    0.0001
+   ],
+   "bbox_max": [
+    -0.2446,
+    0.3595,
+    0.2577
+   ],
+   "centro_bbox": [
+    -0.3081,
+    0.2286,
+    0.1289
+   ]
+  }
+ },
+ "cada_v_original_uma_vez": true,
+ "cada_e_original_uma_vez": true,
+ "cada_f_original_uma_vez": true,
+ "cada_l_original_uma_vez": true,
+ "co_mundo_max_desvio_geral": 0.0,
+ "lados_rodas_corretos": {
+  "Wheel_Front_Left": true,
+  "Wheel_Front_Right": true,
+  "Wheel_Rear_Left": true,
+  "Wheel_Rear_Right": true
+ },
+ "objetos": [
+  "Cabeca",
+  "Corpo_Kart",
+  "Wheel_Front_Left",
+  "Wheel_Front_Right",
+  "Wheel_Rear_Left",
+  "Wheel_Rear_Right"
+ ],
+ "nomes_padrao": true,
+ "imagens_no_arquivo": [
+  [
+   "Dimi_basecolor.jpg",
+   true
+  ],
+  [
+   "Dimi_normal.png",
+   true
+  ],
+  [
+   "Dimi_rm.jpg",
+   true
+  ]
+ ],
+ "materiais_no_arquivo": [
+  "tripo_material_e9d2c8b0-6721-4488-b079-0d0338a98d93"
+ ],
+ "atributos_ausentes_tratados_como_falso": [
+  [
+   "Cabeca",
+   "sharp_edge"
+  ],
+  [
+   "Corpo_Kart",
+   "sharp_edge"
+  ],
+  [
+   "Wheel_Front_Left",
+   "sharp_face"
+  ],
+  [
+   "Wheel_Front_Left",
+   "sharp_edge"
+  ],
+  [
+   "Wheel_Front_Right",
+   "sharp_face"
+  ],
+  [
+   "Wheel_Front_Right",
+   "sharp_edge"
+  ],
+  [
+   "Wheel_Rear_Left",
+   "sharp_face"
+  ],
+  [
+   "Wheel_Rear_Left",
+   "sharp_edge"
+  ],
+  [
+   "Wheel_Rear_Right",
+   "sharp_face"
+  ],
+  [
+   "Wheel_Rear_Right",
+   "sharp_edge"
+  ]
+ ],
+ "tudo_ok": true
+}

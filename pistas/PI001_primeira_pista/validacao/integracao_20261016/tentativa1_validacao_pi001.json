@@ -1,0 +1,7276 @@
+{
+	"adversarios": [
+		{
+			"desvio_max_m": 3.09626007080078,
+			"nome": "Adversario1",
+			"piloto": "Dimi",
+			"progresso_m": 2483.23541259766,
+			"quadros_contramao": 90,
+			"quadros_fora_asfalto": 0,
+			"volta_segundos": 82.85
+		},
+		{
+			"desvio_max_m": 2.99100494384766,
+			"nome": "Adversario2",
+			"piloto": "Bryan",
+			"progresso_m": 2468.29959106445,
+			"quadros_contramao": 81,
+			"quadros_fora_asfalto": 0,
+			"volta_segundos": 88.7666666666667
+		},
+		{
+			"desvio_max_m": 9.36421966552734,
+			"nome": "Adversario3",
+			"piloto": "Dimi",
+			"progresso_m": 398.372100830078,
+			"quadros_contramao": 69,
+			"quadros_fora_asfalto": 10502,
+			"volta_segundos": -1.0
+		},
+		{
+			"desvio_max_m": 3.11341094970703,
+			"nome": "Adversario4",
+			"piloto": "Bryan",
+			"progresso_m": 2255.62316894531,
+			"quadros_contramao": 84,
+			"quadros_fora_asfalto": 0,
+			"volta_segundos": 86.3333333333333
+		},
+		{
+			"desvio_max_m": 3.03526306152344,
+			"nome": "Adversario5",
+			"piloto": "Dimi",
+			"progresso_m": 2444.96897888184,
+			"quadros_contramao": 39,
+			"quadros_fora_asfalto": 0,
+			"volta_segundos": 84.8333333333333
+		}
+	],
+	"amostras": [
+		{
+			"karts": [
+				{
+					"desvio_m": 1.25,
+					"nome": "Adversario1",
+					"posicao": "(-4.679036, 0.134444, 117.35)",
+					"progresso_m": 0.0,
+					"velocidade": 0.200000002980232
+				},
+				{
+					"desvio_m": 1.25,
+					"nome": "Adversario2",
+					"posicao": "(-9.179072, 0.134444, 114.85)",
+					"progresso_m": 0.0,
+					"velocidade": 0.200000002980232
+				},
+				{
+					"desvio_m": 1.25,
+					"nome": "Adversario3",
+					"posicao": "(-9.179091, 0.134444, 117.35)",
+					"progresso_m": 0.0,
+					"velocidade": 0.200000002980232
+				},
+				{
+					"desvio_m": 1.25,
+					"nome": "Adversario4",
+					"posicao": "(-13.67913, 0.134444, 114.85)",
+					"progresso_m": 0.0,
+					"velocidade": 0.200000002980232
+				},
+				{
+					"desvio_m": 1.25,
+					"nome": "Adversario5",
+					"posicao": "(-13.67915, 0.134444, 117.35)",
+					"progresso_m": 0.0,
+					"velocidade": 0.200000002980232
+				}
+			],
+			"segundos": 0.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.348602294921875,
+					"nome": "Adversario1",
+					"posicao": "(1.386021, 0.090942, 115.7152)",
+					"progresso_m": 5.8682861328125,
+					"velocidade": 12.1999940872192
+				},
+				{
+					"desvio_m": 1.69722747802734,
+					"nome": "Adversario2",
+					"posicao": "(-5.810871, 0.090942, 114.3448)",
+					"progresso_m": 3.3128662109375,
+					"velocidade": 4.94380712509155
+				},
+				{
+					"desvio_m": 2.76926422119141,
+					"nome": "Adversario3",
+					"posicao": "(-5.377984, 0.090942, 118.8695)",
+					"progresso_m": 3.7598876953125,
+					"velocidade": 1.58769285678864
+				},
+				{
+					"desvio_m": 0.919525146484375,
+					"nome": "Adversario4",
+					"posicao": "(-8.351728, 0.090942, 115.2)",
+					"progresso_m": 5.158447265625,
+					"velocidade": 10.3917894363403
+				},
+				{
+					"desvio_m": 2.76876831054688,
+					"nome": "Adversario5",
+					"posicao": "(-9.881362, 0.090956, 118.8689)",
+					"progresso_m": 3.7567138671875,
+					"velocidade": 1.56657910346985
+				}
+			],
+			"segundos": 1.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.896598815917969,
+					"nome": "Adversario1",
+					"posicao": "(17.9874, 0.090942, 115.2101)",
+					"progresso_m": 22.3698024749756,
+					"velocidade": 17.9999961853027
+				},
+				{
+					"desvio_m": 2.8807373046875,
+					"nome": "Adversario2",
+					"posicao": "(-3.347672, 0.090943, 113.2167)",
+					"progresso_m": 5.8140869140625,
+					"velocidade": 0.266155630350113
+				},
+				{
+					"desvio_m": 2.70697784423828,
+					"nome": "Adversario3",
+					"posicao": "(-4.078391, 0.090825, 118.7638)",
+					"progresso_m": 5.09716796875,
+					"velocidade": 2.62432360649109
+				},
+				{
+					"desvio_m": 2.86502075195312,
+					"nome": "Adversario4",
+					"posicao": "(-1.475317, 0.090942, 118.9511)",
+					"progresso_m": 12.1688232421875,
+					"velocidade": -0.475670397281647
+				},
+				{
+					"desvio_m": 2.98612213134766,
+					"nome": "Adversario5",
+					"posicao": "(-6.571695, 0.090943, 119.0982)",
+					"progresso_m": 7.025146484375,
+					"velocidade": 5.04867315292358
+				}
+			],
+			"segundos": 2.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.670745849609375,
+					"nome": "Adversario1",
+					"posicao": "(35.97631, 0.090942, 115.4294)",
+					"progresso_m": 40.3586273193359,
+					"velocidade": 17.9999942779541
+				},
+				{
+					"desvio_m": 2.86854553222656,
+					"nome": "Adversario2",
+					"posicao": "(-2.452216, 0.090943, 113.2324)",
+					"progresso_m": 6.7156982421875,
+					"velocidade": 0.215621665120125
+				},
+				{
+					"desvio_m": 1.27395629882812,
+					"nome": "Adversario3",
+					"posicao": "(-5.764176, 0.090825, 114.7595)",
+					"progresso_m": 3.4688720703125,
+					"velocidade": 5.00515127182007
+				},
+				{
+					"desvio_m": 2.52292633056641,
+					"nome": "Adversario4",
+					"posicao": "(-2.543451, 0.090825, 118.5576)",
+					"progresso_m": 11.1318359375,
+					"velocidade": 3.94334316253662
+				},
+				{
+					"desvio_m": 0.928138732910156,
+					"nome": "Adversario5",
+					"posicao": "(-4.354777, 0.090943, 116.9359)",
+					"progresso_m": 9.282470703125,
+					"velocidade": 6.04006338119507
+				}
+			],
+			"segundos": 3.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.699165344238281,
+					"nome": "Adversario1",
+					"posicao": "(53.96703, 0.090942, 115.4005)",
+					"progresso_m": 58.349292755127,
+					"velocidade": 17.9999942779541
+				},
+				{
+					"desvio_m": 2.80817413330078,
+					"nome": "Adversario2",
+					"posicao": "(-1.951831, 0.090943, 113.2918)",
+					"progresso_m": 7.2581787109375,
+					"velocidade": 0.981738865375519
+				},
+				{
+					"desvio_m": 2.860107421875,
+					"nome": "Adversario3",
+					"posicao": "(-6.062069, 0.09094, 113.2302)",
+					"progresso_m": 3.07666015625,
+					"velocidade": 2.44670557975769
+				},
+				{
+					"desvio_m": 0.840316772460938,
+					"nome": "Adversario4",
+					"posicao": "(6.133451, 0.090825, 116.9489)",
+					"progresso_m": 19.5626931190491,
+					"velocidade": 15.1897411346436
+				},
+				{
+					"desvio_m": 1.02664947509766,
+					"nome": "Adversario5",
+					"posicao": "(-0.206434, 0.090943, 117.1581)",
+					"progresso_m": 13.3990478515625,
+					"velocidade": 4.98224449157715
+				}
+			],
+			"segundos": 4.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.701332092285156,
+					"nome": "Adversario1",
+					"posicao": "(71.96247, 0.090942, 115.3987)",
+					"progresso_m": 76.3447952270508,
+					"velocidade": 17.9999980926514
+				},
+				{
+					"desvio_m": 2.81283569335938,
+					"nome": "Adversario2",
+					"posicao": "(-1.404794, 0.090943, 113.2872)",
+					"progresso_m": 7.7774658203125,
+					"velocidade": 0.0
+				},
+				{
+					"desvio_m": 4.24129486083984,
+					"nome": "Adversario3",
+					"posicao": "(-3.766458, 0.135942, 111.7742)",
+					"progresso_m": 5.413818359375,
+					"velocidade": 5.0234260559082
+				},
+				{
+					"desvio_m": 0.890594482421875,
+					"nome": "Adversario4",
+					"posicao": "(23.80712, 0.090825, 116.9849)",
+					"progresso_m": 37.1894512176514,
+					"velocidade": 17.9988460540771
+				},
+				{
+					"desvio_m": 0.1202392578125,
+					"nome": "Adversario5",
+					"posicao": "(9.000572, 0.090943, 115.9431)",
+					"progresso_m": 22.4331636428833,
+					"velocidade": 15.150351524353
+				}
+			],
+			"segundos": 5.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.700706481933594,
+					"nome": "Adversario1",
+					"posicao": "(89.95855, 0.090942, 115.3991)",
+					"progresso_m": 94.3411102294922,
+					"velocidade": 17.9859943389893
+				},
+				{
+					"desvio_m": 1.31405639648438,
+					"nome": "Adversario2",
+					"posicao": "(-4.291381, 0.090943, 114.868)",
+					"progresso_m": 4.9058837890625,
+					"velocidade": 5.00293827056885
+				},
+				{
+					"desvio_m": 8.83128356933594,
+					"nome": "Adversario3",
+					"posicao": "(-2.361644, -0.109565, 107.2206)",
+					"progresso_m": 6.75244140625,
+					"velocidade": 4.99776458740234
+				},
+				{
+					"desvio_m": 0.687332153320312,
+					"nome": "Adversario4",
+					"posicao": "(41.79721, 0.090825, 116.7868)",
+					"progresso_m": 55.1798095703125,
+					"velocidade": 17.9799900054932
+				},
+				{
+					"desvio_m": 0.832847595214844,
+					"nome": "Adversario5",
+					"posicao": "(27.01214, 0.090943, 115.2711)",
+					"progresso_m": 40.3862400054932,
+					"velocidade": 18.4983520507812
+				}
+			],
+			"segundos": 6.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.654439270496368,
+					"nome": "Adversario1",
+					"posicao": "(107.9501, 0.090942, 115.1221)",
+					"progresso_m": 112.366996765137,
+					"velocidade": 17.9999980926514
+				},
+				{
+					"desvio_m": 1.57375335693359,
+					"nome": "Adversario2",
+					"posicao": "(-0.038222, 0.090943, 117.6637)",
+					"progresso_m": 8.9810791015625,
+					"velocidade": 9.80236911773682
+				},
+				{
+					"desvio_m": 7.63234710693359,
+					"nome": "Adversario3",
+					"posicao": "(1.815673, -0.109565, 108.538)",
+					"progresso_m": 10.9536737203598,
+					"velocidade": 4.99997758865356
+				},
+				{
+					"desvio_m": 0.698593139648438,
+					"nome": "Adversario4",
+					"posicao": "(59.79179, 0.090825, 116.7988)",
+					"progresso_m": 73.1741065979004,
+					"velocidade": 17.9999961853027
+				},
+				{
+					"desvio_m": 0.677528381347656,
+					"nome": "Adversario5",
+					"posicao": "(45.50207, 0.090943, 115.4226)",
+					"progresso_m": 58.8762016296387,
+					"velocidade": 18.4983520507812
+				}
+			],
+			"segundos": 7.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.741020202636719,
+					"nome": "Adversario1",
+					"posicao": "(125.9361, 0.090942, 114.7583)",
+					"progresso_m": 130.327896118164,
+					"velocidade": 17.9997215270996
+				},
+				{
+					"desvio_m": 0.566055297851562,
+					"nome": "Adversario2",
+					"posicao": "(15.32924, 0.090943, 116.6619)",
+					"progresso_m": 24.2032098770142,
+					"velocidade": 18.4994335174561
+				},
+				{
+					"desvio_m": 5.98805236816406,
+					"nome": "Adversario3",
+					"posicao": "(4.248535, -0.109058, 110.1119)",
+					"progresso_m": 13.3954739570618,
+					"velocidade": 0.931896030902863
+				},
+				{
+					"desvio_m": 0.701072692871094,
+					"nome": "Adversario4",
+					"posicao": "(77.78726, 0.090825, 116.801)",
+					"progresso_m": 91.1695251464844,
+					"velocidade": 17.9999980926514
+				},
+				{
+					"desvio_m": 0.698883056640625,
+					"nome": "Adversario5",
+					"posicao": "(63.99284, 0.090943, 115.4009)",
+					"progresso_m": 77.3669929504395,
+					"velocidade": 18.4976482391357
+				}
+			],
+			"segundos": 8.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.703178405761719,
+					"nome": "Adversario1",
+					"posicao": "(143.9269, 0.090942, 114.7974)",
+					"progresso_m": 148.318725585938,
+					"velocidade": 17.9983501434326
+				},
+				{
+					"desvio_m": 0.680335998535156,
+					"nome": "Adversario2",
+					"posicao": "(33.81927, 0.090943, 116.7826)",
+					"progresso_m": 42.6932983398438,
+					"velocidade": 18.4983520507812
+				},
+				{
+					"desvio_m": 5.99092102050781,
+					"nome": "Adversario3",
+					"posicao": "(6.264815, -0.109059, 110.109)",
+					"progresso_m": 15.413646697998,
+					"velocidade": 0.936628758907318
+				},
+				{
+					"desvio_m": 0.691836714744568,
+					"nome": "Adversario4",
+					"posicao": "(95.78269, 0.090825, 116.7827)",
+					"progresso_m": 109.162879943848,
+					"velocidade": 17.9999923706055
+				},
+				{
+					"desvio_m": 0.701057434082031,
+					"nome": "Adversario5",
+					"posicao": "(82.49281, 0.090943, 115.399)",
+					"progresso_m": 95.8669204711914,
+					"velocidade": 18.4999980926514
+				}
+			],
+			"segundos": 9.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.697616577148438,
+					"nome": "Adversario1",
+					"posicao": "(161.9223, 0.090942, 114.8023)",
+					"progresso_m": 166.31413269043,
+					"velocidade": 17.9999980926514
+				},
+				{
+					"desvio_m": 0.7095947265625,
+					"nome": "Adversario2",
+					"posicao": "(52.31216, 0.090943, 116.8092)",
+					"progresso_m": 61.1871223449707,
+					"velocidade": 18.4416656494141
+				},
+				{
+					"desvio_m": 5.99331665039062,
+					"nome": "Adversario3",
+					"posicao": "(8.371907, -0.109058, 110.1067)",
+					"progresso_m": 17.5177783966064,
+					"velocidade": 1.04972124099731
+				},
+				{
+					"desvio_m": 0.764721095561981,
+					"nome": "Adversario4",
+					"posicao": "(113.767, 0.090825, 116.3324)",
+					"progresso_m": 127.14022064209,
+					"velocidade": 17.9999732971191
+				},
+				{
+					"desvio_m": 0.711905002593994,
+					"nome": "Adversario5",
+					"posicao": "(100.9834, 0.090943, 115.3192)",
+					"progresso_m": 114.372634887695,
+					"velocidade": 18.4931316375732
+				}
+			],
+			"segundos": 10.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.746582210063934,
+					"nome": "Adversario1",
+					"posicao": "(177.4515, 0.090942, 114.7105)",
+					"progresso_m": 181.995941162109,
+					"velocidade": 9.98947525024414
+				},
+				{
+					"desvio_m": 0.698402404785156,
+					"nome": "Adversario2",
+					"posicao": "(70.80528, 0.090943, 116.7984)",
+					"progresso_m": 79.6792144775391,
+					"velocidade": 18.4999942779541
+				},
+				{
+					"desvio_m": 5.99404144287109,
+					"nome": "Adversario3",
+					"posicao": "(10.5962, -0.109058, 110.1059)",
+					"progresso_m": 19.7407264709473,
+					"velocidade": 1.10573709011078
+				},
+				{
+					"desvio_m": 0.661880493164062,
+					"nome": "Adversario4",
+					"posicao": "(131.7562, 0.090825, 116.1627)",
+					"progresso_m": 145.148010253906,
+					"velocidade": 17.9988460540771
+				},
+				{
+					"desvio_m": 0.692480027675629,
+					"nome": "Adversario5",
+					"posicao": "(119.4677, 0.090943, 114.8107)",
+					"progresso_m": 132.854568481445,
+					"velocidade": 18.4714164733887
+				}
+			],
+			"segundos": 11.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.893038511276245,
+					"nome": "Adversario1",
+					"posicao": "(183.6419, 0.090942, 113.9164)",
+					"progresso_m": 188.503509521484,
+					"velocidade": 4.95187377929688
+				},
+				{
+					"desvio_m": 0.699287414550781,
+					"nome": "Adversario2",
+					"posicao": "(89.3023, 0.090943, 116.7991)",
+					"progresso_m": 98.1769104003906,
+					"velocidade": 18.4591655731201
+				},
+				{
+					"desvio_m": 5.99424743652344,
+					"nome": "Adversario3",
+					"posicao": "(12.87122, -0.109059, 110.1058)",
+					"progresso_m": 22.0152702331543,
+					"velocidade": 1.12510848045349
+				},
+				{
+					"desvio_m": 0.703453063964844,
+					"nome": "Adversario4",
+					"posicao": "(149.7472, 0.090825, 116.2036)",
+					"progresso_m": 163.139083862305,
+					"velocidade": 17.9931354522705
+				},
+				{
+					"desvio_m": 0.720748901367188,
+					"nome": "Adversario5",
+					"posicao": "(137.9582, 0.090943, 114.7802)",
+					"progresso_m": 151.342224121094,
+					"velocidade": 18.4714126586914
+				}
+			],
+			"segundos": 12.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.667992293834686,
+					"nome": "Adversario1",
+					"posicao": "(189.008, 0.090942, 109.6795)",
+					"progresso_m": 196.078552246094,
+					"velocidade": 11.566915512085
+				},
+				{
+					"desvio_m": 0.743969738483429,
+					"nome": "Adversario2",
+					"posicao": "(107.7929, 0.090943, 116.5293)",
+					"progresso_m": 116.638412475586,
+					"velocidade": 18.4999980926514
+				},
+				{
+					"desvio_m": 5.99430847167969,
+					"nome": "Adversario3",
+					"posicao": "(15.16302, -0.109059, 110.1057)",
+					"progresso_m": 24.3069286346436,
+					"velocidade": 1.13095712661743
+				},
+				{
+					"desvio_m": 0.700485229492188,
+					"nome": "Adversario4",
+					"posicao": "(167.741, 0.090825, 116.2003)",
+					"progresso_m": 181.134170532227,
+					"velocidade": 17.9166660308838
+				},
+				{
+					"desvio_m": 0.695594787597656,
+					"nome": "Adversario5",
+					"posicao": "(156.4525, 0.090943, 114.8044)",
+					"progresso_m": 169.836044311523,
+					"velocidade": 18.4999980926514
+				}
+			],
+			"segundos": 13.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.730975031852722,
+					"nome": "Adversario1",
+					"posicao": "(193.8102, 0.090942, 101.1196)",
+					"progresso_m": 206.062576293945,
+					"velocidade": 7.72445869445801
+				},
+				{
+					"desvio_m": 0.657424926757812,
+					"nome": "Adversario2",
+					"posicao": "(126.2788, 0.090943, 116.1567)",
+					"progresso_m": 135.162292480469,
+					"velocidade": 18.4999332427979
+				},
+				{
+					"desvio_m": 5.99432373046875,
+					"nome": "Adversario3",
+					"posicao": "(17.45982, -0.109059, 110.1057)",
+					"progresso_m": 26.6036796569824,
+					"velocidade": 1.13263249397278
+				},
+				{
+					"desvio_m": 0.60675972700119,
+					"nome": "Adversario4",
+					"posicao": "(180.0436, 0.090825, 115.9558)",
+					"progresso_m": 193.587860107422,
+					"velocidade": 6.62640047073364
+				},
+				{
+					"desvio_m": 0.714292407035828,
+					"nome": "Adversario5",
+					"posicao": "(173.9767, 0.090943, 114.7809)",
+					"progresso_m": 187.446319580078,
+					"velocidade": 13.5054044723511
+				}
+			],
+			"segundos": 14.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.565687239170074,
+					"nome": "Adversario1",
+					"posicao": "(195.8718, 0.090942, 90.12032)",
+					"progresso_m": 217.425979614258,
+					"velocidade": 16.5318431854248
+				},
+				{
+					"desvio_m": 0.697021484375,
+					"nome": "Adversario2",
+					"posicao": "(144.7696, 0.090943, 116.1976)",
+					"progresso_m": 153.653091430664,
+					"velocidade": 18.4991912841797
+				},
+				{
+					"desvio_m": 5.99432373046875,
+					"nome": "Adversario3",
+					"posicao": "(19.75802, -0.109059, 110.1057)",
+					"progresso_m": 28.901876449585,
+					"velocidade": 1.13310301303864
+				},
+				{
+					"desvio_m": 0.408007442951202,
+					"nome": "Adversario4",
+					"posicao": "(185.2095, 0.090825, 114.7593)",
+					"progresso_m": 198.803100585938,
+					"velocidade": 5.12596464157104
+				},
+				{
+					"desvio_m": 0.841603398323059,
+					"nome": "Adversario5",
+					"posicao": "(182.2449, 0.090943, 114.2611)",
+					"progresso_m": 195.998626708984,
+					"velocidade": 5.15821552276611
+				}
+			],
+			"segundos": 15.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.626434326171875,
+					"nome": "Adversario1",
+					"posicao": "(195.8691, 0.090942, 72.21895)",
+					"progresso_m": 235.323989868164,
+					"velocidade": 17.9951953887939
+				},
+				{
+					"desvio_m": 0.702384948730469,
+					"nome": "Adversario2",
+					"posicao": "(163.265, 0.090943, 116.2023)",
+					"progresso_m": 172.148468017578,
+					"velocidade": 18.4999980926514
+				},
+				{
+					"desvio_m": 5.99432373046875,
+					"nome": "Adversario3",
+					"posicao": "(22.05664, -0.109059, 110.1057)",
+					"progresso_m": 31.2004852294922,
+					"velocidade": 1.13323557376862
+				},
+				{
+					"desvio_m": 0.792779445648193,
+					"nome": "Adversario4",
+					"posicao": "(191.0371, 0.090825, 109.0982)",
+					"progresso_m": 206.576950073242,
+					"velocidade": 13.3551235198975
+				},
+				{
+					"desvio_m": 0.914480566978455,
+					"nome": "Adversario5",
+					"posicao": "(187.1471, 0.090943, 111.842)",
+					"progresso_m": 202.067260742188,
+					"velocidade": 8.10920333862305
+				}
+			],
+			"segundos": 16.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.719497680664062,
+					"nome": "Adversario1",
+					"posicao": "(195.7809, 0.090942, 54.22804)",
+					"progresso_m": 253.315216064453,
+					"velocidade": 17.9799919128418
+				},
+				{
+					"desvio_m": 0.640080153942108,
+					"nome": "Adversario2",
+					"posicao": "(178.2107, 0.090943, 116.077)",
+					"progresso_m": 187.236923217773,
+					"velocidade": 9.00243091583252
+				},
+				{
+					"desvio_m": 5.99432373046875,
+					"nome": "Adversario3",
+					"posicao": "(24.35537, -0.109059, 110.1057)",
+					"progresso_m": 33.4992198944092,
+					"velocidade": 1.13327217102051
+				},
+				{
+					"desvio_m": 0.62190842628479,
+					"nome": "Adversario4",
+					"posicao": "(195.3625, 0.090825, 100.9149)",
+					"progresso_m": 215.853408813477,
+					"velocidade": 7.9674973487854
+				},
+				{
+					"desvio_m": 0.599147081375122,
+					"nome": "Adversario5",
+					"posicao": "(192.9364, 0.090943, 103.1156)",
+					"progresso_m": 212.815521240234,
+					"velocidade": 7.6637020111084
+				}
+			],
+			"segundos": 17.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.690570473670959,
+					"nome": "Adversario1",
+					"posicao": "(195.9118, 0.090942, 36.23429)",
+					"progresso_m": 271.292205810547,
+					"velocidade": 18.0000019073486
+				},
+				{
+					"desvio_m": 0.461371004581451,
+					"nome": "Adversario2",
+					"posicao": "(184.0882, 0.090943, 115.2018)",
+					"progresso_m": 193.14875793457,
+					"velocidade": 4.96861982345581
+				},
+				{
+					"desvio_m": 5.99432373046875,
+					"nome": "Adversario3",
+					"posicao": "(26.65415, -0.109059, 110.1057)",
+					"progresso_m": 35.7979946136475,
+					"velocidade": 1.13328289985657
+				},
+				{
+					"desvio_m": 0.845465660095215,
+					"nome": "Adversario4",
+					"posicao": "(197.3044, 0.090825, 89.1908)",
+					"progresso_m": 227.383697509766,
+					"velocidade": 17.3668441772461
+				},
+				{
+					"desvio_m": 0.701674282550812,
+					"nome": "Adversario5",
+					"posicao": "(195.4863, 0.090943, 94.39748)",
+					"progresso_m": 222.150970458984,
+					"velocidade": 13.0763206481934
+				}
+			],
+			"segundos": 18.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.69479638338089,
+					"nome": "Adversario1",
+					"posicao": "(196.4041, 0.090942, 18.25065)",
+					"progresso_m": 289.299774169922,
+					"velocidade": 17.999979019165
+				},
+				{
+					"desvio_m": 0.512403845787048,
+					"nome": "Adversario2",
+					"posicao": "(189.2899, 0.090943, 111.4342)",
+					"progresso_m": 199.263732910156,
+					"velocidade": 10.5114774703979
+				},
+				{
+					"desvio_m": 5.99432373046875,
+					"nome": "Adversario3",
+					"posicao": "(28.95292, -0.109059, 110.1057)",
+					"progresso_m": 38.0967693328857,
+					"velocidade": 1.13328647613525
+				},
+				{
+					"desvio_m": 0.76092529296875,
+					"nome": "Adversario4",
+					"posicao": "(197.2568, 0.090825, 71.22272)",
+					"progresso_m": 245.320159912109,
+					"velocidade": 17.9999332427979
+				},
+				{
+					"desvio_m": 0.542938232421875,
+					"nome": "Adversario5",
+					"posicao": "(195.9522, 0.090943, 77.11223)",
+					"progresso_m": 239.422424316406,
+					"velocidade": 18.4999980926514
+				}
+			],
+			"segundos": 19.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.682937622070312,
+					"nome": "Adversario1",
+					"posicao": "(196.4162, 0.090942, 0.260105)",
+					"progresso_m": 307.292053222656,
+					"velocidade": 17.9998645782471
+				},
+				{
+					"desvio_m": 0.704780519008636,
+					"nome": "Adversario2",
+					"posicao": "(194.6671, 0.090943, 102.6493)",
+					"progresso_m": 209.531112670898,
+					"velocidade": 7.54568481445312
+				},
+				{
+					"desvio_m": 5.99432373046875,
+					"nome": "Adversario3",
+					"posicao": "(31.2517, -0.109059, 110.1057)",
+					"progresso_m": 40.395544052124,
+					"velocidade": 1.1332870721817
+				},
+				{
+					"desvio_m": 0.682022094726562,
+					"nome": "Adversario4",
+					"posicao": "(197.1825, 0.090825, 53.23231)",
+					"progresso_m": 263.310623168945,
+					"velocidade": 17.9996032714844
+				},
+				{
+					"desvio_m": 0.721511840820312,
+					"nome": "Adversario5",
+					"posicao": "(195.7783, 0.090943, 58.62255)",
+					"progresso_m": 257.912139892578,
+					"velocidade": 18.4999828338623
+				}
+			],
+			"segundos": 20.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.703811645507812,
+					"nome": "Adversario1",
+					"posicao": "(196.3963, 0.090942, -17.73172)",
+					"progresso_m": 325.284118652344,
+					"velocidade": 17.97141456604
+				},
+				{
+					"desvio_m": 0.726677000522614,
+					"nome": "Adversario2",
+					"posicao": "(197.0297, 0.090943, 93.06731)",
+					"progresso_m": 219.083633422852,
+					"velocidade": 14.4601039886475
+				},
+				{
+					"desvio_m": 5.99432373046875,
+					"nome": "Adversario3",
+					"posicao": "(33.5504, -0.109059, 110.1057)",
+					"progresso_m": 42.6942443847656,
+					"velocidade": 1.13328719139099
+				},
+				{
+					"desvio_m": 0.703247725963593,
+					"nome": "Adversario4",
+					"posicao": "(197.3368, 0.090825, 35.24257)",
+					"progresso_m": 281.323547363281,
+					"velocidade": 17.9951953887939
+				},
+				{
+					"desvio_m": 0.688298523426056,
+					"nome": "Adversario5",
+					"posicao": "(195.8409, 0.090943, 40.13202)",
+					"progresso_m": 276.395904541016,
+					"velocidade": 18.4999542236328
+				}
+			],
+			"segundos": 21.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.735782146453857,
+					"nome": "Adversario1",
+					"posicao": "(196.5653, 0.090942, -35.59012)",
+					"progresso_m": 343.141906738281,
+					"velocidade": 16.6788101196289
+				},
+				{
+					"desvio_m": 0.82818603515625,
+					"nome": "Adversario2",
+					"posicao": "(197.3233, 0.090943, 75.24244)",
+					"progresso_m": 236.792572021484,
+					"velocidade": 18.4714164733887
+				},
+				{
+					"desvio_m": 5.99432373046875,
+					"nome": "Adversario3",
+					"posicao": "(35.84906, -0.109059, 110.1057)",
+					"progresso_m": 44.9929046630859,
+					"velocidade": 1.13328754901886
+				},
+				{
+					"desvio_m": 0.714524269104004,
+					"nome": "Adversario4",
+					"posicao": "(197.815, 0.090825, 17.25659)",
+					"progresso_m": 299.297882080078,
+					"velocidade": 17.9416637420654
+				},
+				{
+					"desvio_m": 0.736671328544617,
+					"nome": "Adversario5",
+					"posicao": "(196.345, 0.090943, 21.64847)",
+					"progresso_m": 294.888214111328,
+					"velocidade": 18.4997215270996
+				}
+			],
+			"segundos": 22.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.739781200885773,
+					"nome": "Adversario1",
+					"posicao": "(196.0534, 0.090942, -48.04745)",
+					"progresso_m": 355.872528076172,
+					"velocidade": 10.7159938812256
+				},
+				{
+					"desvio_m": 0.678329467773438,
+					"nome": "Adversario2",
+					"posicao": "(197.1784, 0.090943, 56.749)",
+					"progresso_m": 255.285583496094,
+					"velocidade": 18.4999980926514
+				},
+				{
+					"desvio_m": 5.99432373046875,
+					"nome": "Adversario3",
+					"posicao": "(38.14772, -0.109059, 110.1057)",
+					"progresso_m": 47.2915649414062,
+					"velocidade": 1.13328754901886
+				},
+				{
+					"desvio_m": 0.714004516601562,
+					"nome": "Adversario4",
+					"posicao": "(197.8132, 0.090825, -0.734996)",
+					"progresso_m": 317.288513183594,
+					"velocidade": 17.9166622161865
+				},
+				{
+					"desvio_m": 0.671051025390625,
+					"nome": "Adversario5",
+					"posicao": "(196.4279, 0.090943, 3.158406)",
+					"progresso_m": 313.385589599609,
+					"velocidade": 18.4994335174561
+				}
+			],
+			"segundos": 23.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.703076243400574,
+					"nome": "Adversario1",
+					"posicao": "(193.0201, 0.090942, -58.01254)",
+					"progresso_m": 366.521728515625,
+					"velocidade": 11.0067567825317
+				},
+				{
+					"desvio_m": 0.713590204715729,
+					"nome": "Adversario2",
+					"posicao": "(197.2696, 0.090943, 38.2587)",
+					"progresso_m": 273.790161132812,
+					"velocidade": 18.4999923706055
+				},
+				{
+					"desvio_m": 5.99432373046875,
+					"nome": "Adversario3",
+					"posicao": "(40.44638, -0.109059, 110.1057)",
+					"progresso_m": 49.5902252197266,
+					"velocidade": 1.13328754901886
+				},
+				{
+					"desvio_m": 0.696685791015625,
+					"nome": "Adversario4",
+					"posicao": "(197.7969, 0.090825, -18.72712)",
+					"progresso_m": 335.279022216797,
+					"velocidade": 17.999906539917
+				},
+				{
+					"desvio_m": 0.704513549804688,
+					"nome": "Adversario5",
+					"posicao": "(196.3955, 0.090943, -15.33232)",
+					"progresso_m": 331.876098632812,
+					"velocidade": 18.4988460540771
+				}
+			],
+			"segundos": 24.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.59847766160965,
+					"nome": "Adversario1",
+					"posicao": "(185.7533, 0.090942, -69.01256)",
+					"progresso_m": 379.893280029297,
+					"velocidade": 12.1237182617188
+				},
+				{
+					"desvio_m": 0.685416638851166,
+					"nome": "Adversario2",
+					"posicao": "(197.7798, 0.090943, 19.77525)",
+					"progresso_m": 292.271911621094,
+					"velocidade": 18.4998626708984
+				},
+				{
+					"desvio_m": 5.99432373046875,
+					"nome": "Adversario3",
+					"posicao": "(42.74504, -0.109059, 110.1057)",
+					"progresso_m": 51.8888854980469,
+					"velocidade": 1.13328766822815
+				},
+				{
+					"desvio_m": 0.650294184684753,
+					"nome": "Adversario4",
+					"posicao": "(197.9806, 0.090825, -36.48933)",
+					"progresso_m": 353.094909667969,
+					"velocidade": 16.1213626861572
+				},
+				{
+					"desvio_m": 0.713299751281738,
+					"nome": "Adversario5",
+					"posicao": "(196.5292, 0.090943, -33.77184)",
+					"progresso_m": 350.313079833984,
+					"velocidade": 17.4418258666992
+				}
+			],
+			"segundos": 25.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.787579834461212,
+					"nome": "Adversario1",
+					"posicao": "(179.4807, 0.090942, -74.94308)",
+					"progresso_m": 388.822204589844,
+					"velocidade": 6.35795545578003
+				},
+				{
+					"desvio_m": 0.72265625,
+					"nome": "Adversario2",
+					"posicao": "(197.8217, 0.090943, 1.284836)",
+					"progresso_m": 310.759033203125,
+					"velocidade": 18.4988479614258
+				},
+				{
+					"desvio_m": 5.99432373046875,
+					"nome": "Adversario3",
+					"posicao": "(45.0437, -0.109059, 110.1057)",
+					"progresso_m": 54.1875457763672,
+					"velocidade": 1.13328766822815
+				},
+				{
+					"desvio_m": 0.654029190540314,
+					"nome": "Adversario4",
+					"posicao": "(197.369, 0.090825, -48.6379)",
+					"progresso_m": 365.248321533203,
+					"velocidade": 10.773832321167
+				},
+				{
+					"desvio_m": 0.752996683120728,
+					"nome": "Adversario5",
+					"posicao": "(196.2135, 0.090943, -46.87991)",
+					"progresso_m": 363.670867919922,
+					"velocidade": 10.9623260498047
+				}
+			],
+			"segundos": 26.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.920679032802582,
+					"nome": "Adversario1",
+					"posicao": "(174.7041, 0.090942, -77.13523)",
+					"progresso_m": 394.538269042969,
+					"velocidade": 4.75145053863525
+				},
+				{
+					"desvio_m": 0.695755004882812,
+					"nome": "Adversario2",
+					"posicao": "(197.7959, 0.090943, -17.20589)",
+					"progresso_m": 329.249542236328,
+					"velocidade": 18.4983539581299
+				},
+				{
+					"desvio_m": 5.99432373046875,
+					"nome": "Adversario3",
+					"posicao": "(47.34236, -0.109059, 110.1057)",
+					"progresso_m": 56.4862060546875,
+					"velocidade": 1.13328778743744
+				},
+				{
+					"desvio_m": 0.6821129322052,
+					"nome": "Adversario4",
+					"posicao": "(194.2836, 0.090825, -58.58079)",
+					"progresso_m": 375.504638671875,
+					"velocidade": 10.9942350387573
+				},
+				{
+					"desvio_m": 0.710809230804443,
+					"nome": "Adversario5",
+					"posicao": "(193.5032, 0.090943, -56.9415)",
+					"progresso_m": 374.328857421875,
+					"velocidade": 10.6781806945801
+				}
+			],
+			"segundos": 27.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.936929225921631,
+					"nome": "Adversario1",
+					"posicao": "(169.9034, 0.090942, -76.40405)",
+					"progresso_m": 400.066772460938,
+					"velocidade": 5.70597362518311
+				},
+				{
+					"desvio_m": 0.6640585064888,
+					"nome": "Adversario2",
+					"posicao": "(197.9623, 0.090943, -35.48264)",
+					"progresso_m": 347.580688476562,
+					"velocidade": 16.6725788116455
+				},
+				{
+					"desvio_m": 5.99432373046875,
+					"nome": "Adversario3",
+					"posicao": "(49.64102, -0.109059, 110.1057)",
+					"progresso_m": 58.7848663330078,
+					"velocidade": 1.13328766822815
+				},
+				{
+					"desvio_m": 0.79262101650238,
+					"nome": "Adversario4",
+					"posicao": "(187.0492, 0.090825, -69.63398)",
+					"progresso_m": 388.529357910156,
+					"velocidade": 12.6322631835938
+				},
+				{
+					"desvio_m": 0.598592162132263,
+					"nome": "Adversario5",
+					"posicao": "(186.6257, 0.090943, -67.95503)",
+					"progresso_m": 387.49169921875,
+					"velocidade": 13.4012041091919
+				}
+			],
+			"segundos": 28.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.610601663589478,
+					"nome": "Adversario1",
+					"posicao": "(164.8132, 0.090942, -70.01193)",
+					"progresso_m": 408.849304199219,
+					"velocidade": 12.8504486083984
+				},
+				{
+					"desvio_m": 0.647126615047455,
+					"nome": "Adversario2",
+					"posicao": "(197.4681, 0.090943, -47.98838)",
+					"progresso_m": 360.089660644531,
+					"velocidade": 10.8720903396606
+				},
+				{
+					"desvio_m": 5.99432373046875,
+					"nome": "Adversario3",
+					"posicao": "(51.93968, -0.109046, 110.1057)",
+					"progresso_m": 61.0835304260254,
+					"velocidade": 1.13328766822815
+				},
+				{
+					"desvio_m": 0.608595311641693,
+					"nome": "Adversario4",
+					"posicao": "(180.6694, 0.090825, -75.79241)",
+					"progresso_m": 397.375427246094,
+					"velocidade": 6.61470317840576
+				},
+				{
+					"desvio_m": 0.768271207809448,
+					"nome": "Adversario5",
+					"posicao": "(180.0488, 0.090943, -74.52843)",
+					"progresso_m": 397.072875976562,
+					"velocidade": 6.63087940216064
+				}
+			],
+			"segundos": 29.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.462912648916245,
+					"nome": "Adversario1",
+					"posicao": "(160.9209, 0.090942, -61.18327)",
+					"progresso_m": 418.534332275391,
+					"velocidade": 7.99128532409668
+				},
+				{
+					"desvio_m": 0.674733519554138,
+					"nome": "Adversario2",
+					"posicao": "(194.5606, 0.090943, -57.97482)",
+					"progresso_m": 370.340179443359,
+					"velocidade": 10.8829040527344
+				},
+				{
+					"desvio_m": 5.99432373046875,
+					"nome": "Adversario3",
+					"posicao": "(54.23834, -0.109046, 110.1057)",
+					"progresso_m": 63.3821907043457,
+					"velocidade": 1.13328754901886
+				},
+				{
+					"desvio_m": 0.450074702501297,
+					"nome": "Adversario4",
+					"posicao": "(175.8223, 0.090825, -78.24792)",
+					"progresso_m": 402.669738769531,
+					"velocidade": 4.75223255157471
+				},
+				{
+					"desvio_m": 0.899724066257477,
+					"nome": "Adversario5",
+					"posicao": "(175.2043, 0.090943, -77.0221)",
+					"progresso_m": 402.913604736328,
+					"velocidade": 4.74612379074097
+				}
+			],
+			"segundos": 30.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.667900502681732,
+					"nome": "Adversario1",
+					"posicao": "(155.1428, 0.090942, -54.42458)",
+					"progresso_m": 427.234008789062,
+					"velocidade": 10.1239051818848
+				},
+				{
+					"desvio_m": 0.792359530925751,
+					"nome": "Adversario2",
+					"posicao": "(187.5446, 0.090943, -69.02881)",
+					"progresso_m": 383.253265380859,
+					"velocidade": 13.027289390564
+				},
+				{
+					"desvio_m": 5.99432373046875,
+					"nome": "Adversario3",
+					"posicao": "(56.537, -0.109046, 110.1057)",
+					"progresso_m": 65.680850982666,
+					"velocidade": 1.13328731060028
+				},
+				{
+					"desvio_m": 0.339076310396194,
+					"nome": "Adversario4",
+					"posicao": "(171.091, 0.090825, -78.27075)",
+					"progresso_m": 407.24462890625,
+					"velocidade": 5.06579113006592
+				},
+				{
+					"desvio_m": 1.00242805480957,
+					"nome": "Adversario5",
+					"posicao": "(170.4299, 0.090943, -76.59003)",
+					"progresso_m": 408.515625,
+					"velocidade": 5.42154216766357
+				}
+			],
+			"segundos": 31.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.699674069881439,
+					"nome": "Adversario1",
+					"posicao": "(146.1727, 0.090942, -49.26751)",
+					"progresso_m": 437.407348632812,
+					"velocidade": 10.6056985855103
+				},
+				{
+					"desvio_m": 0.618382275104523,
+					"nome": "Adversario2",
+					"posicao": "(180.9923, 0.090943, -75.55003)",
+					"progresso_m": 392.471099853516,
+					"velocidade": 6.65783500671387
+				},
+				{
+					"desvio_m": 5.99432373046875,
+					"nome": "Adversario3",
+					"posicao": "(58.83566, -0.109046, 110.1057)",
+					"progresso_m": 67.9795112609863,
+					"velocidade": 1.13328754901886
+				},
+				{
+					"desvio_m": 0.488204538822174,
+					"nome": "Adversario4",
+					"posicao": "(166.1127, 0.090825, -74.72938)",
+					"progresso_m": 413.164337158203,
+					"velocidade": 7.9691219329834
+				},
+				{
+					"desvio_m": 0.663112640380859,
+					"nome": "Adversario5",
+					"posicao": "(165.3372, 0.090943, -71.07436)",
+					"progresso_m": 416.66015625,
+					"velocidade": 11.7014112472534
+				}
+			],
+			"segundos": 32.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.791736245155334,
+					"nome": "Adversario1",
+					"posicao": "(133.6065, 0.090942, -46.2902)",
+					"progresso_m": 450.070220947266,
+					"velocidade": 16.1895275115967
+				},
+				{
+					"desvio_m": 0.450171142816544,
+					"nome": "Adversario2",
+					"posicao": "(176.1026, 0.090943, -78.16701)",
+					"progresso_m": 397.875915527344,
+					"velocidade": 4.87401676177979
+				},
+				{
+					"desvio_m": 5.99432373046875,
+					"nome": "Adversario3",
+					"posicao": "(61.13432, -0.109046, 110.1057)",
+					"progresso_m": 70.2781715393066,
+					"velocidade": 1.13328754901886
+				},
+				{
+					"desvio_m": 0.969735622406006,
+					"nome": "Adversario4",
+					"posicao": "(161.2444, 0.090825, -65.13184)",
+					"progresso_m": 423.792022705078,
+					"velocidade": 8.57884216308594
+				},
+				{
+					"desvio_m": 0.452211797237396,
+					"nome": "Adversario5",
+					"posicao": "(161.2757, 0.090943, -61.85231)",
+					"progresso_m": 426.791198730469,
+					"velocidade": 7.83437252044678
+				}
+			],
+			"segundos": 33.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.815501153469086,
+					"nome": "Adversario1",
+					"posicao": "(115.7926, 0.090942, -45.41565)",
+					"progresso_m": 467.826873779297,
+					"velocidade": 17.9997215270996
+				},
+				{
+					"desvio_m": 0.32768651843071,
+					"nome": "Adversario2",
+					"posicao": "(171.3878, 0.090943, -78.3493)",
+					"progresso_m": 402.438079833984,
+					"velocidade": 5.05218601226807
+				},
+				{
+					"desvio_m": 5.99432373046875,
+					"nome": "Adversario3",
+					"posicao": "(63.43298, -0.109046, 110.1057)",
+					"progresso_m": 72.576831817627,
+					"velocidade": 1.13328576087952
+				},
+				{
+					"desvio_m": 0.791322469711304,
+					"nome": "Adversario4",
+					"posicao": "(157.0399, 0.090825, -58.09929)",
+					"progresso_m": 432.361755371094,
+					"velocidade": 9.14274883270264
+				},
+				{
+					"desvio_m": 0.64749550819397,
+					"nome": "Adversario5",
+					"posicao": "(155.8821, 0.090943, -55.04922)",
+					"progresso_m": 435.294403076172,
+					"velocidade": 9.97600173950195
+				}
+			],
+			"segundos": 34.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.728967785835266,
+					"nome": "Adversario1",
+					"posicao": "(97.80388, 0.090942, -45.1649)",
+					"progresso_m": 485.786804199219,
+					"velocidade": 17.9983520507812
+				},
+				{
+					"desvio_m": 0.456459581851959,
+					"nome": "Adversario2",
+					"posicao": "(166.4179, 0.090943, -75.09554)",
+					"progresso_m": 408.192932128906,
+					"velocidade": 7.71546745300293
+				},
+				{
+					"desvio_m": 5.99432373046875,
+					"nome": "Adversario3",
+					"posicao": "(65.73182, -0.109046, 110.1057)",
+					"progresso_m": 74.8756713867188,
+					"velocidade": 1.13328468799591
+				},
+				{
+					"desvio_m": 0.673636257648468,
+					"nome": "Adversario4",
+					"posicao": "(149.0235, 0.090825, -52.07732)",
+					"progresso_m": 442.650848388672,
+					"velocidade": 10.4124851226807
+				},
+				{
+					"desvio_m": 0.698439717292786,
+					"nome": "Adversario5",
+					"posicao": "(147.1125, 0.090943, -49.65574)",
+					"progresso_m": 445.414733886719,
+					"velocidade": 10.4788579940796
+				}
+			],
+			"segundos": 35.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.633004367351532,
+					"nome": "Adversario1",
+					"posicao": "(79.81795, 0.090942, -44.76093)",
+					"progresso_m": 503.796997070312,
+					"velocidade": 17.9859924316406
+				},
+				{
+					"desvio_m": 0.962362885475159,
+					"nome": "Adversario2",
+					"posicao": "(161.4447, 0.090943, -65.61012)",
+					"progresso_m": 418.770751953125,
+					"velocidade": 8.74721145629883
+				},
+				{
+					"desvio_m": 5.99432373046875,
+					"nome": "Adversario3",
+					"posicao": "(68.03071, -0.109046, 110.1057)",
+					"progresso_m": 77.174560546875,
+					"velocidade": 1.13328611850739
+				},
+				{
+					"desvio_m": 0.652815401554108,
+					"nome": "Adversario4",
+					"posicao": "(138.2498, 0.090825, -48.42422)",
+					"progresso_m": 454.208435058594,
+					"velocidade": 13.7601661682129
+				},
+				{
+					"desvio_m": 0.770313739776611,
+					"nome": "Adversario5",
+					"posicao": "(135.114, 0.090943, -46.4903)",
+					"progresso_m": 457.573547363281,
+					"velocidade": 15.4999399185181
+				}
+			],
+			"segundos": 36.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.747830748558044,
+					"nome": "Adversario1",
+					"posicao": "(61.8259, 0.090942, -44.46049)",
+					"progresso_m": 521.790893554688,
+					"velocidade": 17.9999980926514
+				},
+				{
+					"desvio_m": 0.805546402931213,
+					"nome": "Adversario2",
+					"posicao": "(157.3991, 0.090943, -58.51227)",
+					"progresso_m": 427.27685546875,
+					"velocidade": 8.90297985076904
+				},
+				{
+					"desvio_m": 5.99432373046875,
+					"nome": "Adversario3",
+					"posicao": "(70.3296, -0.109046, 110.1057)",
+					"progresso_m": 79.4734497070312,
+					"velocidade": 1.13328659534454
+				},
+				{
+					"desvio_m": 0.500744044780731,
+					"nome": "Adversario4",
+					"posicao": "(121.4557, 0.090825, -46.94346)",
+					"progresso_m": 471.109405517578,
+					"velocidade": 17.9999942779541
+				},
+				{
+					"desvio_m": 0.851558566093445,
+					"nome": "Adversario5",
+					"posicao": "(117.148, 0.090943, -45.43893)",
+					"progresso_m": 475.461486816406,
+					"velocidade": 18.4931392669678
+				}
+			],
+			"segundos": 37.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.697894930839539,
+					"nome": "Adversario1",
+					"posicao": "(43.8412, 0.090942, -44.00426)",
+					"progresso_m": 539.769104003906,
+					"velocidade": 17.9999866485596
+				},
+				{
+					"desvio_m": 0.672861874103546,
+					"nome": "Adversario2",
+					"posicao": "(149.5751, 0.090943, -52.37346)",
+					"progresso_m": 437.505310058594,
+					"velocidade": 10.2829208374023
+				},
+				{
+					"desvio_m": 5.99432373046875,
+					"nome": "Adversario3",
+					"posicao": "(72.62849, -0.109046, 110.1057)",
+					"progresso_m": 81.7723388671875,
+					"velocidade": 1.13328719139099
+				},
+				{
+					"desvio_m": 0.699173092842102,
+					"nome": "Adversario4",
+					"posicao": "(103.4683, 0.090825, -46.60564)",
+					"progresso_m": 489.117248535156,
+					"velocidade": 17.9999847412109
+				},
+				{
+					"desvio_m": 0.726765930652618,
+					"nome": "Adversario5",
+					"posicao": "(98.65922, 0.090943, -45.16907)",
+					"progresso_m": 493.923034667969,
+					"velocidade": 18.4859924316406
+				}
+			],
+			"segundos": 38.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.716341316699982,
+					"nome": "Adversario1",
+					"posicao": "(25.85153, 0.090942, -43.83939)",
+					"progresso_m": 557.783447265625,
+					"velocidade": 17.999906539917
+				},
+				{
+					"desvio_m": 0.662722706794739,
+					"nome": "Adversario2",
+					"posicao": "(139.0509, 0.090943, -48.59283)",
+					"progresso_m": 448.883453369141,
+					"velocidade": 13.2438278198242
+				},
+				{
+					"desvio_m": 5.99432373046875,
+					"nome": "Adversario3",
+					"posicao": "(74.92738, -0.109046, 110.1057)",
+					"progresso_m": 84.0712280273438,
+					"velocidade": 1.13328742980957
+				},
+				{
+					"desvio_m": 0.722153127193451,
+					"nome": "Adversario4",
+					"posicao": "(85.48012, 0.090825, -46.34138)",
+					"progresso_m": 507.080749511719,
+					"velocidade": 17.9988479614258
+				},
+				{
+					"desvio_m": 0.630299091339111,
+					"nome": "Adversario5",
+					"posicao": "(80.16945, 0.090943, -44.77372)",
+					"progresso_m": 512.440551757812,
+					"velocidade": 18.4999961853027
+				}
+			],
+			"segundos": 39.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.714848697185516,
+					"nome": "Adversario1",
+					"posicao": "(7.866872, 0.090942, -43.38402)",
+					"progresso_m": 575.751586914062,
+					"velocidade": 17.9976463317871
+				},
+				{
+					"desvio_m": 0.498209714889526,
+					"nome": "Adversario2",
+					"posicao": "(122.3206, 0.090943, -46.96424)",
+					"progresso_m": 465.735931396484,
+					"velocidade": 18.4999694824219
+				},
+				{
+					"desvio_m": 5.99432373046875,
+					"nome": "Adversario3",
+					"posicao": "(77.22626, -0.109046, 110.1057)",
+					"progresso_m": 86.3701171875,
+					"velocidade": 1.13328742980957
+				},
+				{
+					"desvio_m": 0.655129730701447,
+					"nome": "Adversario4",
+					"posicao": "(67.49433, 0.090825, -45.94239)",
+					"progresso_m": 525.101867675781,
+					"velocidade": 17.9966354370117
+				},
+				{
+					"desvio_m": 0.749498307704926,
+					"nome": "Adversario5",
+					"posicao": "(61.68173, 0.090943, -44.45535)",
+					"progresso_m": 530.926940917969,
+					"velocidade": 18.4999942779541
+				}
+			],
+			"segundos": 40.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.662140846252441,
+					"nome": "Adversario1",
+					"posicao": "(-10.12097, 0.090942, -43.09099)",
+					"progresso_m": 593.773193359375,
+					"velocidade": 17.9931354522705
+				},
+				{
+					"desvio_m": 0.698661983013153,
+					"nome": "Adversario2",
+					"posicao": "(103.8335, 0.090943, -46.60678)",
+					"progresso_m": 484.243713378906,
+					"velocidade": 18.4999332427979
+				},
+				{
+					"desvio_m": 5.99432373046875,
+					"nome": "Adversario3",
+					"posicao": "(79.52515, -0.109046, 110.1057)",
+					"progresso_m": 88.6690063476562,
+					"velocidade": 1.13328719139099
+				},
+				{
+					"desvio_m": 0.756237626075745,
+					"nome": "Adversario4",
+					"posicao": "(49.50908, 0.090825, -45.51318)",
+					"progresso_m": 543.082824707031,
+					"velocidade": 17.9951934814453
+				},
+				{
+					"desvio_m": 0.702569246292114,
+					"nome": "Adversario5",
+					"posicao": "(43.19694, 0.090943, -43.99786)",
+					"progresso_m": 549.404174804688,
+					"velocidade": 18.499979019165
+				}
+			],
+			"segundos": 41.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.745572626590729,
+					"nome": "Adversario1",
+					"posicao": "(-28.10818, 0.090942, -42.74659)",
+					"progresso_m": 611.737609863281,
+					"velocidade": 17.9799919128418
+				},
+				{
+					"desvio_m": 0.724142014980316,
+					"nome": "Adversario2",
+					"posicao": "(85.34536, 0.090943, -46.3375)",
+					"progresso_m": 502.707214355469,
+					"velocidade": 18.4994354248047
+				},
+				{
+					"desvio_m": 5.99432373046875,
+					"nome": "Adversario3",
+					"posicao": "(81.82404, -0.109046, 110.1057)",
+					"progresso_m": 90.9678955078125,
+					"velocidade": 1.13328731060028
+				},
+				{
+					"desvio_m": 0.654049634933472,
+					"nome": "Adversario4",
+					"posicao": "(31.51877, 0.090825, -45.33056)",
+					"progresso_m": 561.083251953125,
+					"velocidade": 17.9714164733887
+				},
+				{
+					"desvio_m": 0.704940319061279,
+					"nome": "Adversario5",
+					"posicao": "(24.70759, 0.090943, -43.80821)",
+					"progresso_m": 567.9228515625,
+					"velocidade": 18.4999694824219
+				}
+			],
+			"segundos": 42.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.610211730003357,
+					"nome": "Adversario1",
+					"posicao": "(-44.61665, 0.090942, -42.45046)",
+					"progresso_m": 628.362060546875,
+					"velocidade": 11.9211530685425
+				},
+				{
+					"desvio_m": 0.651535511016846,
+					"nome": "Adversario2",
+					"posicao": "(66.85958, 0.090943, -45.93489)",
+					"progresso_m": 521.226898193359,
+					"velocidade": 18.4988479614258
+				},
+				{
+					"desvio_m": 5.99432373046875,
+					"nome": "Adversario3",
+					"posicao": "(84.12293, -0.109046, 110.1057)",
+					"progresso_m": 93.2667846679688,
+					"velocidade": 1.13328731060028
+				},
+				{
+					"desvio_m": 0.748995959758759,
+					"nome": "Adversario4",
+					"posicao": "(13.53068, 0.090825, -44.87714)",
+					"progresso_m": 579.075317382812,
+					"velocidade": 17.9999961853027
+				},
+				{
+					"desvio_m": 0.727745711803436,
+					"nome": "Adversario5",
+					"posicao": "(6.222579, 0.090943, -43.36943)",
+					"progresso_m": 586.387329101562,
+					"velocidade": 18.4994354248047
+				}
+			],
+			"segundos": 43.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.537972569465637,
+					"nome": "Adversario1",
+					"posicao": "(-52.34816, 0.090942, -43.04309)",
+					"progresso_m": 636.114929199219,
+					"velocidade": 5.36928939819336
+				},
+				{
+					"desvio_m": 0.750345289707184,
+					"nome": "Adversario2",
+					"posicao": "(48.37447, 0.090943, -45.48729)",
+					"progresso_m": 539.71337890625,
+					"velocidade": 18.4951953887939
+				},
+				{
+					"desvio_m": 5.99435424804688,
+					"nome": "Adversario3",
+					"posicao": "(86.42182, -0.109057, 110.1056)",
+					"progresso_m": 95.565673828125,
+					"velocidade": 1.13328659534454
+				},
+				{
+					"desvio_m": 0.664214491844177,
+					"nome": "Adversario4",
+					"posicao": "(-4.458405, 0.090825, -44.6487)",
+					"progresso_m": 597.056823730469,
+					"velocidade": 17.9999828338623
+				},
+				{
+					"desvio_m": 0.640023648738861,
+					"nome": "Adversario5",
+					"posicao": "(-12.26524, 0.090943, -43.02375)",
+					"progresso_m": 604.906188964844,
+					"velocidade": 18.4714183807373
+				}
+			],
+			"segundos": 44.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.377575993537903,
+					"nome": "Adversario1",
+					"posicao": "(-56.78155, 0.090942, -45.02588)",
+					"progresso_m": 640.83056640625,
+					"velocidade": 4.8745379447937
+				},
+				{
+					"desvio_m": 0.654764175415039,
+					"nome": "Adversario2",
+					"posicao": "(29.88449, 0.090943, -45.31107)",
+					"progresso_m": 558.206359863281,
+					"velocidade": 18.485990524292
+				},
+				{
+					"desvio_m": 5.99441528320312,
+					"nome": "Adversario3",
+					"posicao": "(88.72071, -0.109057, 110.1056)",
+					"progresso_m": 97.8645629882812,
+					"velocidade": 1.13321328163147
+				},
+				{
+					"desvio_m": 0.693665683269501,
+					"nome": "Adversario4",
+					"posicao": "(-22.44308, 0.090825, -44.19371)",
+					"progresso_m": 615.068176269531,
+					"velocidade": 17.9999752044678
+				},
+				{
+					"desvio_m": 0.75307309627533,
+					"nome": "Adversario5",
+					"posicao": "(-30.75646, 0.090943, -42.72337)",
+					"progresso_m": 623.381164550781,
+					"velocidade": 18.4999675750732
+				}
+			],
+			"segundos": 45.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.506310403347015,
+					"nome": "Adversario1",
+					"posicao": "(-60.1343, 0.090942, -50.33411)",
+					"progresso_m": 646.888305664062,
+					"velocidade": 9.16986846923828
+				},
+				{
+					"desvio_m": 0.726962566375732,
+					"nome": "Adversario2",
+					"posicao": "(11.39956, 0.090943, -44.83611)",
+					"progresso_m": 576.70458984375,
+					"velocidade": 18.4714183807373
+				},
+				{
+					"desvio_m": 5.99433994293213,
+					"nome": "Adversario3",
+					"posicao": "(91.01941, -0.109057, 110.1056)",
+					"progresso_m": 100.16682434082,
+					"velocidade": 1.13334906101227
+				},
+				{
+					"desvio_m": 0.730209469795227,
+					"nome": "Adversario4",
+					"posicao": "(-40.24551, 0.090825, -43.9356)",
+					"progresso_m": 632.880187988281,
+					"velocidade": 15.8639068603516
+				},
+				{
+					"desvio_m": 0.59662139415741,
+					"nome": "Adversario5",
+					"posicao": "(-46.32153, 0.090943, -42.45705)",
+					"progresso_m": 639.077209472656,
+					"velocidade": 10.1285972595215
+				}
+			],
+			"segundos": 46.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.968896269798279,
+					"nome": "Adversario1",
+					"posicao": "(-61.32232, 0.090942, -65.03435)",
+					"progresso_m": 661.372314453125,
+					"velocidade": 17.9992523193359
+				},
+				{
+					"desvio_m": 0.692098677158356,
+					"nome": "Adversario2",
+					"posicao": "(-7.092628, 0.090943, -44.58098)",
+					"progresso_m": 595.176391601562,
+					"velocidade": 18.4999961853027
+				},
+				{
+					"desvio_m": 5.99247217178345,
+					"nome": "Adversario3",
+					"posicao": "(93.31944, -0.109057, 110.1056)",
+					"progresso_m": 102.474433898926,
+					"velocidade": 1.13631474971771
+				},
+				{
+					"desvio_m": 0.823194086551666,
+					"nome": "Adversario4",
+					"posicao": "(-50.50508, 0.090825, -44.12059)",
+					"progresso_m": 643.423950195312,
+					"velocidade": 6.46639680862427
+				},
+				{
+					"desvio_m": 0.507396399974823,
+					"nome": "Adversario5",
+					"posicao": "(-53.14502, 0.090943, -43.24757)",
+					"progresso_m": 645.903381347656,
+					"velocidade": 5.16413545608521
+				}
+			],
+			"segundos": 47.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.700825452804565,
+					"nome": "Adversario1",
+					"posicao": "(-61.90272, 0.090942, -81.62792)",
+					"progresso_m": 678.125671386719,
+					"velocidade": 12.23850440979
+				},
+				{
+					"desvio_m": 0.667904496192932,
+					"nome": "Adversario2",
+					"posicao": "(-25.57809, 0.090943, -44.16453)",
+					"progresso_m": 613.695190429688,
+					"velocidade": 18.4999828338623
+				},
+				{
+					"desvio_m": 5.9933819770813,
+					"nome": "Adversario3",
+					"posicao": "(95.61256, -0.109057, 110.0988)",
+					"progresso_m": 104.786315917969,
+					"velocidade": 1.12860107421875
+				},
+				{
+					"desvio_m": 1.59673047065735,
+					"nome": "Adversario4",
+					"posicao": "(-54.94528, 0.09094, -46.22757)",
+					"progresso_m": 648.842041015625,
+					"velocidade": 4.72765350341797
+				},
+				{
+					"desvio_m": 0.382328152656555,
+					"nome": "Adversario5",
+					"posicao": "(-57.3842, 0.090943, -45.50846)",
+					"progresso_m": 650.540832519531,
+					"velocidade": 5.13617515563965
+				}
+			],
+			"segundos": 48.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.757757186889648,
+					"nome": "Adversario1",
+					"posicao": "(-63.9229, 0.090942, -91.25401)",
+					"progresso_m": 688.229858398438,
+					"velocidade": 9.02714252471924
+				},
+				{
+					"desvio_m": 0.77190101146698,
+					"nome": "Adversario2",
+					"posicao": "(-43.05447, 0.090943, -43.86883)",
+					"progresso_m": 631.23388671875,
+					"velocidade": 13.8575067520142
+				},
+				{
+					"desvio_m": 5.99250173568726,
+					"nome": "Adversario3",
+					"posicao": "(97.89928, -0.109057, 110.0848)",
+					"progresso_m": 107.109283447266,
+					"velocidade": 1.11671376228333
+				},
+				{
+					"desvio_m": 1.31299293041229,
+					"nome": "Adversario4",
+					"posicao": "(-58.53261, 0.09094, -51.47983)",
+					"progresso_m": 656.681274414062,
+					"velocidade": 10.0303955078125
+				},
+				{
+					"desvio_m": 0.239724114537239,
+					"nome": "Adversario5",
+					"posicao": "(-60.19383, 0.090943, -52.12971)",
+					"progresso_m": 657.582763671875,
+					"velocidade": 11.2043285369873
+				}
+			],
+			"segundos": 49.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.735526621341705,
+					"nome": "Adversario1",
+					"posicao": "(-68.38383, 0.090942, -99.09655)",
+					"progresso_m": 697.542907714844,
+					"velocidade": 9.38042449951172
+				},
+				{
+					"desvio_m": 0.840037524700165,
+					"nome": "Adversario2",
+					"posicao": "(-51.63305, 0.090943, -44.30407)",
+					"progresso_m": 640.116027832031,
+					"velocidade": 5.74121475219727
+				},
+				{
+					"desvio_m": 5.99245309829712,
+					"nome": "Adversario3",
+					"posicao": "(100.1753, -0.109057, 110.0534)",
+					"progresso_m": 109.443634033203,
+					"velocidade": 1.10384809970856
+				},
+				{
+					"desvio_m": 0.00307532981969416,
+					"nome": "Adversario4",
+					"posicao": "(-60.41222, 0.09094, -61.60104)",
+					"progresso_m": 667.025939941406,
+					"velocidade": 13.0739850997925
+				},
+				{
+					"desvio_m": 1.21080243587494,
+					"nome": "Adversario5",
+					"posicao": "(-61.64125, 0.090943, -68.25773)",
+					"progresso_m": 673.614685058594,
+					"velocidade": 18.4999141693115
+				}
+			],
+			"segundos": 50.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.705555319786072,
+					"nome": "Adversario1",
+					"posicao": "(-75.67948, 0.090942, -105.446)",
+					"progresso_m": 707.496337890625,
+					"velocidade": 9.59531497955322
+				},
+				{
+					"desvio_m": 0.94153243303299,
+					"nome": "Adversario2",
+					"posicao": "(-56.14911, 0.090943, -46.19913)",
+					"progresso_m": 645.513977050781,
+					"velocidade": 4.92797040939331
+				},
+				{
+					"desvio_m": 5.99337291717529,
+					"nome": "Adversario3",
+					"posicao": "(102.4357, -0.109057, 109.9978)",
+					"progresso_m": 111.774063110352,
+					"velocidade": 1.0902704000473
+				},
+				{
+					"desvio_m": 0.272267192602158,
+					"nome": "Adversario4",
+					"posicao": "(-61.17765, 0.09094, -78.07545)",
+					"progresso_m": 683.463195800781,
+					"velocidade": 15.7106065750122
+				},
+				{
+					"desvio_m": 0.727211058139801,
+					"nome": "Adversario5",
+					"posicao": "(-62.15753, 0.090943, -83.74426)",
+					"progresso_m": 689.304626464844,
+					"velocidade": 10.8034963607788
+				}
+			],
+			"segundos": 51.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.698459446430206,
+					"nome": "Adversario1",
+					"posicao": "(-84.90721, 0.090942, -109.3201)",
+					"progresso_m": 717.756042480469,
+					"velocidade": 10.4882164001465
+				},
+				{
+					"desvio_m": 0.681425988674164,
+					"nome": "Adversario2",
+					"posicao": "(-59.29594, 0.090943, -52.4396)",
+					"progresso_m": 653.275695800781,
+					"velocidade": 11.2785367965698
+				},
+				{
+					"desvio_m": 5.99203538894653,
+					"nome": "Adversario3",
+					"posicao": "(104.6875, -0.109057, 109.919)",
+					"progresso_m": 114.084754943848,
+					"velocidade": 1.09710896015167
+				},
+				{
+					"desvio_m": 0.598102211952209,
+					"nome": "Adversario4",
+					"posicao": "(-61.83107, 0.09094, -89.12657)",
+					"progresso_m": 694.572265625,
+					"velocidade": 9.14066791534424
+				},
+				{
+					"desvio_m": 0.755856692790985,
+					"nome": "Adversario5",
+					"posicao": "(-64.55557, 0.090943, -92.83907)",
+					"progresso_m": 698.999633789062,
+					"velocidade": 9.00513553619385
+				}
+			],
+			"segundos": 52.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.650618314743042,
+					"nome": "Adversario1",
+					"posicao": "(-96.42678, 0.090942, -110.4546)",
+					"progresso_m": 729.536254882812,
+					"velocidade": 11.4660110473633
+				},
+				{
+					"desvio_m": 0.521240234375,
+					"nome": "Adversario2",
+					"posicao": "(-59.9345, 0.090943, -68.78313)",
+					"progresso_m": 669.577026367188,
+					"velocidade": 18.4999580383301
+				},
+				{
+					"desvio_m": 5.99169111251831,
+					"nome": "Adversario3",
+					"posicao": "(106.9466, -0.109057, 109.8213)",
+					"progresso_m": 116.365196228027,
+					"velocidade": 1.10652327537537
+				},
+				{
+					"desvio_m": 0.642169952392578,
+					"nome": "Adversario4",
+					"posicao": "(-65.41439, 0.09094, -97.37881)",
+					"progresso_m": 703.403930664062,
+					"velocidade": 9.11837005615234
+				},
+				{
+					"desvio_m": 0.728223323822021,
+					"nome": "Adversario5",
+					"posicao": "(-69.57064, 0.090943, -100.4467)",
+					"progresso_m": 708.398559570312,
+					"velocidade": 9.55369567871094
+				}
+			],
+			"segundos": 53.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.731053233146667,
+					"nome": "Adversario1",
+					"posicao": "(-106.3528, 0.090942, -108.8158)",
+					"progresso_m": 739.846252441406,
+					"velocidade": 9.40939140319824
+				},
+				{
+					"desvio_m": 0.674659550189972,
+					"nome": "Adversario2",
+					"posicao": "(-60.78788, 0.090943, -84.08624)",
+					"progresso_m": 684.98681640625,
+					"velocidade": 10.7278356552124
+				},
+				{
+					"desvio_m": 5.99360322952271,
+					"nome": "Adversario3",
+					"posicao": "(109.2199, -0.109057, 109.7195)",
+					"progresso_m": 118.611511230469,
+					"velocidade": 1.13503229618073
+				},
+				{
+					"desvio_m": 0.670691609382629,
+					"nome": "Adversario4",
+					"posicao": "(-71.81214, 0.09094, -104.3973)",
+					"progresso_m": 712.722412109375,
+					"velocidade": 9.88640975952148
+				},
+				{
+					"desvio_m": 0.716423392295837,
+					"nome": "Adversario5",
+					"posicao": "(-77.26886, 0.090943, -106.3656)",
+					"progresso_m": 718.382446289062,
+					"velocidade": 9.77897167205811
+				}
+			],
+			"segundos": 54.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.692783772945404,
+					"nome": "Adversario1",
+					"posicao": "(-115.2935, 0.090942, -104.3191)",
+					"progresso_m": 750.116455078125,
+					"velocidade": 10.2855262756348
+				},
+				{
+					"desvio_m": 0.620679914951324,
+					"nome": "Adversario2",
+					"posicao": "(-63.19582, 0.090943, -93.17213)",
+					"progresso_m": 694.249694824219,
+					"velocidade": 9.08177375793457
+				},
+				{
+					"desvio_m": 5.99287033081055,
+					"nome": "Adversario3",
+					"posicao": "(111.5283, -0.109057, 109.6341)",
+					"progresso_m": 120.858543395996,
+					"velocidade": 1.1599258184433
+				},
+				{
+					"desvio_m": 0.67076450586319,
+					"nome": "Adversario4",
+					"posicao": "(-80.25886, 0.09094, -109.2803)",
+					"progresso_m": 722.320983886719,
+					"velocidade": 10.0849609375
+				},
+				{
+					"desvio_m": 0.696754813194275,
+					"nome": "Adversario5",
+					"posicao": "(-86.8996, 0.090943, -109.7568)",
+					"progresso_m": 728.832458496094,
+					"velocidade": 11.0112924575806
+				}
+			],
+			"segundos": 55.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.745294570922852,
+					"nome": "Adversario1",
+					"posicao": "(-121.9606, 0.090942, -97.90992)",
+					"progresso_m": 759.628173828125,
+					"velocidade": 8.67958164215088
+				},
+				{
+					"desvio_m": 0.644890606403351,
+					"nome": "Adversario2",
+					"posicao": "(-68.06544, 0.090943, -100.8411)",
+					"progresso_m": 703.18115234375,
+					"velocidade": 9.52947521209717
+				},
+				{
+					"desvio_m": 5.99405097961426,
+					"nome": "Adversario3",
+					"posicao": "(113.8592, -0.109057, 109.5711)",
+					"progresso_m": 123.1201171875,
+					"velocidade": 1.16541862487793
+				},
+				{
+					"desvio_m": 0.714125037193298,
+					"nome": "Adversario4",
+					"posicao": "(-90.81631, 0.09094, -111.696)",
+					"progresso_m": 732.960266113281,
+					"velocidade": 12.0704755783081
+				},
+				{
+					"desvio_m": 0.664268374443054,
+					"nome": "Adversario5",
+					"posicao": "(-98.52272, 0.090943, -110.3237)",
+					"progresso_m": 740.680419921875,
+					"velocidade": 10.6998090744019
+				}
+			],
+			"segundos": 56.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.743480145931244,
+					"nome": "Adversario1",
+					"posicao": "(-125.9164, 0.090942, -90.17555)",
+					"progresso_m": 768.626831054688,
+					"velocidade": 9.53211402893066
+				},
+				{
+					"desvio_m": 0.667654514312744,
+					"nome": "Adversario2",
+					"posicao": "(-75.57832, 0.090943, -106.9962)",
+					"progresso_m": 712.710266113281,
+					"velocidade": 9.74537372589111
+				},
+				{
+					"desvio_m": 5.99299955368042,
+					"nome": "Adversario3",
+					"posicao": "(116.2013, -0.109057, 109.5354)",
+					"progresso_m": 125.418495178223,
+					"velocidade": 1.171990275383
+				},
+				{
+					"desvio_m": 0.695594608783722,
+					"nome": "Adversario4",
+					"posicao": "(-102.0426, 0.09094, -111.2772)",
+					"progresso_m": 744.082397460938,
+					"velocidade": 9.82117652893066
+				},
+				{
+					"desvio_m": 0.739075064659119,
+					"nome": "Adversario5",
+					"posicao": "(-108.0472, 0.090943, -108.2232)",
+					"progresso_m": 750.696166992188,
+					"velocidade": 9.55817031860352
+				}
+			],
+			"segundos": 57.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.504653215408325,
+					"nome": "Adversario1",
+					"posicao": "(-127.5799, 0.090942, -76.63654)",
+					"progresso_m": 782.36572265625,
+					"velocidade": 17.9812107086182
+				},
+				{
+					"desvio_m": 0.682714343070984,
+					"nome": "Adversario2",
+					"posicao": "(-84.91477, 0.090943, -110.7438)",
+					"progresso_m": 722.6064453125,
+					"velocidade": 10.5915794372559
+				},
+				{
+					"desvio_m": 5.99501323699951,
+					"nome": "Adversario3",
+					"posicao": "(118.5378, -0.109057, 109.5153)",
+					"progresso_m": 127.716850280762,
+					"velocidade": 1.15884685516357
+				},
+				{
+					"desvio_m": 0.652476370334625,
+					"nome": "Adversario4",
+					"posicao": "(-111.172, 0.09094, -108.3776)",
+					"progresso_m": 753.50048828125,
+					"velocidade": 10.0178527832031
+				},
+				{
+					"desvio_m": 0.694365620613098,
+					"nome": "Adversario5",
+					"posicao": "(-116.8172, 0.090943, -103.162)",
+					"progresso_m": 761.080383300781,
+					"velocidade": 9.84083557128906
+				}
+			],
+			"segundos": 58.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.671348571777344,
+					"nome": "Adversario1",
+					"posicao": "(-127.4257, 0.090942, -58.64685)",
+					"progresso_m": 800.360900878906,
+					"velocidade": 17.9714183807373
+				},
+				{
+					"desvio_m": 0.734030723571777,
+					"nome": "Adversario2",
+					"posicao": "(-96.47865, 0.090943, -111.8384)",
+					"progresso_m": 734.051391601562,
+					"velocidade": 11.4681358337402
+				},
+				{
+					"desvio_m": 5.99295711517334,
+					"nome": "Adversario3",
+					"posicao": "(120.8681, -0.109057, 109.5099)",
+					"progresso_m": 130.030265808105,
+					"velocidade": 1.14812517166138
+				},
+				{
+					"desvio_m": 0.6807901263237,
+					"nome": "Adversario4",
+					"posicao": "(-119.4998, 0.09094, -102.6746)",
+					"progresso_m": 763.443054199219,
+					"velocidade": 9.24126052856445
+				},
+				{
+					"desvio_m": 0.754042446613312,
+					"nome": "Adversario5",
+					"posicao": "(-122.8969, 0.090943, -96.5823)",
+					"progresso_m": 770.322998046875,
+					"velocidade": 8.50854301452637
+				}
+			],
+			"segundos": 59.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.71830427646637,
+					"nome": "Adversario1",
+					"posicao": "(-127.747, 0.090942, -40.65991)",
+					"progresso_m": 818.306030273438,
+					"velocidade": 18.0
+				},
+				{
+					"desvio_m": 0.653617084026337,
+					"nome": "Adversario2",
+					"posicao": "(-106.4368, 0.090943, -110.2381)",
+					"progresso_m": 744.016906738281,
+					"velocidade": 9.39499473571777
+				},
+				{
+					"desvio_m": 5.9938588142395,
+					"nome": "Adversario3",
+					"posicao": "(123.1808, -0.109057, 109.5065)",
+					"progresso_m": 132.335670471191,
+					"velocidade": 1.14430999755859
+				},
+				{
+					"desvio_m": 0.621698021888733,
+					"nome": "Adversario4",
+					"posicao": "(-124.9564, 0.09094, -95.86785)",
+					"progresso_m": 772.027099609375,
+					"velocidade": 8.50192260742188
+				},
+				{
+					"desvio_m": 0.725593507289886,
+					"nome": "Adversario5",
+					"posicao": "(-126.4087, 0.090943, -88.34383)",
+					"progresso_m": 779.571594238281,
+					"velocidade": 10.4481754302979
+				}
+			],
+			"segundos": 60.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.699716448783875,
+					"nome": "Adversario1",
+					"posicao": "(-129.8012, 0.090942, -26.98514)",
+					"progresso_m": 832.140686035156,
+					"velocidade": 11.3789196014404
+				},
+				{
+					"desvio_m": 0.681666791439056,
+					"nome": "Adversario2",
+					"posicao": "(-115.4158, 0.090943, -105.9151)",
+					"progresso_m": 753.810729980469,
+					"velocidade": 10.4959850311279
+				},
+				{
+					"desvio_m": 5.9935302734375,
+					"nome": "Adversario3",
+					"posicao": "(125.4901, -0.109057, 109.5065)",
+					"progresso_m": 134.643577575684,
+					"velocidade": 1.13802552223206
+				},
+				{
+					"desvio_m": 0.676298677921295,
+					"nome": "Adversario4",
+					"posicao": "(-128.0909, 0.09094, -87.03492)",
+					"progresso_m": 781.169677734375,
+					"velocidade": 11.5231008529663
+				},
+				{
+					"desvio_m": 0.49051770567894,
+					"nome": "Adversario5",
+					"posicao": "(-127.6066, 0.090943, -73.08344)",
+					"progresso_m": 794.914733886719,
+					"velocidade": 18.4992065429688
+				}
+			],
+			"segundos": 61.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.614737749099731,
+					"nome": "Adversario1",
+					"posicao": "(-133.2531, 0.090942, -18.2662)",
+					"progresso_m": 841.41845703125,
+					"velocidade": 8.39304447174072
+				},
+				{
+					"desvio_m": 0.639475345611572,
+					"nome": "Adversario2",
+					"posicao": "(-122.3938, 0.090943, -99.59179)",
+					"progresso_m": 763.107055664062,
+					"velocidade": 8.77436256408691
+				},
+				{
+					"desvio_m": 5.9935302734375,
+					"nome": "Adversario3",
+					"posicao": "(127.7931, -0.109057, 109.5065)",
+					"progresso_m": 136.946624755859,
+					"velocidade": 1.13495481014252
+				},
+				{
+					"desvio_m": 0.895248591899872,
+					"nome": "Adversario4",
+					"posicao": "(-128.9923, 0.09094, -70.90129)",
+					"progresso_m": 797.106628417969,
+					"velocidade": 17.9999847412109
+				},
+				{
+					"desvio_m": 0.69651061296463,
+					"nome": "Adversario5",
+					"posicao": "(-127.4037, 0.090943, -54.59379)",
+					"progresso_m": 813.404602050781,
+					"velocidade": 18.4951972961426
+				}
+			],
+			"segundos": 62.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.764256536960602,
+					"nome": "Adversario1",
+					"posicao": "(-140.2135, 0.090942, -10.02943)",
+					"progresso_m": 851.917907714844,
+					"velocidade": 14.3178577423096
+				},
+				{
+					"desvio_m": 0.618797898292542,
+					"nome": "Adversario2",
+					"posicao": "(-126.6923, 0.090943, -92.15655)",
+					"progresso_m": 771.50244140625,
+					"velocidade": 9.06815910339355
+				},
+				{
+					"desvio_m": 5.9935302734375,
+					"nome": "Adversario3",
+					"posicao": "(130.0934, -0.109057, 109.5065)",
+					"progresso_m": 139.246948242188,
+					"velocidade": 1.13400542736053
+				},
+				{
+					"desvio_m": 0.695528626441956,
+					"nome": "Adversario4",
+					"posicao": "(-128.7998, 0.09094, -52.91179)",
+					"progresso_m": 815.097229003906,
+					"velocidade": 17.9999332427979
+				},
+				{
+					"desvio_m": 0.752071261405945,
+					"nome": "Adversario5",
+					"posicao": "(-128.1102, 0.090943, -36.44885)",
+					"progresso_m": 831.536376953125,
+					"velocidade": 16.0492725372314
+				}
+			],
+			"segundos": 63.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.787806987762451,
+					"nome": "Adversario1",
+					"posicao": "(-152.0996, 0.090942, -1.797302)",
+					"progresso_m": 866.240966796875,
+					"velocidade": 14.730393409729
+				},
+				{
+					"desvio_m": 0.815123081207275,
+					"nome": "Adversario2",
+					"posicao": "(-128.8299, 0.090943, -80.3512)",
+					"progresso_m": 783.202270507812,
+					"velocidade": 16.9603996276855
+				},
+				{
+					"desvio_m": 5.9935302734375,
+					"nome": "Adversario3",
+					"posicao": "(132.3931, -0.109057, 109.5065)",
+					"progresso_m": 141.546722412109,
+					"velocidade": 1.13370585441589
+				},
+				{
+					"desvio_m": 0.641813158988953,
+					"nome": "Adversario4",
+					"posicao": "(-129.6452, 0.09094, -35.33582)",
+					"progresso_m": 832.833984375,
+					"velocidade": 14.9262647628784
+				},
+				{
+					"desvio_m": 0.684411406517029,
+					"nome": "Adversario5",
+					"posicao": "(-130.5592, 0.090943, -24.43833)",
+					"progresso_m": 843.762573242188,
+					"velocidade": 10.3562250137329
+				}
+			],
+			"segundos": 64.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.877031862735748,
+					"nome": "Adversario1",
+					"posicao": "(-167.673, 0.090942, 4.996757)",
+					"progresso_m": 883.072387695312,
+					"velocidade": 17.9999980926514
+				},
+				{
+					"desvio_m": 0.776473999023438,
+					"nome": "Adversario2",
+					"posicao": "(-128.8722, 0.090943, -61.95895)",
+					"progresso_m": 801.5400390625,
+					"velocidade": 18.4999046325684
+				},
+				{
+					"desvio_m": 5.9935302734375,
+					"nome": "Adversario3",
+					"posicao": "(134.692, -0.109057, 109.5065)",
+					"progresso_m": 143.845611572266,
+					"velocidade": 1.13364291191101
+				},
+				{
+					"desvio_m": 0.710286974906921,
+					"nome": "Adversario4",
+					"posicao": "(-132.2286, 0.09094, -23.85113)",
+					"progresso_m": 844.867858886719,
+					"velocidade": 9.83619689941406
+				},
+				{
+					"desvio_m": 0.602789640426636,
+					"nome": "Adversario5",
+					"posicao": "(-134.3728, 0.090943, -16.48758)",
+					"progresso_m": 852.466796875,
+					"velocidade": 8.91101360321045
+				}
+			],
+			"segundos": 65.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.745186805725098,
+					"nome": "Adversario1",
+					"posicao": "(-180.3588, 0.090942, 10.53406)",
+					"progresso_m": 897.190979003906,
+					"velocidade": 10.1795015335083
+				},
+				{
+					"desvio_m": 0.696388125419617,
+					"nome": "Adversario2",
+					"posicao": "(-128.9872, 0.090943, -43.50783)",
+					"progresso_m": 820.032287597656,
+					"velocidade": 18.1857147216797
+				},
+				{
+					"desvio_m": 5.9935302734375,
+					"nome": "Adversario3",
+					"posicao": "(136.9909, -0.109057, 109.5065)",
+					"progresso_m": 146.144500732422,
+					"velocidade": 1.13363254070282
+				},
+				{
+					"desvio_m": 0.772295653820038,
+					"nome": "Adversario4",
+					"posicao": "(-136.3372, 0.09094, -16.12194)",
+					"progresso_m": 853.914001464844,
+					"velocidade": 9.75275611877441
+				},
+				{
+					"desvio_m": 0.80910325050354,
+					"nome": "Adversario5",
+					"posicao": "(-142.9429, 0.090943, -7.761888)",
+					"progresso_m": 864.422607421875,
+					"velocidade": 14.558424949646
+				}
+			],
+			"segundos": 66.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.766788423061371,
+					"nome": "Adversario1",
+					"posicao": "(-187.3448, 0.090942, 15.96594)",
+					"progresso_m": 906.332214355469,
+					"velocidade": 8.09921455383301
+				},
+				{
+					"desvio_m": 0.683248817920685,
+					"nome": "Adversario2",
+					"posicao": "(-130.7943, 0.090943, -28.76692)",
+					"progresso_m": 835.126892089844,
+					"velocidade": 11.5317497253418
+				},
+				{
+					"desvio_m": 5.9935302734375,
+					"nome": "Adversario3",
+					"posicao": "(139.2898, -0.109057, 109.5065)",
+					"progresso_m": 148.443389892578,
+					"velocidade": 1.13363254070282
+				},
+				{
+					"desvio_m": 0.565741121768951,
+					"nome": "Adversario4",
+					"posicao": "(-145.9629, 0.09094, -7.240916)",
+					"progresso_m": 867.157348632812,
+					"velocidade": 14.3643016815186
+				},
+				{
+					"desvio_m": 0.775284707546234,
+					"nome": "Adversario5",
+					"posicao": "(-155.4147, 0.090943, -0.09708)",
+					"progresso_m": 878.913818359375,
+					"velocidade": 15.6796340942383
+				}
+			],
+			"segundos": 67.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.687086582183838,
+					"nome": "Adversario1",
+					"posicao": "(-192.2393, 0.090942, 23.97075)",
+					"progresso_m": 915.980407714844,
+					"velocidade": 12.6735420227051
+				},
+				{
+					"desvio_m": 0.756837069988251,
+					"nome": "Adversario2",
+					"posicao": "(-134.0982, 0.090943, -19.59938)",
+					"progresso_m": 845.145690917969,
+					"velocidade": 8.2462215423584
+				},
+				{
+					"desvio_m": 5.9935302734375,
+					"nome": "Adversario3",
+					"posicao": "(141.5887, -0.109057, 109.5065)",
+					"progresso_m": 150.742279052734,
+					"velocidade": 1.13363254070282
+				},
+				{
+					"desvio_m": 0.60654091835022,
+					"nome": "Adversario4",
+					"posicao": "(-159.1384, 0.09094, 0.090993)",
+					"progresso_m": 882.330932617188,
+					"velocidade": 17.6002769470215
+				},
+				{
+					"desvio_m": 0.867261826992035,
+					"nome": "Adversario5",
+					"posicao": "(-171.9102, 0.090943, 6.626076)",
+					"progresso_m": 896.668090820312,
+					"velocidade": 16.3379764556885
+				}
+			],
+			"segundos": 68.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.608634471893311,
+					"nome": "Adversario1",
+					"posicao": "(-195.8949, 0.090942, 37.29918)",
+					"progresso_m": 929.985595703125,
+					"velocidade": 9.02798271179199
+				},
+				{
+					"desvio_m": 0.63195139169693,
+					"nome": "Adversario2",
+					"posicao": "(-140.6401, 0.090943, -11.50877)",
+					"progresso_m": 855.776123046875,
+					"velocidade": 14.0151653289795
+				},
+				{
+					"desvio_m": 5.9935302734375,
+					"nome": "Adversario3",
+					"posicao": "(143.8876, -0.109057, 109.5065)",
+					"progresso_m": 153.041168212891,
+					"velocidade": 1.13363254070282
+				},
+				{
+					"desvio_m": 0.582663953304291,
+					"nome": "Adversario4",
+					"posicao": "(-175.2022, 0.09094, 6.454406)",
+					"progresso_m": 899.670959472656,
+					"velocidade": 14.2250652313232
+				},
+				{
+					"desvio_m": 0.746086537837982,
+					"nome": "Adversario5",
+					"posicao": "(-182.5236, 0.090943, 11.88551)",
+					"progresso_m": 908.797973632812,
+					"velocidade": 9.46346950531006
+				}
+			],
+			"segundos": 69.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.869383573532104,
+					"nome": "Adversario1",
+					"posicao": "(-196.3052, 0.090942, 43.23851)",
+					"progresso_m": 936.2216796875,
+					"velocidade": 4.64359283447266
+				},
+				{
+					"desvio_m": 0.609289348125458,
+					"nome": "Adversario2",
+					"posicao": "(-152.4474, 0.090943, -3.201232)",
+					"progresso_m": 870.362426757812,
+					"velocidade": 14.733736038208
+				},
+				{
+					"desvio_m": 5.9935302734375,
+					"nome": "Adversario3",
+					"posicao": "(146.1864, -0.109059, 109.5065)",
+					"progresso_m": 155.340057373047,
+					"velocidade": 1.13363254070282
+				},
+				{
+					"desvio_m": 0.642718434333801,
+					"nome": "Adversario4",
+					"posicao": "(-184.5755, 0.09094, 11.63496)",
+					"progresso_m": 910.346130371094,
+					"velocidade": 8.93399810791016
+				},
+				{
+					"desvio_m": 0.774020135402679,
+					"nome": "Adversario5",
+					"posicao": "(-188.7267, 0.090943, 17.61397)",
+					"progresso_m": 917.557983398438,
+					"velocidade": 8.31726837158203
+				}
+			],
+			"segundos": 70.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.888572990894318,
+					"nome": "Adversario1",
+					"posicao": "(-194.0575, 0.090942, 48.03062)",
+					"progresso_m": 942.276306152344,
+					"velocidade": 7.78461933135986
+				},
+				{
+					"desvio_m": 0.516883075237274,
+					"nome": "Adversario2",
+					"posicao": "(-168.1644, 0.090943, 3.692725)",
+					"progresso_m": 887.569274902344,
+					"velocidade": 18.4999866485596
+				},
+				{
+					"desvio_m": 5.9935302734375,
+					"nome": "Adversario3",
+					"posicao": "(148.4853, -0.109059, 109.5065)",
+					"progresso_m": 157.638946533203,
+					"velocidade": 1.13363254070282
+				},
+				{
+					"desvio_m": 0.603321015834808,
+					"nome": "Adversario4",
+					"posicao": "(-190.4115, 0.09094, 17.58602)",
+					"progresso_m": 918.524841308594,
+					"velocidade": 8.57413864135742
+				},
+				{
+					"desvio_m": 0.59429520368576,
+					"nome": "Adversario5",
+					"posicao": "(-193.4868, 0.090943, 27.49672)",
+					"progresso_m": 928.730224609375,
+					"velocidade": 15.7989482879639
+				}
+			],
+			"segundos": 71.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.439141452312469,
+					"nome": "Adversario1",
+					"posicao": "(-182.2969, 0.090942, 55.01064)",
+					"progresso_m": 956.04443359375,
+					"velocidade": 17.9914817810059
+				},
+				{
+					"desvio_m": 0.643098592758179,
+					"nome": "Adversario2",
+					"posicao": "(-180.914, 0.090943, 9.251351)",
+					"progresso_m": 901.53369140625,
+					"velocidade": 10.188440322876
+				},
+				{
+					"desvio_m": 5.9935302734375,
+					"nome": "Adversario3",
+					"posicao": "(150.7842, -0.109059, 109.5065)",
+					"progresso_m": 159.937835693359,
+					"velocidade": 1.13363254070282
+				},
+				{
+					"desvio_m": 0.821391701698303,
+					"nome": "Adversario4",
+					"posicao": "(-195.1664, 0.09094, 28.23626)",
+					"progresso_m": 929.878173828125,
+					"velocidade": 16.7758598327637
+				},
+				{
+					"desvio_m": 0.699088096618652,
+					"nome": "Adversario5",
+					"posicao": "(-196.1809, 0.090943, 39.28028)",
+					"progresso_m": 941.036987304688,
+					"velocidade": 6.83362054824829
+				}
+			],
+			"segundos": 72.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.856841385364532,
+					"nome": "Adversario1",
+					"posicao": "(-166.971, 0.090942, 64.40284)",
+					"progresso_m": 973.956176757812,
+					"velocidade": 17.9859924316406
+				},
+				{
+					"desvio_m": 0.608676314353943,
+					"nome": "Adversario2",
+					"posicao": "(-188.0067, 0.090943, 14.65783)",
+					"progresso_m": 910.329528808594,
+					"velocidade": 8.24710464477539
+				},
+				{
+					"desvio_m": 5.9935302734375,
+					"nome": "Adversario3",
+					"posicao": "(153.0831, -0.109059, 109.5065)",
+					"progresso_m": 162.236724853516,
+					"velocidade": 1.13363254070282
+				},
+				{
+					"desvio_m": 0.681509554386139,
+					"nome": "Adversario4",
+					"posicao": "(-197.6007, 0.09094, 39.41886)",
+					"progresso_m": 941.410766601562,
+					"velocidade": 6.4095139503479
+				},
+				{
+					"desvio_m": 0.917169213294983,
+					"nome": "Adversario5",
+					"posicao": "(-196.1074, 0.090943, 44.43935)",
+					"progresso_m": 946.541259765625,
+					"velocidade": 4.67452478408813
+				}
+			],
+			"segundos": 73.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.684305012226105,
+					"nome": "Adversario1",
+					"posicao": "(-152.2229, 0.090942, 74.70399)",
+					"progresso_m": 991.9814453125,
+					"velocidade": 17.9799919128418
+				},
+				{
+					"desvio_m": 0.657423257827759,
+					"nome": "Adversario2",
+					"posicao": "(-192.9652, 0.090943, 22.16323)",
+					"progresso_m": 919.110595703125,
+					"velocidade": 11.3756618499756
+				},
+				{
+					"desvio_m": 5.9935302734375,
+					"nome": "Adversario3",
+					"posicao": "(155.382, -0.109059, 109.5065)",
+					"progresso_m": 164.535614013672,
+					"velocidade": 1.13363254070282
+				},
+				{
+					"desvio_m": 0.433810025453568,
+					"nome": "Adversario4",
+					"posicao": "(-197.4665, 0.09094, 44.50578)",
+					"progresso_m": 946.384033203125,
+					"velocidade": 4.63448190689087
+				},
+				{
+					"desvio_m": 0.713650643825531,
+					"nome": "Adversario5",
+					"posicao": "(-192.1548, 0.090943, 49.60437)",
+					"progresso_m": 953.903076171875,
+					"velocidade": 10.9224519729614
+				}
+			],
+			"segundos": 74.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.621783792972565,
+					"nome": "Adversario1",
+					"posicao": "(-136.7612, 0.090942, 83.89371)",
+					"progresso_m": 1010.01641845703,
+					"velocidade": 17.9591655731201
+				},
+				{
+					"desvio_m": 0.826097726821899,
+					"nome": "Adversario2",
+					"posicao": "(-197.0259, 0.090943, 35.74812)",
+					"progresso_m": 933.178894042969,
+					"velocidade": 11.0736179351807
+				},
+				{
+					"desvio_m": 5.9935302734375,
+					"nome": "Adversario3",
+					"posicao": "(157.6809, -0.109059, 109.5065)",
+					"progresso_m": 166.834503173828,
+					"velocidade": 1.13363254070282
+				},
+				{
+					"desvio_m": 0.430828869342804,
+					"nome": "Adversario4",
+					"posicao": "(-194.4455, 0.09094, 49.42486)",
+					"progresso_m": 951.914916992188,
+					"velocidade": 8.80659866333008
+				},
+				{
+					"desvio_m": 0.587748348712921,
+					"nome": "Adversario5",
+					"posicao": "(-177.9798, 0.090943, 57.34127)",
+					"progresso_m": 969.921325683594,
+					"velocidade": 18.4999217987061
+				}
+			],
+			"segundos": 75.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.693216621875763,
+					"nome": "Adversario1",
+					"posicao": "(-120.8488, 0.090942, 92.2933)",
+					"progresso_m": 1028.02673339844,
+					"velocidade": 17.9999980926514
+				},
+				{
+					"desvio_m": 0.536227107048035,
+					"nome": "Adversario2",
+					"posicao": "(-197.7309, 0.090943, 42.37544)",
+					"progresso_m": 939.829467773438,
+					"velocidade": 4.89738702774048
+				},
+				{
+					"desvio_m": 5.9935302734375,
+					"nome": "Adversario3",
+					"posicao": "(159.9798, -0.109059, 109.5065)",
+					"progresso_m": 169.133392333984,
+					"velocidade": 1.13363254070282
+				},
+				{
+					"desvio_m": 0.940163731575012,
+					"nome": "Adversario4",
+					"posicao": "(-181.9459, 0.09094, 56.78819)",
+					"progresso_m": 966.21484375,
+					"velocidade": 17.9986209869385
+				},
+				{
+					"desvio_m": 0.846346735954285,
+					"nome": "Adversario5",
+					"posicao": "(-162.5661, 0.090943, 67.53635)",
+					"progresso_m": 988.356201171875,
+					"velocidade": 18.4998645782471
+				}
+			],
+			"segundos": 76.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.684098780155182,
+					"nome": "Adversario1",
+					"posicao": "(-104.6808, 0.090942, 100.1808)",
+					"progresso_m": 1046.05236816406,
+					"velocidade": 17.9999923706055
+				},
+				{
+					"desvio_m": 0.331771075725555,
+					"nome": "Adversario2",
+					"posicao": "(-196.459, 0.090943, 47.02592)",
+					"progresso_m": 944.478454589844,
+					"velocidade": 5.5756139755249
+				},
+				{
+					"desvio_m": 5.9935302734375,
+					"nome": "Adversario3",
+					"posicao": "(162.2787, -0.109059, 109.5065)",
+					"progresso_m": 171.432281494141,
+					"velocidade": 1.13363254070282
+				},
+				{
+					"desvio_m": 0.544153332710266,
+					"nome": "Adversario4",
+					"posicao": "(-166.7002, 0.09094, 66.31232)",
+					"progresso_m": 984.280334472656,
+					"velocidade": 17.9976463317871
+				},
+				{
+					"desvio_m": 0.643778085708618,
+					"nome": "Adversario5",
+					"posicao": "(-147.2351, 0.090943, 77.86605)",
+					"progresso_m": 1006.89337158203,
+					"velocidade": 18.499605178833
+				}
+			],
+			"segundos": 77.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.65874844789505,
+					"nome": "Adversario1",
+					"posicao": "(-88.10825, 0.090942, 107.1755)",
+					"progresso_m": 1064.07556152344,
+					"velocidade": 17.9999675750732
+				},
+				{
+					"desvio_m": 0.908752739429474,
+					"nome": "Adversario2",
+					"posicao": "(-188.96, 0.090943, 53.0872)",
+					"progresso_m": 953.780334472656,
+					"velocidade": 15.3250780105591
+				},
+				{
+					"desvio_m": 5.9935302734375,
+					"nome": "Adversario3",
+					"posicao": "(164.5776, -0.109059, 109.5065)",
+					"progresso_m": 173.731170654297,
+					"velocidade": 1.13363254070282
+				},
+				{
+					"desvio_m": 0.72564172744751,
+					"nome": "Adversario4",
+					"posicao": "(-151.9193, 0.09094, 76.56875)",
+					"progresso_m": 1002.2392578125,
+					"velocidade": 17.9416656494141
+				},
+				{
+					"desvio_m": 0.632889449596405,
+					"nome": "Adversario5",
+					"posicao": "(-131.1228, 0.090943, 86.93182)",
+					"progresso_m": 1025.41741943359,
+					"velocidade": 18.4951972961426
+				}
+			],
+			"segundos": 78.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.672596573829651,
+					"nome": "Adversario1",
+					"posicao": "(-72.23267, 0.090942, 112.4542)",
+					"progresso_m": 1080.96008300781,
+					"velocidade": 14.6260499954224
+				},
+				{
+					"desvio_m": 0.639256656169891,
+					"nome": "Adversario2",
+					"posicao": "(-173.1728, 0.090943, 61.90175)",
+					"progresso_m": 971.925231933594,
+					"velocidade": 18.4983520507812
+				},
+				{
+					"desvio_m": 5.9935302734375,
+					"nome": "Adversario3",
+					"posicao": "(166.8764, -0.109059, 109.5065)",
+					"progresso_m": 176.030059814453,
+					"velocidade": 1.13363254070282
+				},
+				{
+					"desvio_m": 0.777317583560944,
+					"nome": "Adversario4",
+					"posicao": "(-136.4085, 0.09094, 85.67916)",
+					"progresso_m": 1020.18121337891,
+					"velocidade": 17.9999961853027
+				},
+				{
+					"desvio_m": 0.678551256656647,
+					"nome": "Adversario5",
+					"posicao": "(-114.6835, 0.090943, 95.39849)",
+					"progresso_m": 1043.93408203125,
+					"velocidade": 18.4591693878174
+				}
+			],
+			"segundos": 79.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.565231263637543,
+					"nome": "Adversario1",
+					"posicao": "(-55.19196, 0.090942, 115.0809)",
+					"progresso_m": 1098.26354980469,
+					"velocidade": 17.9416675567627
+				},
+				{
+					"desvio_m": 0.630795657634735,
+					"nome": "Adversario2",
+					"posicao": "(-158.0074, 0.090943, 72.478)",
+					"progresso_m": 990.416320800781,
+					"velocidade": 18.4976444244385
+				},
+				{
+					"desvio_m": 5.9935302734375,
+					"nome": "Adversario3",
+					"posicao": "(169.1753, -0.109059, 109.5065)",
+					"progresso_m": 178.328948974609,
+					"velocidade": 1.13356733322144
+				},
+				{
+					"desvio_m": 0.705832302570343,
+					"nome": "Adversario4",
+					"posicao": "(-120.4847, 0.09094, 94.05076)",
+					"progresso_m": 1038.15106201172,
+					"velocidade": 17.9999942779541
+				},
+				{
+					"desvio_m": 0.651242733001709,
+					"nome": "Adversario5",
+					"posicao": "(-97.91071, 0.090943, 103.1774)",
+					"progresso_m": 1062.46105957031,
+					"velocidade": 18.4416675567627
+				}
+			],
+			"segundos": 80.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.602096557617188,
+					"nome": "Adversario1",
+					"posicao": "(-37.20956, 0.090942, 115.4956)",
+					"progresso_m": 1116.30517578125,
+					"velocidade": 18.0
+				},
+				{
+					"desvio_m": 0.773942828178406,
+					"nome": "Adversario2",
+					"posicao": "(-142.3874, 0.090943, 82.36218)",
+					"progresso_m": 1008.85186767578,
+					"velocidade": 18.4951992034912
+				},
+				{
+					"desvio_m": 5.99347734451294,
+					"nome": "Adversario3",
+					"posicao": "(171.4742, -0.109059, 109.5065)",
+					"progresso_m": 180.630889892578,
+					"velocidade": 1.13350880146027
+				},
+				{
+					"desvio_m": 0.720409154891968,
+					"nome": "Adversario4",
+					"posicao": "(-104.2953, 0.09094, 101.8938)",
+					"progresso_m": 1056.10754394531,
+					"velocidade": 17.9999332427979
+				},
+				{
+					"desvio_m": 0.671004951000214,
+					"nome": "Adversario5",
+					"posicao": "(-80.69424, 0.090943, 109.9091)",
+					"progresso_m": 1080.99621582031,
+					"velocidade": 18.4038581848145
+				}
+			],
+			"segundos": 81.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.7100830078125,
+					"nome": "Adversario1",
+					"posicao": "(-19.21919, 0.090942, 115.3896)",
+					"progresso_m": 1134.29528808594,
+					"velocidade": 17.9999885559082
+				},
+				{
+					"desvio_m": 0.731480836868286,
+					"nome": "Adversario2",
+					"posicao": "(-126.1182, 0.090943, 91.1477)",
+					"progresso_m": 1027.31732177734,
+					"velocidade": 18.4901924133301
+				},
+				{
+					"desvio_m": 5.99393558502197,
+					"nome": "Adversario3",
+					"posicao": "(173.7701, -0.109059, 109.5032)",
+					"progresso_m": 182.947570800781,
+					"velocidade": 1.12450540065765
+				},
+				{
+					"desvio_m": 0.739102125167847,
+					"nome": "Adversario4",
+					"posicao": "(-87.69949, 0.09094, 108.8334)",
+					"progresso_m": 1074.05871582031,
+					"velocidade": 17.9994354248047
+				},
+				{
+					"desvio_m": 0.618009448051453,
+					"nome": "Adversario5",
+					"posicao": "(-65.16998, 0.090943, 113.8879)",
+					"progresso_m": 1097.16564941406,
+					"velocidade": 18.3676223754883
+				}
+			],
+			"segundos": 82.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.701469421386719,
+					"nome": "Adversario1",
+					"posicao": "(-1.228395, 0.090942, 115.3987)",
+					"progresso_m": 1152.28588867188,
+					"velocidade": 17.9983520507812
+				},
+				{
+					"desvio_m": 0.716944098472595,
+					"nome": "Adversario2",
+					"posicao": "(-109.5869, 0.090943, 99.43591)",
+					"progresso_m": 1045.78515625,
+					"velocidade": 18.4166622161865
+				},
+				{
+					"desvio_m": 5.99307250976562,
+					"nome": "Adversario3",
+					"posicao": "(176.0545, -0.109059, 109.4889)",
+					"progresso_m": 185.295623779297,
+					"velocidade": 1.10210561752319
+				},
+				{
+					"desvio_m": 0.72335147857666,
+					"nome": "Adversario4",
+					"posicao": "(-71.94202, 0.09094, 113.9629)",
+					"progresso_m": 1090.59106445312,
+					"velocidade": 14.8782930374146
+				},
+				{
+					"desvio_m": 0.573614954948425,
+					"nome": "Adversario5",
+					"posicao": "(-46.7643, 0.090943, 115.4826)",
+					"progresso_m": 1115.72998046875,
+					"velocidade": 18.4999923706055
+				}
+			],
+			"segundos": 83.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 2.85499572753906,
+					"nome": "Adversario1",
+					"posicao": "(-0.280844, 0.090942, 113.245)",
+					"progresso_m": 1153.53332519531,
+					"velocidade": 0.0
+				},
+				{
+					"desvio_m": 0.746564090251923,
+					"nome": "Adversario2",
+					"posicao": "(-92.66166, 0.090943, 106.8786)",
+					"progresso_m": 1064.22998046875,
+					"velocidade": 18.4999942779541
+				},
+				{
+					"desvio_m": 5.99219846725464,
+					"nome": "Adversario3",
+					"posicao": "(178.3071, -0.109059, 109.4398)",
+					"progresso_m": 187.71044921875,
+					"velocidade": 1.05654168128967
+				},
+				{
+					"desvio_m": 0.826666831970215,
+					"nome": "Adversario4",
+					"posicao": "(-54.75911, 0.09094, 116.5139)",
+					"progresso_m": 1107.81665039062,
+					"velocidade": 17.9931373596191
+				},
+				{
+					"desvio_m": 0.672119140625,
+					"nome": "Adversario5",
+					"posicao": "(-28.27425, 0.090943, 115.4257)",
+					"progresso_m": 1134.23217773438,
+					"velocidade": 18.4999046325684
+				}
+			],
+			"segundos": 84.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 2.31781005859375,
+					"nome": "Adversario1",
+					"posicao": "(-3.570939, 0.090942, 113.8471)",
+					"progresso_m": 1150.29577636719,
+					"velocidade": 5.00622272491455
+				},
+				{
+					"desvio_m": 0.723707437515259,
+					"nome": "Adversario2",
+					"posicao": "(-75.90218, 0.090943, 112.9098)",
+					"progresso_m": 1082.0322265625,
+					"velocidade": 15.0452747344971
+				},
+				{
+					"desvio_m": 5.98684978485107,
+					"nome": "Adversario3",
+					"posicao": "(180.487, -0.109058, 109.3055)",
+					"progresso_m": 190.261871337891,
+					"velocidade": 0.945685625076294
+				},
+				{
+					"desvio_m": 0.793655395507812,
+					"nome": "Adversario4",
+					"posicao": "(-36.77779, 0.09094, 116.8913)",
+					"progresso_m": 1125.73706054688,
+					"velocidade": 17.9951953887939
+				},
+				{
+					"desvio_m": 0.709724426269531,
+					"nome": "Adversario5",
+					"posicao": "(-9.783573, 0.090943, 115.3906)",
+					"progresso_m": 1152.72253417969,
+					"velocidade": 18.4994354248047
+				}
+			],
+			"segundos": 85.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 2.77165985107422,
+					"nome": "Adversario1",
+					"posicao": "(2.783735, 0.090825, 113.3705)",
+					"progresso_m": 1156.57676756382,
+					"velocidade": 2.82713460922241
+				},
+				{
+					"desvio_m": 0.840064108371735,
+					"nome": "Adversario2",
+					"posicao": "(-59.54573, 0.090943, 116.0708)",
+					"progresso_m": 1098.52380371094,
+					"velocidade": 18.4998683929443
+				},
+				{
+					"desvio_m": 5.96603870391846,
+					"nome": "Adversario3",
+					"posicao": "(182.4443, -0.109057, 108.9821)",
+					"progresso_m": 193.624969482422,
+					"velocidade": 0.75791072845459
+				},
+				{
+					"desvio_m": 0.689674377441406,
+					"nome": "Adversario4",
+					"posicao": "(-18.78533, 0.09094, 116.7894)",
+					"progresso_m": 1143.73010253906,
+					"velocidade": 17.9416656494141
+				},
+				{
+					"desvio_m": 1.23069763183594,
+					"nome": "Adversario5",
+					"posicao": "(-3.869469, 0.090943, 117.3775)",
+					"progresso_m": 1158.8759765625,
+					"velocidade": 4.99988460540771
+				}
+			],
+			"segundos": 86.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 1.28475952148438,
+					"nome": "Adversario1",
+					"posicao": "(5.077597, 0.090825, 117.4345)",
+					"progresso_m": 1158.7835483551,
+					"velocidade": 7.14646625518799
+				},
+				{
+					"desvio_m": 0.827715754508972,
+					"nome": "Adversario2",
+					"posicao": "(-41.08694, 0.090943, 116.9238)",
+					"progresso_m": 1116.92163085938,
+					"velocidade": 18.4994335174561
+				},
+				{
+					"desvio_m": 5.88687086105347,
+					"nome": "Adversario3",
+					"posicao": "(183.3471, -0.109058, 108.6022)",
+					"progresso_m": 197.180236816406,
+					"velocidade": 0.403676301240921
+				},
+				{
+					"desvio_m": 0.698753356933594,
+					"nome": "Adversario4",
+					"posicao": "(-0.792098, 0.09094, 116.7989)",
+					"progresso_m": 1161.72216796875,
+					"velocidade": 17.9966373443604
+				},
+				{
+					"desvio_m": 0.359504699707031,
+					"nome": "Adversario5",
+					"posicao": "(3.017073, 0.090943, 116.3717)",
+					"progresso_m": 1165.67868685722,
+					"velocidade": 10.3791475296021
+				}
+			],
+			"segundos": 87.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 1.61644744873047,
+					"nome": "Adversario1",
+					"posicao": "(13.56708, 0.09094, 117.6662)",
+					"progresso_m": 1167.27617263794,
+					"velocidade": 6.7319278717041
+				},
+				{
+					"desvio_m": 0.697914123535156,
+					"nome": "Adversario2",
+					"posicao": "(-22.59643, 0.090943, 116.7969)",
+					"progresso_m": 1135.40991210938,
+					"velocidade": 18.4931392669678
+				},
+				{
+					"desvio_m": 5.84649181365967,
+					"nome": "Adversario3",
+					"posicao": "(183.7406, -0.109058, 108.2225)",
+					"progresso_m": 198.465774536133,
+					"velocidade": 0.0856116116046906
+				},
+				{
+					"desvio_m": 2.75278472900391,
+					"nome": "Adversario4",
+					"posicao": "(5.769643, 0.09094, 118.9065)",
+					"progresso_m": 1168.54318904877,
+					"velocidade": 0.059394359588623
+				},
+				{
+					"desvio_m": 2.93170928955078,
+					"nome": "Adversario5",
+					"posicao": "(5.656965, 0.090943, 113.1454)",
+					"progresso_m": 1168.48235607147,
+					"velocidade": 1.35909605026245
+				}
+			],
+			"segundos": 88.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 1.01155090332031,
+					"nome": "Adversario1",
+					"posicao": "(26.14833, 0.09094, 115.0789)",
+					"progresso_m": 1179.66353225708,
+					"velocidade": 17.954122543335
+				},
+				{
+					"desvio_m": 0.695587158203125,
+					"nome": "Adversario2",
+					"posicao": "(-4.10134, 0.090943, 116.7958)",
+					"progresso_m": 1153.90466308594,
+					"velocidade": 18.4999980926514
+				},
+				{
+					"desvio_m": 5.86063480377197,
+					"nome": "Adversario3",
+					"posicao": "(184.0267, -0.109057, 107.806)",
+					"progresso_m": 199.508743286133,
+					"velocidade": 0.06775963306427
+				},
+				{
+					"desvio_m": 2.88042449951172,
+					"nome": "Adversario4",
+					"posicao": "(7.248268, 0.09094, 118.9804)",
+					"progresso_m": 1170.04758787155,
+					"velocidade": 0.191494420170784
+				},
+				{
+					"desvio_m": 2.80680084228516,
+					"nome": "Adversario5",
+					"posicao": "(6.233519, 0.090943, 113.2934)",
+					"progresso_m": 1169.01943969727,
+					"velocidade": 0.907728970050812
+				}
+			],
+			"segundos": 89.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.7396240234375,
+					"nome": "Adversario1",
+					"posicao": "(44.13767, 0.09094, 115.3654)",
+					"progresso_m": 1197.65194320679,
+					"velocidade": 17.9996089935303
+				},
+				{
+					"desvio_m": 0.701133728027344,
+					"nome": "Adversario2",
+					"posicao": "(14.39403, 0.090943, 116.8011)",
+					"progresso_m": 1172.39997768402,
+					"velocidade": 18.4999980926514
+				},
+				{
+					"desvio_m": 5.89712238311768,
+					"nome": "Adversario3",
+					"posicao": "(184.2844, -0.109058, 107.3497)",
+					"progresso_m": 200.321578979492,
+					"velocidade": 0.0922937393188477
+				},
+				{
+					"desvio_m": 2.83152008056641,
+					"nome": "Adversario4",
+					"posicao": "(8.203297, 0.090941, 118.9304)",
+					"progresso_m": 1170.99742031097,
+					"velocidade": 0.42927423119545
+				},
+				{
+					"desvio_m": 2.61141204833984,
+					"nome": "Adversario5",
+					"posicao": "(10.05923, 0.090943, 113.5207)",
+					"progresso_m": 1172.79618453979,
+					"velocidade": 5.00802803039551
+				}
+			],
+			"segundos": 90.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.677436828613281,
+					"nome": "Adversario1",
+					"posicao": "(62.12807, 0.09094, 115.4217)",
+					"progresso_m": 1215.64231109619,
+					"velocidade": 17.9988460540771
+				},
+				{
+					"desvio_m": 0.699882507324219,
+					"nome": "Adversario2",
+					"posicao": "(32.89399, 0.090943, 116.7999)",
+					"progresso_m": 1190.89987564087,
+					"velocidade": 18.4999980926514
+				},
+				{
+					"desvio_m": 5.92935562133789,
+					"nome": "Adversario3",
+					"posicao": "(184.6152, -0.109058, 106.7372)",
+					"progresso_m": 201.012573242188,
+					"velocidade": 0.192144900560379
+				},
+				{
+					"desvio_m": 2.87889099121094,
+					"nome": "Adversario4",
+					"posicao": "(10.30792, 0.090943, 118.9918)",
+					"progresso_m": 1173.05522155762,
+					"velocidade": 3.75091958045959
+				},
+				{
+					"desvio_m": 1.09341430664062,
+					"nome": "Adversario5",
+					"posicao": "(11.71429, 0.090943, 117.2767)",
+					"progresso_m": 1174.52739429474,
+					"velocidade": 4.99951934814453
+				}
+			],
+			"segundos": 91.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.703704833984375,
+					"nome": "Adversario1",
+					"posicao": "(80.12338, 0.09094, 115.3963)",
+					"progresso_m": 1233.63766479492,
+					"velocidade": 17.9999961853027
+				},
+				{
+					"desvio_m": 0.699920654296875,
+					"nome": "Adversario2",
+					"posicao": "(51.39405, 0.090943, 116.7999)",
+					"progresso_m": 1209.39993667603,
+					"velocidade": 18.4999980926514
+				},
+				{
+					"desvio_m": 5.95990419387817,
+					"nome": "Adversario3",
+					"posicao": "(185.0664, -0.109058, 105.8984)",
+					"progresso_m": 202.078857421875,
+					"velocidade": 0.35554450750351
+				},
+				{
+					"desvio_m": 2.80406188964844,
+					"nome": "Adversario4",
+					"posicao": "(11.36764, 0.090944, 118.9041)",
+					"progresso_m": 1174.20016288757,
+					"velocidade": 0.620705664157867
+				},
+				{
+					"desvio_m": 2.73765563964844,
+					"nome": "Adversario5",
+					"posicao": "(15.26429, 0.090943, 118.8339)",
+					"progresso_m": 1177.99478721619,
+					"velocidade": 5.02510213851929
+				}
+			],
+			"segundos": 92.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.712208569049835,
+					"nome": "Adversario1",
+					"posicao": "(98.11407, 0.09094, 115.363)",
+					"progresso_m": 1251.63371276855,
+					"velocidade": 17.9994354248047
+				},
+				{
+					"desvio_m": 0.699920654296875,
+					"nome": "Adversario2",
+					"posicao": "(69.8941, 0.090943, 116.7999)",
+					"progresso_m": 1227.89999389648,
+					"velocidade": 18.4999980926514
+				},
+				{
+					"desvio_m": 5.981689453125,
+					"nome": "Adversario3",
+					"posicao": "(185.7259, -0.109057, 104.7093)",
+					"progresso_m": 203.426712036133,
+					"velocidade": 0.652857065200806
+				},
+				{
+					"desvio_m": 2.81785583496094,
+					"nome": "Adversario4",
+					"posicao": "(9.075047, 0.090943, 118.9202)",
+					"progresso_m": 1171.92545604706,
+					"velocidade": 0.865446507930756
+				},
+				{
+					"desvio_m": 0.593841552734375,
+					"nome": "Adversario5",
+					"posicao": "(23.47353, 0.090943, 115.4576)",
+					"progresso_m": 1186.04903030396,
+					"velocidade": 14.6239986419678
+				}
+			],
+			"segundos": 93.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.655081152915955,
+					"nome": "Adversario1",
+					"posicao": "(116.0978, 0.09094, 114.8721)",
+					"progresso_m": 1269.63045501709,
+					"velocidade": 17.9966430664062
+				},
+				{
+					"desvio_m": 0.6995849609375,
+					"nome": "Adversario2",
+					"posicao": "(88.39278, 0.090943, 116.7995)",
+					"progresso_m": 1246.4001159668,
+					"velocidade": 18.4166660308838
+				},
+				{
+					"desvio_m": 5.99484252929688,
+					"nome": "Adversario3",
+					"posicao": "(186.6383, -0.109057, 103.1459)",
+					"progresso_m": 205.09602355957,
+					"velocidade": 0.947801351547241
+				},
+				{
+					"desvio_m": 2.89939117431641,
+					"nome": "Adversario4",
+					"posicao": "(7.663502, 0.090943, 119.0028)",
+					"progresso_m": 1170.49202919006,
+					"velocidade": 0.343267381191254
+				},
+				{
+					"desvio_m": 0.9678955078125,
+					"nome": "Adversario5",
+					"posicao": "(41.32298, 0.090943, 115.1443)",
+					"progresso_m": 1203.83019638062,
+					"velocidade": 18.4416618347168
+				}
+			],
+			"segundos": 94.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.731094360351562,
+					"nome": "Adversario1",
+					"posicao": "(134.0884, 0.09094, 114.7699)",
+					"progresso_m": 1287.61248779297,
+					"velocidade": 17.9799900054932
+				},
+				{
+					"desvio_m": 0.733364343643188,
+					"nome": "Adversario2",
+					"posicao": "(106.8822, 0.090943, 116.5596)",
+					"progresso_m": 1264.85971069336,
+					"velocidade": 18.4999923706055
+				},
+				{
+					"desvio_m": 5.99294281005859,
+					"nome": "Adversario3",
+					"posicao": "(187.7496, -0.109057, 101.3175)",
+					"progresso_m": 207.284698486328,
+					"velocidade": 1.06014406681061
+				},
+				{
+					"desvio_m": 2.98027801513672,
+					"nome": "Adversario4",
+					"posicao": "(7.167891, 0.090943, 119.0836)",
+					"progresso_m": 1169.985850811,
+					"velocidade": 0.205223426222801
+				},
+				{
+					"desvio_m": 0.647911071777344,
+					"nome": "Adversario5",
+					"posicao": "(59.81194, 0.090943, 115.4516)",
+					"progresso_m": 1222.31795120239,
+					"velocidade": 18.4999980926514
+				}
+			],
+			"segundos": 95.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.695747375488281,
+					"nome": "Adversario1",
+					"posicao": "(152.083, 0.09094, 114.8043)",
+					"progresso_m": 1305.60678100586,
+					"velocidade": 17.9999980926514
+				},
+				{
+					"desvio_m": 0.660255432128906,
+					"nome": "Adversario2",
+					"posicao": "(125.3676, 0.090943, 116.1592)",
+					"progresso_m": 1283.38304138184,
+					"velocidade": 18.4999732971191
+				},
+				{
+					"desvio_m": 5.98718309402466,
+					"nome": "Adversario3",
+					"posicao": "(188.8045, -0.109057, 99.42062)",
+					"progresso_m": 209.919403076172,
+					"velocidade": 0.926937401294708
+				},
+				{
+					"desvio_m": 2.95276641845703,
+					"nome": "Adversario4",
+					"posicao": "(7.14031, 0.090943, 119.0528)",
+					"progresso_m": 1169.95468664169,
+					"velocidade": 0.0
+				},
+				{
+					"desvio_m": 0.702461242675781,
+					"nome": "Adversario5",
+					"posicao": "(78.30262, 0.090943, 115.3972)",
+					"progresso_m": 1240.80863189697,
+					"velocidade": 18.4999904632568
+				}
+			],
+			"segundos": 96.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.701278686523438,
+					"nome": "Adversario1",
+					"posicao": "(170.0085, 0.09094, 114.7983)",
+					"progresso_m": 1323.54945373535,
+					"velocidade": 16.9691295623779
+				},
+				{
+					"desvio_m": 0.695243835449219,
+					"nome": "Adversario2",
+					"posicao": "(143.8584, 0.090943, 116.1959)",
+					"progresso_m": 1301.87379455566,
+					"velocidade": 18.499979019165
+				},
+				{
+					"desvio_m": 5.98021268844604,
+					"nome": "Adversario3",
+					"posicao": "(189.5327, -0.109057, 97.63287)",
+					"progresso_m": 212.960525512695,
+					"velocidade": 0.734894275665283
+				},
+				{
+					"desvio_m": 2.91203308105469,
+					"nome": "Adversario4",
+					"posicao": "(7.140516, 0.090943, 119.012)",
+					"progresso_m": 1169.95489025116,
+					"velocidade": 0.0
+				},
+				{
+					"desvio_m": 0.711632668972015,
+					"nome": "Adversario5",
+					"posicao": "(96.79331, 0.090943, 115.3739)",
+					"progresso_m": 1259.3028717041,
+					"velocidade": 18.4998645782471
+				}
+			],
+			"segundos": 97.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.807059943675995,
+					"nome": "Adversario1",
+					"posicao": "(180.8316, 0.09094, 114.476)",
+					"progresso_m": 1334.64460754395,
+					"velocidade": 5.94709634780884
+				},
+				{
+					"desvio_m": 0.702705383300781,
+					"nome": "Adversario2",
+					"posicao": "(162.3491, 0.090943, 116.2026)",
+					"progresso_m": 1320.36456298828,
+					"velocidade": 18.4996032714844
+				},
+				{
+					"desvio_m": 5.97791910171509,
+					"nome": "Adversario3",
+					"posicao": "(189.9345, -0.109057, 95.99507)",
+					"progresso_m": 215.275924682617,
+					"velocidade": 0.655861914157867
+				},
+				{
+					"desvio_m": 2.87123870849609,
+					"nome": "Adversario4",
+					"posicao": "(7.140867, 0.090943, 118.9712)",
+					"progresso_m": 1169.9552397728,
+					"velocidade": 0.0
+				},
+				{
+					"desvio_m": 0.6427321434021,
+					"nome": "Adversario5",
+					"posicao": "(115.2773, 0.090943, 114.8953)",
+					"progresso_m": 1277.80457305908,
+					"velocidade": 18.4997234344482
+				}
+			],
+			"segundos": 98.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.957354784011841,
+					"nome": "Adversario1",
+					"posicao": "(185.7662, 0.09094, 112.941)",
+					"progresso_m": 1340.32450866699,
+					"velocidade": 5.79553842544556
+				},
+				{
+					"desvio_m": 0.647993206977844,
+					"nome": "Adversario2",
+					"posicao": "(177.7595, 0.090943, 116.0971)",
+					"progresso_m": 1335.91047668457,
+					"velocidade": 9.41598224639893
+				},
+				{
+					"desvio_m": 5.98032188415527,
+					"nome": "Adversario3",
+					"posicao": "(190.1228, -0.109057, 94.76629)",
+					"progresso_m": 216.766372680664,
+					"velocidade": 0.466009587049484
+				},
+				{
+					"desvio_m": 2.81307220458984,
+					"nome": "Adversario4",
+					"posicao": "(7.915283, 0.090943, 118.9122)",
+					"progresso_m": 1170.70487785339,
+					"velocidade": 0.658940613269806
+				},
+				{
+					"desvio_m": 0.734573364257812,
+					"nome": "Adversario5",
+					"posicao": "(133.7671, 0.090943, 114.7664)",
+					"progresso_m": 1296.28266906738,
+					"velocidade": 18.4966373443604
+				}
+			],
+			"segundos": 99.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.464750349521637,
+					"nome": "Adversario1",
+					"posicao": "(191.9862, 0.09094, 104.981)",
+					"progresso_m": 1350.80969238281,
+					"velocidade": 9.11256313323975
+				},
+				{
+					"desvio_m": 0.480055540800095,
+					"nome": "Adversario2",
+					"posicao": "(183.8544, 0.090943, 115.2767)",
+					"progresso_m": 1342.0365447998,
+					"velocidade": 4.93537569046021
+				},
+				{
+					"desvio_m": 5.98576545715332,
+					"nome": "Adversario3",
+					"posicao": "(190.2841, -0.109057, 93.18711)",
+					"progresso_m": 218.689636230469,
+					"velocidade": 0.780178666114807
+				},
+				{
+					"desvio_m": 2.93721771240234,
+					"nome": "Adversario4",
+					"posicao": "(11.07867, 0.090943, 119.027)",
+					"progresso_m": 1173.80825138092,
+					"velocidade": 5.04079246520996
+				},
+				{
+					"desvio_m": 0.695724487304688,
+					"nome": "Adversario5",
+					"posicao": "(152.2579, 0.090943, 114.8044)",
+					"progresso_m": 1314.77349853516,
+					"velocidade": 18.4951953887939
+				}
+			],
+			"segundos": 100.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.777664184570312,
+					"nome": "Adversario1",
+					"posicao": "(194.9663, 0.09094, 97.35141)",
+					"progresso_m": 1359.24287414551,
+					"velocidade": 10.1104650497437
+				},
+				{
+					"desvio_m": 0.465850055217743,
+					"nome": "Adversario2",
+					"posicao": "(188.9584, 0.090943, 111.8221)",
+					"progresso_m": 1347.94107055664,
+					"velocidade": 9.91829681396484
+				},
+				{
+					"desvio_m": 5.99179697036743,
+					"nome": "Adversario3",
+					"posicao": "(190.3924, -0.109058, 91.31085)",
+					"progresso_m": 220.686340332031,
+					"velocidade": 0.886208474636078
+				},
+				{
+					"desvio_m": 0.760902404785156,
+					"nome": "Adversario4",
+					"posicao": "(18.9107, 0.090943, 116.8332)",
+					"progresso_m": 1181.50011825562,
+					"velocidade": 13.593770980835
+				},
+				{
+					"desvio_m": 0.701957702636719,
+					"nome": "Adversario5",
+					"posicao": "(170.5667, 0.090943, 114.7975)",
+					"progresso_m": 1333.11059570312,
+					"velocidade": 16.7986812591553
+				}
+			],
+			"segundos": 101.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.483032375574112,
+					"nome": "Adversario1",
+					"posicao": "(196.0139, 0.09094, 82.03238)",
+					"progresso_m": 1374.64202880859,
+					"velocidade": 17.9998340606689
+				},
+				{
+					"desvio_m": 0.724581062793732,
+					"nome": "Adversario2",
+					"posicao": "(194.5159, 0.090943, 102.9899)",
+					"progresso_m": 1358.32373046875,
+					"velocidade": 7.57309198379517
+				},
+				{
+					"desvio_m": 5.99093246459961,
+					"nome": "Adversario3",
+					"posicao": "(190.4576, -0.109058, 89.28238)",
+					"progresso_m": 222.874847412109,
+					"velocidade": 0.987688899040222
+				},
+				{
+					"desvio_m": 0.559112548828125,
+					"nome": "Adversario4",
+					"posicao": "(36.10728, 0.090943, 116.6659)",
+					"progresso_m": 1198.62196350098,
+					"velocidade": 17.9799880981445
+				},
+				{
+					"desvio_m": 0.810703992843628,
+					"nome": "Adversario5",
+					"posicao": "(181.0227, 0.090943, 114.452)",
+					"progresso_m": 1343.84043884277,
+					"velocidade": 5.75760507583618
+				}
+			],
+			"segundos": 102.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.708465576171875,
+					"nome": "Adversario1",
+					"posicao": "(195.7901, 0.09094, 64.04315)",
+					"progresso_m": 1392.6316986084,
+					"velocidade": 17.9996032714844
+				},
+				{
+					"desvio_m": 0.700890123844147,
+					"nome": "Adversario2",
+					"posicao": "(196.9541, 0.090943, 93.76501)",
+					"progresso_m": 1367.54223632812,
+					"velocidade": 13.8707494735718
+				},
+				{
+					"desvio_m": 5.99260425567627,
+					"nome": "Adversario3",
+					"posicao": "(190.4876, -0.109058, 87.14376)",
+					"progresso_m": 225.098937988281,
+					"velocidade": 1.04522097110748
+				},
+				{
+					"desvio_m": 0.729682922363281,
+					"nome": "Adversario4",
+					"posicao": "(54.0971, 0.090943, 116.8293)",
+					"progresso_m": 1216.61185836792,
+					"velocidade": 17.9714164733887
+				},
+				{
+					"desvio_m": 0.950572073459625,
+					"nome": "Adversario5",
+					"posicao": "(185.9296, 0.090943, 112.8321)",
+					"progresso_m": 1349.51846313477,
+					"velocidade": 5.94027614593506
+				}
+			],
+			"segundos": 103.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.703399956226349,
+					"nome": "Adversario1",
+					"posicao": "(195.7985, 0.09094, 46.05242)",
+					"progresso_m": 1410.62191772461,
+					"velocidade": 17.9988460540771
+				},
+				{
+					"desvio_m": 0.842559814453125,
+					"nome": "Adversario2",
+					"posicao": "(197.3377, 0.090943, 76.15099)",
+					"progresso_m": 1385.01647949219,
+					"velocidade": 18.4416637420654
+				},
+				{
+					"desvio_m": 5.99450731277466,
+					"nome": "Adversario3",
+					"posicao": "(190.4991, -0.109058, 84.93691)",
+					"progresso_m": 227.345077514648,
+					"velocidade": 1.09161949157715
+				},
+				{
+					"desvio_m": 0.698532104492188,
+					"nome": "Adversario4",
+					"posicao": "(72.09135, 0.090943, 116.7983)",
+					"progresso_m": 1234.60557556152,
+					"velocidade": 17.9999980926514
+				},
+				{
+					"desvio_m": 0.48326775431633,
+					"nome": "Adversario5",
+					"posicao": "(192.1216, 0.090943, 104.722)",
+					"progresso_m": 1360.10835266113,
+					"velocidade": 8.70271015167236
+				}
+			],
+			"segundos": 104.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.764969944953918,
+					"nome": "Adversario1",
+					"posicao": "(196.1676, 0.09094, 28.06642)",
+					"progresso_m": 1428.58474731445,
+					"velocidade": 17.9951953887939
+				},
+				{
+					"desvio_m": 0.678497314453125,
+					"nome": "Adversario2",
+					"posicao": "(197.1784, 0.090943, 57.65882)",
+					"progresso_m": 1403.50770568848,
+					"velocidade": 18.4999923706055
+				},
+				{
+					"desvio_m": 5.99410009384155,
+					"nome": "Adversario3",
+					"posicao": "(190.5045, -0.109058, 82.68325)",
+					"progresso_m": 229.613830566406,
+					"velocidade": 1.12442553043365
+				},
+				{
+					"desvio_m": 0.698097229003906,
+					"nome": "Adversario4",
+					"posicao": "(90.08378, 0.090943, 116.7979)",
+					"progresso_m": 1252.59868621826,
+					"velocidade": 17.9591655731201
+				},
+				{
+					"desvio_m": 0.777950465679169,
+					"nome": "Adversario5",
+					"posicao": "(195.0393, 0.090943, 97.01117)",
+					"progresso_m": 1368.58436584473,
+					"velocidade": 10.5046606063843
+				}
+			],
+			"segundos": 105.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.656585693359375,
+					"nome": "Adversario1",
+					"posicao": "(196.4432, 0.09094, 10.07881)",
+					"progresso_m": 1446.60552978516,
+					"velocidade": 17.9931354522705
+				},
+				{
+					"desvio_m": 0.71296501159668,
+					"nome": "Adversario2",
+					"posicao": "(197.2544, 0.090943, 39.1684)",
+					"progresso_m": 1422.00872802734,
+					"velocidade": 18.4999542236328
+				},
+				{
+					"desvio_m": 5.99372863769531,
+					"nome": "Adversario3",
+					"posicao": "(190.5062, -0.109058, 80.39871)",
+					"progresso_m": 231.904769897461,
+					"velocidade": 1.12357103824615
+				},
+				{
+					"desvio_m": 0.746199011802673,
+					"nome": "Adversario4",
+					"posicao": "(108.0742, 0.090943, 116.5186)",
+					"progresso_m": 1270.56021881104,
+					"velocidade": 17.9999980926514
+				},
+				{
+					"desvio_m": 0.490005642175674,
+					"nome": "Adversario5",
+					"posicao": "(196.0069, 0.090943, 81.25259)",
+					"progresso_m": 1384.41363525391,
+					"velocidade": 18.4998016357422
+				}
+			],
+			"segundos": 106.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.70074462890625,
+					"nome": "Adversario1",
+					"posicao": "(196.3989, 0.09094, -7.916238)",
+					"progresso_m": 1464.60025024414,
+					"velocidade": 17.9999980926514
+				},
+				{
+					"desvio_m": 0.674576699733734,
+					"nome": "Adversario2",
+					"posicao": "(197.7639, 0.090943, 20.68493)",
+					"progresso_m": 1440.49575805664,
+					"velocidade": 18.4994316101074
+				},
+				{
+					"desvio_m": 5.993896484375,
+					"nome": "Adversario3",
+					"posicao": "(190.5061, -0.109058, 78.10862)",
+					"progresso_m": 234.196105957031,
+					"velocidade": 1.13003349304199
+				},
+				{
+					"desvio_m": 0.658355712890625,
+					"nome": "Adversario4",
+					"posicao": "(126.0602, 0.090943, 116.1577)",
+					"progresso_m": 1288.58399963379,
+					"velocidade": 17.9999904632568
+				},
+				{
+					"desvio_m": 0.711532592773438,
+					"nome": "Adversario5",
+					"posicao": "(195.7872, 0.090943, 62.76308)",
+					"progresso_m": 1402.90364074707,
+					"velocidade": 18.4951972961426
+				}
+			],
+			"segundos": 107.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.6932412981987,
+					"nome": "Adversario1",
+					"posicao": "(196.4171, 0.09094, -25.90694)",
+					"progresso_m": 1482.58837890625,
+					"velocidade": 17.9999656677246
+				},
+				{
+					"desvio_m": 0.725662231445312,
+					"nome": "Adversario2",
+					"posicao": "(197.8246, 0.090943, 2.194577)",
+					"progresso_m": 1458.98129272461,
+					"velocidade": 18.4966373443604
+				},
+				{
+					"desvio_m": 5.99391174316406,
+					"nome": "Adversario3",
+					"posicao": "(190.5061, -0.109058, 75.81256)",
+					"progresso_m": 236.492095947266,
+					"velocidade": 1.13246285915375
+				},
+				{
+					"desvio_m": 0.697044372558594,
+					"nome": "Adversario4",
+					"posicao": "(144.051, 0.090943, 116.1976)",
+					"progresso_m": 1306.57473754883,
+					"velocidade": 17.9998035430908
+				},
+				{
+					"desvio_m": 0.699830114841461,
+					"nome": "Adversario5",
+					"posicao": "(195.805, 0.090943, 44.27204)",
+					"progresso_m": 1421.39379882812,
+					"velocidade": 18.4859924316406
+				}
+			],
+			"segundos": 108.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.794304072856903,
+					"nome": "Adversario1",
+					"posicao": "(196.5781, 0.09094, -41.82471)",
+					"progresso_m": 1498.62310791016,
+					"velocidade": 12.2080745697021
+				},
+				{
+					"desvio_m": 0.695556640625,
+					"nome": "Adversario2",
+					"posicao": "(197.7956, 0.090943, -16.30063)",
+					"progresso_m": 1477.47619628906,
+					"velocidade": 18.4999980926514
+				},
+				{
+					"desvio_m": 5.99392700195312,
+					"nome": "Adversario3",
+					"posicao": "(190.5061, -0.109058, 73.51443)",
+					"progresso_m": 238.790191650391,
+					"velocidade": 1.13316559791565
+				},
+				{
+					"desvio_m": 0.702339172363281,
+					"nome": "Adversario4",
+					"posicao": "(162.0465, 0.090943, 116.2022)",
+					"progresso_m": 1324.57025146484,
+					"velocidade": 17.9999980926514
+				},
+				{
+					"desvio_m": 0.770585238933563,
+					"nome": "Adversario5",
+					"posicao": "(196.2382, 0.090943, 25.78457)",
+					"progresso_m": 1439.86849975586,
+					"velocidade": 18.4166641235352
+				}
+			],
+			"segundos": 109.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.717880427837372,
+					"nome": "Adversario1",
+					"posicao": "(195.0436, 0.09094, -52.67003)",
+					"progresso_m": 1509.8313293457,
+					"velocidade": 10.2153186798096
+				},
+				{
+					"desvio_m": 0.675269186496735,
+					"nome": "Adversario2",
+					"posicao": "(197.9468, 0.090943, -34.66054)",
+					"progresso_m": 1495.88412475586,
+					"velocidade": 17.0348300933838
+				},
+				{
+					"desvio_m": 5.99392700195312,
+					"nome": "Adversario3",
+					"posicao": "(190.5061, -0.109058, 71.21566)",
+					"progresso_m": 241.088989257812,
+					"velocidade": 1.13336300849915
+				},
+				{
+					"desvio_m": 0.651588201522827,
+					"nome": "Adversario4",
+					"posicao": "(177.5233, 0.090943, 116.1071)",
+					"progresso_m": 1340.16606140137,
+					"velocidade": 9.90073299407959
+				},
+				{
+					"desvio_m": 0.658859252929688,
+					"nome": "Adversario5",
+					"posicao": "(196.4404, 0.090943, 7.294502)",
+					"progresso_m": 1458.38146972656,
+					"velocidade": 18.4999980926514
+				}
+			],
+			"segundos": 110.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.652227163314819,
+					"nome": "Adversario1",
+					"posicao": "(190.3108, 0.09094, -62.85928)",
+					"progresso_m": 1521.26177978516,
+					"velocidade": 13.69580078125
+				},
+				{
+					"desvio_m": 0.643015682697296,
+					"nome": "Adversario2",
+					"posicao": "(197.5435, 0.090943, -47.45544)",
+					"progresso_m": 1508.69747924805,
+					"velocidade": 11.0162477493286
+				},
+				{
+					"desvio_m": 5.99392700195312,
+					"nome": "Adversario3",
+					"posicao": "(190.5061, -0.109058, 68.91677)",
+					"progresso_m": 243.387878417969,
+					"velocidade": 1.13341534137726
+				},
+				{
+					"desvio_m": 0.488283842802048,
+					"nome": "Adversario4",
+					"posicao": "(183.737, 0.090943, 115.3132)",
+					"progresso_m": 1346.41426086426,
+					"velocidade": 4.91452693939209
+				},
+				{
+					"desvio_m": 0.703140258789062,
+					"nome": "Adversario5",
+					"posicao": "(196.3967, 0.090943, -11.19618)",
+					"progresso_m": 1476.87191772461,
+					"velocidade": 18.4999523162842
+				}
+			],
+			"segundos": 111.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.680479109287262,
+					"nome": "Adversario1",
+					"posicao": "(182.5717, 0.09094, -72.38456)",
+					"progresso_m": 1533.77728271484,
+					"velocidade": 8.57522392272949
+				},
+				{
+					"desvio_m": 0.674687027931213,
+					"nome": "Adversario2",
+					"posicao": "(194.7762, 0.090943, -57.48834)",
+					"progresso_m": 1518.96557617188,
+					"velocidade": 10.6809892654419
+				},
+				{
+					"desvio_m": 5.99392700195312,
+					"nome": "Adversario3",
+					"posicao": "(190.5061, -0.109058, 66.61788)",
+					"progresso_m": 245.686798095703,
+					"velocidade": 1.13343739509583
+				},
+				{
+					"desvio_m": 0.454523384571075,
+					"nome": "Adversario4",
+					"posicao": "(188.796, 0.090943, 112.0071)",
+					"progresso_m": 1352.20021057129,
+					"velocidade": 9.61809349060059
+				},
+				{
+					"desvio_m": 0.689936280250549,
+					"nome": "Adversario5",
+					"posicao": "(196.4566, 0.090943, -29.68685)",
+					"progresso_m": 1495.35174560547,
+					"velocidade": 18.4951953887939
+				}
+			],
+			"segundos": 112.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.846332490444183,
+					"nome": "Adversario1",
+					"posicao": "(177.2439, 0.09094, -76.27036)",
+					"progresso_m": 1540.6904296875,
+					"velocidade": 5.22448253631592
+				},
+				{
+					"desvio_m": 0.791412055492401,
+					"nome": "Adversario2",
+					"posicao": "(187.9552, 0.090943, -68.51941)",
+					"progresso_m": 1531.73034667969,
+					"velocidade": 13.7747383117676
+				},
+				{
+					"desvio_m": 5.99392700195312,
+					"nome": "Adversario3",
+					"posicao": "(190.5061, -0.109058, 64.31899)",
+					"progresso_m": 247.985687255859,
+					"velocidade": 1.13344693183899
+				},
+				{
+					"desvio_m": 0.7420374751091,
+					"nome": "Adversario4",
+					"posicao": "(194.4432, 0.090943, 103.1588)",
+					"progresso_m": 1362.64129638672,
+					"velocidade": 7.54048442840576
+				},
+				{
+					"desvio_m": 0.779894888401031,
+					"nome": "Adversario5",
+					"posicao": "(196.4561, 0.090943, -44.36411)",
+					"progresso_m": 1510.22640991211,
+					"velocidade": 11.6433715820312
+				}
+			],
+			"segundos": 113.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.944381177425385,
+					"nome": "Adversario1",
+					"posicao": "(172.575, 0.09094, -77.24889)",
+					"progresso_m": 1546.0866394043,
+					"velocidade": 4.81732416152954
+				},
+				{
+					"desvio_m": 0.623504638671875,
+					"nome": "Adversario2",
+					"posicao": "(181.2553, 0.090943, -75.34875)",
+					"progresso_m": 1541.26705932617,
+					"velocidade": 6.94627952575684
+				},
+				{
+					"desvio_m": 5.99392700195312,
+					"nome": "Adversario3",
+					"posicao": "(190.5061, -0.109058, 62.0201)",
+					"progresso_m": 250.284591674805,
+					"velocidade": 1.13344943523407
+				},
+				{
+					"desvio_m": 0.694496512413025,
+					"nome": "Adversario4",
+					"posicao": "(196.9162, 0.090943, 94.1021)",
+					"progresso_m": 1371.70816040039,
+					"velocidade": 13.5678606033325
+				},
+				{
+					"desvio_m": 0.716008484363556,
+					"nome": "Adversario5",
+					"posicao": "(194.365, 0.090943, -54.7656)",
+					"progresso_m": 1521.07992553711,
+					"velocidade": 10.2663440704346
+				}
+			],
+			"segundos": 114.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.835794806480408,
+					"nome": "Adversario1",
+					"posicao": "(167.6509, 0.09094, -74.55543)",
+					"progresso_m": 1552.45092773438,
+					"velocidade": 7.34835910797119
+				},
+				{
+					"desvio_m": 0.456517994403839,
+					"nome": "Adversario2",
+					"posicao": "(176.3322, 0.090943, -78.09585)",
+					"progresso_m": 1546.81369018555,
+					"velocidade": 4.93501758575439
+				},
+				{
+					"desvio_m": 5.99392700195312,
+					"nome": "Adversario3",
+					"posicao": "(190.5061, -0.109058, 59.72121)",
+					"progresso_m": 252.583480834961,
+					"velocidade": 1.13344740867615
+				},
+				{
+					"desvio_m": 0.850341796875,
+					"nome": "Adversario4",
+					"posicao": "(197.3455, 0.090943, 76.91891)",
+					"progresso_m": 1388.75639343262,
+					"velocidade": 17.9714164733887
+				},
+				{
+					"desvio_m": 0.617357492446899,
+					"nome": "Adversario5",
+					"posicao": "(188.5551, 0.090943, -65.42904)",
+					"progresso_m": 1533.39407348633,
+					"velocidade": 14.7665939331055
+				}
+			],
+			"segundos": 115.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.415233463048935,
+					"nome": "Adversario1",
+					"posicao": "(162.7666, 0.09094, -65.20335)",
+					"progresso_m": 1563.28582763672,
+					"velocidade": 8.87395477294922
+				},
+				{
+					"desvio_m": 0.33282858133316,
+					"nome": "Adversario2",
+					"posicao": "(171.6284, 0.090943, -78.40516)",
+					"progresso_m": 1551.37551879883,
+					"velocidade": 4.987548828125
+				},
+				{
+					"desvio_m": 5.99392700195312,
+					"nome": "Adversario3",
+					"posicao": "(190.5061, -0.109058, 57.42233)",
+					"progresso_m": 254.882385253906,
+					"velocidade": 1.13344860076904
+				},
+				{
+					"desvio_m": 0.678863525390625,
+					"nome": "Adversario4",
+					"posicao": "(197.1787, 0.090943, 58.92708)",
+					"progresso_m": 1406.7491607666,
+					"velocidade": 17.9166641235352
+				},
+				{
+					"desvio_m": 0.732367813587189,
+					"nome": "Adversario5",
+					"posicao": "(181.2799, 0.090943, -73.542)",
+					"progresso_m": 1544.57705688477,
+					"velocidade": 7.61266136169434
+				}
+			],
+			"segundos": 116.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.554550588130951,
+					"nome": "Adversario1",
+					"posicao": "(158.8259, 0.09094, -58.07549)",
+					"progresso_m": 1571.30581665039,
+					"velocidade": 8.76121044158936
+				},
+				{
+					"desvio_m": 0.445543795824051,
+					"nome": "Adversario2",
+					"posicao": "(166.6649, 0.090943, -75.37611)",
+					"progresso_m": 1556.99954223633,
+					"velocidade": 7.39835739135742
+				},
+				{
+					"desvio_m": 5.99392700195312,
+					"nome": "Adversario3",
+					"posicao": "(190.5061, -0.109058, 55.12344)",
+					"progresso_m": 257.181274414062,
+					"velocidade": 1.13344407081604
+				},
+				{
+					"desvio_m": 0.710252821445465,
+					"nome": "Adversario4",
+					"posicao": "(197.2315, 0.090943, 40.93509)",
+					"progresso_m": 1424.74490356445,
+					"velocidade": 17.9999923706055
+				},
+				{
+					"desvio_m": 0.873870134353638,
+					"nome": "Adversario5",
+					"posicao": "(176.2369, 0.090943, -76.69916)",
+					"progresso_m": 1550.86700439453,
+					"velocidade": 4.92694568634033
+				}
+			],
+			"segundos": 117.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.709097385406494,
+					"nome": "Adversario1",
+					"posicao": "(151.2898, 0.09094, -51.75684)",
+					"progresso_m": 1580.96124267578,
+					"velocidade": 10.2423429489136
+				},
+				{
+					"desvio_m": 0.957661390304565,
+					"nome": "Adversario2",
+					"posicao": "(161.6098, 0.090943, -66.01454)",
+					"progresso_m": 1567.44009399414,
+					"velocidade": 9.22391891479492
+				},
+				{
+					"desvio_m": 5.99394226074219,
+					"nome": "Adversario3",
+					"posicao": "(190.5061, -0.109058, 52.82455)",
+					"progresso_m": 259.480194091797,
+					"velocidade": 1.13343226909637
+				},
+				{
+					"desvio_m": 0.651571691036224,
+					"nome": "Adversario4",
+					"posicao": "(197.7182, 0.090943, 22.95135)",
+					"progresso_m": 1442.74227905273,
+					"velocidade": 17.9997215270996
+				},
+				{
+					"desvio_m": 0.945124387741089,
+					"nome": "Adversario5",
+					"posicao": "(171.5351, 0.090943, -77.06511)",
+					"progresso_m": 1556.29025268555,
+					"velocidade": 5.04705238342285
+				}
+			],
+			"segundos": 118.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.709927916526794,
+					"nome": "Adversario1",
+					"posicao": "(141.2502, 0.09094, -47.68274)",
+					"progresso_m": 1591.60037231445,
+					"velocidade": 12.3458814620972
+				},
+				{
+					"desvio_m": 0.816672265529633,
+					"nome": "Adversario2",
+					"posicao": "(157.6768, 0.090943, -58.84454)",
+					"progresso_m": 1575.97836303711,
+					"velocidade": 8.75987815856934
+				},
+				{
+					"desvio_m": 5.99394226074219,
+					"nome": "Adversario3",
+					"posicao": "(190.5061, -0.109058, 50.52567)",
+					"progresso_m": 261.779098510742,
+					"velocidade": 1.13345062732697
+				},
+				{
+					"desvio_m": 0.732254028320312,
+					"nome": "Adversario4",
+					"posicao": "(197.8313, 0.090943, 4.961458)",
+					"progresso_m": 1460.72274780273,
+					"velocidade": 17.996639251709
+				},
+				{
+					"desvio_m": 0.768914580345154,
+					"nome": "Adversario5",
+					"posicao": "(166.5772, 0.090943, -73.17066)",
+					"progresso_m": 1563.31942749023,
+					"velocidade": 8.93942832946777
+				}
+			],
+			"segundos": 119.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.877146780490875,
+					"nome": "Adversario1",
+					"posicao": "(125.6032, 0.09094, -45.68125)",
+					"progresso_m": 1607.13565063477,
+					"velocidade": 17.9995918273926
+				},
+				{
+					"desvio_m": 0.673759639263153,
+					"nome": "Adversario2",
+					"posicao": "(150.0161, 0.090943, -52.61676)",
+					"progresso_m": 1586.13232421875,
+					"velocidade": 10.3620634078979
+				},
+				{
+					"desvio_m": 5.99397277832031,
+					"nome": "Adversario3",
+					"posicao": "(190.506, -0.109058, 48.22671)",
+					"progresso_m": 264.077850341797,
+					"velocidade": 1.13346445560455
+				},
+				{
+					"desvio_m": 0.695816040039062,
+					"nome": "Adversario4",
+					"posicao": "(197.7958, 0.090943, -13.03235)",
+					"progresso_m": 1478.71768188477,
+					"velocidade": 17.9166641235352
+				},
+				{
+					"desvio_m": 0.42344006896019,
+					"nome": "Adversario5",
+					"posicao": "(162.0748, 0.090943, -63.5365)",
+					"progresso_m": 1574.09094238281,
+					"velocidade": 8.13236808776855
+				}
+			],
+			"segundos": 120.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.689903497695923,
+					"nome": "Adversario1",
+					"posicao": "(107.6178, 0.09094, -45.25591)",
+					"progresso_m": 1625.11657714844,
+					"velocidade": 17.9988479614258
+				},
+				{
+					"desvio_m": 0.670979142189026,
+					"nome": "Adversario2",
+					"posicao": "(139.6808, 0.090943, -48.73225)",
+					"progresso_m": 1597.35794067383,
+					"velocidade": 12.9900188446045
+				},
+				{
+					"desvio_m": 5.99516534805298,
+					"nome": "Adversario3",
+					"posicao": "(190.506, -0.109058, 45.92836)",
+					"progresso_m": 266.370941162109,
+					"velocidade": 1.13163459300995
+				},
+				{
+					"desvio_m": 0.706663846969604,
+					"nome": "Adversario4",
+					"posicao": "(197.8778, 0.090943, -31.02406)",
+					"progresso_m": 1496.72283935547,
+					"velocidade": 17.9999961853027
+				},
+				{
+					"desvio_m": 0.597918629646301,
+					"nome": "Adversario5",
+					"posicao": "(157.5314, 0.090943, -56.61497)",
+					"progresso_m": 1582.21740722656,
+					"velocidade": 9.38204002380371
+				}
+			],
+			"segundos": 121.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.724387466907501,
+					"nome": "Adversario1",
+					"posicao": "(89.6283, 0.09094, -45.05699)",
+					"progresso_m": 1643.11492919922,
+					"velocidade": 17.9976444244385
+				},
+				{
+					"desvio_m": 0.501330375671387,
+					"nome": "Adversario2",
+					"posicao": "(123.2251, 0.090943, -46.9915)",
+					"progresso_m": 1613.96331787109,
+					"velocidade": 18.4999141693115
+				},
+				{
+					"desvio_m": 5.99556875228882,
+					"nome": "Adversario3",
+					"posicao": "(190.5102, -0.109058, 43.62941)",
+					"progresso_m": 268.658142089844,
+					"velocidade": 1.14524137973785
+				},
+				{
+					"desvio_m": 0.623934030532837,
+					"nome": "Adversario4",
+					"posicao": "(197.7961, 0.090943, -45.15561)",
+					"progresso_m": 1510.90606689453,
+					"velocidade": 11.509913444519
+				},
+				{
+					"desvio_m": 0.703752517700195,
+					"nome": "Adversario5",
+					"posicao": "(149.3341, 0.090943, -50.68969)",
+					"progresso_m": 1592.14379882812,
+					"velocidade": 10.3215446472168
+				}
+			],
+			"segundos": 122.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.710303008556366,
+					"nome": "Adversario1",
+					"posicao": "(71.64081, 0.09094, -44.58879)",
+					"progresso_m": 1661.09307861328,
+					"velocidade": 17.9166660308838
+				},
+				{
+					"desvio_m": 0.70231568813324,
+					"nome": "Adversario2",
+					"posicao": "(104.7383, 0.090943, -46.61585)",
+					"progresso_m": 1632.46899414062,
+					"velocidade": 18.499605178833
+				},
+				{
+					"desvio_m": 5.99539947509766,
+					"nome": "Adversario3",
+					"posicao": "(190.5219, -0.109058, 41.31697)",
+					"progresso_m": 270.946075439453,
+					"velocidade": 1.13866353034973
+				},
+				{
+					"desvio_m": 0.67141979932785,
+					"nome": "Adversario4",
+					"posicao": "(195.5853, 0.090943, -55.47477)",
+					"progresso_m": 1521.34460449219,
+					"velocidade": 10.3556184768677
+				},
+				{
+					"desvio_m": 0.732322633266449,
+					"nome": "Adversario5",
+					"posicao": "(138.5013, 0.090943, -47.06208)",
+					"progresso_m": 1603.34140014648,
+					"velocidade": 13.7741498947144
+				}
+			],
+			"segundos": 123.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.649928152561188,
+					"nome": "Adversario1",
+					"posicao": "(53.65279, 0.09094, -44.23234)",
+					"progresso_m": 1679.11236572266,
+					"velocidade": 17.9999523162842
+				},
+				{
+					"desvio_m": 0.711829900741577,
+					"nome": "Adversario2",
+					"posicao": "(86.24978, 0.090943, -46.36536)",
+					"progresso_m": 1650.93557739258,
+					"velocidade": 18.4983520507812
+				},
+				{
+					"desvio_m": 5.99636840820312,
+					"nome": "Adversario3",
+					"posicao": "(190.5466, -0.109058, 39.00345)",
+					"progresso_m": 273.214477539062,
+					"velocidade": 1.15663075447083
+				},
+				{
+					"desvio_m": 0.772709667682648,
+					"nome": "Adversario4",
+					"posicao": "(189.7478, 0.090943, -66.15491)",
+					"progresso_m": 1533.2692565918,
+					"velocidade": 14.8595485687256
+				},
+				{
+					"desvio_m": 0.898648262023926,
+					"nome": "Adversario5",
+					"posicao": "(121.4777, 0.090943, -45.5437)",
+					"progresso_m": 1620.25051879883,
+					"velocidade": 18.4999885559082
+				}
+			],
+			"segundos": 124.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.744408547878265,
+					"nome": "Adversario1",
+					"posicao": "(35.66504, 0.09094, -43.95213)",
+					"progresso_m": 1697.07598876953,
+					"velocidade": 17.9994354248047
+				},
+				{
+					"desvio_m": 0.656838834285736,
+					"nome": "Adversario2",
+					"posicao": "(67.75985, 0.090943, -45.94497)",
+					"progresso_m": 1669.45989990234,
+					"velocidade": 18.5
+				},
+				{
+					"desvio_m": 5.99481344223022,
+					"nome": "Adversario3",
+					"posicao": "(190.5954, -0.109058, 36.67144)",
+					"progresso_m": 275.483306884766,
+					"velocidade": 1.16649961471558
+				},
+				{
+					"desvio_m": 0.667944252490997,
+					"nome": "Adversario4",
+					"posicao": "(182.4199, 0.090943, -74.39631)",
+					"progresso_m": 1544.3017578125,
+					"velocidade": 7.80835294723511
+				},
+				{
+					"desvio_m": 0.705630540847778,
+					"nome": "Adversario5",
+					"posicao": "(102.9905, 0.090943, -45.19881)",
+					"progresso_m": 1638.72421264648,
+					"velocidade": 18.4999675750732
+				}
+			],
+			"segundos": 125.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.629481554031372,
+					"nome": "Adversario1",
+					"posicao": "(17.67895, 0.09094, -43.59023)",
+					"progresso_m": 1715.08911132812,
+					"velocidade": 17.9988441467285
+				},
+				{
+					"desvio_m": 0.756671369075775,
+					"nome": "Adversario2",
+					"posicao": "(49.27468, 0.090943, -45.50883)",
+					"progresso_m": 1687.94085693359,
+					"velocidade": 18.4999923706055
+				},
+				{
+					"desvio_m": 5.99721145629883,
+					"nome": "Adversario3",
+					"posicao": "(190.6665, -0.109058, 34.33386)",
+					"progresso_m": 277.753845214844,
+					"velocidade": 1.16516554355621
+				},
+				{
+					"desvio_m": 0.490045100450516,
+					"nome": "Adversario4",
+					"posicao": "(177.2946, 0.090943, -77.74085)",
+					"progresso_m": 1550.28512573242,
+					"velocidade": 5.13527679443359
+				},
+				{
+					"desvio_m": 0.663411438465118,
+					"nome": "Adversario5",
+					"posicao": "(84.50269, 0.090943, -44.91048)",
+					"progresso_m": 1657.24490356445,
+					"velocidade": 18.4998645782471
+				}
+			],
+			"segundos": 126.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.753232836723328,
+					"nome": "Adversario1",
+					"posicao": "(-0.309156, 0.09094, -43.31625)",
+					"progresso_m": 1733.06524658203,
+					"velocidade": 17.9988460540771
+				},
+				{
+					"desvio_m": 0.652557849884033,
+					"nome": "Adversario2",
+					"posicao": "(30.78527, 0.090943, -45.32134)",
+					"progresso_m": 1706.43920898438,
+					"velocidade": 18.4999866485596
+				},
+				{
+					"desvio_m": 5.99694728851318,
+					"nome": "Adversario3",
+					"posicao": "(190.7626, -0.109058, 31.99885)",
+					"progresso_m": 280.045318603516,
+					"velocidade": 1.16854548454285
+				},
+				{
+					"desvio_m": 0.345861315727234,
+					"nome": "Adversario4",
+					"posicao": "(172.622, 0.090943, -78.55629)",
+					"progresso_m": 1554.87322998047,
+					"velocidade": 4.83027505874634
+				},
+				{
+					"desvio_m": 0.752155840396881,
+					"nome": "Adversario5",
+					"posicao": "(66.01652, 0.090943, -44.52517)",
+					"progresso_m": 1675.71282958984,
+					"velocidade": 18.4994354248047
+				}
+			],
+			"segundos": 127.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.659949779510498,
+					"nome": "Adversario1",
+					"posicao": "(-18.29842, 0.09094, -42.86116)",
+					"progresso_m": 1751.06414794922,
+					"velocidade": 18.0
+				},
+				{
+					"desvio_m": 0.738113045692444,
+					"nome": "Adversario2",
+					"posicao": "(12.3008, 0.090943, -44.85336)",
+					"progresso_m": 1724.93218994141,
+					"velocidade": 18.4999847412109
+				},
+				{
+					"desvio_m": 5.99604558944702,
+					"nome": "Adversario3",
+					"posicao": "(190.8671, -0.109058, 29.66938)",
+					"progresso_m": 282.376953125,
+					"velocidade": 1.13483107089996
+				},
+				{
+					"desvio_m": 0.396422356367111,
+					"nome": "Adversario4",
+					"posicao": "(167.6962, 0.090943, -76.38673)",
+					"progresso_m": 1560.1159362793,
+					"velocidade": 6.51102066040039
+				},
+				{
+					"desvio_m": 0.656658709049225,
+					"nome": "Adversario5",
+					"posicao": "(47.53159, 0.090943, -44.0688)",
+					"progresso_m": 1694.20770263672,
+					"velocidade": 18.4966354370117
+				}
+			],
+			"segundos": 128.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.72724860906601,
+					"nome": "Adversario1",
+					"posicao": "(-36.28755, 0.09094, -42.63617)",
+					"progresso_m": 1769.07208251953,
+					"velocidade": 17.9999656677246
+				},
+				{
+					"desvio_m": 0.679535627365112,
+					"nome": "Adversario2",
+					"posicao": "(-6.188028, 0.090943, -44.60516)",
+					"progresso_m": 1743.40350341797,
+					"velocidade": 18.4999332427979
+				},
+				{
+					"desvio_m": 5.99586057662964,
+					"nome": "Adversario3",
+					"posicao": "(190.9594, -0.109057, 27.37572)",
+					"progresso_m": 284.718780517578,
+					"velocidade": 1.11881327629089
+				},
+				{
+					"desvio_m": 0.885562300682068,
+					"nome": "Adversario4",
+					"posicao": "(162.411, 0.090943, -67.95824)",
+					"progresso_m": 1569.7829284668,
+					"velocidade": 12.1697854995728
+				},
+				{
+					"desvio_m": 0.741933941841125,
+					"nome": "Adversario5",
+					"posicao": "(29.04171, 0.090943, -43.89965)",
+					"progresso_m": 1712.70428466797,
+					"velocidade": 18.4931354522705
+				}
+			],
+			"segundos": 129.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.584769427776337,
+					"nome": "Adversario1",
+					"posicao": "(-48.92059, 0.09094, -42.5632)",
+					"progresso_m": 1781.82287597656,
+					"velocidade": 7.59209012985229
+				},
+				{
+					"desvio_m": 0.674606919288635,
+					"nome": "Adversario2",
+					"posicao": "(-24.67321, 0.090943, -44.17212)",
+					"progresso_m": 1761.92230224609,
+					"velocidade": 18.499605178833
+				},
+				{
+					"desvio_m": 5.99365282058716,
+					"nome": "Adversario3",
+					"posicao": "(191.0293, -0.109057, 25.10345)",
+					"progresso_m": 287.060791015625,
+					"velocidade": 1.10552048683167
+				},
+				{
+					"desvio_m": 0.864131391048431,
+					"nome": "Adversario4",
+					"posicao": "(158.732, 0.090943, -60.25611)",
+					"progresso_m": 1578.63275146484,
+					"velocidade": 8.21596145629883
+				},
+				{
+					"desvio_m": 0.68307489156723,
+					"nome": "Adversario5",
+					"posicao": "(10.55538, 0.090943, -43.42188)",
+					"progresso_m": 1731.18975830078,
+					"velocidade": 18.4416694641113
+				}
+			],
+			"segundos": 130.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.466078013181686,
+					"nome": "Adversario1",
+					"posicao": "(-54.53281, 0.09094, -43.72778)",
+					"progresso_m": 1787.46685791016,
+					"velocidade": 4.76426458358765
+				},
+				{
+					"desvio_m": 0.762425601482391,
+					"nome": "Adversario2",
+					"posicao": "(-42.37, 0.090943, -43.8825)",
+					"progresso_m": 1779.66705322266,
+					"velocidade": 14.3470964431763
+				},
+				{
+					"desvio_m": 5.99424409866333,
+					"nome": "Adversario3",
+					"posicao": "(191.0701, -0.109057, 22.84445)",
+					"progresso_m": 289.384185791016,
+					"velocidade": 1.08459067344666
+				},
+				{
+					"desvio_m": 0.672673642635345,
+					"nome": "Adversario4",
+					"posicao": "(151.8444, 0.090943, -53.72049)",
+					"progresso_m": 1588.45422363281,
+					"velocidade": 10.3355579376221
+				},
+				{
+					"desvio_m": 0.694471120834351,
+					"nome": "Adversario5",
+					"posicao": "(-7.935422, 0.090943, -43.15684)",
+					"progresso_m": 1749.70983886719,
+					"velocidade": 18.4999923706055
+				}
+			],
+			"segundos": 131.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.344433486461639,
+					"nome": "Adversario1",
+					"posicao": "(-58.44915, 0.09094, -46.77092)",
+					"progresso_m": 1792.25988769531,
+					"velocidade": 5.81540250778198
+				},
+				{
+					"desvio_m": 0.831492781639099,
+					"nome": "Adversario2",
+					"posicao": "(-51.35469, 0.090943, -44.25279)",
+					"progresso_m": 1788.96337890625,
+					"velocidade": 5.84613656997681
+				},
+				{
+					"desvio_m": 5.99335479736328,
+					"nome": "Adversario3",
+					"posicao": "(191.0928, -0.109058, 20.59383)",
+					"progresso_m": 291.679138183594,
+					"velocidade": 1.11513996124268
+				},
+				{
+					"desvio_m": 0.682281851768494,
+					"nome": "Adversario4",
+					"posicao": "(142.1637, 0.090943, -49.36818)",
+					"progresso_m": 1599.27798461914,
+					"velocidade": 11.7281370162964
+				},
+				{
+					"desvio_m": 0.737305402755737,
+					"nome": "Adversario5",
+					"posicao": "(-26.42122, 0.090943, -42.75833)",
+					"progresso_m": 1768.17230224609,
+					"velocidade": 18.4999675750732
+				}
+			],
+			"segundos": 132.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.825616002082825,
+					"nome": "Adversario1",
+					"posicao": "(-61.05111, 0.09094, -55.6927)",
+					"progresso_m": 1801.23193359375,
+					"velocidade": 14.5999612808228
+				},
+				{
+					"desvio_m": 0.937737226486206,
+					"nome": "Adversario2",
+					"posicao": "(-55.95957, 0.090943, -46.0519)",
+					"progresso_m": 1794.40692138672,
+					"velocidade": 4.8657693862915
+				},
+				{
+					"desvio_m": 5.99489641189575,
+					"nome": "Adversario3",
+					"posicao": "(191.1008, -0.109058, 18.32856)",
+					"progresso_m": 293.969329833984,
+					"velocidade": 1.11872005462646
+				},
+				{
+					"desvio_m": 0.534429609775543,
+					"nome": "Adversario4",
+					"posicao": "(127.1491, 0.090943, -47.15008)",
+					"progresso_m": 1614.53369140625,
+					"velocidade": 17.9969673156738
+				},
+				{
+					"desvio_m": 0.619742751121521,
+					"nome": "Adversario5",
+					"posicao": "(-43.64869, 0.090943, -42.46015)",
+					"progresso_m": 1785.51086425781,
+					"velocidade": 13.2573156356812
+				}
+			],
+			"segundos": 133.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.764891624450684,
+					"nome": "Adversario1",
+					"posicao": "(-61.42881, 0.09094, -73.21462)",
+					"progresso_m": 1818.71209716797,
+					"velocidade": 17.9901962280273
+				},
+				{
+					"desvio_m": 0.715191721916199,
+					"nome": "Adversario2",
+					"posicao": "(-59.19144, 0.090943, -51.9068)",
+					"progresso_m": 1801.83715820312,
+					"velocidade": 10.6913270950317
+				},
+				{
+					"desvio_m": 5.99650812149048,
+					"nome": "Adversario3",
+					"posicao": "(191.1027, -0.109058, 16.05114)",
+					"progresso_m": 296.257781982422,
+					"velocidade": 1.11797249317169
+				},
+				{
+					"desvio_m": 0.702413558959961,
+					"nome": "Adversario4",
+					"posicao": "(109.1649, 0.090943, -46.68131)",
+					"progresso_m": 1632.5373840332,
+					"velocidade": 17.9931354522705
+				},
+				{
+					"desvio_m": 0.539066314697266,
+					"nome": "Adversario5",
+					"posicao": "(-51.92877, 0.090943, -42.95448)",
+					"progresso_m": 1793.84423828125,
+					"velocidade": 5.67899799346924
+				}
+			],
+			"segundos": 134.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.741625666618347,
+					"nome": "Adversario1",
+					"posicao": "(-62.587, 0.09094, -86.39422)",
+					"progresso_m": 1832.19641113281,
+					"velocidade": 9.68826103210449
+				},
+				{
+					"desvio_m": 0.497463762760162,
+					"nome": "Adversario2",
+					"posicao": "(-59.92609, 0.090943, -67.8773)",
+					"progresso_m": 1817.80651855469,
+					"velocidade": 18.4998817443848
+				},
+				{
+					"desvio_m": 5.99159240722656,
+					"nome": "Adversario3",
+					"posicao": "(191.1084, -0.109058, 13.75439)",
+					"progresso_m": 298.559692382812,
+					"velocidade": 1.13223505020142
+				},
+				{
+					"desvio_m": 0.66607940196991,
+					"nome": "Adversario4",
+					"posicao": "(91.17099, 0.090943, -46.4896)",
+					"progresso_m": 1650.5348815918,
+					"velocidade": 17.9999961853027
+				},
+				{
+					"desvio_m": 0.377120703458786,
+					"nome": "Adversario5",
+					"posicao": "(-56.47739, 0.090943, -44.7988)",
+					"progresso_m": 1798.58312988281,
+					"velocidade": 4.87543249130249
+				}
+			],
+			"segundos": 135.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.748702943325043,
+					"nome": "Adversario1",
+					"posicao": "(-65.60405, 0.09094, -94.98055)",
+					"progresso_m": 1841.58184814453,
+					"velocidade": 8.91215133666992
+				},
+				{
+					"desvio_m": 0.682797074317932,
+					"nome": "Adversario2",
+					"posicao": "(-60.71729, 0.090943, -83.56577)",
+					"progresso_m": 1833.59283447266,
+					"velocidade": 10.7997541427612
+				},
+				{
+					"desvio_m": 5.99211120605469,
+					"nome": "Adversario3",
+					"posicao": "(191.1079, -0.109057, 11.45702)",
+					"progresso_m": 300.857086181641,
+					"velocidade": 1.1323903799057
+				},
+				{
+					"desvio_m": 0.706990838050842,
+					"nome": "Adversario4",
+					"posicao": "(73.18683, 0.090943, -46.01044)",
+					"progresso_m": 1668.54013061523,
+					"velocidade": 17.9999752044678
+				},
+				{
+					"desvio_m": 0.4572414457798,
+					"nome": "Adversario5",
+					"posicao": "(-59.92085, 0.090943, -49.67843)",
+					"progresso_m": 1804.34375,
+					"velocidade": 8.50103569030762
+				}
+			],
+			"segundos": 136.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.713621020317078,
+					"nome": "Adversario1",
+					"posicao": "(-71.42085, 0.09094, -102.2594)",
+					"progresso_m": 1851.17260742188,
+					"velocidade": 9.85501480102539
+				},
+				{
+					"desvio_m": 0.625408470630646,
+					"nome": "Adversario2",
+					"posicao": "(-63.02559, 0.090943, -92.76524)",
+					"progresso_m": 1842.96801757812,
+					"velocidade": 8.98354530334473
+				},
+				{
+					"desvio_m": 5.99214172363281,
+					"nome": "Adversario3",
+					"posicao": "(191.1079, -0.109057, 9.158678)",
+					"progresso_m": 303.155395507812,
+					"velocidade": 1.1336430311203
+				},
+				{
+					"desvio_m": 0.731364786624908,
+					"nome": "Adversario4",
+					"posicao": "(55.19955, 0.090943, -45.68108)",
+					"progresso_m": 1686.50427246094,
+					"velocidade": 17.9998626708984
+				},
+				{
+					"desvio_m": 0.97651606798172,
+					"nome": "Adversario5",
+					"posicao": "(-61.31036, 0.090943, -63.72098)",
+					"progresso_m": 1818.17846679688,
+					"velocidade": 18.4903049468994
+				}
+			],
+			"segundos": 137.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.71270227432251,
+					"nome": "Adversario1",
+					"posicao": "(-79.60968, 0.09094, -107.5133)",
+					"progresso_m": 1861.17205810547,
+					"velocidade": 9.92155838012695
+				},
+				{
+					"desvio_m": 0.644620001316071,
+					"nome": "Adversario2",
+					"posicao": "(-67.762, 0.090943, -100.4943)",
+					"progresso_m": 1851.85467529297,
+					"velocidade": 9.38612270355225
+				},
+				{
+					"desvio_m": 5.99214172363281,
+					"nome": "Adversario3",
+					"posicao": "(191.1079, -0.109057, 6.859214)",
+					"progresso_m": 305.454803466797,
+					"velocidade": 1.13407564163208
+				},
+				{
+					"desvio_m": 0.658523797988892,
+					"nome": "Adversario4",
+					"posicao": "(37.21205, 0.090943, -45.35683)",
+					"progresso_m": 1704.52752685547,
+					"velocidade": 17.9859962463379
+				},
+				{
+					"desvio_m": 0.698642790317535,
+					"nome": "Adversario5",
+					"posicao": "(-61.84006, 0.090943, -80.92666)",
+					"progresso_m": 1835.54638671875,
+					"velocidade": 12.6794023513794
+				}
+			],
+			"segundos": 138.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.679090261459351,
+					"nome": "Adversario1",
+					"posicao": "(-89.89089, 0.09094, -110.211)",
+					"progresso_m": 1872.01824951172,
+					"velocidade": 11.8283138275146
+				},
+				{
+					"desvio_m": 0.671525895595551,
+					"nome": "Adversario2",
+					"posicao": "(-75.1724, 0.090943, -106.7525)",
+					"progresso_m": 1861.39447021484,
+					"velocidade": 9.64846992492676
+				},
+				{
+					"desvio_m": 5.99214172363281,
+					"nome": "Adversario3",
+					"posicao": "(191.1079, -0.109057, 4.559379)",
+					"progresso_m": 307.754608154297,
+					"velocidade": 1.13420426845551
+				},
+				{
+					"desvio_m": 0.763232469558716,
+					"nome": "Adversario4",
+					"posicao": "(19.22112, 0.090943, -45.03931)",
+					"progresso_m": 1722.49432373047,
+					"velocidade": 17.9999980926514
+				},
+				{
+					"desvio_m": 0.760397136211395,
+					"nome": "Adversario5",
+					"posicao": "(-63.75376, 0.090943, -90.77097)",
+					"progresso_m": 1845.84973144531,
+					"velocidade": 9.05087471008301
+				}
+			],
+			"segundos": 139.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.690103590488434,
+					"nome": "Adversario1",
+					"posicao": "(-101.2559, 0.09094, -109.9991)",
+					"progresso_m": 1883.61016845703,
+					"velocidade": 10.1377372741699
+				},
+				{
+					"desvio_m": 0.680941700935364,
+					"nome": "Adversario2",
+					"posicao": "(-84.41739, 0.090943, -110.6204)",
+					"progresso_m": 1871.22662353516,
+					"velocidade": 10.5478382110596
+				},
+				{
+					"desvio_m": 5.99214172363281,
+					"nome": "Adversario3",
+					"posicao": "(191.1079, -0.109057, 2.259435)",
+					"progresso_m": 310.054534912109,
+					"velocidade": 1.13424074649811
+				},
+				{
+					"desvio_m": 0.648068606853485,
+					"nome": "Adversario4",
+					"posicao": "(1.23373, 0.090943, -44.73115)",
+					"progresso_m": 1740.51129150391,
+					"velocidade": 17.9999885559082
+				},
+				{
+					"desvio_m": 0.738244533538818,
+					"nome": "Adversario5",
+					"posicao": "(-68.05389, 0.090943, -98.68268)",
+					"progresso_m": 1855.14764404297,
+					"velocidade": 9.25918102264404
+				}
+			],
+			"segundos": 140.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.730421841144562,
+					"nome": "Adversario1",
+					"posicao": "(-110.4222, 0.09094, -107.2043)",
+					"progresso_m": 1893.46319580078,
+					"velocidade": 9.95163440704346
+				},
+				{
+					"desvio_m": 0.733586549758911,
+					"nome": "Adversario2",
+					"posicao": "(-95.92007, 0.090943, -111.8552)",
+					"progresso_m": 1882.62084960938,
+					"velocidade": 11.6926774978638
+				},
+				{
+					"desvio_m": 5.99214172363281,
+					"nome": "Adversario3",
+					"posicao": "(191.1079, -0.109057, -0.040539)",
+					"progresso_m": 312.354461669922,
+					"velocidade": 1.13425087928772
+				},
+				{
+					"desvio_m": 0.754669547080994,
+					"nome": "Adversario4",
+					"posicao": "(-16.75128, 0.090943, -44.29603)",
+					"progresso_m": 1758.49774169922,
+					"velocidade": 17.9996013641357
+				},
+				{
+					"desvio_m": 0.711321651935577,
+					"nome": "Adversario5",
+					"posicao": "(-75.2208, 0.090943, -105.1526)",
+					"progresso_m": 1865.05688476562,
+					"velocidade": 9.72509860992432
+				}
+			],
+			"segundos": 141.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.703557133674622,
+					"nome": "Adversario1",
+					"posicao": "(-118.7198, 0.09094, -101.5101)",
+					"progresso_m": 1903.78851318359,
+					"velocidade": 9.19228172302246
+				},
+				{
+					"desvio_m": 0.652991950511932,
+					"nome": "Adversario2",
+					"posicao": "(-105.9954, 0.090943, -110.3697)",
+					"progresso_m": 1892.71032714844,
+					"velocidade": 9.50517082214355
+				},
+				{
+					"desvio_m": 5.99214172363281,
+					"nome": "Adversario3",
+					"posicao": "(191.1079, -0.109057, -2.340523)",
+					"progresso_m": 314.654418945312,
+					"velocidade": 1.13425290584564
+				},
+				{
+					"desvio_m": 0.658107042312622,
+					"nome": "Adversario4",
+					"posicao": "(-34.74038, 0.090943, -44.06849)",
+					"progresso_m": 1776.48419189453,
+					"velocidade": 17.9991912841797
+				},
+				{
+					"desvio_m": 0.704647481441498,
+					"nome": "Adversario5",
+					"posicao": "(-84.33217, 0.090943, -109.168)",
+					"progresso_m": 1875.27056884766,
+					"velocidade": 10.4863653182983
+				}
+			],
+			"segundos": 142.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.75651091337204,
+					"nome": "Adversario1",
+					"posicao": "(-124.0549, 0.09094, -94.65096)",
+					"progresso_m": 1912.77795410156,
+					"velocidade": 8.45116424560547
+				},
+				{
+					"desvio_m": 0.680674374103546,
+					"nome": "Adversario2",
+					"posicao": "(-114.9931, 0.090943, -106.1975)",
+					"progresso_m": 1902.43597412109,
+					"velocidade": 10.3959045410156
+				},
+				{
+					"desvio_m": 5.99214172363281,
+					"nome": "Adversario3",
+					"posicao": "(191.1079, -0.109057, -4.640507)",
+					"progresso_m": 316.954376220703,
+					"velocidade": 1.13424909114838
+				},
+				{
+					"desvio_m": 0.807442009449005,
+					"nome": "Adversario4",
+					"posicao": "(-48.24626, 0.090943, -43.91684)",
+					"progresso_m": 1790.20465087891,
+					"velocidade": 8.30489158630371
+				},
+				{
+					"desvio_m": 0.655342519283295,
+					"nome": "Adversario5",
+					"posicao": "(-95.77575, 0.090943, -110.47)",
+					"progresso_m": 1887.01196289062,
+					"velocidade": 11.7748231887817
+				}
+			],
+			"segundos": 143.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.678005158901215,
+					"nome": "Adversario1",
+					"posicao": "(-126.9738, 0.09094, -85.33088)",
+					"progresso_m": 1922.8017578125,
+					"velocidade": 12.7952947616577
+				},
+				{
+					"desvio_m": 0.646938502788544,
+					"nome": "Adversario2",
+					"posicao": "(-122.1227, 0.090943, -99.91939)",
+					"progresso_m": 1911.81530761719,
+					"velocidade": 8.68958473205566
+				},
+				{
+					"desvio_m": 5.99214172363281,
+					"nome": "Adversario3",
+					"posicao": "(191.1079, -0.109057, -6.940484)",
+					"progresso_m": 319.254333496094,
+					"velocidade": 1.13425230979919
+				},
+				{
+					"desvio_m": 0.890063881874084,
+					"nome": "Adversario4",
+					"posicao": "(-54.05309, 0.090943, -44.99538)",
+					"progresso_m": 1796.47869873047,
+					"velocidade": 4.7597188949585
+				},
+				{
+					"desvio_m": 0.733066380023956,
+					"nome": "Adversario5",
+					"posicao": "(-105.8436, 0.090943, -108.9697)",
+					"progresso_m": 1897.44494628906,
+					"velocidade": 9.49072647094727
+				}
+			],
+			"segundos": 144.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.531524658203125,
+					"nome": "Adversario1",
+					"posicao": "(-127.5642, 0.09094, -68.45647)",
+					"progresso_m": 1939.68286132812,
+					"velocidade": 18.0
+				},
+				{
+					"desvio_m": 0.615033805370331,
+					"nome": "Adversario2",
+					"posicao": "(-126.5342, 0.090943, -92.56723)",
+					"progresso_m": 1920.22589111328,
+					"velocidade": 8.96892833709717
+				},
+				{
+					"desvio_m": 5.99214172363281,
+					"nome": "Adversario3",
+					"posicao": "(191.1079, -0.109057, -9.24046)",
+					"progresso_m": 321.554290771484,
+					"velocidade": 1.13425278663635
+				},
+				{
+					"desvio_m": 0.913226902484894,
+					"nome": "Adversario4",
+					"posicao": "(-57.9124, 0.090943, -48.29645)",
+					"progresso_m": 1802.31781005859,
+					"velocidade": 6.50896310806274
+				},
+				{
+					"desvio_m": 0.701714098453522,
+					"nome": "Adversario5",
+					"posicao": "(-114.8113, 0.090943, -104.6536)",
+					"progresso_m": 1907.65789794922,
+					"velocidade": 10.5116949081421
+				}
+			],
+			"segundos": 145.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.70630145072937,
+					"nome": "Adversario1",
+					"posicao": "(-127.4106, 0.09094, -50.46686)",
+					"progresso_m": 1957.66723632812,
+					"velocidade": 17.9999542236328
+				},
+				{
+					"desvio_m": 0.79663360118866,
+					"nome": "Adversario2",
+					"posicao": "(-128.7804, 0.090943, -81.16542)",
+					"progresso_m": 1931.53991699219,
+					"velocidade": 16.3748779296875
+				},
+				{
+					"desvio_m": 5.99214172363281,
+					"nome": "Adversario3",
+					"posicao": "(191.1079, -0.109057, -11.54044)",
+					"progresso_m": 323.854217529297,
+					"velocidade": 1.13425421714783
+				},
+				{
+					"desvio_m": 0.427908360958099,
+					"nome": "Adversario4",
+					"posicao": "(-59.86831, 0.090943, -59.46139)",
+					"progresso_m": 1813.92193603516,
+					"velocidade": 17.1824760437012
+				},
+				{
+					"desvio_m": 0.741805553436279,
+					"nome": "Adversario5",
+					"posicao": "(-121.6603, 0.090943, -98.29675)",
+					"progresso_m": 1917.27203369141,
+					"velocidade": 8.58414745330811
+				}
+			],
+			"segundos": 146.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.752764165401459,
+					"nome": "Adversario1",
+					"posicao": "(-128.4951, 0.09094, -33.41379)",
+					"progresso_m": 1974.74591064453,
+					"velocidade": 13.4129610061646
+				},
+				{
+					"desvio_m": 0.789352416992188,
+					"nome": "Adversario2",
+					"posicao": "(-128.8849, 0.090943, -62.85905)",
+					"progresso_m": 1949.77191162109,
+					"velocidade": 18.4997234344482
+				},
+				{
+					"desvio_m": 5.99214172363281,
+					"nome": "Adversario3",
+					"posicao": "(191.1079, -0.109057, -13.84041)",
+					"progresso_m": 326.154174804688,
+					"velocidade": 1.13425529003143
+				},
+				{
+					"desvio_m": 0.713321626186371,
+					"nome": "Adversario4",
+					"posicao": "(-60.17208, 0.090943, -77.24493)",
+					"progresso_m": 1831.70159912109,
+					"velocidade": 16.057165145874
+				},
+				{
+					"desvio_m": 0.751652896404266,
+					"nome": "Adversario5",
+					"posicao": "(-125.7522, 0.090943, -90.68507)",
+					"progresso_m": 1926.22589111328,
+					"velocidade": 9.39569568634033
+				}
+			],
+			"segundos": 147.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.671078681945801,
+					"nome": "Adversario1",
+					"posicao": "(-131.2508, 0.09094, -22.49574)",
+					"progresso_m": 1985.95373535156,
+					"velocidade": 9.4599437713623
+				},
+				{
+					"desvio_m": 0.699330866336823,
+					"nome": "Adversario2",
+					"posicao": "(-128.9493, 0.090943, -44.39427)",
+					"progresso_m": 1968.27008056641,
+					"velocidade": 18.189453125
+				},
+				{
+					"desvio_m": 5.99214172363281,
+					"nome": "Adversario3",
+					"posicao": "(191.1079, -0.109057, -16.14039)",
+					"progresso_m": 328.454132080078,
+					"velocidade": 1.13425588607788
+				},
+				{
+					"desvio_m": 0.635784566402435,
+					"nome": "Adversario4",
+					"posicao": "(-61.66144, 0.090943, -88.61742)",
+					"progresso_m": 1843.18688964844,
+					"velocidade": 9.3789005279541
+				},
+				{
+					"desvio_m": 0.522754669189453,
+					"nome": "Adversario5",
+					"posicao": "(-127.5519, 0.090943, -77.62724)",
+					"progresso_m": 1939.49780273438,
+					"velocidade": 18.3453464508057
+				}
+			],
+			"segundos": 148.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.61738395690918,
+					"nome": "Adversario1",
+					"posicao": "(-135.5524, 0.09094, -14.88699)",
+					"progresso_m": 1994.50836181641,
+					"velocidade": 9.99966049194336
+				},
+				{
+					"desvio_m": 0.680260598659515,
+					"nome": "Adversario2",
+					"posicao": "(-130.6689, 0.090943, -29.31395)",
+					"progresso_m": 1983.69421386719,
+					"velocidade": 11.7374973297119
+				},
+				{
+					"desvio_m": 5.99214172363281,
+					"nome": "Adversario3",
+					"posicao": "(191.1079, -0.109057, -18.44043)",
+					"progresso_m": 330.754119873047,
+					"velocidade": 1.13429915904999
+				},
+				{
+					"desvio_m": 0.634490013122559,
+					"nome": "Adversario4",
+					"posicao": "(-65.1438, 0.090943, -96.93148)",
+					"progresso_m": 1852.04229736328,
+					"velocidade": 8.98642921447754
+				},
+				{
+					"desvio_m": 0.660560607910156,
+					"nome": "Adversario5",
+					"posicao": "(-127.4361, 0.090943, -59.13948)",
+					"progresso_m": 1957.99151611328,
+					"velocidade": 18.4999923706055
+				}
+			],
+			"segundos": 149.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.821087002754211,
+					"nome": "Adversario1",
+					"posicao": "(-145.3771, 0.09094, -5.955347)",
+					"progresso_m": 2007.56146240234,
+					"velocidade": 14.4393463134766
+				},
+				{
+					"desvio_m": 0.756380915641785,
+					"nome": "Adversario2",
+					"posicao": "(-133.9103, 0.090943, -19.95647)",
+					"progresso_m": 1993.84106445312,
+					"velocidade": 8.38646221160889
+				},
+				{
+					"desvio_m": 5.9921875,
+					"nome": "Adversario3",
+					"posicao": "(191.1079, -0.109058, -20.50995)",
+					"progresso_m": 332.824462890625,
+					"velocidade": 1.09626889228821
+				},
+				{
+					"desvio_m": 0.67045259475708,
+					"nome": "Adversario4",
+					"posicao": "(-71.37135, 0.090943, -104.038)",
+					"progresso_m": 1861.30993652344,
+					"velocidade": 9.85849189758301
+				},
+				{
+					"desvio_m": 0.718558549880981,
+					"nome": "Adversario5",
+					"posicao": "(-127.7436, 0.090943, -40.70333)",
+					"progresso_m": 1976.38653564453,
+					"velocidade": 18.4794368743896
+				}
+			],
+			"segundos": 150.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.788741230964661,
+					"nome": "Adversario1",
+					"posicao": "(-158.5732, 0.09094, 1.36672)",
+					"progresso_m": 2022.46057128906,
+					"velocidade": 17.6070728302002
+				},
+				{
+					"desvio_m": 0.650098621845245,
+					"nome": "Adversario2",
+					"posicao": "(-140.1433, 0.090943, -11.96942)",
+					"progresso_m": 2004.21881103516,
+					"velocidade": 13.8317346572876
+				},
+				{
+					"desvio_m": 5.99365711212158,
+					"nome": "Adversario3",
+					"posicao": "(191.1079, -0.109058, -22.78235)",
+					"progresso_m": 335.088531494141,
+					"velocidade": 1.12891614437103
+				},
+				{
+					"desvio_m": 0.665454506874084,
+					"nome": "Adversario4",
+					"posicao": "(-79.72266, 0.090943, -109.0639)",
+					"progresso_m": 1870.87365722656,
+					"velocidade": 10.1517305374146
+				},
+				{
+					"desvio_m": 0.697396397590637,
+					"nome": "Adversario5",
+					"posicao": "(-129.8006, 0.090943, -26.99731)",
+					"progresso_m": 1990.26080322266,
+					"velocidade": 11.3774814605713
+				}
+			],
+			"segundos": 151.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.81460577249527,
+					"nome": "Adversario1",
+					"posicao": "(-174.6445, 0.09094, 7.735489)",
+					"progresso_m": 2039.80541992188,
+					"velocidade": 14.223201751709
+				},
+				{
+					"desvio_m": 0.60551780462265,
+					"nome": "Adversario2",
+					"posicao": "(-151.8233, 0.090943, -3.54892)",
+					"progresso_m": 2018.77227783203,
+					"velocidade": 14.5971803665161
+				},
+				{
+					"desvio_m": 5.99640464782715,
+					"nome": "Adversario3",
+					"posicao": "(191.1103, -0.109058, -25.07596)",
+					"progresso_m": 337.368713378906,
+					"velocidade": 1.14157700538635
+				},
+				{
+					"desvio_m": 0.709175944328308,
+					"nome": "Adversario4",
+					"posicao": "(-90.13358, 0.090943, -111.6306)",
+					"progresso_m": 1881.40863037109,
+					"velocidade": 11.9357376098633
+				},
+				{
+					"desvio_m": 0.612657845020294,
+					"nome": "Adversario5",
+					"posicao": "(-133.2508, 0.090943, -18.27462)",
+					"progresso_m": 1999.55053710938,
+					"velocidade": 8.39082622528076
+				}
+			],
+			"segundos": 152.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.74412602186203,
+					"nome": "Adversario1",
+					"posicao": "(-183.9597, 0.09094, 12.90889)",
+					"progresso_m": 2050.75689697266,
+					"velocidade": 8.71763324737549
+				},
+				{
+					"desvio_m": 0.522925138473511,
+					"nome": "Adversario2",
+					"posicao": "(-167.3254, 0.090943, 3.375417)",
+					"progresso_m": 2035.80548095703,
+					"velocidade": 18.4999656677246
+				},
+				{
+					"desvio_m": 5.99497079849243,
+					"nome": "Adversario3",
+					"posicao": "(191.1245, -0.109058, -27.38608)",
+					"progresso_m": 339.649871826172,
+					"velocidade": 1.15338277816772
+				},
+				{
+					"desvio_m": 0.697504878044128,
+					"nome": "Adversario4",
+					"posicao": "(-101.4802, 0.090943, -111.3692)",
+					"progresso_m": 1892.65997314453,
+					"velocidade": 10.1327772140503
+				},
+				{
+					"desvio_m": 0.760517716407776,
+					"nome": "Adversario5",
+					"posicao": "(-140.2055, 0.090943, -10.04116)",
+					"progresso_m": 2010.03631591797,
+					"velocidade": 14.3160190582275
+				}
+			],
+			"segundos": 153.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.772136628627777,
+					"nome": "Adversario1",
+					"posicao": "(-189.6851, 0.09094, 18.96678)",
+					"progresso_m": 2059.38153076172,
+					"velocidade": 8.78534984588623
+				},
+				{
+					"desvio_m": 0.637996733188629,
+					"nome": "Adversario2",
+					"posicao": "(-180.4764, 0.090943, 9.00491)",
+					"progresso_m": 2050.17309570312,
+					"velocidade": 10.6004505157471
+				},
+				{
+					"desvio_m": 5.99577713012695,
+					"nome": "Adversario3",
+					"posicao": "(191.1495, -0.109058, -29.61547)",
+					"progresso_m": 341.839508056641,
+					"velocidade": 0.987583756446838
+				},
+				{
+					"desvio_m": 0.648667812347412,
+					"nome": "Adversario4",
+					"posicao": "(-110.6551, 0.090943, -108.6238)",
+					"progresso_m": 1902.06079101562,
+					"velocidade": 9.96143341064453
+				},
+				{
+					"desvio_m": 0.783059179782867,
+					"nome": "Adversario5",
+					"posicao": "(-152.0907, 0.090943, -1.807637)",
+					"progresso_m": 2024.36022949219,
+					"velocidade": 14.7313842773438
+				}
+			],
+			"segundos": 154.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.52357029914856,
+					"nome": "Adversario1",
+					"posicao": "(-194.3949, 0.09094, 30.58139)",
+					"progresso_m": 2072.08020019531,
+					"velocidade": 16.3762130737305
+				},
+				{
+					"desvio_m": 0.614982843399048,
+					"nome": "Adversario2",
+					"posicao": "(-187.7275, 0.090943, 14.37105)",
+					"progresso_m": 2059.09100341797,
+					"velocidade": 8.1954870223999
+				},
+				{
+					"desvio_m": 5.99681282043457,
+					"nome": "Adversario3",
+					"posicao": "(191.1919, -0.109057, -31.82329)",
+					"progresso_m": 343.984283447266,
+					"velocidade": 1.14992141723633
+				},
+				{
+					"desvio_m": 0.68277370929718,
+					"nome": "Adversario4",
+					"posicao": "(-119.105, 0.090943, -103.0357)",
+					"progresso_m": 1912.05889892578,
+					"velocidade": 9.45768356323242
+				},
+				{
+					"desvio_m": 0.881285846233368,
+					"nome": "Adversario5",
+					"posicao": "(-167.8907, 0.090943, 5.08287)",
+					"progresso_m": 2041.43029785156,
+					"velocidade": 18.4999942779541
+				}
+			],
+			"segundos": 155.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.752030611038208,
+					"nome": "Adversario1",
+					"posicao": "(-196.304, 0.09094, 40.47246)",
+					"progresso_m": 2082.40576171875,
+					"velocidade": 5.8699688911438
+				},
+				{
+					"desvio_m": 0.645862817764282,
+					"nome": "Adversario2",
+					"posicao": "(-192.7393, 0.090943, 21.66792)",
+					"progresso_m": 2067.70495605469,
+					"velocidade": 10.9738788604736
+				},
+				{
+					"desvio_m": 5.99692344665527,
+					"nome": "Adversario3",
+					"posicao": "(191.2581, -0.109057, -34.14658)",
+					"progresso_m": 346.266265869141,
+					"velocidade": 1.17022013664246
+				},
+				{
+					"desvio_m": 0.624592363834381,
+					"nome": "Adversario4",
+					"posicao": "(-124.7132, 0.090943, -96.28582)",
+					"progresso_m": 1920.67687988281,
+					"velocidade": 8.41860580444336
+				},
+				{
+					"desvio_m": 0.749621152877808,
+					"nome": "Adversario5",
+					"posicao": "(-180.4881, 0.090943, 10.61403)",
+					"progresso_m": 2055.47473144531,
+					"velocidade": 10.1934604644775
+				}
+			],
+			"segundos": 156.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.940800845623016,
+					"nome": "Adversario1",
+					"posicao": "(-195.841, 0.09094, 45.32691)",
+					"progresso_m": 2087.72985839844,
+					"velocidade": 4.89043521881104
+				},
+				{
+					"desvio_m": 0.842074632644653,
+					"nome": "Adversario2",
+					"posicao": "(-196.9188, 0.090943, 35.20676)",
+					"progresso_m": 2081.74633789062,
+					"velocidade": 11.8484878540039
+				},
+				{
+					"desvio_m": 5.99501943588257,
+					"nome": "Adversario3",
+					"posicao": "(191.3356, -0.109058, -36.47586)",
+					"progresso_m": 348.609741210938,
+					"velocidade": 1.13930511474609
+				},
+				{
+					"desvio_m": 0.665149033069611,
+					"nome": "Adversario4",
+					"posicao": "(-127.9673, 0.090943, -87.67195)",
+					"progresso_m": 1929.65954589844,
+					"velocidade": 11.1207609176636
+				},
+				{
+					"desvio_m": 0.769474804401398,
+					"nome": "Adversario5",
+					"posicao": "(-187.4261, 0.090943, 16.05741)",
+					"progresso_m": 2064.58618164062,
+					"velocidade": 8.12531280517578
+				}
+			],
+			"segundos": 157.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.538396835327148,
+					"nome": "Adversario1",
+					"posicao": "(-190.1741, 0.09094, 50.86951)",
+					"progresso_m": 2096.37237548828,
+					"velocidade": 13.2398719787598
+				},
+				{
+					"desvio_m": 0.550854444503784,
+					"nome": "Adversario2",
+					"posicao": "(-197.7378, 0.090943, 42.13779)",
+					"progresso_m": 2088.72412109375,
+					"velocidade": 4.89681005477905
+				},
+				{
+					"desvio_m": 5.99533557891846,
+					"nome": "Adversario3",
+					"posicao": "(191.3919, -0.109057, -38.76386)",
+					"progresso_m": 351.000030517578,
+					"velocidade": 1.0965428352356
+				},
+				{
+					"desvio_m": 0.90248167514801,
+					"nome": "Adversario4",
+					"posicao": "(-128.9998, 0.090943, -71.93368)",
+					"progresso_m": 1945.20672607422,
+					"velocidade": 17.9999446868896
+				},
+				{
+					"desvio_m": 0.685700058937073,
+					"nome": "Adversario5",
+					"posicao": "(-192.3091, 0.090943, 24.1529)",
+					"progresso_m": 2074.32611083984,
+					"velocidade": 12.8531103134155
+				}
+			],
+			"segundos": 158.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.689044177532196,
+					"nome": "Adversario1",
+					"posicao": "(-175.1557, 0.09094, 58.9944)",
+					"progresso_m": 2113.31494140625,
+					"velocidade": 17.9591636657715
+				},
+				{
+					"desvio_m": 0.342111945152283,
+					"nome": "Adversario2",
+					"posicao": "(-196.5929, 0.090943, 46.79449)",
+					"progresso_m": 2093.34643554688,
+					"velocidade": 5.38343238830566
+				},
+				{
+					"desvio_m": 5.99108743667603,
+					"nome": "Adversario3",
+					"posicao": "(191.3969, -0.109057, -41.00326)",
+					"progresso_m": 353.43017578125,
+					"velocidade": 1.04315257072449
+				},
+				{
+					"desvio_m": 0.698319375514984,
+					"nome": "Adversario4",
+					"posicao": "(-128.7999, 0.090943, -53.94417)",
+					"progresso_m": 1963.19610595703,
+					"velocidade": 17.9991912841797
+				},
+				{
+					"desvio_m": 0.61767315864563,
+					"nome": "Adversario5",
+					"posicao": "(-195.9126, 0.090943, 37.43175)",
+					"progresso_m": 2088.25531005859,
+					"velocidade": 8.77956581115723
+				}
+			],
+			"segundos": 159.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.808074116706848,
+					"nome": "Adversario1",
+					"posicao": "(-160.313, 0.09094, 69.1576)",
+					"progresso_m": 2131.27648925781,
+					"velocidade": 17.9999961853027
+				},
+				{
+					"desvio_m": 0.871002316474915,
+					"nome": "Adversario2",
+					"posicao": "(-189.6018, 0.090943, 52.7302)",
+					"progresso_m": 2102.18859863281,
+					"velocidade": 14.7428874969482
+				},
+				{
+					"desvio_m": 5.9909873008728,
+					"nome": "Adversario3",
+					"posicao": "(191.3131, -0.109057, -43.16969)",
+					"progresso_m": 355.850921630859,
+					"velocidade": 0.982685089111328
+				},
+				{
+					"desvio_m": 0.645230293273926,
+					"nome": "Adversario4",
+					"posicao": "(-129.5439, 0.090943, -36.20019)",
+					"progresso_m": 1981.07360839844,
+					"velocidade": 15.8556289672852
+				},
+				{
+					"desvio_m": 0.874041378498077,
+					"nome": "Adversario5",
+					"posicao": "(-196.2964, 0.090943, 43.30945)",
+					"progresso_m": 2094.42492675781,
+					"velocidade": 4.64967107772827
+				}
+			],
+			"segundos": 160.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.638676524162292,
+					"nome": "Adversario1",
+					"posicao": "(-145.2873, 0.09094, 79.04246)",
+					"progresso_m": 2149.31573486328,
+					"velocidade": 17.9999885559082
+				},
+				{
+					"desvio_m": 0.662762820720673,
+					"nome": "Adversario2",
+					"posicao": "(-173.9297, 0.090943, 61.41927)",
+					"progresso_m": 2120.15521240234,
+					"velocidade": 18.4931373596191
+				},
+				{
+					"desvio_m": 5.98929691314697,
+					"nome": "Adversario3",
+					"posicao": "(191.1339, -0.109057, -45.27354)",
+					"progresso_m": 358.245727539062,
+					"velocidade": 0.959268450737
+				},
+				{
+					"desvio_m": 0.705812931060791,
+					"nome": "Adversario4",
+					"posicao": "(-132.0381, 0.090943, -24.39508)",
+					"progresso_m": 1993.39916992188,
+					"velocidade": 10.1237602233887
+				},
+				{
+					"desvio_m": 0.887582778930664,
+					"nome": "Adversario5",
+					"posicao": "(-193.9693, 0.090943, 48.11683)",
+					"progresso_m": 2100.52856445312,
+					"velocidade": 7.97125387191772
+				}
+			],
+			"segundos": 161.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.647338390350342,
+					"nome": "Adversario1",
+					"posicao": "(-129.5513, 0.09094, 87.75845)",
+					"progresso_m": 2167.33361816406,
+					"velocidade": 17.9999866485596
+				},
+				{
+					"desvio_m": 0.617830693721771,
+					"nome": "Adversario2",
+					"posicao": "(-158.7434, 0.090943, 71.96507)",
+					"progresso_m": 2138.65411376953,
+					"velocidade": 18.4799919128418
+				},
+				{
+					"desvio_m": 5.9900164604187,
+					"nome": "Adversario3",
+					"posicao": "(190.8643, -0.109057, -47.23974)",
+					"progresso_m": 360.5361328125,
+					"velocidade": 0.858472526073456
+				},
+				{
+					"desvio_m": 0.770504534244537,
+					"nome": "Adversario4",
+					"posicao": "(-136.0065, 0.090943, -16.56387)",
+					"progresso_m": 2002.46295166016,
+					"velocidade": 9.30550193786621
+				},
+				{
+					"desvio_m": 0.451484978199005,
+					"nome": "Adversario5",
+					"posicao": "(-181.9793, 0.090943, 55.17181)",
+					"progresso_m": 2114.52001953125,
+					"velocidade": 18.4850635528564
+				}
+			],
+			"segundos": 162.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.67603474855423,
+					"nome": "Adversario1",
+					"posicao": "(-113.5406, 0.09094, 95.9623)",
+					"progresso_m": 2185.3486328125,
+					"velocidade": 17.9997234344482
+				},
+				{
+					"desvio_m": 0.771349847316742,
+					"nome": "Adversario2",
+					"posicao": "(-143.164, 0.090943, 81.91586)",
+					"progresso_m": 2157.08898925781,
+					"velocidade": 18.4416656494141
+				},
+				{
+					"desvio_m": 5.99016189575195,
+					"nome": "Adversario3",
+					"posicao": "(190.4913, -0.109057, -49.19092)",
+					"progresso_m": 362.848846435547,
+					"velocidade": 0.915239214897156
+				},
+				{
+					"desvio_m": 0.566123783588409,
+					"nome": "Adversario4",
+					"posicao": "(-145.2879, 0.090943, -7.725237)",
+					"progresso_m": 2015.44732666016,
+					"velocidade": 14.4878606796265
+				},
+				{
+					"desvio_m": 0.864964783191681,
+					"nome": "Adversario5",
+					"posicao": "(-166.267, 0.090943, 64.8919)",
+					"progresso_m": 2132.93707275391,
+					"velocidade": 18.4416656494141
+				}
+			],
+			"segundos": 163.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.653350412845612,
+					"nome": "Adversario1",
+					"posicao": "(-97.19802, 0.09094, 103.4789)",
+					"progresso_m": 2203.37609863281,
+					"velocidade": 17.9976444244385
+				},
+				{
+					"desvio_m": 0.736586689949036,
+					"nome": "Adversario2",
+					"posicao": "(-126.9101, 0.090943, 90.73396)",
+					"progresso_m": 2175.5556640625,
+					"velocidade": 18.4999980926514
+				},
+				{
+					"desvio_m": 5.9906702041626,
+					"nome": "Adversario3",
+					"posicao": "(190.1711, -0.109057, -50.52122)",
+					"progresso_m": 364.582092285156,
+					"velocidade": 0.820267915725708
+				},
+				{
+					"desvio_m": 0.611815452575684,
+					"nome": "Adversario4",
+					"posicao": "(-158.2242, 0.090943, -0.316637)",
+					"progresso_m": 2030.46429443359,
+					"velocidade": 16.9418811798096
+				},
+				{
+					"desvio_m": 0.673247396945953,
+					"nome": "Adversario5",
+					"posicao": "(-151.082, 0.090943, 75.44337)",
+					"progresso_m": 2151.46716308594,
+					"velocidade": 18.4999866485596
+				}
+			],
+			"segundos": 164.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.674227774143219,
+					"nome": "Adversario1",
+					"posicao": "(-80.43216, 0.09094, 109.9968)",
+					"progresso_m": 2221.41162109375,
+					"velocidade": 17.97141456604
+				},
+				{
+					"desvio_m": 0.720018565654755,
+					"nome": "Adversario2",
+					"posicao": "(-110.3956, 0.090943, 99.04936)",
+					"progresso_m": 2194.01940917969,
+					"velocidade": 18.4998645782471
+				},
+				{
+					"desvio_m": 5.98916101455688,
+					"nome": "Adversario3",
+					"posicao": "(189.6205, -0.109057, -52.36384)",
+					"progresso_m": 366.886322021484,
+					"velocidade": 0.901594877243042
+				},
+				{
+					"desvio_m": 0.568829596042633,
+					"nome": "Adversario4",
+					"posicao": "(-174.4398, 0.090943, 6.133481)",
+					"progresso_m": 2047.96539306641,
+					"velocidade": 14.8533048629761
+				},
+				{
+					"desvio_m": 0.616977334022522,
+					"nome": "Adversario5",
+					"posicao": "(-135.131, 0.090943, 84.78625)",
+					"progresso_m": 2170.00030517578,
+					"velocidade": 18.499906539917
+				}
+			],
+			"segundos": 165.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.611491441726685,
+					"nome": "Adversario1",
+					"posicao": "(-64.93589, 0.09094, 113.93)",
+					"progresso_m": 2237.5419921875,
+					"velocidade": 17.9606800079346
+				},
+				{
+					"desvio_m": 0.746961534023285,
+					"nome": "Adversario2",
+					"posicao": "(-93.49334, 0.090943, 106.5405)",
+					"progresso_m": 2212.46411132812,
+					"velocidade": 18.499605178833
+				},
+				{
+					"desvio_m": 5.98513460159302,
+					"nome": "Adversario3",
+					"posicao": "(188.9323, -0.109057, -54.21736)",
+					"progresso_m": 369.256591796875,
+					"velocidade": 0.90533459186554
+				},
+				{
+					"desvio_m": 0.646074712276459,
+					"nome": "Adversario4",
+					"posicao": "(-184.1545, 0.090943, 11.32534)",
+					"progresso_m": 2058.97564697266,
+					"velocidade": 9.08233070373535
+				},
+				{
+					"desvio_m": 0.691982507705688,
+					"nome": "Adversario5",
+					"posicao": "(-118.75, 0.090943, 93.36246)",
+					"progresso_m": 2188.51098632812,
+					"velocidade": 18.499605178833
+				}
+			],
+			"segundos": 166.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.581885159015656,
+					"nome": "Adversario1",
+					"posicao": "(-47.02287, 0.09094, 115.4691)",
+					"progresso_m": 2255.61145019531,
+					"velocidade": 17.9999980926514
+				},
+				{
+					"desvio_m": 0.723491847515106,
+					"nome": "Adversario2",
+					"posicao": "(-76.60826, 0.090943, 112.7013)",
+					"progresso_m": 2230.42785644531,
+					"velocidade": 15.5651245117188
+				},
+				{
+					"desvio_m": 5.98485708236694,
+					"nome": "Adversario3",
+					"posicao": "(188.1249, -0.109058, -55.99828)",
+					"progresso_m": 371.597351074219,
+					"velocidade": 0.849763631820679
+				},
+				{
+					"desvio_m": 0.600361168384552,
+					"nome": "Adversario4",
+					"posicao": "(-190.1234, 0.090943, 17.18203)",
+					"progresso_m": 2067.19378662109,
+					"velocidade": 8.48513031005859
+				},
+				{
+					"desvio_m": 0.666677713394165,
+					"nome": "Adversario5",
+					"posicao": "(-102.0783, 0.090943, 101.3568)",
+					"progresso_m": 2207.0380859375,
+					"velocidade": 18.4859924316406
+				}
+			],
+			"segundos": 167.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.670875549316406,
+					"nome": "Adversario1",
+					"posicao": "(-29.03279, 0.09094, 115.427)",
+					"progresso_m": 2273.61389160156,
+					"velocidade": 17.9999675750732
+				},
+				{
+					"desvio_m": 0.835374474525452,
+					"nome": "Adversario2",
+					"posicao": "(-60.43122, 0.090943, 115.9678)",
+					"progresso_m": 2246.76428222656,
+					"velocidade": 18.4996318817139
+				},
+				{
+					"desvio_m": 5.98618650436401,
+					"nome": "Adversario3",
+					"posicao": "(187.2372, -0.109135, -57.67417)",
+					"progresso_m": 373.875305175781,
+					"velocidade": 0.0731406137347221
+				},
+				{
+					"desvio_m": 0.79841011762619,
+					"nome": "Adversario4",
+					"posicao": "(-194.8855, 0.090943, 27.32254)",
+					"progresso_m": 2078.07666015625,
+					"velocidade": 16.0834903717041
+				},
+				{
+					"desvio_m": 0.662685692310333,
+					"nome": "Adversario5",
+					"posicao": "(-84.96909, 0.090943, 108.3731)",
+					"progresso_m": 2225.5673828125,
+					"velocidade": 18.5
+				}
+			],
+			"segundos": 168.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.709381103515625,
+					"nome": "Adversario1",
+					"posicao": "(-11.0421, 0.09094, 115.3909)",
+					"progresso_m": 2291.60424804688,
+					"velocidade": 17.9988460540771
+				},
+				{
+					"desvio_m": 0.82974499464035,
+					"nome": "Adversario2",
+					"posicao": "(-41.98024, 0.090943, 116.9244)",
+					"progresso_m": 2265.16027832031,
+					"velocidade": 18.4976444244385
+				},
+				{
+					"desvio_m": 5.98739290237427,
+					"nome": "Adversario3",
+					"posicao": "(186.5346, -0.109135, -58.85526)",
+					"progresso_m": 375.380645751953,
+					"velocidade": 0.846114695072174
+				},
+				{
+					"desvio_m": 0.698196172714233,
+					"nome": "Adversario4",
+					"posicao": "(-197.5578, 0.090943, 39.04234)",
+					"progresso_m": 2090.18011474609,
+					"velocidade": 6.82295989990234
+				},
+				{
+					"desvio_m": 0.665503263473511,
+					"nome": "Adversario5",
+					"posicao": "(-69.35576, 0.090943, 113.1101)",
+					"progresso_m": 2242.05407714844,
+					"velocidade": 15.9070072174072
+				}
+			],
+			"segundos": 169.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.69891357421875,
+					"nome": "Adversario1",
+					"posicao": "(6.953218, 0.09094, 115.4011)",
+					"progresso_m": 2309.59940004349,
+					"velocidade": 17.9999980926514
+				},
+				{
+					"desvio_m": 0.701202392578125,
+					"nome": "Adversario2",
+					"posicao": "(-23.48779, 0.090943, 116.8)",
+					"progresso_m": 2283.6513671875,
+					"velocidade": 18.4416675567627
+				},
+				{
+					"desvio_m": 5.98796844482422,
+					"nome": "Adversario3",
+					"posicao": "(185.4559, -0.109057, -60.51378)",
+					"progresso_m": 377.632202148438,
+					"velocidade": 0.90874457359314
+				},
+				{
+					"desvio_m": 0.443687379360199,
+					"nome": "Adversario4",
+					"posicao": "(-197.5221, 0.090943, 44.24469)",
+					"progresso_m": 2095.2490234375,
+					"velocidade": 4.64277601242065
+				},
+				{
+					"desvio_m": 0.579175353050232,
+					"nome": "Adversario5",
+					"posicao": "(-51.30787, 0.090943, 115.33)",
+					"progresso_m": 2260.29504394531,
+					"velocidade": 18.4992198944092
+				}
+			],
+			"segundos": 170.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.699882507324219,
+					"nome": "Adversario1",
+					"posicao": "(24.9532, 0.09094, 115.4001)",
+					"progresso_m": 2327.59943771362,
+					"velocidade": 17.9999980926514
+				},
+				{
+					"desvio_m": 0.694801330566406,
+					"nome": "Adversario2",
+					"posicao": "(-4.994709, 0.090943, 116.7951)",
+					"progresso_m": 2302.14318847656,
+					"velocidade": 18.5000019073486
+				},
+				{
+					"desvio_m": 5.98658466339111,
+					"nome": "Adversario3",
+					"posicao": "(184.5045, -0.109056, -61.87003)",
+					"progresso_m": 379.545593261719,
+					"velocidade": 0.0
+				},
+				{
+					"desvio_m": 0.390443652868271,
+					"nome": "Adversario4",
+					"posicao": "(-194.8058, 0.090943, 49.086)",
+					"progresso_m": 2100.61138916016,
+					"velocidade": 8.11096572875977
+				},
+				{
+					"desvio_m": 0.633407592773438,
+					"nome": "Adversario5",
+					"posicao": "(-32.82037, 0.090943, 115.4637)",
+					"progresso_m": 2278.81811523438,
+					"velocidade": 18.4988460540771
+				}
+			],
+			"segundos": 171.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.700103759765625,
+					"nome": "Adversario1",
+					"posicao": "(42.95316, 0.09094, 115.3999)",
+					"progresso_m": 2345.59939575195,
+					"velocidade": 17.9999980926514
+				},
+				{
+					"desvio_m": 0.701194763183594,
+					"nome": "Adversario2",
+					"posicao": "(13.50066, 0.090943, 116.8012)",
+					"progresso_m": 2320.63851070404,
+					"velocidade": 18.4999980926514
+				},
+				{
+					"desvio_m": 5.99119997024536,
+					"nome": "Adversario3",
+					"posicao": "(184.1965, -0.109056, -62.28032)",
+					"progresso_m": 380.032379150391,
+					"velocidade": 0.746300995349884
+				},
+				{
+					"desvio_m": 0.964786052703857,
+					"nome": "Adversario4",
+					"posicao": "(-182.8666, 0.090943, 56.30103)",
+					"progresso_m": 2114.29663085938,
+					"velocidade": 17.9952640533447
+				},
+				{
+					"desvio_m": 0.712722778320312,
+					"nome": "Adversario5",
+					"posicao": "(-14.32985, 0.090943, 115.3874)",
+					"progresso_m": 2297.30834960938,
+					"velocidade": 18.4983501434326
+				}
+			],
+			"segundos": 172.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.700080871582031,
+					"nome": "Adversario1",
+					"posicao": "(60.95311, 0.09094, 115.3999)",
+					"progresso_m": 2363.59929275513,
+					"velocidade": 17.9999980926514
+				},
+				{
+					"desvio_m": 0.699920654296875,
+					"nome": "Adversario2",
+					"posicao": "(32.00072, 0.090943, 116.7999)",
+					"progresso_m": 2339.13857460022,
+					"velocidade": 18.4999980926514
+				},
+				{
+					"desvio_m": 5.98811101913452,
+					"nome": "Adversario3",
+					"posicao": "(183.1843, -0.10906, -63.62015)",
+					"progresso_m": 381.911773681641,
+					"velocidade": 0.353783130645752
+				},
+				{
+					"desvio_m": 0.546035587787628,
+					"nome": "Adversario4",
+					"posicao": "(-167.55, 0.090943, 65.71156)",
+					"progresso_m": 2132.37152099609,
+					"velocidade": 17.9714183807373
+				},
+				{
+					"desvio_m": 0.699569702148438,
+					"nome": "Adversario5",
+					"posicao": "(4.165455, 0.090943, 115.4005)",
+					"progresso_m": 2315.8034799099,
+					"velocidade": 18.5000019073486
+				}
+			],
+			"segundos": 173.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.700080871582031,
+					"nome": "Adversario1",
+					"posicao": "(78.95325, 0.09094, 115.3999)",
+					"progresso_m": 2381.59949493408,
+					"velocidade": 17.9999980926514
+				},
+				{
+					"desvio_m": 0.699928283691406,
+					"nome": "Adversario2",
+					"posicao": "(50.50079, 0.090943, 116.7999)",
+					"progresso_m": 2357.63868713379,
+					"velocidade": 18.4999980926514
+				},
+				{
+					"desvio_m": 5.99116611480713,
+					"nome": "Adversario3",
+					"posicao": "(182.1398, -0.109059, -64.92406)",
+					"progresso_m": 383.651153564453,
+					"velocidade": 0.96456915140152
+				},
+				{
+					"desvio_m": 0.716159522533417,
+					"nome": "Adversario4",
+					"posicao": "(-152.7909, 0.090943, 76.00268)",
+					"progresso_m": 2150.33404541016,
+					"velocidade": 18.0
+				},
+				{
+					"desvio_m": 0.699615478515625,
+					"nome": "Adversario5",
+					"posicao": "(22.66081, 0.090943, 115.4004)",
+					"progresso_m": 2334.29883575439,
+					"velocidade": 18.4999980926514
+				}
+			],
+			"segundos": 174.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.710183024406433,
+					"nome": "Adversario1",
+					"posicao": "(96.94865, 0.09094, 115.3744)",
+					"progresso_m": 2399.59836578369,
+					"velocidade": 17.9999961853027
+				},
+				{
+					"desvio_m": 0.699920654296875,
+					"nome": "Adversario2",
+					"posicao": "(69.00085, 0.090943, 116.7999)",
+					"progresso_m": 2376.13875579834,
+					"velocidade": 18.4999980926514
+				},
+				{
+					"desvio_m": 5.99070310592651,
+					"nome": "Adversario3",
+					"posicao": "(180.7751, -0.109058, -66.53884)",
+					"progresso_m": 385.962677001953,
+					"velocidade": 1.00988340377808
+				},
+				{
+					"desvio_m": 0.777545869350433,
+					"nome": "Adversario4",
+					"posicao": "(-137.3235, 0.090943, 85.18115)",
+					"progresso_m": 2168.27307128906,
+					"velocidade": 17.9999942779541
+				},
+				{
+					"desvio_m": 0.700119018554688,
+					"nome": "Adversario5",
+					"posicao": "(41.16081, 0.090943, 115.3999)",
+					"progresso_m": 2352.79883575439,
+					"velocidade": 18.4999980926514
+				}
+			],
+			"segundos": 175.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.64361697435379,
+					"nome": "Adversario1",
+					"posicao": "(114.9326, 0.09094, 114.9006)",
+					"progresso_m": 2417.59996795654,
+					"velocidade": 17.9999828338623
+				},
+				{
+					"desvio_m": 0.69976806640625,
+					"nome": "Adversario2",
+					"posicao": "(87.50091, 0.090943, 116.7997)",
+					"progresso_m": 2394.6388168335,
+					"velocidade": 18.4999980926514
+				},
+				{
+					"desvio_m": 5.99113416671753,
+					"nome": "Adversario3",
+					"posicao": "(179.3409, -0.109072, -68.1041)",
+					"progresso_m": 388.340881347656,
+					"velocidade": 0.985393762588501
+				},
+				{
+					"desvio_m": 0.706589102745056,
+					"nome": "Adversario4",
+					"posicao": "(-121.4126, 0.090943, 93.57735)",
+					"progresso_m": 2186.24395751953,
+					"velocidade": 17.999906539917
+				},
+				{
+					"desvio_m": 0.700057983398438,
+					"nome": "Adversario5",
+					"posicao": "(59.66087, 0.090943, 115.3999)",
+					"progresso_m": 2371.29884338379,
+					"velocidade": 18.4999980926514
+				}
+			],
+			"segundos": 176.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.734672546386719,
+					"nome": "Adversario1",
+					"posicao": "(132.9221, 0.09094, 114.7662)",
+					"progresso_m": 2435.5778503418,
+					"velocidade": 17.9999656677246
+				},
+				{
+					"desvio_m": 0.722851753234863,
+					"nome": "Adversario2",
+					"posicao": "(105.9894, 0.090943, 116.5885)",
+					"progresso_m": 2413.10034942627,
+					"velocidade": 18.4999904632568
+				},
+				{
+					"desvio_m": 5.98885059356689,
+					"nome": "Adversario3",
+					"posicao": "(177.8534, -0.109058, -69.55868)",
+					"progresso_m": 390.999938964844,
+					"velocidade": 0.930778205394745
+				},
+				{
+					"desvio_m": 0.715682327747345,
+					"nome": "Adversario4",
+					"posicao": "(-105.2434, 0.090943, 101.4626)",
+					"progresso_m": 2204.19799804688,
+					"velocidade": 17.9996032714844
+				},
+				{
+					"desvio_m": 0.700065612792969,
+					"nome": "Adversario5",
+					"posicao": "(78.16093, 0.090943, 115.3999)",
+					"progresso_m": 2389.79890441895,
+					"velocidade": 18.4999980926514
+				}
+			],
+			"segundos": 177.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.696067810058594,
+					"nome": "Adversario1",
+					"posicao": "(150.9129, 0.09094, 114.804)",
+					"progresso_m": 2453.56864929199,
+					"velocidade": 17.9996013641357
+				},
+				{
+					"desvio_m": 0.664207458496094,
+					"nome": "Adversario2",
+					"posicao": "(124.4744, 0.090943, 116.1627)",
+					"progresso_m": 2431.62158203125,
+					"velocidade": 18.4998035430908
+				},
+				{
+					"desvio_m": 5.97571754455566,
+					"nome": "Adversario3",
+					"posicao": "(176.3272, -0.109057, -70.82024)",
+					"progresso_m": 393.568725585938,
+					"velocidade": 0.779187560081482
+				},
+				{
+					"desvio_m": 0.740934193134308,
+					"nome": "Adversario4",
+					"posicao": "(-88.66974, 0.090943, 108.4588)",
+					"progresso_m": 2222.15393066406,
+					"velocidade": 17.9591655731201
+				},
+				{
+					"desvio_m": 0.709778726100922,
+					"nome": "Adversario5",
+					"posicao": "(96.65627, 0.090943, 115.3764)",
+					"progresso_m": 2408.29776763916,
+					"velocidade": 18.4999961853027
+				}
+			],
+			"segundos": 178.0
+		},
+		{
+			"karts": [
+				{
+					"desvio_m": 0.700180053710938,
+					"nome": "Adversario1",
+					"posicao": "(168.8922, 0.09094, 114.7996)",
+					"progresso_m": 2471.55606079102,
+					"velocidade": 17.510591506958
+				},
+				{
+					"desvio_m": 0.693336486816406,
+					"nome": "Adversario2",
+					"posicao": "(142.9651, 0.090943, 116.194)",
+					"progresso_m": 2450.11253356934,
+					"velocidade": 18.4994335174561
+				},
+				{
+					"desvio_m": 5.96766519546509,
+					"nome": "Adversario3",
+					"posicao": "(174.802, -0.109058, -71.77059)",
+					"progresso_m": 396.197723388672,
+					"velocidade": 0.62310928106308
+				},
+				{
+					"desvio_m": 0.723895251750946,
+					"nome": "Adversario4",
+					"posicao": "(-72.76656, 0.090943, 113.7609)",
+					"progresso_m": 2238.88952636719,
+					"velocidade": 14.6476669311523
+				},
+				{
+					"desvio_m": 0.642144203186035,
+					"nome": "Adversario5",
+					"posicao": "(115.1402, 0.090943, 114.8983)",
+					"progresso_m": 2426.7993927002,
+					"velocidade": 18.4999847412109
+				}
+			],
+			"segundos": 179.0
+		}
+	],
+	"aprovado_voltas": false,
+	"colisoes": 4,
+	"comprimento_m": 1149.13195800781,
+	"controles": {
+		"aceleracao": {
+			"distancia_m": 24.0166645050049,
+			"velocidade": 22.0
+		},
+		"frenagem_velocidade": -0.399998545646667,
+		"giro_re": -1.92,
+		"no_piso": true,
+		"re_velocidade": -8.0,
+		"zebra": {
+			"posicao_final": "(35.2513, 0.090942, 118.7186)",
+			"velocidade_final": 5.47521495819092,
+			"y_max": 0.0913672000169754,
+			"y_min": 0.0901953279972076
+		}
+	},
+	"distancia_minima_largada_m": 2.5,
+	"menu": {
+		"circuitos": 2,
+		"padrao": "PI001 — Primeira pista"
+	},
+	"metodo": "Godot real, Input e CharacterBody3D; sem teletransporte na medição da volta"
+}

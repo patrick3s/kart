@@ -1,0 +1,39 @@
+{
+ "arquivo": "/Users/patricksoares/Documents/jogos/kart/personagens/P003_bryan/blender/bryan.blend",
+ "backup": "/Users/patricksoares/Documents/jogos/kart/personagens/P003_bryan/backups/bryan_antes_da_edicao_20261015_191749.blend",
+ "co_igual_npz": true,
+ "edges_igual_npz": true,
+ "loops_igual_npz": true,
+ "uv_igual_npz": true,
+ "starts_igual_npz": true,
+ "totals_igual_npz": true,
+ "smooth_igual_npz": true,
+ "materials_igual_npz": true,
+ "custom_normal_igual_backup": true,
+ "sharp_face_igual_backup": true,
+ "sharp_edge_igual_backup": true,
+ "co_max_desvio_npz": 0.0,
+ "hash_co_sha256": "e707a208e8ed0565603308548fe5e39c19342df3fedc56d80679fd15d4ceb39e",
+ "matriz_mundo_identidade": true,
+ "rig_original_vertex": true,
+ "rig_original_edge": true,
+ "rig_original_face": true,
+ "rig_original_corner": true,
+ "materiais_no_arquivo": [
+  "tripo_material_1db849c3-8e37-4423-b45a-4dcd0d8abf93"
+ ],
+ "imagens_no_arquivo": [
+  [
+   "bryan_basecolor.jpg",
+   true
+  ],
+  [
+   "bryan_normal.png",
+   true
+  ],
+  [
+   "bryan_rm.jpg",
+   true
+  ]
+ ]
+}

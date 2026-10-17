@@ -1,0 +1,106 @@
+# Jogo — projeto Godot 4.7
+
+Abrir/rodar (pela pasta `jogo/`):
+
+```bash
+/Applications/Godot.app/Contents/MacOS/Godot --path .            # roda o jogo
+/Applications/Godot.app/Contents/MacOS/Godot -e --path .         # abre no editor
+```
+
+Controles: **W/↑** acelera · **S/↓** freia e dá ré · **A/D ou ←/→** esterça · **Esc** volta à escolha de piloto.
+
+## Estrutura
+
+| Caminho | Função |
+| --- | --- |
+| `personagens/jake/jake_kart.glb` | Exportado de `../personagens/P001_jake/blender/jake.blend` (sem animações, pose de repouso) |
+| `personagens/jake/jake.tres` | Ficha do piloto (`DefinicaoPersonagem`) |
+| `personagens/dimi/dimi_kart.glb` | Exportado de `../personagens/P002_dimi/blender/dimi.blend` (pose de repouso + ações `Cabeca_Direita/Esquerda_Ida_e_Volta`) |
+| `personagens/dimi/dimi.tres` | Ficha do Dimi: raio das rodas 0,1297 (medido na banda, sem as bolinhas) e teto da cabeça de 25° |
+| `personagens/bryan/bryan_kart.glb` | Exportado de `../personagens/P003_bryan/blender/bryan.blend` (pose de repouso + ações `Cabeca_Direita/Esquerda_Ida_e_Volta`) |
+| `personagens/bryan/bryan.tres` | Ficha do Bryan: raio das rodas 0,1196 (média dos quatro medidos na banda, sem o preenchimento do para-lama) e teto da cabeça de 25° |
+| `ambiente/kloofendal_48d_partly_cloudy_puresky_4k.exr` | Céu HDRI da pista e do menu (cópia de `../ambiente/referencia/ceu/`; ver [ambiente](../ambiente/LEIA-ME.md#céu-no-jogo)) |
+| `scripts/jogo.gd` | Autoload `Jogo`: catálogo de pilotos e escolha atual |
+| `scripts/kart.gd` | Direção arcade (`CharacterBody3D`) e choques com impulso, empurrão lateral e rodada |
+| `scripts/kart_ia.gd` | `KartIA`: adversário do computador (circuito, desvio por raios, ré ao enroscar, perseguição) |
+| `scripts/efeitos.gd` | Faíscas das batidas |
+| `scripts/visual_kart.gd` | Rodas (giro + esterço), suspensão por mola, vibração e compensação da cabeça |
+| `scripts/camera_perseguicao.gd` | Câmera atrás do kart, dinâmica |
+| `ferramentas/construir_cenas.gd` | Gera `cenas/*.tscn` pela linha de comando, inclusive céu HDRI, neblina e sol (`_ambiente()`) |
+| `ferramentas/validar_mecanicas_dimi.gd` | Fase 8 do Dimi: escolha entre pilotos, movimento, frenagem, ré, câmera, rodas, suspensão e cabeça |
+| `ferramentas/capturar_vistas_dimi.gd` | Imagens renderizadas do menu e da pista com o Dimi (precisa de janela) |
+| `ferramentas/inspecionar_importacao_dimi.gd` | Confere o GLB importado do Dimi contra o Blender (ossos, pivôs, rodas, malhas, animações) |
+| `ferramentas/inspecionar_importacao_bryan.gd` | Confere o GLB importado do Bryan contra o Blender |
+| `ferramentas/validar_mecanicas_bryan.gd` | Fase 8 do Bryan: catálogo com três pilotos, troca no menu, movimento, câmera, rodas e apoio, suspensão e cabeça |
+| `ferramentas/capturar_vistas_bryan.gd` | Imagens renderizadas do menu e da pista com o Bryan, com vistas fechadas da lateral e da nuca (precisa de janela) |
+
+Regenerar as cenas:
+
+```bash
+/Applications/Godot.app/Contents/MacOS/Godot --headless --path . --script res://ferramentas/construir_cenas.gd
+```
+
+## Mecânica
+
+- Rodas saem do `Torso_Bone` em tempo de execução e ficam no chão; giram por `velocidade / raio` e as dianteiras esterçam. O raio vem de `raio_rodas` na ficha ou, se for zero, da caixa da malha.
+- Suspensão: `Torso_Bone` rola conforme a aceleração lateral (`giro × velocidade`). Curva para a esquerda → carroceria pende para a direita; acelerar levanta o bico, frear o abaixa. Vibração por ruído cresce com a velocidade.
+- Cabeça: `Head_Bone` busca `-1,7 ×` a rolagem total (com o tremor) em relação ao corpo, com mola própria. Em todo quadro, a inclinação global da cabeça fica do lado oposto ao corpo, entre 0,2 e 1,0 vez a inclinação dele (`oposicao_minima_cabeca`/`oposicao_maxima_cabeca`). Depois vem o limite `giro_maximo_cabeca`, quando a ficha informa. Ver [T001](tarefas/T001-cabeca-sempre-oposta.md).
+
+## Adversários e colisões
+
+- `pista.gd` cria `Jogo.quantidade_adversarios` karts `KartIA` (padrão 5) em volta da arena, primeiro com os pilotos que o jogador não escolheu. Um em cada três corre na contramão, numa faixa mais aberta. Velocidade máxima, massa e agressividade variam entre eles.
+- A IA segue um circuito ondulado de raio 60 m e desvia de blocos, muros e karts com três raios à frente. Se acelerar sem sair do lugar por 1 s, dá ré esterçando ao contrário. A cada 2–4 s sorteia se persegue o kart mais próximo à frente, mirando onde ele vai estar; desiste depois de bater nele ou após 5 s.
+- Choque entre karts: impulso pela normal do contato com massa e restituição (`restituicao_karts`, separação mínima de 3 m/s). A parte longitudinal muda `velocidade`; a lateral vira `empurrao`, que some conforme a `aderencia`. O ponto de contato gera `rodada` (giro em Y). Muros e blocos também quicam acima de 4 m/s.
+- Efeitos: faíscas no ponto de contato, solavanco de rolagem, arfagem e pulo na suspensão (`VisualKart.impacto`) e tremor da câmera (`Kart.tremor`).
+- As ferramentas de validação e captura zeram `quantidade_adversarios` para medir o piloto sozinho.
+
+## Validação das regras — 15/10/2026
+
+Auditoria pela CLI, com o GLB e os scripts reais:
+
+```bash
+/Applications/Godot.app/Contents/MacOS/Godot --headless --path . --fixed-fps 60 --script res://ferramentas/validar_mecanicas_jake.gd
+```
+
+O comando grava [validacao_godot_jake.json](../personagens/P001_jake/validacao/validacao_godot_jake.json). A auditoria concluiu com **atendimento parcial**: rodas, suspensão estabilizada, movimento e câmera passaram nas medições; a cabeça não cumpre literalmente a regra de permanecer sempre oposta. Sem ruído, a 60 passos/s, foram 18 quadros no mesmo lado ao entrar na curva e 15 ao inverter. Há somente um piloto, e `Corpo_Kart` reúne torso e veículo. Não houve alteração da mecânica nem inspeção de imagens renderizadas nesta auditoria.
+
+Consultar o [registro completo](../personagens/P001_jake/registros/registro-validacao-godot-2026-10-15.md) e o [prompt original na receita](../documentacao/RECEITA_PERSONAGEM.md#quinto-prompt--jogo-na-godot-rodas-suspensão-e-equilíbrio-da-cabeça). Código zero do comando indica que o relatório foi produzido; os resultados das regras estão no campo `conclusao`.
+
+## Inspeção da importação do Dimi
+
+```bash
+/Applications/Godot.app/Contents/MacOS/Godot --headless --path . --import
+/Applications/Godot.app/Contents/MacOS/Godot --headless --path . --script res://ferramentas/inspecionar_importacao_dimi.gd
+```
+
+Grava [importacao_godot_fase7.json](../personagens/P002_dimi/validacao/importacao_godot_fase7.json). No modo headless a Godot não detecta o uso 3D das texturas; o `.import` delas já foi ajustado para VRAM. O `dimi_kart.glb.import` usa `animation/fps=24` e o otimizador desligado em `PATH:AnimationPlayer`, para manter as 49 chaves das ações. Ver o [registro](../personagens/P002_dimi/registros/registro-fase7-exportacao-godot-2026-10-15.md).
+
+## Validação das mecânicas do Dimi — 15/10/2026
+
+```bash
+/Applications/Godot.app/Contents/MacOS/Godot --headless --path . --fixed-fps 60 --script res://ferramentas/validar_mecanicas_dimi.gd
+/Applications/Godot.app/Contents/MacOS/Godot --path . --fixed-fps 60 --script res://ferramentas/capturar_vistas_dimi.gd
+```
+
+Gravam [validacao_mecanicas_fase8.json](../personagens/P002_dimi/validacao/validacao_mecanicas_fase8.json) e as imagens em [vistas_fase8/](../personagens/P002_dimi/registros/vistas_fase8/). Com dois pilotos, a troca no menu passou a ser testada. Passaram escolha, movimento, frenagem, ré, câmera, rodas e suspensão, além da cabeça oposta em regime estabilizado. A cabeça oposta em **todo** quadro falha como no Jake: 18 quadros na entrada da curva e 15 na inversão. Corrigido depois pela tarefa [T001](tarefas/T001-cabeca-sempre-oposta.md): 0 quadros no mesmo lado nos dois pilotos. A auditoria do Jake acima descreve os scripts antes dos campos `raio_rodas`/`giro_maximo_cabeca`; com esses campos em zero, os resultados dele foram reproduzidos sem diferença. Ver o [registro](../personagens/P002_dimi/registros/registro-fase8-jogavel-2026-10-15.md).
+
+## Validação das mecânicas do Bryan — 16/10/2026
+
+```bash
+/Applications/Godot.app/Contents/MacOS/Godot --headless --path . --fixed-fps 60 --script res://ferramentas/validar_mecanicas_bryan.gd
+/Applications/Godot.app/Contents/MacOS/Godot --path . --fixed-fps 60 --script res://ferramentas/capturar_vistas_bryan.gd
+```
+
+Gravam [validacao_mecanicas_fase8.json](../personagens/P003_bryan/validacao/validacao_mecanicas_fase8.json) e as imagens em [vistas_fase8/](../personagens/P003_bryan/registros/vistas_fase8/). Todas as conclusões passaram, inclusive a cabeça oposta em todo quadro (0 quadros no mesmo lado a 60 e 120 passos/s, com e sem ruído) e o teto de 25°. Com três pilotos, `validar_mecanicas_dimi.gd` reprova `catalogo_jake_e_dimi` e `selecao_troca_e_volta`, porque espera exatamente dois; as mecânicas do Dimi continuam iguais. Ver o [registro](../personagens/P003_bryan/registros/registro-fase8-jogavel-2026-10-16.md).
+
+## Novo personagem
+
+Exportar o GLB com a mesma estrutura (osso de corpo, osso de cabeça, quatro malhas de roda com origem no centro, frente em −Y no Blender), criar outra ficha `.tres` e acrescentá-la em `scripts/jogo.gd`. Os nomes de ossos e rodas podem ser trocados na ficha.
+
+## PI001 jogável — 16/10/2026
+
+O menu oferece **PI001 — Primeira pista** por padrão e mantém **Arena de testes** para o circuito anterior. A PI001 preserva o kart, os três personagens, câmera, HUD, controles e HDRI; acrescenta modelo exportado via Blender MCP, colisões estáticas, largada alinhada e IA pelo eixo real. O gerador de cenas inclui a integração.
+
+Os testes headless e as capturas do renderizador estão no [relatório da PI001](../pistas/PI001_primeira_pista/validacao/integracao_20261016/RELATORIO.md). Cinco IAs completaram uma volta nas três escolhas de jogador, sem saídas/contramão nos ensaios finais; controles, zebras, retorno do gramado, pneus e colisões passaram. As regressões novas de Jake, Dimi e Bryan estão nessa pasta e preservam os relatórios históricos. O validador de Dimi agora aceita o catálogo atual; Jake aceita `--saida=` e calcula seu estado a partir das medições.
+
+As seções históricas acima descrevem as auditorias nas datas originais. A integração mantém a escala provisória e não acrescenta classificação, cronômetro ou regras de checkpoints. A conferência visual foi feita nas capturas reais; os comandos/voltas foram automatizados, sem pilotagem manual completa.

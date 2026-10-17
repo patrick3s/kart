@@ -1,0 +1,387 @@
+{
+ "arquivo": "/Users/patricksoares/Documents/jogos/kart/personagens/P002_dimi/blender/dimi.blend",
+ "arquivo_sujo_no_inicio": false,
+ "tolerancia_m": 1e-06,
+ "partes": {
+  "Cabeca": {
+   "co_mundo_base_max_desvio": 7.450580596923828e-09,
+   "co_mundo_avaliado_repouso_max_desvio": 5.960464477539063e-08,
+   "normais_canto_max_desvio_npz": 0.0003966689109802246,
+   "origem_mundo": [
+    0.0,
+    -0.010498046875,
+    0.4453125
+   ],
+   "origem_desvio_do_adotado": 0.0,
+   "rotacao_escala_identidade": true,
+   "pai": "Personagem_Rig",
+   "tipo_pai": "OBJECT",
+   "osso_pai": "",
+   "modificadores": [
+    [
+     "Rig_Rigido_Sem_Deformacao",
+     "ARMATURE",
+     "Personagem_Rig",
+     true,
+     false,
+     false
+    ]
+   ],
+   "grupos": [
+    "Head_Bone"
+   ],
+   "vertices_sem_peso": 0,
+   "vertices_com_mais_de_um_grupo": 0,
+   "pesos_todos_1": true,
+   "configuracao_ok": true,
+   "ok": true
+  },
+  "Corpo_Kart": {
+   "co_mundo_base_max_desvio": 0.0,
+   "co_mundo_avaliado_repouso_max_desvio": 5.960464477539063e-08,
+   "normais_canto_max_desvio_npz": 0.0,
+   "origem_mundo": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "origem_desvio_do_adotado": 0.0,
+   "rotacao_escala_identidade": true,
+   "pai": "Personagem_Rig",
+   "tipo_pai": "OBJECT",
+   "osso_pai": "",
+   "modificadores": [
+    [
+     "Rig_Rigido_Sem_Deformacao",
+     "ARMATURE",
+     "Personagem_Rig",
+     true,
+     false,
+     false
+    ]
+   ],
+   "grupos": [
+    "Torso_Bone"
+   ],
+   "vertices_sem_peso": 0,
+   "vertices_com_mais_de_um_grupo": 0,
+   "pesos_todos_1": true,
+   "configuracao_ok": true,
+   "ok": true
+  },
+  "Wheel_Front_Left": {
+   "co_mundo_base_max_desvio": 2.9802322387695312e-08,
+   "co_mundo_avaliado_repouso_max_desvio": 2.9802322387695312e-08,
+   "normais_canto_max_desvio_npz": 0.00020313262939453125,
+   "origem_mundo": [
+    0.31591796875,
+    -0.25,
+    0.1279296576976776
+   ],
+   "origem_desvio_do_adotado": 2.9802322387695312e-08,
+   "rotacao_escala_identidade": true,
+   "pai": "Personagem_Rig",
+   "tipo_pai": "BONE",
+   "osso_pai": "Torso_Bone",
+   "modificadores": [],
+   "grupos": [],
+   "configuracao_ok": true,
+   "ok": true
+  },
+  "Wheel_Front_Right": {
+   "co_mundo_base_max_desvio": 2.9802322387695312e-08,
+   "co_mundo_avaliado_repouso_max_desvio": 2.9802322387695312e-08,
+   "normais_canto_max_desvio_npz": 0.00022974610328674316,
+   "origem_mundo": [
+    -0.31640625,
+    -0.250244140625,
+    0.1279296576976776
+   ],
+   "origem_desvio_do_adotado": 2.9802322387695312e-08,
+   "rotacao_escala_identidade": true,
+   "pai": "Personagem_Rig",
+   "tipo_pai": "BONE",
+   "osso_pai": "Torso_Bone",
+   "modificadores": [],
+   "grupos": [],
+   "configuracao_ok": true,
+   "ok": true
+  },
+  "Wheel_Rear_Left": {
+   "co_mundo_base_max_desvio": 2.9802322387695312e-08,
+   "co_mundo_avaliado_repouso_max_desvio": 2.9802322387695312e-08,
+   "normais_canto_max_desvio_npz": 6.90072774887085e-05,
+   "origem_mundo": [
+    0.31982421875,
+    0.228515625,
+    0.1279296576976776
+   ],
+   "origem_desvio_do_adotado": 2.9802322387695312e-08,
+   "rotacao_escala_identidade": true,
+   "pai": "Personagem_Rig",
+   "tipo_pai": "BONE",
+   "osso_pai": "Torso_Bone",
+   "modificadores": [],
+   "grupos": [],
+   "configuracao_ok": true,
+   "ok": true
+  },
+  "Wheel_Rear_Right": {
+   "co_mundo_base_max_desvio": 2.9802322387695312e-08,
+   "co_mundo_avaliado_repouso_max_desvio": 2.9802322387695312e-08,
+   "normais_canto_max_desvio_npz": 0.00010898709297180176,
+   "origem_mundo": [
+    -0.320068359375,
+    0.228515625,
+    0.1279296576976776
+   ],
+   "origem_desvio_do_adotado": 2.9802322387695312e-08,
+   "rotacao_escala_identidade": true,
+   "pai": "Personagem_Rig",
+   "tipo_pai": "BONE",
+   "osso_pai": "Torso_Bone",
+   "modificadores": [],
+   "grupos": [],
+   "configuracao_ok": true,
+   "ok": true
+  }
+ },
+ "ossos": {
+  "Root_Bone": {
+   "inicio": [
+    0.0,
+    0.0,
+    0.1171875
+   ],
+   "fim": [
+    0.0,
+    0.0,
+    0.234375
+   ],
+   "pai": null,
+   "conectado": false,
+   "deforma": false,
+   "rolagem_matriz": [
+    [
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     1.0,
+     0.0
+    ]
+   ]
+  },
+  "Torso_Bone": {
+   "inicio": [
+    0.0,
+    0.0,
+    0.234375
+   ],
+   "fim": [
+    0.0,
+    -0.010498046875,
+    0.40625
+   ],
+   "pai": "Root_Bone",
+   "conectado": true,
+   "deforma": true,
+   "rolagem_matriz": [
+    [
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     -0.060965925455093384,
+     -0.9981398582458496
+    ],
+    [
+     0.0,
+     0.9981397986412048,
+     -0.060965925455093384
+    ]
+   ]
+  },
+  "Neck_Bone": {
+   "inicio": [
+    0.0,
+    -0.010498046875,
+    0.40625
+   ],
+   "fim": [
+    0.0,
+    -0.010498046875,
+    0.4453125
+   ],
+   "pai": "Torso_Bone",
+   "conectado": true,
+   "deforma": false,
+   "rolagem_matriz": [
+    [
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     0.9999999403953552,
+     -3.725290298461914e-09
+    ]
+   ]
+  },
+  "Head_Bone": {
+   "inicio": [
+    0.0,
+    -0.010498046875,
+    0.4453125
+   ],
+   "fim": [
+    0.0,
+    -0.010498046875,
+    0.703125
+   ],
+   "pai": "Neck_Bone",
+   "conectado": true,
+   "deforma": true,
+   "rolagem_matriz": [
+    [
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    [
+     0.0,
+     0.9999999403953552,
+     -3.725290298461914e-09
+    ]
+   ]
+  }
+ },
+ "testes": {
+  "Head_Bone_Y_25": {
+   "pivo_deslocamento": 0.0,
+   "erro_rigido_partes_moveis": 2.6345083892209686e-08,
+   "movimento_max_partes_fixas": 0.0,
+   "movimento_max_partes_moveis": 0.07506293430924416,
+   "cabeca_z_min": 0.4148711860179901,
+   "ok": true
+  },
+  "Head_Bone_Y_-40": {
+   "pivo_deslocamento": 0.0,
+   "erro_rigido_partes_moveis": 2.5260071367938508e-08,
+   "movimento_max_partes_fixas": 0.0,
+   "movimento_max_partes_moveis": 0.1190229132771492,
+   "cabeca_z_min": 0.4148711860179901,
+   "ok": true
+  },
+  "Head_Bone_Z_15": {
+   "pivo_deslocamento": 0.0,
+   "erro_rigido_partes_moveis": 8.63521022465008e-08,
+   "movimento_max_partes_fixas": 0.0,
+   "movimento_max_partes_moveis": 0.06826958805322647,
+   "cabeca_z_min": 0.41384372115135193,
+   "ok": true
+  },
+  "Head_Bone_X_15": {
+   "pivo_deslocamento": 0.0,
+   "erro_rigido_partes_moveis": 9.958236568685663e-08,
+   "movimento_max_partes_fixas": 0.0,
+   "movimento_max_partes_moveis": 0.06994450837373734,
+   "cabeca_z_min": 0.4138577878475189,
+   "ok": true
+  },
+  "Torso_Bone_Y_10": {
+   "pivo_deslocamento": 0.0,
+   "erro_rigido_partes_moveis": 1.0403241235135141e-07,
+   "movimento_max_partes_fixas": 0.0,
+   "movimento_max_partes_moveis": 0.09168100170791149,
+   "ok": true
+  },
+  "Root_Bone_Z_20": {
+   "pivo_deslocamento": 0.0,
+   "erro_rigido_partes_moveis": 1.7171715427366507e-07,
+   "movimento_max_partes_fixas": 0.0,
+   "movimento_max_partes_moveis": 0.2725947047583759,
+   "ok": true
+  },
+  "Wheel_Front_Left": {
+   "pivo_deslocamento_X90": 0.0,
+   "outras_partes_movimento_X90": 0.0,
+   "pivo_deslocamento_Z30": 0.0,
+   "outras_partes_movimento_Z30": 0.0,
+   "z_min_no_giro": [
+    -0.01539616508905911,
+    -2.9802322387695312e-08
+   ],
+   "oscilacao_contato_m": 0.015396135286736723,
+   "ok": true
+  },
+  "Wheel_Front_Right": {
+   "pivo_deslocamento_X90": 0.0,
+   "outras_partes_movimento_X90": 0.0,
+   "pivo_deslocamento_Z30": 0.0,
+   "outras_partes_movimento_Z30": 0.0,
+   "z_min_no_giro": [
+    -0.0129127848111672,
+    3.0487775802612305e-05
+   ],
+   "oscilacao_contato_m": 0.012943272586969812,
+   "ok": true
+  },
+  "Wheel_Rear_Left": {
+   "pivo_deslocamento_X90": 0.0,
+   "outras_partes_movimento_X90": 0.0,
+   "pivo_deslocamento_Z30": 0.0,
+   "outras_partes_movimento_Z30": 0.0,
+   "z_min_no_giro": [
+    -0.025401272656389473,
+    3.0487775802612305e-05
+   ],
+   "oscilacao_contato_m": 0.025431760432192085,
+   "ok": true
+  },
+  "Wheel_Rear_Right": {
+   "pivo_deslocamento_X90": 0.0,
+   "outras_partes_movimento_X90": 0.0,
+   "pivo_deslocamento_Z30": 0.0,
+   "outras_partes_movimento_Z30": 0.0,
+   "z_min_no_giro": [
+    -0.003483517421996929,
+    6.1005353927612305e-05
+   ],
+   "oscilacao_contato_m": 0.0035445227759245412,
+   "ok": true
+  }
+ },
+ "ossos_ok": true,
+ "rig_matriz_identidade": true,
+ "pivo_cabeca_igual_inicio_head_bone": 0.0,
+ "fim_neck_igual_inicio_head": 0.0,
+ "pose_em_repouso": true,
+ "head_bone_eixo_y_local_no_mundo": [
+  0.0,
+  0.0,
+  0.9999999403953552
+ ],
+ "restaurado_apos_testes": true,
+ "tudo_ok": true
+}

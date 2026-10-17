@@ -1,0 +1,104 @@
+{
+  "status": "Modelo criado e salvo pelo Blender MCP",
+  "blender": "5.2.2 LTS",
+  "arquivo_blend": "/Users/patricksoares/Documents/jogos/kart/pistas/PI001_primeira_pista/blender/primeira_pista.blend",
+  "sha256_blend": "f8d7dac286211775dfabc49a2f447e98e72ea59f56e55820943daf95de501bca",
+  "referencia_preservada": true,
+  "backup_sessao_anterior": "/Users/patricksoares/Documents/jogos/kart/pistas/PI001_primeira_pista/backups/sessao_antes_PI001_20261016_104049.blend",
+  "estado_anterior": {
+    "arquivo": "",
+    "cena": "Scene",
+    "objetos": [
+      "Camera",
+      "Cube",
+      "Light"
+    ]
+  },
+  "dimensoes_eixo_m": [
+    394.60688776608254,
+    227.23564188947745
+  ],
+  "comprimento_eixo_m": 1149.1303264545786,
+  "largura_asfalto_m": 8.0,
+  "largura_zebra_m": 0.8,
+  "objetos": 13,
+  "validacao_malhas": [
+    {
+      "objeto": "PI001_Asfalto",
+      "vertices": 4000,
+      "faces": 4000,
+      "arestas_nao_manifold": 0,
+      "faces_degeneradas": 0,
+      "normais_topo_invertidas": 0
+    },
+    {
+      "objeto": "PI001_Zebra_Externa",
+      "vertices": 4000,
+      "faces": 4000,
+      "arestas_nao_manifold": 0,
+      "faces_degeneradas": 0,
+      "normais_topo_invertidas": 0
+    },
+    {
+      "objeto": "PI001_Zebra_Interna",
+      "vertices": 4000,
+      "faces": 4000,
+      "arestas_nao_manifold": 0,
+      "faces_degeneradas": 0,
+      "normais_topo_invertidas": 0
+    },
+    {
+      "objeto": "PI001_Linha_Externa",
+      "vertices": 4000,
+      "faces": 4000,
+      "arestas_nao_manifold": 0,
+      "faces_degeneradas": 0,
+      "normais_topo_invertidas": 0
+    },
+    {
+      "objeto": "PI001_Linha_Interna",
+      "vertices": 4000,
+      "faces": 4000,
+      "arestas_nao_manifold": 0,
+      "faces_degeneradas": 0,
+      "normais_topo_invertidas": 0
+    }
+  ],
+  "bordas_sem_autointersecoes": true,
+  "integracao_godot": "Pendente; jogo atual preservado",
+  "limitacoes": [
+    "Escala, largura e largada provisórias",
+    "Ponta superior direita arredondada para acomodar a largura",
+    "Sem relevo ou cenário detalhado: referência mostra somente o traçado"
+  ],
+  "arquivo_reaberto_via_mcp": true,
+  "cenas_no_arquivo": [
+    "PI001_Primeira_Pista"
+  ],
+  "imagens_verificadas": [
+    {
+      "arquivo": "pista_topo.png",
+      "resolucao": [
+        1600,
+        1000
+      ],
+      "sha256": "9b2924c025dbdd42530352ac9433c4841eb94379f1812b8cf98c14fa4467689a"
+    },
+    {
+      "arquivo": "pista_perspectiva.png",
+      "resolucao": [
+        1600,
+        1000
+      ],
+      "sha256": "a63655455c586845c4d02f9a791309010bca67cecb1ebfb9a84d682a60947d9d"
+    },
+    {
+      "arquivo": "sobreposicao_tracado.png",
+      "resolucao": [
+        1358,
+        818
+      ],
+      "sha256": "d95a3bade6825effd1042f113624b9b6c562cda9b6e0e08dacd0ddf5aa3396d5"
+    }
+  ]
+}

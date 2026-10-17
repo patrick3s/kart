@@ -1,0 +1,37 @@
+{
+  "sha256_original_antes": "f8d7dac286211775dfabc49a2f447e98e72ea59f56e55820943daf95de501bca",
+  "sha256_original_depois": "f8d7dac286211775dfabc49a2f447e98e72ea59f56e55820943daf95de501bca",
+  "malhas": [
+    "PI001_Asfalto",
+    "PI001_Zebra_Externa",
+    "PI001_Zebra_Interna",
+    "PI001_Linha_Externa",
+    "PI001_Linha_Interna",
+    "PI001_Base_Gramado",
+    "PI001_Largada_Quadriculada"
+  ],
+  "materiais": [
+    "PI001_Asfalto_Jogo.002",
+    "PI001_Grama_Jogo.002",
+    "PI001_Quadriculado_Preto_Jogo.002",
+    "PI001_Tinta_Branca_Jogo.010",
+    "PI001_Tinta_Branca_Jogo.011",
+    "PI001_Tinta_Branca_Jogo.012",
+    "PI001_Tinta_Branca_Jogo.013",
+    "PI001_Tinta_Branca_Jogo.014",
+    "PI001_Zebra_Lateral_Jogo.004",
+    "PI001_Zebra_Lateral_Jogo.005",
+    "PI001_Zebra_Vermelha_Jogo.004",
+    "PI001_Zebra_Vermelha_Jogo.005"
+  ],
+  "eixo_pontos": 1000,
+  "erro_eixo_m": 0.0,
+  "glb_bytes": 1973312,
+  "excluidos": [
+    "cameras",
+    "luzes",
+    "referencia",
+    "eixo (exportado em JSON)"
+  ],
+  "materiais_procedurais": "equivalentes em superficie.gdshader na Godot"
+}

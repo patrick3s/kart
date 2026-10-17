@@ -1,0 +1,379 @@
+{
+ "arquivo": "/Users/patricksoares/Documents/jogos/kart/personagens/P003_bryan/blender/bryan.blend",
+ "arquivo_sujo_no_inicio": false,
+ "fps": [
+  24,
+  1.0
+ ],
+ "previa": [
+  true,
+  1,
+  49
+ ],
+ "intervalo": [
+  1,
+  250
+ ],
+ "nla_trilhas": 0,
+ "drivers": 0,
+ "acoes_no_arquivo": [
+  "Cabeca_Direita_Ida_e_Volta",
+  "Cabeca_Esquerda_Ida_e_Volta"
+ ],
+ "acoes": {
+  "Cabeca_Direita_Ida_e_Volta": {
+   "use_fake_user": true,
+   "slot": "OBPersonagem_Rig",
+   "fcurves": [
+    [
+     "pose.bones[\"Head_Bone\"].rotation_euler",
+     1
+    ]
+   ],
+   "keyframes": [
+    {
+     "quadro": 1.0,
+     "graus": 0.0,
+     "interp": "BEZIER",
+     "alcas": [
+      "AUTO_CLAMPED",
+      "AUTO_CLAMPED"
+     ],
+     "alca_esq_graus": 0.0,
+     "alca_dir_graus": 0.0
+    },
+    {
+     "quadro": 25.0,
+     "graus": -25.00000012650595,
+     "interp": "BEZIER",
+     "alcas": [
+      "AUTO_CLAMPED",
+      "AUTO_CLAMPED"
+     ],
+     "alca_esq_graus": -25.00000012650595,
+     "alca_dir_graus": -25.00000012650595
+    },
+    {
+     "quadro": 49.0,
+     "graus": 0.0,
+     "interp": "BEZIER",
+     "alcas": [
+      "AUTO_CLAMPED",
+      "AUTO_CLAMPED"
+     ],
+     "alca_esq_graus": 0.0,
+     "alca_dir_graus": 0.0
+    }
+   ],
+   "extrapolacao": "CONSTANT",
+   "modificadores_curva": 0,
+   "keyframes_ok": true,
+   "curva_min_max_graus": [
+    -25.00000012650595,
+    0.0
+   ],
+   "curva_dentro_do_intervalo": true,
+   "fora_do_intervalo_graus": [
+    0.0,
+    0.0
+   ],
+   "curva_monotona_ida_e_volta": true,
+   "todos_quadros": {
+    "pivo_deslocamento_max": 7.450580596923828e-09,
+    "outros_ossos_max": 0.0,
+    "head_loc_escala_eixos_xz_max": 0.0,
+    "matrizes_objetos_max": 0.0,
+    "angulos_graus": [
+     0.0,
+     -0.126591,
+     -0.491898,
+     -1.074219,
+     -1.851852,
+     -2.803096,
+     -3.90625,
+     -5.139612,
+     -6.481482,
+     -7.910156,
+     -9.403935,
+     -10.941116,
+     -12.5,
+     -14.058884,
+     -15.596064,
+     -17.089844,
+     -18.518519,
+     -19.860389,
+     -21.093752,
+     -22.196906,
+     -23.14815,
+     -23.92578,
+     -24.508098,
+     -24.873408,
+     -25.0,
+     -24.873408,
+     -24.508102,
+     -23.925782,
+     -23.148148,
+     -22.196904,
+     -21.093752,
+     -19.860389,
+     -18.518518,
+     -17.089844,
+     -15.596064,
+     -14.058884,
+     -12.5,
+     -10.941116,
+     -9.403936,
+     -7.910156,
+     -6.481481,
+     -5.139611,
+     -3.906248,
+     -2.803094,
+     -1.85185,
+     -1.074221,
+     -0.491903,
+     -0.126594,
+     0.0
+    ]
+   },
+   "amostras": {
+    "1": {
+     "graus": 0.0,
+     "frente_mundo": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "cabeca_erro_rigido": 5.960464477539063e-08,
+     "cabeca_arestas_desvio": 1.1504104671482274e-08,
+     "fixas_desvio_npz": 2.9802322387695312e-08
+    },
+    "13": {
+     "graus": -12.500000063252974,
+     "frente_mundo": [
+      -0.21644,
+      -0.976296,
+      0.0
+     ],
+     "cabeca_erro_rigido": 5.960464477539063e-08,
+     "cabeca_arestas_desvio": 2.6480692467793776e-08,
+     "fixas_desvio_npz": 2.9802322387695312e-08
+    },
+    "25": {
+     "graus": -25.00000012650595,
+     "frente_mundo": [
+      -0.422618,
+      -0.906308,
+      0.0
+     ],
+     "cabeca_erro_rigido": 5.960464477539063e-08,
+     "cabeca_arestas_desvio": 2.3888314987577375e-08,
+     "fixas_desvio_npz": 2.9802322387695312e-08
+    },
+    "37": {
+     "graus": -12.500000063252974,
+     "frente_mundo": [
+      -0.21644,
+      -0.976296,
+      0.0
+     ],
+     "cabeca_erro_rigido": 5.960464477539063e-08,
+     "cabeca_arestas_desvio": 2.6480692467793776e-08,
+     "fixas_desvio_npz": 2.9802322387695312e-08
+    },
+    "49": {
+     "graus": 0.0,
+     "frente_mundo": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "cabeca_erro_rigido": 5.960464477539063e-08,
+     "cabeca_arestas_desvio": 1.1504104671482274e-08,
+     "fixas_desvio_npz": 2.9802322387695312e-08
+    }
+   },
+   "sentido_ok": true,
+   "ok": true
+  },
+  "Cabeca_Esquerda_Ida_e_Volta": {
+   "use_fake_user": true,
+   "slot": "OBPersonagem_Rig",
+   "fcurves": [
+    [
+     "pose.bones[\"Head_Bone\"].rotation_euler",
+     1
+    ]
+   ],
+   "keyframes": [
+    {
+     "quadro": 1.0,
+     "graus": 0.0,
+     "interp": "BEZIER",
+     "alcas": [
+      "AUTO_CLAMPED",
+      "AUTO_CLAMPED"
+     ],
+     "alca_esq_graus": 0.0,
+     "alca_dir_graus": 0.0
+    },
+    {
+     "quadro": 25.0,
+     "graus": 25.00000012650595,
+     "interp": "BEZIER",
+     "alcas": [
+      "AUTO_CLAMPED",
+      "AUTO_CLAMPED"
+     ],
+     "alca_esq_graus": 25.00000012650595,
+     "alca_dir_graus": 25.00000012650595
+    },
+    {
+     "quadro": 49.0,
+     "graus": 0.0,
+     "interp": "BEZIER",
+     "alcas": [
+      "AUTO_CLAMPED",
+      "AUTO_CLAMPED"
+     ],
+     "alca_esq_graus": 0.0,
+     "alca_dir_graus": 0.0
+    }
+   ],
+   "extrapolacao": "CONSTANT",
+   "modificadores_curva": 0,
+   "keyframes_ok": true,
+   "curva_min_max_graus": [
+    0.0,
+    25.00000012650595
+   ],
+   "curva_dentro_do_intervalo": true,
+   "fora_do_intervalo_graus": [
+    0.0,
+    0.0
+   ],
+   "curva_monotona_ida_e_volta": true,
+   "todos_quadros": {
+    "pivo_deslocamento_max": 7.450580596923828e-09,
+    "outros_ossos_max": 0.0,
+    "head_loc_escala_eixos_xz_max": 0.0,
+    "matrizes_objetos_max": 0.0,
+    "angulos_graus": [
+     0.0,
+     0.126591,
+     0.491898,
+     1.074219,
+     1.851852,
+     2.803096,
+     3.90625,
+     5.139612,
+     6.481482,
+     7.910156,
+     9.403935,
+     10.941116,
+     12.5,
+     14.058884,
+     15.596064,
+     17.089844,
+     18.518519,
+     19.860389,
+     21.093752,
+     22.196906,
+     23.14815,
+     23.92578,
+     24.508098,
+     24.873408,
+     25.0,
+     24.873408,
+     24.508102,
+     23.925782,
+     23.148148,
+     22.196904,
+     21.093752,
+     19.860389,
+     18.518518,
+     17.089844,
+     15.596064,
+     14.058884,
+     12.5,
+     10.941116,
+     9.403936,
+     7.910156,
+     6.481481,
+     5.139611,
+     3.906248,
+     2.803094,
+     1.85185,
+     1.074221,
+     0.491903,
+     0.126594,
+     0.0
+    ]
+   },
+   "amostras": {
+    "1": {
+     "graus": 0.0,
+     "frente_mundo": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "cabeca_erro_rigido": 5.960464477539063e-08,
+     "cabeca_arestas_desvio": 1.1504104671482274e-08,
+     "fixas_desvio_npz": 2.9802322387695312e-08
+    },
+    "13": {
+     "graus": 12.500000063252974,
+     "frente_mundo": [
+      0.21644,
+      -0.976296,
+      0.0
+     ],
+     "cabeca_erro_rigido": 5.960464477539063e-08,
+     "cabeca_arestas_desvio": 2.5456818898532407e-08,
+     "fixas_desvio_npz": 2.9802322387695312e-08
+    },
+    "25": {
+     "graus": 25.00000012650595,
+     "frente_mundo": [
+      0.422618,
+      -0.906308,
+      0.0
+     ],
+     "cabeca_erro_rigido": 5.960464477539063e-08,
+     "cabeca_arestas_desvio": 2.9494573557369702e-08,
+     "fixas_desvio_npz": 2.9802322387695312e-08
+    },
+    "37": {
+     "graus": 12.500000063252974,
+     "frente_mundo": [
+      0.21644,
+      -0.976296,
+      0.0
+     ],
+     "cabeca_erro_rigido": 5.960464477539063e-08,
+     "cabeca_arestas_desvio": 2.5456818898532407e-08,
+     "fixas_desvio_npz": 2.9802322387695312e-08
+    },
+    "49": {
+     "graus": 0.0,
+     "frente_mundo": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "cabeca_erro_rigido": 5.960464477539063e-08,
+     "cabeca_arestas_desvio": 1.1504104671482274e-08,
+     "fixas_desvio_npz": 2.9802322387695312e-08
+    }
+   },
+   "sentido_ok": true,
+   "ok": true
+  }
+ },
+ "espelhamento_max_graus": 0.0,
+ "estado_restaurado": {
+  "acao": "Cabeca_Direita_Ida_e_Volta",
+  "quadro": 1
+ },
+ "tudo_ok": true
+}

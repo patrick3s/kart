@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="DefinicaoPersonagem" format=3]
+
+[ext_resource type="Script" path="res://scripts/definicao_personagem.gd" id="1"]
+[ext_resource type="PackedScene" path="res://personagens/bryan/bryan_kart.glb" id="2"]
+
+[resource]
+script = ExtResource("1")
+nome = "Bryan"
+descricao = "P003 — piloto policial no kart “POLÍCIA 190”, com giroflex e guincho."
+modelo = ExtResource("2")
+escala = 2.0
+raio_rodas = 0.1196
+giro_maximo_cabeca = 25.0

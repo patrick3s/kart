@@ -1,0 +1,12 @@
+{
+  "personagem": "P003 — Bryan",
+  "data": "2026-10-15T19:11-03:00",
+  "ferramenta": "Blender MCP (execute_blender_code) na sessão já aberta, Blender 5.2.2 LTS",
+  "sessao_antes": {"filepath": "", "is_dirty": false, "mode": "OBJECT", "objetos": ["Camera", "Cube", "Light"]},
+  "operacoes": ["wm.read_homefile(use_empty=True)", "wm.save_as_mainfile(blender/bryan.blend)", "wm.revert_mainfile()"],
+  "arquivo": "blender/bryan.blend",
+  "tamanho_bytes": 84706,
+  "sha256": "b01077946ed797903417ef367806f8536537f6c4692d5d33b9342bb75884e678",
+  "apos_recarga": {"filepath": "blender/bryan.blend", "is_dirty": false, "objetos": [], "malhas": 0, "cenas": ["Scene"], "fps": 24, "unidades": "METRIC"},
+  "resultado": "Projeto criado, aguardando modelo"
+}

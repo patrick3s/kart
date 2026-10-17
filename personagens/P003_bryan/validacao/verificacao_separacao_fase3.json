@@ -1,0 +1,423 @@
+{
+ "arquivo": "/Users/patricksoares/Documents/jogos/kart/personagens/P003_bryan/blender/bryan.blend",
+ "sujo_ao_verificar": false,
+ "backup": "/Users/patricksoares/Documents/jogos/kart/personagens/P003_bryan/backups/bryan_antes_fase3_20261015_192311.blend",
+ "partes": {
+  "Cabeca": {
+   "v": 41982,
+   "e": 122573,
+   "f": 80608,
+   "cantos": 241824,
+   "faces_conforme_rotulo": true,
+   "ids_unicos_na_parte": true,
+   "ilhas": 17,
+   "ilhas_divididas": [],
+   "co_mundo_max_desvio": 0.0,
+   "arestas_iguais": true,
+   "cantos_vertices_iguais": true,
+   "cantos_arestas_iguais": true,
+   "faces_inicio_ordem_iguais": true,
+   "uv_iguais": true,
+   "suavizacao_igual": true,
+   "material_igual": true,
+   "sharp_face_igual": true,
+   "sharp_edge_igual": true,
+   "cantos_na_costura": 0,
+   "normais_max_desvio_fora_costura": 0.0,
+   "normais_max_desvio_costura": 0.0,
+   "normais_ok": true,
+   "vertices_sem_aresta": 0,
+   "arestas_sem_face": 0,
+   "matriz_mundo_identidade": true,
+   "pai": null,
+   "modificadores": [],
+   "dados_exclusivos": true,
+   "bbox_min": [
+    -0.0857,
+    -0.007,
+    0.4941
+   ],
+   "bbox_max": [
+    0.0885,
+    0.2053,
+    0.7336
+   ],
+   "centro_bbox": [
+    0.0014,
+    0.0992,
+    0.6139
+   ]
+  },
+  "Corpo_Kart": {
+   "v": 771146,
+   "e": 2209470,
+   "f": 1439415,
+   "cantos": 4318245,
+   "faces_conforme_rotulo": true,
+   "ids_unicos_na_parte": true,
+   "ilhas": 1094,
+   "ilhas_divididas": [
+    8,
+    15,
+    17,
+    22,
+    31,
+    54,
+    55,
+    65,
+    72,
+    87,
+    106,
+    110,
+    113,
+    116,
+    175,
+    209,
+    234,
+    241,
+    243,
+    267,
+    338,
+    704,
+    757,
+    859,
+    870,
+    876,
+    877,
+    920,
+    961,
+    967,
+    970,
+    982,
+    996,
+    998,
+    1007,
+    1011,
+    1013,
+    1014,
+    1020,
+    1094,
+    1116,
+    1120
+   ],
+   "co_mundo_max_desvio": 0.0,
+   "arestas_iguais": true,
+   "cantos_vertices_iguais": true,
+   "cantos_arestas_iguais": true,
+   "faces_inicio_ordem_iguais": true,
+   "uv_iguais": true,
+   "suavizacao_igual": true,
+   "material_igual": true,
+   "sharp_face_igual": true,
+   "sharp_edge_igual": true,
+   "cantos_na_costura": 5109,
+   "normais_max_desvio_fora_costura": 0.0,
+   "normais_max_desvio_costura": 0.00045199692249298096,
+   "normais_ok": true,
+   "vertices_sem_aresta": 0,
+   "arestas_sem_face": 0,
+   "matriz_mundo_identidade": true,
+   "pai": null,
+   "modificadores": [],
+   "dados_exclusivos": true,
+   "bbox_min": [
+    -0.3009,
+    -0.4898,
+    0.0557
+   ],
+   "bbox_max": [
+    0.3021,
+    0.4898,
+    0.7707
+   ],
+   "centro_bbox": [
+    0.0006,
+    0.0,
+    0.4132
+   ]
+  },
+  "Wheel_Front_Left": {
+   "v": 41998,
+   "e": 122585,
+   "f": 80611,
+   "cantos": 241833,
+   "faces_conforme_rotulo": true,
+   "ids_unicos_na_parte": true,
+   "ilhas": 24,
+   "ilhas_divididas": [
+    757,
+    859,
+    870,
+    876,
+    920,
+    982,
+    996,
+    1011,
+    1013,
+    1014,
+    1020,
+    1094,
+    1116,
+    1120
+   ],
+   "co_mundo_max_desvio": 0.0,
+   "arestas_iguais": true,
+   "cantos_vertices_iguais": true,
+   "cantos_arestas_iguais": true,
+   "faces_inicio_ordem_iguais": true,
+   "uv_iguais": true,
+   "suavizacao_igual": true,
+   "material_igual": true,
+   "sharp_face_igual": true,
+   "sharp_edge_igual": true,
+   "cantos_na_costura": 1869,
+   "normais_max_desvio_fora_costura": 0.0,
+   "normais_max_desvio_costura": 9.828805923461914e-05,
+   "normais_ok": true,
+   "vertices_sem_aresta": 0,
+   "arestas_sem_face": 0,
+   "matriz_mundo_identidade": true,
+   "pai": null,
+   "modificadores": [],
+   "dados_exclusivos": true,
+   "bbox_min": [
+    0.15,
+    -0.3958,
+    0.0
+   ],
+   "bbox_max": [
+    0.3309,
+    -0.1435,
+    0.2493
+   ],
+   "centro_bbox": [
+    0.2405,
+    -0.2697,
+    0.1246
+   ]
+  },
+  "Wheel_Front_Right": {
+   "v": 42702,
+   "e": 124062,
+   "f": 81386,
+   "cantos": 244158,
+   "faces_conforme_rotulo": true,
+   "ids_unicos_na_parte": true,
+   "ilhas": 24,
+   "ilhas_divididas": [
+    8,
+    17,
+    22,
+    54,
+    55,
+    65,
+    72,
+    110,
+    116,
+    175,
+    209,
+    234,
+    241,
+    338
+   ],
+   "co_mundo_max_desvio": 0.0,
+   "arestas_iguais": true,
+   "cantos_vertices_iguais": true,
+   "cantos_arestas_iguais": true,
+   "faces_inicio_ordem_iguais": true,
+   "uv_iguais": true,
+   "suavizacao_igual": true,
+   "material_igual": true,
+   "sharp_face_igual": true,
+   "sharp_edge_igual": true,
+   "cantos_na_costura": 2168,
+   "normais_max_desvio_fora_costura": 0.0,
+   "normais_max_desvio_costura": 0.00023088697344064713,
+   "normais_ok": true,
+   "vertices_sem_aresta": 0,
+   "arestas_sem_face": 0,
+   "matriz_mundo_identidade": true,
+   "pai": null,
+   "modificadores": [],
+   "dados_exclusivos": true,
+   "bbox_min": [
+    -0.3298,
+    -0.3968,
+    0.0002
+   ],
+   "bbox_max": [
+    -0.15,
+    -0.1429,
+    0.2492
+   ],
+   "centro_bbox": [
+    -0.2399,
+    -0.2698,
+    0.1247
+   ]
+  },
+  "Wheel_Rear_Left": {
+   "v": 45724,
+   "e": 133086,
+   "f": 87392,
+   "cantos": 262176,
+   "faces_conforme_rotulo": true,
+   "ids_unicos_na_parte": true,
+   "ilhas": 30,
+   "ilhas_divididas": [
+    704,
+    877,
+    961,
+    967,
+    970,
+    998,
+    1007
+   ],
+   "co_mundo_max_desvio": 0.0,
+   "arestas_iguais": true,
+   "cantos_vertices_iguais": true,
+   "cantos_arestas_iguais": true,
+   "faces_inicio_ordem_iguais": true,
+   "uv_iguais": true,
+   "suavizacao_igual": true,
+   "material_igual": true,
+   "sharp_face_igual": true,
+   "sharp_edge_igual": true,
+   "cantos_na_costura": 571,
+   "normais_max_desvio_fora_costura": 0.0,
+   "normais_max_desvio_costura": 0.00022461265325546265,
+   "normais_ok": true,
+   "vertices_sem_aresta": 0,
+   "arestas_sem_face": 0,
+   "matriz_mundo_identidade": true,
+   "pai": null,
+   "modificadores": [],
+   "dados_exclusivos": true,
+   "bbox_min": [
+    0.1494,
+    0.1681,
+    0.0004
+   ],
+   "bbox_max": [
+    0.3321,
+    0.4145,
+    0.25
+   ],
+   "centro_bbox": [
+    0.2407,
+    0.2913,
+    0.1252
+   ]
+  },
+  "Wheel_Rear_Right": {
+   "v": 44498,
+   "e": 129664,
+   "f": 85189,
+   "cantos": 255567,
+   "faces_conforme_rotulo": true,
+   "ids_unicos_na_parte": true,
+   "ilhas": 23,
+   "ilhas_divididas": [
+    15,
+    31,
+    87,
+    106,
+    113,
+    243,
+    267
+   ],
+   "co_mundo_max_desvio": 0.0,
+   "arestas_iguais": true,
+   "cantos_vertices_iguais": true,
+   "cantos_arestas_iguais": true,
+   "faces_inicio_ordem_iguais": true,
+   "uv_iguais": true,
+   "suavizacao_igual": true,
+   "material_igual": true,
+   "sharp_face_igual": true,
+   "sharp_edge_igual": true,
+   "cantos_na_costura": 690,
+   "normais_max_desvio_fora_costura": 0.0,
+   "normais_max_desvio_costura": 0.00010645389556884766,
+   "normais_ok": true,
+   "vertices_sem_aresta": 0,
+   "arestas_sem_face": 0,
+   "matriz_mundo_identidade": true,
+   "pai": null,
+   "modificadores": [],
+   "dados_exclusivos": true,
+   "bbox_min": [
+    -0.3321,
+    0.1678,
+    0.0002
+   ],
+   "bbox_max": [
+    -0.1501,
+    0.4144,
+    0.2496
+   ],
+   "centro_bbox": [
+    -0.2411,
+    0.2911,
+    0.1249
+   ]
+  }
+ },
+ "cada_face_original_uma_vez": true,
+ "cada_canto_original_uma_vez": true,
+ "vertices_multiplicidade_esperada": true,
+ "arestas_multiplicidade_esperada": true,
+ "vertices_costura": 1730,
+ "arestas_costura": 1689,
+ "vertices_totais_partes": 988050,
+ "arestas_totais_partes": 2841440,
+ "co_mundo_max_desvio_geral": 0.0,
+ "lados_rodas_corretos": {
+  "Wheel_Front_Left": true,
+  "Wheel_Front_Right": true,
+  "Wheel_Rear_Left": true,
+  "Wheel_Rear_Right": true
+ },
+ "objetos": [
+  "Cabeca",
+  "Corpo_Kart",
+  "Wheel_Front_Left",
+  "Wheel_Front_Right",
+  "Wheel_Rear_Left",
+  "Wheel_Rear_Right"
+ ],
+ "nomes_padrao": true,
+ "imagens_no_arquivo": [
+  [
+   "bryan_basecolor.jpg",
+   true
+  ],
+  [
+   "bryan_normal.png",
+   true
+  ],
+  [
+   "bryan_rm.jpg",
+   true
+  ]
+ ],
+ "materiais_no_arquivo": [
+  "tripo_material_1db849c3-8e37-4423-b45a-4dcd0d8abf93"
+ ],
+ "atributos_ausentes_tratados_como_falso": [
+  [
+   "Cabeca",
+   "sharp_edge"
+  ],
+  [
+   "Cabeca",
+   "sharp_face"
+  ]
+ ],
+ "tolerancias": {
+  "posicao_m": 1e-06,
+  "normais_fora_da_costura": 0.0,
+  "normais_na_costura": 0.001
+ },
+ "tudo_ok": true
+}
