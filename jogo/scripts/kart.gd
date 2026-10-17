@@ -15,6 +15,8 @@ signal bateu(outro: Node, intensidade: float)
 @export var giro_maximo := 2.2
 @export var resposta_direcao := 5.0
 @export var gravidade := 20.0
+## Ativado pela PI001 para transpor zebras e o desnível de 20 cm do gramado.
+@export var altura_degrau := 0.0
 @export_group("Colisão")
 @export var massa := 1.0
 ## Fração da velocidade de aproximação devolvida num choque entre karts.
@@ -78,6 +80,7 @@ func _physics_process(delta: float) -> void:
 	velocity.x = antes.x
 	velocity.z = antes.z
 	velocity.y = 0.0 if is_on_floor() else velocity.y - gravidade * delta
+	_transpor_degrau(delta)
 	move_and_slide()
 
 	if not _resolver_choques(antes):
@@ -166,3 +169,18 @@ func _resolver_choques(antes: Vector3) -> bool:
 	if houve:
 		_decompor(v)
 	return houve
+
+
+func _transpor_degrau(delta: float) -> void:
+	if altura_degrau <= 0.0 or not is_on_floor():
+		return
+	var movimento := Vector3(velocity.x, 0.0, velocity.z) * delta
+	var choque := KinematicCollision3D.new()
+	if not test_move(global_transform, movimento, choque):
+		return
+	if choque.get_collider() is Kart or absf(choque.get_normal().y) > 0.5:
+		return
+	var elevado := global_transform
+	elevado.origin.y += altura_degrau
+	if not test_move(elevado, movimento):
+		global_position.y += altura_degrau

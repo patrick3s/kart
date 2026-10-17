@@ -1,0 +1,15 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+VALIDACAO_JAKE_CONCLUIDA /Users/patricksoares/Documents/jogos/kart/jogo/../pistas/PI001_primeira_pista/validacao/integracao_20261016/regressao_jake.json
+ESTRUTURA {"malhas":[{"nome":"Wheel_Front_Left","skin":false},{"nome":"Wheel_Front_Right","skin":false},{"nome":"Wheel_Rear_Left","skin":false},{"nome":"Wheel_Rear_Right","skin":false},{"nome":"Cabeca","skin":true},{"nome":"Corpo_Kart","skin":true}],"ossos":["Root_Bone","Torso_Bone","Neck_Bone","Head_Bone"],"pilotos_cadastrados":3}
+PERCURSO {"cabeca_global_graus":-9.74180581240309,"camera_atras_produto_escalar":4.32779264450073,"camera_fov_base":68.0,"camera_fov_em_movimento":80.5005340576172,"corpo_graus":13.8434927479857,"distancia_avante":24.0166664123535,"giro_esquerda_rad_s":1.43,"shader_quadriculado":"res://shaders/quadriculado.gdshader","velocidade":21.9999942779541}
+CONCLUSAO {"cabeca_oposta_estabilizada":true,"cabeca_sempre_oposta":true,"camera_atras_e_fov_dinamico":true,"limites":["Corpo_Kart reune torso do piloto e carro; Cabeca e uma malha distinta","Quatro ossos no GLB; Torso_Bone e Head_Bone sao os dois controles usados","Suspensao visual; sem curso individual de rodas ou contato por raycast","Auditoria headless; sem verificacao de pixels ou aparencia renderizada"],"menu_e_movimento":true,"rodas_giro_re_parada_esterco":true,"status":"aprovado","suspensao_lado_correto_estabilizada":true}
+CURVA 60 ruido=false esquerda mesmo_lado=0 corpo=6.8754933112948 cabeca=-4.81253999986935
+CURVA 60 ruido=false direita mesmo_lado=0 corpo=-6.87549415892865 cabeca=4.81239110744202
+CURVA 60 ruido=false reta mesmo_lado=0 corpo=0.00000003785693 cabeca=-0.00000003785693
+CURVA 60 ruido=true esquerda mesmo_lado=0 corpo=6.67763684779693 cabeca=-5.02840506498707
+CURVA 60 ruido=true direita mesmo_lado=0 corpo=-7.07728914804225 cabeca=4.63093931252486
+CURVA 60 ruido=true reta mesmo_lado=0 corpo=0.03957589246491 cabeca=-0.01284810498004
+CURVA 120 ruido=true esquerda mesmo_lado=0 corpo=6.67763684779693 cabeca=-5.02216264345963
+CURVA 120 ruido=true direita mesmo_lado=0 corpo=-7.07728999531086 cabeca=4.63806669290277
+CURVA 120 ruido=true reta mesmo_lado=0 corpo=0.03957601586186 cabeca=-0.00791520082617

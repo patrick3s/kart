@@ -1,0 +1,22 @@
+{
+  "jogo/scripts/kart.gd": "64fa98e7e0a3e2fc9807eaee9ee26d0824e34fdb6b358e06894e8c8c10f58a23",
+  "jogo/scripts/kart_ia.gd": "35d2b6c4df1e274e834b84dec85bd287a0c8f1eda7d73101423b80dad56248aa",
+  "jogo/scripts/visual_kart.gd": "8e16f4437163950636e5d4ee730d8fc1c02463354b85dbf02ef9a5d4ca857238",
+  "jogo/scripts/camera_perseguicao.gd": "f3be233496c049329650bac2b46bef74f1c15a3c301e0b6526533b1702d49e05",
+  "jogo/scripts/selecao_personagem.gd": "c81ab80a97f1da0a506710a581ecbf5ba2120175ceba46b91ba73e7ec51a3738",
+  "jogo/scripts/jogo.gd": "9e35954c692ac2f4ba6b24ae9fe141009a684cca2078f96d76315b8af12428ee",
+  "jogo/ferramentas/construir_cenas.gd": "61561482cdb2c97fa19c22c7028fccbf53eb6c82fd45fed85daa4e07256f693c",
+  "jogo/pistas/primeira_pista/primeira_pista.tscn": "9dbcbdd59fc47d664bb885c31a044a04babc2d4772d7f2973b69a2f74d000a61",
+  "jogo/pistas/primeira_pista/percurso.gd": "951e23d80dcf961aac8794cb2494252e87ee8846a1abe834bb363c844f95e760",
+  "jogo/pistas/primeira_pista/primeira_pista.gd": "dbd514cb5771818a905ac19b127e6fc283ff664120fa1246ddf09c8ae56fbd79",
+  "jogo/pistas/primeira_pista/primeira_pista.glb": "08967da460109dfc170b40a57cf7053eb37ec64a6604f0a1fcb498d73380e6cc",
+  "jogo/pistas/primeira_pista/percurso.json": "7f940beda86f95768ff5f2bcebb664953c49047e26e85a3ce6a2553c6a1c0634",
+  "jogo/pistas/primeira_pista/superficie.gdshader": "c3bfde95ce9d0e4acec13e987987400155949376c93d3b35a0d2e82261fe2d9b",
+  "jogo/ferramentas/validar_pi001.gd": "ad1a314f6a8e6e3ddae18b5301e1e90ec7a04ce15f44ec31528f7b347b809c6e",
+  "jogo/ferramentas/validar_contato_pi001.gd": "3da92eeeb4b459dac826e6240c2ca1ad3be40fd4ac22ec35a8f7bc43f4b5103f",
+  "jogo/ferramentas/capturar_pi001.gd": "7d55a67ba9147e92a47ad8e0fa202ce2a320c2b574857fae78cf5e7ce95feb6f",
+  "jogo/ferramentas/validar_mecanicas_jake.gd": "f427ca651b711d67250f02f88d2e51708d0357298a61e8e4b6ec9cc584f16ab7",
+  "jogo/ferramentas/validar_mecanicas_dimi.gd": "9209d09701dab58068a049fda7c31fa8ea90f670fa01e17fb5a75a766be1d187",
+  "jogo/ferramentas/validar_mecanicas_bryan.gd": "c4ef526cb6a02f2f966c4bdde5608677d80440c70f4aa0e10bcfbf20923d5885",
+  "pistas/PI001_primeira_pista/registros/exportar_godot.py": "a0afa24f681a5ece88116ed218428f67cf071515b3ccf62b77e566e13cc8d065"
+}

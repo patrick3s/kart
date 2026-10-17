@@ -1,0 +1,17 @@
+{
+  "codigo": 0,
+  "cenas": {
+    "jogo/cenas/kart.tscn": true,
+    "jogo/cenas/pista.tscn": true,
+    "jogo/cenas/selecao_personagem.tscn": true,
+    "jogo/pistas/primeira_pista/primeira_pista.tscn": true
+  },
+  "arena_e_kart_preservados": {
+    "jogo/cenas/kart.tscn": true,
+    "jogo/cenas/pista.tscn": true
+  },
+  "originais_inalterados": {
+    "pistas/PI001_primeira_pista/blender/primeira_pista.blend": true,
+    "pistas/PI001_primeira_pista/referencia/PI001_primeira_pista.jpg": true
+  }
+}

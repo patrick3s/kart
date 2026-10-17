@@ -7,6 +7,7 @@ func _init() -> void:
 	_salvar(_kart(), "res://cenas/kart.tscn")
 	_salvar(_pista(), "res://cenas/pista.tscn")
 	_salvar(_selecao(), "res://cenas/selecao_personagem.tscn")
+	_salvar(_primeira_pista(), "res://pistas/primeira_pista/primeira_pista.tscn")
 	quit()
 
 
@@ -222,6 +223,13 @@ func _selecao() -> Node:
 	descricao.add_theme_constant_override("outline_size", 6)
 	descricao.add_theme_color_override("font_outline_color", Color.BLACK)
 	_filho(coluna, descricao, "Descricao")
+	var circuito := OptionButton.new()
+	circuito.unique_name_in_owner = true
+	circuito.add_item("PI001 — Primeira pista")
+	circuito.add_item("Arena de testes")
+	circuito.custom_minimum_size = Vector2(320, 40)
+	circuito.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
+	_filho(coluna, circuito, "Circuito")
 	var botoes := HBoxContainer.new()
 	botoes.alignment = BoxContainer.ALIGNMENT_CENTER
 	botoes.add_theme_constant_override("separation", 16)
@@ -234,3 +242,79 @@ func _selecao() -> Node:
 		botao.add_theme_font_size_override("font_size", 26)
 		_filho(botoes, botao, dados[0])
 	return raiz
+
+
+func _primeira_pista() -> Node:
+	var raiz := _pista() as Node3D
+	raiz.name = "PrimeiraPista"
+	raiz.set_script(load("res://pistas/primeira_pista/primeira_pista.gd"))
+	for nome in ["Chao", "Muros", "Blocos"]:
+		var no := raiz.get_node(NodePath(nome))
+		raiz.remove_child(no)
+		no.free()
+	var modelo := (load("res://pistas/primeira_pista/primeira_pista.glb") as PackedScene).instantiate()
+	_filho(raiz, modelo, "Modelo")
+	var colisoes := _filho(raiz, Node3D.new(), "Colisoes")
+	for malha in modelo.find_children("*", "MeshInstance3D", true, false):
+		var mi := malha as MeshInstance3D
+		if "Asfalto" in mi.name or "Base_Gramado" in mi.name:
+			var mat := ShaderMaterial.new()
+			mat.shader = load("res://pistas/primeira_pista/superficie.gdshader")
+			var grama := "Gramado" in mi.name
+			mat.set_shader_parameter("cor", Color(0.37, 0.50, 0.22) if grama else Color(0.25, 0.28, 0.31))
+			mat.set_shader_parameter("escala", 1.2 if grama else 45.0)
+			mat.set_shader_parameter("variacao", 0.42 if grama else 0.18)
+			mi.material_override = mat
+		if "Asfalto" in mi.name or "Zebra" in mi.name or "Gramado" in mi.name:
+			var corpo := _filho(colisoes, StaticBody3D.new(), str(mi.name)) as StaticBody3D
+			var transformacao := mi.transform
+			var pai := mi.get_parent() as Node3D
+			while pai != modelo:
+				transformacao = pai.transform * transformacao
+				pai = pai.get_parent() as Node3D
+			corpo.transform = modelo.transform * transformacao
+			var forma := CollisionShape3D.new()
+			forma.shape = mi.mesh.create_trimesh_shape()
+			_filho(corpo, forma, "Forma")
+	var percurso := Path3D.new()
+	percurso.set_script(load("res://pistas/primeira_pista/percurso.gd"))
+	_filho(raiz, percurso, "Percurso")
+	_barreiras(raiz, "res://pistas/primeira_pista/barreiras.json")
+	raiz.get_node("Kart").transform = percurso.largada(0)
+	raiz.get_node("Kart").altura_degrau = 0.28
+	raiz.get_node("HUD/Ajuda").text = "PI001 · W/↑ acelera · S/↓ freia/ré · A/D ou ←/→ esterça · Esc menu"
+	return raiz
+
+
+## Barreiras nas bordas a partir do JSON exportado pelo Blender (posicionar_barreiras.py).
+## Reutilizável por qualquer pista: um MeshInstance3D por módulo, todos com a mesma malha
+## (descarte por câmera/distância e LOD individuais; MultiMesh não guarda as instâncias quando
+## o gerador roda em --headless) e uma caixa de colisão por módulo, mais longa para fechar as emendas.
+func _barreiras(pai: Node, caminho: String) -> void:
+	var dados: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(caminho))
+	var modelo := (load(dados["modulo"]) as PackedScene).instantiate()
+	var malha := (modelo.find_children("*", "MeshInstance3D", true, false)[0] as MeshInstance3D).mesh
+	var raiz := _filho(pai, Node3D.new(), "Barreiras")
+	var corpo := _filho(raiz, StaticBody3D.new(), "Colisao") as StaticBody3D
+	for borda in dados["bordas"]:
+		var lista: Array = dados["bordas"][borda]
+		var visual := _filho(raiz, Node3D.new(), "Borda" + str(borda))
+		for i in lista.size():
+			var m: Dictionary = lista[i]
+			var b: Array = m["base"]
+			var o: Array = m["origem"]
+			var t := Transform3D(
+				Basis(Vector3(b[0][0], b[0][1], b[0][2]), Vector3(b[1][0], b[1][1], b[1][2]), Vector3(b[2][0], b[2][1], b[2][2])),
+				Vector3(o[0], o[1], o[2]))
+			var mi := MeshInstance3D.new()
+			mi.mesh = malha
+			mi.transform = t
+			mi.visibility_range_end = 220.0
+			_filho(visual, mi, "%03d" % i)
+			var forma := BoxShape3D.new()
+			forma.size = Vector3(float(m["comprimento_m"]) + 0.3, 1.3, 0.6)
+			var colisao := CollisionShape3D.new()
+			colisao.shape = forma
+			colisao.transform = Transform3D(t.basis.orthonormalized(), t.origin + Vector3.UP * 0.6)
+			_filho(corpo, colisao, "%s%03d" % [borda, i])
+	modelo.free()

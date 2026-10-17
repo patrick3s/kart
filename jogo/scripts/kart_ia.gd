@@ -16,6 +16,13 @@ extends Kart
 @export var agressividade := 0.35
 @export var alcance_perseguicao := 28.0
 
+## Configurar antes de add_child: nulo conserva a arena antiga.
+var percurso: Path3D
+var progresso_percurso := 0.0
+var distancia_percorrida := 0.0
+var desvio_percurso := 0.0
+var velocidade_alvo := 0.0
+var faixa_percurso := 0.0
 var presas: Array[Kart] = []
 
 var _circuito: PackedVector3Array
@@ -34,8 +41,11 @@ func _ready() -> void:
 	super()
 	_sorteio.randomize()
 	_fase = _sorteio.randf() * TAU
-	_circuito = _gerar_circuito()
-	_indice = _ponto_a_frente()
+	if percurso:
+		progresso_percurso = percurso.curve.get_closest_offset(percurso.to_local(global_position))
+	else:
+		_circuito = _gerar_circuito()
+		_indice = _ponto_a_frente()
 	bateu.connect(_ao_bater)
 
 
@@ -64,6 +74,8 @@ func _ponto_a_frente() -> int:
 
 
 func _entrada(delta: float) -> Vector2:
+	if percurso:
+		return _entrada_percurso(delta)
 	var alvo := _escolher_alvo(delta)
 	var para := alvo - global_position
 	para.y = 0.0
@@ -172,3 +184,75 @@ func _desvio() -> float:
 			# Raio da esquerda (lado = +1 gira para a esquerda) acertou: vira para a direita.
 			correcao -= lado * perto * 1.2
 	return correcao
+
+
+## Seguimento contínuo com antecipação de curvatura e frenagem pela distância.
+## Não persegue presas nem usa desvios que apontem para fora do traçado.
+func _entrada_percurso(_delta: float) -> Vector2:
+	var curva := percurso.curve
+	var comprimento := curva.get_baked_length()
+	var local := percurso.to_local(global_position)
+	var atual := curva.get_closest_offset(local)
+	var avanco := wrapf(atual - progresso_percurso, -comprimento * 0.5, comprimento * 0.5)
+	distancia_percorrida += avanco
+	progresso_percurso = atual
+	var centro := curva.sample_baked(atual)
+	desvio_percurso = Vector2(local.x - centro.x, local.z - centro.z).length()
+	# Ultrapassa karts parados somente se a outra faixa estiver livre.
+	var eixo_frente := (_amostra_percurso(atual + 1.0) - _amostra_percurso(atual - 1.0)).normalized()
+	var eixo_lado := eixo_frente.cross(Vector3.UP)
+	for outro in presas:
+		if not is_instance_valid(outro) or outro == self: continue
+		var relativo := outro.global_position - global_position
+		var distancia_frente := relativo.dot(eixo_frente)
+		var faixa_outro := (outro.global_position - percurso.to_global(centro)).dot(eixo_lado)
+		if distancia_frente > 0.0 and distancia_frente < 16.0 and absf(faixa_outro - faixa_percurso) < 1.6 and absf(outro.velocidade) < 3.0:
+			var alternativa := -faixa_percurso
+			var livre := true
+			for vizinho in presas:
+				if not is_instance_valid(vizinho) or vizinho == self: continue
+				var v := vizinho.global_position - global_position
+				var faixa_vizinho := (vizinho.global_position - percurso.to_global(centro)).dot(eixo_lado)
+				if absf(v.dot(eixo_frente)) < 12.0 and absf(faixa_vizinho - alternativa) < 1.6:
+					livre = false
+			if livre: faixa_percurso = alternativa
+	var antecipa := clampf(2.0 + absf(velocidade) * 0.32, 3.0, 8.0)
+	var alvo := _amostra_percurso(atual + antecipa)
+	var tangente := (_amostra_percurso(atual + antecipa + 1.0) - _amostra_percurso(atual + antecipa - 1.0)).normalized()
+	alvo += tangente.cross(Vector3.UP) * faixa_percurso
+	var para := alvo - global_position
+	para.y = 0.0
+	var angulo := (-global_basis.z).signed_angle_to(para.normalized(), Vector3.UP)
+	velocidade_alvo = velocidade_maxima
+	# Velocidade angular disponível e aderência limitam a velocidade na curva.
+	for distancia in [0.0, 5.0, 10.0, 18.0, 28.0, 40.0]:
+		var a := _amostra_percurso(atual + distancia)
+		var b := _amostra_percurso(atual + distancia + 3.0)
+		var c := _amostra_percurso(atual + distancia + 6.0)
+		var curvatura := absf((b-a).signed_angle_to(c-b, Vector3.UP)) / 3.0
+		var limite := minf(velocidade_maxima, sqrt(3.0 / maxf(curvatura, 0.001)))
+		velocidade_alvo = minf(velocidade_alvo, sqrt(limite * limite + 2.0 * 12.0 * distancia))
+	if absf(angulo) > 0.65 or desvio_percurso > 2.5:
+		velocidade_alvo = minf(velocidade_alvo, 5.0)
+	# Espaçamento medido ao longo da curva: funciona também nas curvas fechadas.
+	for outro in presas:
+		if not is_instance_valid(outro) or outro == self: continue
+		var pos_outro := percurso.to_local(outro.global_position)
+		var progresso_outro := curva.get_closest_offset(pos_outro)
+		var longitudinal := wrapf(progresso_outro - atual, -comprimento * 0.5, comprimento * 0.5)
+		if longitudinal <= 0.0 or longitudinal > 22.0: continue
+		var centro_outro := _amostra_percurso(progresso_outro)
+		var tangente_outro := (_amostra_percurso(progresso_outro+1.0) - _amostra_percurso(progresso_outro-1.0)).normalized()
+		var faixa_obstaculo := (outro.global_position - centro_outro).dot(tangente_outro.cross(Vector3.UP))
+		var minha_faixa := (global_position - percurso.to_global(centro)).dot(eixo_lado)
+		if absf(faixa_obstaculo - minha_faixa) < 1.8:
+			var saindo_da_faixa := absf(faixa_obstaculo - faixa_percurso) > 1.7
+			var minima := 2.0 if saindo_da_faixa and longitudinal > 1.5 else 0.0
+			var velocidade_outro := maxf(0.0, outro.velocidade_plana().dot(tangente_outro))
+			velocidade_alvo = minf(velocidade_alvo, maxf(minima, velocidade_outro + (longitudinal - 8.0) * 0.8))
+	var acelerador := clampf((velocidade_alvo - velocidade) * 1.5, -1.0, 1.0)
+	return Vector2(acelerador, clampf(angulo * 2.2, -1.0, 1.0))
+
+
+func _amostra_percurso(distancia: float) -> Vector3:
+	return percurso.to_global(percurso.curve.sample_baked(fposmod(distancia, percurso.curve.get_baked_length())))

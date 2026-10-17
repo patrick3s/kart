@@ -126,6 +126,7 @@ func _executar() -> void:
 	await process_frame
 	relatorio.selecao = {"nome_exibido": menu.nome.text, "botao_jogar": menu.jogar != null, "troca_visivel": menu.anterior.visible}
 	root.get_node("Jogo").quantidade_adversarios = 0  # mede o piloto sem adversários
+	menu.circuito.selected = 1  # Regressão na arena histórica.
 	menu._jogar()
 	await scene_changed
 	await physics_frame
@@ -158,20 +159,28 @@ func _executar() -> void:
 		"cabeca_sempre_oposta": int(fases[0].quadros_cabeca_mesmo_lado) == 0 and int(fases[1].quadros_cabeca_mesmo_lado) == 0 and int(relatorio.reta_com_vibracao.quadros_mesmo_lado) == 0,
 		"camera_atras_e_fov_dinamico": float(relatorio.percurso.camera_atras_produto_escalar) > 0.0 and float(relatorio.percurso.camera_fov_em_movimento) > float(relatorio.percurso.camera_fov_base),
 		"menu_e_movimento": relatorio.selecao.nome_exibido == "Jake" and distancia > 1.0,
-		"limites": ["Um unico piloto cadastrado", "Corpo_Kart reune torso do piloto e carro; Cabeca e uma malha distinta", "Quatro ossos no GLB; Torso_Bone e Head_Bone sao os dois controles usados", "Suspensao visual; sem curso individual de rodas ou contato por raycast", "Auditoria headless; sem verificacao de pixels ou aparencia renderizada"]
+		"limites": ["Corpo_Kart reune torso do piloto e carro; Cabeca e uma malha distinta", "Quatro ossos no GLB; Torso_Bone e Head_Bone sao os dois controles usados", "Suspensao visual; sem curso individual de rodas ou contato por raycast", "Auditoria headless; sem verificacao de pixels ou aparencia renderizada"]
 	}
+	# O estado acompanha as medições atuais; os JSONs históricos permanecem intactos.
+	var passou := true
+	for valor in relatorio.conclusao.values():
+		if valor is bool: passou = passou and valor
+	relatorio.conclusao.status = "aprovado" if passou else "parcial"
 	# Hashes permitem distinguir a versao auditada de futuras alteracoes.
 	relatorio.sha256 = {}
 	for caminho in ["res://scripts/kart.gd", "res://scripts/visual_kart.gd", "res://scripts/camera_perseguicao.gd", "res://personagens/jake/jake_kart.glb", "res://project.godot"]:
 		relatorio.sha256[caminho] = FileAccess.get_sha256(caminho)
-	var arquivo := FileAccess.open(DESTINO, FileAccess.WRITE)
+	var destino := DESTINO
+	for arg in OS.get_cmdline_user_args():
+		if arg.begins_with("--saida="): destino = arg.trim_prefix("--saida=")
+	var arquivo := FileAccess.open(destino, FileAccess.WRITE)
 	if arquivo == null:
 		push_error("Nao foi possivel gravar o relatorio: " + str(FileAccess.get_open_error()))
 		quit(2)
 		return
 	arquivo.store_string(JSON.stringify(relatorio, "\t") + "\n")
 	arquivo.close()
-	print("VALIDACAO_JAKE_CONCLUIDA ", ProjectSettings.globalize_path(DESTINO))
+	print("VALIDACAO_JAKE_CONCLUIDA ", ProjectSettings.globalize_path(destino))
 	print("ESTRUTURA ", JSON.stringify(relatorio.estrutura))
 	print("PERCURSO ", JSON.stringify(relatorio.percurso))
 	print("CONCLUSAO ", JSON.stringify(relatorio.conclusao))

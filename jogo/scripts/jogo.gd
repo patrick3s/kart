@@ -7,6 +7,7 @@ var personagens: Array[DefinicaoPersonagem] = [
 	preload("res://personagens/bryan/bryan.tres"),
 ]
 var indice_escolhido := 0
+var indice_pista := 0
 ## Karts do computador na pista. As ferramentas de validação zeram para medir o piloto sozinho.
 var quantidade_adversarios := 5
 

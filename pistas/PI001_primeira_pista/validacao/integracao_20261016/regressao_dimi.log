@@ -1,0 +1,18 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+VALIDACAO_DIMI_CONCLUIDA /Users/patricksoares/Documents/jogos/kart/jogo/../pistas/PI001_primeira_pista/validacao/integracao_20261016/regressao_dimi.json
+SELECAO {"apos_anterior":"Bryan","apos_proximo":"Dimi","apos_volta_completa":"Jake","botoes_troca_visiveis":true,"descricao_dimi":"P002 — piloto bebê com boné, chupeta e móbile no kart.","indice_escolhido":1,"inicial":"Jake"}
+PERCURSO {"avante":{"camera_atras_produto_escalar":4.47147369384766,"camera_fov":80.5005340576172,"camera_fov_base":68.0,"distancia":24.0166664123535,"velocidade":22.0},"cabeca_relativa_max_graus":25.0,"curva_direita":{"cabeca_global_graus":9.51291171102672,"corpo_graus":-14.1662325055463,"esterco":-1.0,"giro_rad_s":-1.43,"velocidade":22.0000019073486},"curva_esquerda":{"cabeca_global_graus":-9.9542515844659,"camera_atraso_max_graus":19.7982048942524,"corpo_graus":13.9055860023032,"esterco":1.0,"giro_rad_s":1.43,"rolagem_camera_graus":-2.10001017565553,"velocidade":21.9999942779541},"frenagem":{"bico_mergulha_max_graus":6.53116023312729,"segundos_ate_parar":0.8,"velocidade_inicial":22.0000019073486},"modelo_na_pista":"res://personagens/dimi/dimi_kart.glb","parado":{"cabeca_relativa_graus":-0.0000000000000000184233259812199,"rolagem_graus":0.0000000000000000153527716510165,"velocidade":0.0},"re":{"camera_fov":73.0188293457031,"deslocamento_ao_longo_da_frente":-12.0519523620605,"fov_em_alta":81.9999923706055,"velocidade":-8.0},"shader_quadriculado":"res://shaders/quadriculado.gdshader"}
+CONCLUSAO {"cabeca_dentro_do_teto_25":true,"cabeca_oposta_estabilizada":true,"cabeca_relativa_max_graus":25.0,"cabeca_sempre_oposta":true,"camera_atras_atraso_e_fov_dinamico":true,"catalogo_jake_e_dimi":true,"direcao_dois_sentidos":true,"movimento_frenagem_re":true,"pista_usa_modelo_dimi":true,"rodas_raio_giro_re_parada_esterco":true,"selecao_troca_e_volta":true,"suspensao_lado_correto_estabilizada":true}
+CURVA 60 ruido=false esquerda mesmo_lado=0 ultimo=0 corpo=6.87549290246633 cabeca=-4.81254027760788 rel_max=13.3509820868236 salto_max=0.68116246591942
+CURVA 60 ruido=false direita mesmo_lado=0 ultimo=0 corpo=-6.87549375010012 cabeca=4.81239280022227 rel_max=14.1942434526254 salto_max=2.27054156052416
+CURVA 60 ruido=false reta mesmo_lado=0 ultimo=0 corpo=0.00000003785693 cabeca=-0.00000003785694 rel_max=11.6834528937294 salto_max=1.13527079145124
+CURVA 60 ruido=false parada mesmo_lado=0 ultimo=0 corpo=0.0 cabeca=-0.0 rel_max=0.0000000516291 salto_max=0.00000002996347
+CURVA 60 ruido=true esquerda mesmo_lado=0 ultimo=0 corpo=6.67763729866092 cabeca=-5.02840276534814 rel_max=13.3566074857644 salto_max=0.92579543525639
+CURVA 60 ruido=true direita mesmo_lado=0 ultimo=0 corpo=-7.07728915090915 cabeca=4.6309397618293 rel_max=14.2239711436764 salto_max=2.67299505824438
+CURVA 60 ruido=true reta mesmo_lado=0 ultimo=0 corpo=0.0395758877471 cabeca=-0.0128481208895 rel_max=11.7065587505931 salto_max=1.46930542370925
+CURVA 60 ruido=true parada mesmo_lado=0 ultimo=0 corpo=0.0 cabeca=-0.0 rel_max=0.00000004575039 salto_max=0.05242395638369
+CURVA 120 ruido=true esquerda mesmo_lado=0 ultimo=0 corpo=6.67763729866092 cabeca=-5.02216417177734 rel_max=13.3985276158646 salto_max=0.54770815042749
+CURVA 120 ruido=true direita mesmo_lado=0 ultimo=0 corpo=-7.07728999817771 cabeca=4.63806826805032 rel_max=14.2513107129469 salto_max=1.5180331599764
+CURVA 120 ruido=true reta mesmo_lado=0 ultimo=0 corpo=0.03957601114403 cabeca=-0.00791521619589 rel_max=11.7167718077675 salto_max=0.80669706249466
+CURVA 120 ruido=true parada mesmo_lado=0 ultimo=0 corpo=0.00000000000001 cabeca=-0.0 rel_max=0.00000028808876 salto_max=0.04749092614554

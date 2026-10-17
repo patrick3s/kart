@@ -17,16 +17,22 @@ Controles: **W/↑** acelera · **S/↓** freia e dá ré · **A/D ou ←/→** 
 | `personagens/jake/jake.tres` | Ficha do piloto (`DefinicaoPersonagem`) |
 | `personagens/dimi/dimi_kart.glb` | Exportado de `../personagens/P002_dimi/blender/dimi.blend` (pose de repouso + ações `Cabeca_Direita/Esquerda_Ida_e_Volta`) |
 | `personagens/dimi/dimi.tres` | Ficha do Dimi: raio das rodas 0,1297 (medido na banda, sem as bolinhas) e teto da cabeça de 25° |
+| `personagens/bryan/bryan_kart.glb` | Exportado de `../personagens/P003_bryan/blender/bryan.blend` (pose de repouso + ações `Cabeca_Direita/Esquerda_Ida_e_Volta`) |
+| `personagens/bryan/bryan.tres` | Ficha do Bryan: raio das rodas 0,1196 (média dos quatro medidos na banda, sem o preenchimento do para-lama) e teto da cabeça de 25° |
+| `ambiente/kloofendal_48d_partly_cloudy_puresky_4k.exr` | Céu HDRI da pista e do menu (cópia de `../ambiente/referencia/ceu/`; ver [ambiente](../ambiente/LEIA-ME.md#céu-no-jogo)) |
 | `scripts/jogo.gd` | Autoload `Jogo`: catálogo de pilotos e escolha atual |
 | `scripts/kart.gd` | Direção arcade (`CharacterBody3D`) e choques com impulso, empurrão lateral e rodada |
 | `scripts/kart_ia.gd` | `KartIA`: adversário do computador (circuito, desvio por raios, ré ao enroscar, perseguição) |
 | `scripts/efeitos.gd` | Faíscas das batidas |
 | `scripts/visual_kart.gd` | Rodas (giro + esterço), suspensão por mola, vibração e compensação da cabeça |
 | `scripts/camera_perseguicao.gd` | Câmera atrás do kart, dinâmica |
-| `ferramentas/construir_cenas.gd` | Gera `cenas/*.tscn` pela linha de comando |
+| `ferramentas/construir_cenas.gd` | Gera `cenas/*.tscn` pela linha de comando, inclusive céu HDRI, neblina e sol (`_ambiente()`) |
 | `ferramentas/validar_mecanicas_dimi.gd` | Fase 8 do Dimi: escolha entre pilotos, movimento, frenagem, ré, câmera, rodas, suspensão e cabeça |
 | `ferramentas/capturar_vistas_dimi.gd` | Imagens renderizadas do menu e da pista com o Dimi (precisa de janela) |
 | `ferramentas/inspecionar_importacao_dimi.gd` | Confere o GLB importado do Dimi contra o Blender (ossos, pivôs, rodas, malhas, animações) |
+| `ferramentas/inspecionar_importacao_bryan.gd` | Confere o GLB importado do Bryan contra o Blender |
+| `ferramentas/validar_mecanicas_bryan.gd` | Fase 8 do Bryan: catálogo com três pilotos, troca no menu, movimento, câmera, rodas e apoio, suspensão e cabeça |
+| `ferramentas/capturar_vistas_bryan.gd` | Imagens renderizadas do menu e da pista com o Bryan, com vistas fechadas da lateral e da nuca (precisa de janela) |
 
 Regenerar as cenas:
 
@@ -78,6 +84,23 @@ Grava [importacao_godot_fase7.json](../personagens/P002_dimi/validacao/importaca
 
 Gravam [validacao_mecanicas_fase8.json](../personagens/P002_dimi/validacao/validacao_mecanicas_fase8.json) e as imagens em [vistas_fase8/](../personagens/P002_dimi/registros/vistas_fase8/). Com dois pilotos, a troca no menu passou a ser testada. Passaram escolha, movimento, frenagem, ré, câmera, rodas e suspensão, além da cabeça oposta em regime estabilizado. A cabeça oposta em **todo** quadro falha como no Jake: 18 quadros na entrada da curva e 15 na inversão. Corrigido depois pela tarefa [T001](tarefas/T001-cabeca-sempre-oposta.md): 0 quadros no mesmo lado nos dois pilotos. A auditoria do Jake acima descreve os scripts antes dos campos `raio_rodas`/`giro_maximo_cabeca`; com esses campos em zero, os resultados dele foram reproduzidos sem diferença. Ver o [registro](../personagens/P002_dimi/registros/registro-fase8-jogavel-2026-10-15.md).
 
+## Validação das mecânicas do Bryan — 16/10/2026
+
+```bash
+/Applications/Godot.app/Contents/MacOS/Godot --headless --path . --fixed-fps 60 --script res://ferramentas/validar_mecanicas_bryan.gd
+/Applications/Godot.app/Contents/MacOS/Godot --path . --fixed-fps 60 --script res://ferramentas/capturar_vistas_bryan.gd
+```
+
+Gravam [validacao_mecanicas_fase8.json](../personagens/P003_bryan/validacao/validacao_mecanicas_fase8.json) e as imagens em [vistas_fase8/](../personagens/P003_bryan/registros/vistas_fase8/). Todas as conclusões passaram, inclusive a cabeça oposta em todo quadro (0 quadros no mesmo lado a 60 e 120 passos/s, com e sem ruído) e o teto de 25°. Com três pilotos, `validar_mecanicas_dimi.gd` reprova `catalogo_jake_e_dimi` e `selecao_troca_e_volta`, porque espera exatamente dois; as mecânicas do Dimi continuam iguais. Ver o [registro](../personagens/P003_bryan/registros/registro-fase8-jogavel-2026-10-16.md).
+
 ## Novo personagem
 
 Exportar o GLB com a mesma estrutura (osso de corpo, osso de cabeça, quatro malhas de roda com origem no centro, frente em −Y no Blender), criar outra ficha `.tres` e acrescentá-la em `scripts/jogo.gd`. Os nomes de ossos e rodas podem ser trocados na ficha.
+
+## PI001 jogável — 16/10/2026
+
+O menu oferece **PI001 — Primeira pista** por padrão e mantém **Arena de testes** para o circuito anterior. A PI001 preserva o kart, os três personagens, câmera, HUD, controles e HDRI; acrescenta modelo exportado via Blender MCP, colisões estáticas, largada alinhada e IA pelo eixo real. O gerador de cenas inclui a integração.
+
+Os testes headless e as capturas do renderizador estão no [relatório da PI001](../pistas/PI001_primeira_pista/validacao/integracao_20261016/RELATORIO.md). Cinco IAs completaram uma volta nas três escolhas de jogador, sem saídas/contramão nos ensaios finais; controles, zebras, retorno do gramado, pneus e colisões passaram. As regressões novas de Jake, Dimi e Bryan estão nessa pasta e preservam os relatórios históricos. O validador de Dimi agora aceita o catálogo atual; Jake aceita `--saida=` e calcula seu estado a partir das medições.
+
+As seções históricas acima descrevem as auditorias nas datas originais. A integração mantém a escala provisória e não acrescenta classificação, cronômetro ou regras de checkpoints. A conferência visual foi feita nas capturas reais; os comandos/voltas foram automatizados, sem pilotagem manual completa.

@@ -1,0 +1,14 @@
+{
+  "status": "jogavel_validado",
+  "logs_finais_sem_erros_avisos": true,
+  "importacao_headless": true,
+  "gerador_preserva_integracao": true,
+  "voltas_tres_escolhas": true,
+  "controles": true,
+  "regressoes_tres_personagens": true,
+  "pneus_e_colisoes": true,
+  "capturas_renderizador_conferidas": true,
+  "pilotagem_manual_volta_completa": false,
+  "arquivos_originais_preservados": true,
+  "relatorio": "RELATORIO.md"
+}

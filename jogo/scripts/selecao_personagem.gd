@@ -8,6 +8,8 @@ extends Node3D
 @onready var proximo: Button = %Proximo
 @onready var jogar: Button = %Jogar
 
+@onready var circuito: OptionButton = %Circuito
+
 var _visual: VisualKart
 
 @onready var jogo := get_node("/root/Jogo")
@@ -20,6 +22,7 @@ func _ready() -> void:
 	var varios: bool = jogo.personagens.size() > 1
 	anterior.visible = varios
 	proximo.visible = varios
+	circuito.selected = jogo.indice_pista
 	_mostrar()
 	jogar.grab_focus()
 
@@ -54,4 +57,5 @@ func _mostrar() -> void:
 
 
 func _jogar() -> void:
-	get_tree().change_scene_to_file("res://cenas/pista.tscn")
+	jogo.indice_pista = circuito.selected
+	get_tree().change_scene_to_file("res://pistas/primeira_pista/primeira_pista.tscn" if circuito.selected == 0 else "res://cenas/pista.tscn")

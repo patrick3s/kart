@@ -1,0 +1,906 @@
+{
+	"adversarios": [
+		{
+			"desvio_max_m": 1.29643845558167,
+			"nome": "Adversario1",
+			"quadros_fora_asfalto": 0,
+			"volta_segundos": 84.1
+		},
+		{
+			"desvio_max_m": 1.2968248128891,
+			"nome": "Adversario2",
+			"quadros_fora_asfalto": 0,
+			"volta_segundos": 90.25
+		},
+		{
+			"desvio_max_m": 1.29657852649689,
+			"nome": "Adversario3",
+			"quadros_fora_asfalto": 0,
+			"volta_segundos": 86.05
+		},
+		{
+			"desvio_max_m": 1.29665052890778,
+			"nome": "Adversario4",
+			"quadros_fora_asfalto": 0,
+			"volta_segundos": 91.8166666666667
+		},
+		{
+			"desvio_max_m": 1.29677653312683,
+			"nome": "Adversario5",
+			"quadros_fora_asfalto": 0,
+			"volta_segundos": 87.8166666666667
+		}
+	],
+	"aprovado_impactos": true,
+	"aprovado_voltas": true,
+	"impactos": [
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 23.9402491251628,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.19969177246094,
+			"posicao_final": "(27.53782, 0.090826, 116.516)",
+			"velocidade_max": 17.1733303070068
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 23.9402491251628,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.10044097900391,
+			"posicao_final": "(81.68497, 0.135943, 120.799)",
+			"velocidade_max": 22.0110893249512
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 23.9402491251628,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.19969177246094,
+			"posicao_final": "(22.97809, 0.090826, 115.684)",
+			"velocidade_max": 17.1733303070068
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 23.9402491251628,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.10042572021484,
+			"posicao_final": "(81.68497, 0.135942, 111.401)",
+			"velocidade_max": 22.0110893249512
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 71.8207473754883,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.19969177246094,
+			"posicao_final": "(75.41831, 0.090826, 116.516)",
+			"velocidade_max": 17.1733303070068
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 71.8207473754883,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.51219940185547,
+			"posicao_final": "(128.984, -0.109057, 121.0122)",
+			"velocidade_max": 22.0110893249512
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 71.8207473754883,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.19968414306641,
+			"posicao_final": "(70.85859, 0.090826, 115.684)",
+			"velocidade_max": 17.1733303070068
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 71.8207473754883,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.09302520751953,
+			"posicao_final": "(129.8739, 0.090826, 113.4751)",
+			"velocidade_max": 22.0110893249512
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 119.701245625814,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.1982250213623,
+			"posicao_final": "(123.2885, 0.090826, 115.9503)",
+			"velocidade_max": 17.1647548675537
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 119.701245625814,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.27281475067139,
+			"posicao_final": "(174.1632, 0.135943, 110.2227)",
+			"velocidade_max": 22.0512390136719
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 119.701245625814,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.19896507263184,
+			"posicao_final": "(119.1177, 0.090826, 115.4015)",
+			"velocidade_max": 17.0329856872559
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 119.701245625814,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.19545745849609,
+			"posicao_final": "(145.1463, 0.135943, 110.4381)",
+			"velocidade_max": 22.0127944946289
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 167.581743876139,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.19969177246094,
+			"posicao_final": "(174.2918, 0.135943, 110.4848)",
+			"velocidade_max": 10.9999942779541
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 167.581743876139,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.11470937728882,
+			"posicao_final": "(175.97, 0.135943, 110.7464)",
+			"velocidade_max": 22.0256729125977
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 167.581743876139,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.19969177246094,
+			"posicao_final": "(171.1977, 0.090826, 115.0203)",
+			"velocidade_max": 17.1682872772217
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 167.581743876139,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.25851535797119,
+			"posicao_final": "(191.352, 0.135277, 99.54708)",
+			"velocidade_max": 24.3715686798096
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 215.462242126465,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.20331478118896,
+			"posicao_final": "(196.8463, 0.090826, 84.24214)",
+			"velocidade_max": 17.1182899475098
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 215.462242126465,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.45283508300781,
+			"posicao_final": "(197.0672, 0.090826, 77.93681)",
+			"velocidade_max": 22.0203247070312
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 215.462242126465,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.19530200958252,
+			"posicao_final": "(195.117, 0.090826, 88.24154)",
+			"velocidade_max": 17.1700325012207
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 215.462242126465,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.09004211425781,
+			"posicao_final": "(201.5111, 0.135943, 45.44273)",
+			"velocidade_max": 22.3108329772949
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 263.34274037679,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.19558429718018,
+			"posicao_final": "(197.2552, 0.090826, 36.12118)",
+			"velocidade_max": 17.1560401916504
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 263.34274037679,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.2354736328125,
+			"posicao_final": "(202.3355, 0.135943, -8.025656)",
+			"velocidade_max": 22.0083084106445
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 263.34274037679,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.36154794692993,
+			"posicao_final": "(198.2681, 0.090826, 78.63409)",
+			"velocidade_max": 24.8590908050537
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 263.34274037679,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.19963073730469,
+			"posicao_final": "(191.9185, 0.135943, 12.19503)",
+			"velocidade_max": 22.0152473449707
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 311.223238627116,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.24948740005493,
+			"posicao_final": "(191.8417, 0.135942, 19.62241)",
+			"velocidade_max": 16.9911594390869
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 311.223238627116,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.09303283691406,
+			"posicao_final": "(202.4479, 0.135943, -37.88729)",
+			"velocidade_max": 22.0110931396484
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 311.223238627116,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.19969177246094,
+			"posicao_final": "(192.0887, 0.135943, -21.18701)",
+			"velocidade_max": 18.573335647583
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 311.223238627116,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.16072177886963,
+			"posicao_final": "(192.1298, 0.135943, -35.22285)",
+			"velocidade_max": 22.0110893249512
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 359.103736877441,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.18947601318359,
+			"posicao_final": "(189.5864, 0.135943, -54.83126)",
+			"velocidade_max": 10.9999942779541
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 359.103736877441,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.24409294128418,
+			"posicao_final": "(185.4371, 0.135943, -62.17219)",
+			"velocidade_max": 22.1272754669189
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 359.103736877441,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.22696304321289,
+			"posicao_final": "(186.8187, 0.135943, -59.83386)",
+			"velocidade_max": 17.459041595459
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 359.103736877441,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.29784154891968,
+			"posicao_final": "(179.9393, 0.135943, -81.50008)",
+			"velocidade_max": 17.2013320922852
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 406.984235127767,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.18071222305298,
+			"posicao_final": "(150.2646, 0.135943, -57.89264)",
+			"velocidade_max": 17.6433887481689
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 406.984235127767,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.16862440109253,
+			"posicao_final": "(151.18, 0.135943, -46.7132)",
+			"velocidade_max": 13.5999937057495
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 406.984235127767,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.21061515808105,
+			"posicao_final": "(172.0219, 0.135943, -72.7087)",
+			"velocidade_max": 17.4149265289307
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 406.984235127767,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.19350719451904,
+			"posicao_final": "(120.045, 0.135941, -50.52145)",
+			"velocidade_max": 25.1163349151611
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 454.864733378092,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.20040893554688,
+			"posicao_final": "(125.3648, 0.090826, -47.17358)",
+			"velocidade_max": 17.1505107879639
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 454.864733378092,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.10077095031738,
+			"posicao_final": "(113.8974, 0.135943, -41.1281)",
+			"velocidade_max": 22.0313339233398
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 454.864733378092,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.19895219802856,
+			"posicao_final": "(120.7804, 0.090826, -45.89465)",
+			"velocidade_max": 17.1088180541992
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 454.864733378092,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.16657876968384,
+			"posicao_final": "(84.36325, 0.135943, -49.59951)",
+			"velocidade_max": 25.2860794067383
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 502.745231628418,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.33202457427979,
+			"posicao_final": "(76.09223, 0.090826, -47.54535)",
+			"velocidade_max": 17.0887832641602
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 502.745231628418,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.26739978790283,
+			"posicao_final": "(30.24072, 0.135943, -49.9264)",
+			"velocidade_max": 22.0073051452637
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 502.745231628418,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.2033371925354,
+			"posicao_final": "(72.9182, 0.090826, -44.92602)",
+			"velocidade_max": 17.1693363189697
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 502.745231628418,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.18777656555176,
+			"posicao_final": "(51.19523, 0.135943, -39.70431)",
+			"velocidade_max": 22.0166397094727
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 550.625729878744,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.20623826980591,
+			"posicao_final": "(25.96812, 0.090826, -45.18581)",
+			"velocidade_max": 16.9417743682861
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 550.625729878744,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.09596824645996,
+			"posicao_final": "(-27.75131, 0.090826, -45.87815)",
+			"velocidade_max": 22.6648063659668
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 550.625729878744,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.19165563583374,
+			"posicao_final": "(25.15342, 0.090826, -43.9203)",
+			"velocidade_max": 17.1006660461426
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 550.625729878744,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.13389253616333,
+			"posicao_final": "(17.22341, 0.135279, -47.62479)",
+			"velocidade_max": 22.0176124572754
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 598.506228129069,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.19676971435547,
+			"posicao_final": "(-22.86003, 0.090826, -43.96009)",
+			"velocidade_max": 17.1616744995117
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 598.506228129069,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.23094320297241,
+			"posicao_final": "(-62.95487, 0.135943, -44.72308)",
+			"velocidade_max": 22.0097808837891
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 598.506228129069,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.26759481430054,
+			"posicao_final": "(-56.64531, 0.135943, -39.4309)",
+			"velocidade_max": 22.0015735626221
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 598.506228129069,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.09403467178345,
+			"posicao_final": "(-42.31137, 0.135943, -38.08538)",
+			"velocidade_max": 22.0130386352539
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 646.386726379395,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.28053760528564,
+			"posicao_final": "(-23.78857, 0.090162, -41.5687)",
+			"velocidade_max": 22.0000057220459
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 646.386726379395,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.25467586517334,
+			"posicao_final": "(-69.88311, 0.135943, -93.39108)",
+			"velocidade_max": 22.4461822509766
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 646.386726379395,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.2149920463562,
+			"posicao_final": "(-60.31497, 0.090825, -57.43025)",
+			"velocidade_max": 16.9388027191162
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 646.386726379395,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.14271211624146,
+			"posicao_final": "(-57.17072, 0.135279, -66.68732)",
+			"velocidade_max": 22.0296173095703
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 694.26722462972,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.19712018966675,
+			"posicao_final": "(-69.99538, 0.090162, -100.1904)",
+			"velocidade_max": 16.773365020752
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 694.26722462972,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.45377016067505,
+			"posicao_final": "(-81.88868, 0.135943, -103.8055)",
+			"velocidade_max": 18.4000015258789
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 694.26722462972,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.40710067749023,
+			"posicao_final": "(-68.22252, 0.135943, -89.50154)",
+			"velocidade_max": 17.5774707794189
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 694.26722462972,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.401771068573,
+			"posicao_final": "(-98.1726, 0.135943, -116.2447)",
+			"velocidade_max": 21.9556789398193
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 742.147722880046,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.23953914642334,
+			"posicao_final": "(-112.8989, 0.090942, -105.4911)",
+			"velocidade_max": 16.7598152160645
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 742.147722880046,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.46720266342163,
+			"posicao_final": "(-119.3691, 0.135943, -94.06459)",
+			"velocidade_max": 17.6000022888184
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 742.147722880046,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.16662693023682,
+			"posicao_final": "(-103.1763, 0.135943, -105.2532)",
+			"velocidade_max": 17.5803909301758
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 742.147722880046,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.29108381271362,
+			"posicao_final": "(-132.67, 0.135943, -86.42359)",
+			"velocidade_max": 17.3909645080566
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 790.028221130371,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.19967651367188,
+			"posicao_final": "(-128.5145, 0.090826, -65.55713)",
+			"velocidade_max": 17.1733303070068
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 790.028221130371,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.09198045730591,
+			"posicao_final": "(-136.3583, 0.135943, -8.067152)",
+			"velocidade_max": 22.0110092163086
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 790.028221130371,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.19969177246094,
+			"posicao_final": "(-127.6835, 0.090826, -65.55948)",
+			"velocidade_max": 17.1733303070068
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 790.028221130371,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.14082956314087,
+			"posicao_final": "(-123.5559, 0.135943, -39.35855)",
+			"velocidade_max": 22.0111465454102
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 837.908719380697,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.15527963638306,
+			"posicao_final": "(-144.9931, 0.135943, -13.61735)",
+			"velocidade_max": 17.6046981811523
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 837.908719380697,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.02963161468506,
+			"posicao_final": "(-186.877, 0.090826, 13.04639)",
+			"velocidade_max": 22.0008430480957
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 837.908719380697,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.18226528167725,
+			"posicao_final": "(-139.1946, 0.135943, -19.50401)",
+			"velocidade_max": 10.9999971389771
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 837.908719380697,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.30531311035156,
+			"posicao_final": "(-148.9423, 0.135201, -8.63053)",
+			"velocidade_max": 22.0966053009033
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 885.789217631022,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.20911836624146,
+			"posicao_final": "(-176.5928, 0.090162, 8.323298)",
+			"velocidade_max": 16.8293495178223
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 885.789217631022,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.27555751800537,
+			"posicao_final": "(-177.1892, 0.135943, 13.44366)",
+			"velocidade_max": 22.075590133667
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 885.789217631022,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.20784759521484,
+			"posicao_final": "(-172.8515, 0.090826, 7.216403)",
+			"velocidade_max": 17.2513236999512
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 885.789217631022,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.30615329742432,
+			"posicao_final": "(-189.5372, 0.090823, 52.46014)",
+			"velocidade_max": 22.5606384277344
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 933.669715881348,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.811363697052,
+			"posicao_final": "(-196.1397, 0.09023, 38.93908)",
+			"velocidade_max": 16.36399269104
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 933.669715881348,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.50164461135864,
+			"posicao_final": "(-143.9004, 0.135943, 75.12357)",
+			"velocidade_max": 22.0
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 933.669715881348,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.08002758026123,
+			"posicao_final": "(-179.4977, 0.135279, 62.73319)",
+			"velocidade_max": 22.6095161437988
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 933.669715881348,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.01361656188965,
+			"posicao_final": "(-200.0982, 0.135943, 49.87885)",
+			"velocidade_max": 12.3999938964844
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 981.550214131673,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.19895553588867,
+			"posicao_final": "(-167.2684, 0.135943, 71.37615)",
+			"velocidade_max": 17.9102725982666
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 981.550214131673,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.15294790267944,
+			"posicao_final": "(-122.7595, 0.135943, 97.87455)",
+			"velocidade_max": 22.014778137207
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 981.550214131673,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.24287891387939,
+			"posicao_final": "(-154.6583, 0.090826, 72.1758)",
+			"velocidade_max": 17.0748252868652
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 981.550214131673,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.35922718048096,
+			"posicao_final": "(-122.3146, 0.135943, 86.86726)",
+			"velocidade_max": 22.0096263885498
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 1029.430712382,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.2011456489563,
+			"posicao_final": "(-112.9857, 0.090826, 97.38186)",
+			"velocidade_max": 17.1639652252197
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 1029.430712382,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.10379123687744,
+			"posicao_final": "(-104.0412, 0.135279, 97.09708)",
+			"velocidade_max": 22.0238399505615
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 1029.430712382,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.19814825057983,
+			"posicao_final": "(-116.6583, 0.090826, 94.54113)",
+			"velocidade_max": 17.1380004882812
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 1029.430712382,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.16130542755127,
+			"posicao_final": "(-82.47385, 0.135943, 113.7904)",
+			"velocidade_max": 25.1554927825928
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 1077.31121063232,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.19458055496216,
+			"posicao_final": "(-52.49254, 0.135943, 120.8856)",
+			"velocidade_max": 19.3733177185059
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 1077.31121063232,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.14488363265991,
+			"posicao_final": "(-59.68893, 0.135943, 110.1549)",
+			"velocidade_max": 22.0471706390381
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 1077.31121063232,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.28110074996948,
+			"posicao_final": "(-67.41507, 0.090826, 112.6832)",
+			"velocidade_max": 17.2863464355469
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 1077.31121063232,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.32473754882812,
+			"posicao_final": "(-9.654452, 0.090826, 113.5922)",
+			"velocidade_max": 23.1363430023193
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 1125.19170888265,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.19969177246094,
+			"posicao_final": "(-57.99719, 0.135941, 111.109)",
+			"velocidade_max": 22.0157985687256
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 1125.19170888265,
+			"lado": -1.0,
+			"maior_afastamento_m": 5.10035705566406,
+			"posicao_final": "(33.80415, 0.135943, 120.7988)",
+			"velocidade_max": 22.0110893249512
+		},
+		{
+			"angulo": 90.0,
+			"contido": true,
+			"distancia_m": 1125.19170888265,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.19969177246094,
+			"posicao_final": "(-24.90277, 0.090826, 115.684)",
+			"velocidade_max": 17.1733303070068
+		},
+		{
+			"angulo": 35.0,
+			"contido": true,
+			"distancia_m": 1125.19170888265,
+			"lado": 1.0,
+			"maior_afastamento_m": 5.10037231445312,
+			"posicao_final": "(33.80415, 0.135943, 111.4012)",
+			"velocidade_max": 22.0110893249512
+		}
+	],
+	"impactos_contidos": "96/96",
+	"maior_afastamento_m": 5.811363697052,
+	"metodo": "Godot real, Input e CharacterBody3D; kart posicionado no eixo e acelerado contra a borda",
+	"modulos": 657
+}

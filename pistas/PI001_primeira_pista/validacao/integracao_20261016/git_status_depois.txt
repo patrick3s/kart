@@ -1,0 +1,34 @@
+ M documentacao/README.md
+ M jogo/LEIA-ME.md
+ M jogo/cenas/pista.tscn
+ M jogo/cenas/selecao_personagem.tscn
+ M jogo/ferramentas/construir_cenas.gd
+ M jogo/ferramentas/validar_mecanicas_dimi.gd
+ M jogo/ferramentas/validar_mecanicas_jake.gd
+ M jogo/pistas/LEIA-ME.md
+ M jogo/scripts/jogo.gd
+ M jogo/scripts/kart.gd
+ M jogo/scripts/kart_ia.gd
+ M jogo/scripts/selecao_personagem.gd
+ M jogo/tarefas/T001-cabeca-sempre-oposta.md
+ M pistas/PI001_primeira_pista/CHECKPOINT.md
+ M pistas/PI001_primeira_pista/LEIA-ME.md
+?? ambiente/
+?? jogo/ambiente/
+?? jogo/ferramentas/capturar_pi001.gd
+?? jogo/ferramentas/capturar_pi001.gd.uid
+?? jogo/ferramentas/capturar_vistas_bryan.gd
+?? jogo/ferramentas/capturar_vistas_bryan.gd.uid
+?? jogo/ferramentas/inspecionar_importacao_bryan.gd
+?? jogo/ferramentas/inspecionar_importacao_bryan.gd.uid
+?? jogo/ferramentas/validar_contato_pi001.gd
+?? jogo/ferramentas/validar_contato_pi001.gd.uid
+?? jogo/ferramentas/validar_mecanicas_bryan.gd
+?? jogo/ferramentas/validar_mecanicas_bryan.gd.uid
+?? jogo/ferramentas/validar_pi001.gd
+?? jogo/ferramentas/validar_pi001.gd.uid
+?? jogo/personagens/bryan/
+?? jogo/pistas/primeira_pista/
+?? personagens/P003_bryan/
+?? pistas/PI001_primeira_pista/registros/exportar_godot.py
+?? pistas/PI001_primeira_pista/validacao/integracao_20261016/

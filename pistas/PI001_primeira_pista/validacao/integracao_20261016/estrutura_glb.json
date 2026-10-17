@@ -1,0 +1,16 @@
+{
+  "nos_glb": [
+    "PI001_Asfalto",
+    "PI001_Base_Gramado",
+    "PI001_Largada_Quadriculada",
+    "PI001_Linha_Externa",
+    "PI001_Linha_Interna",
+    "PI001_Zebra_Externa",
+    "PI001_Zebra_Interna"
+  ],
+  "total_malhas": 7,
+  "cameras": 0,
+  "escala": "1:1",
+  "transformacao": "(x,y,z) Blender -> (x,z,-y) Godot",
+  "malhas_esperadas": true
+}

@@ -235,15 +235,18 @@ func _executar() -> void:
 	await process_frame
 	selecao.apos_proximo = menu.nome.text
 	selecao.descricao_dimi = menu.descricao.text
-	menu._trocar(1)
+	menu._trocar(jogo.personagens.size() - 1)
 	await process_frame
 	selecao.apos_volta_completa = menu.nome.text
 	menu._trocar(-1)
 	await process_frame
 	selecao.apos_anterior = menu.nome.text
+	menu._trocar(1 - jogo.indice_escolhido)
+	await process_frame
 	selecao.indice_escolhido = jogo.indice_escolhido
 	relatorio.selecao = selecao
 	root.get_node("Jogo").quantidade_adversarios = 0  # mede o piloto sem adversários
+	menu.circuito.selected = 1  # Regressão na arena histórica.
 	menu._jogar()
 	await scene_changed
 	await physics_frame
@@ -312,8 +315,8 @@ func _executar() -> void:
 			maior_relativa = maxf(maior_relativa, float(fase.cabeca_relativa_max_graus))
 			falhas_transicao += int(fase.quadros_cabeca_mesmo_lado)
 	relatorio.conclusao = {
-		"catalogo_jake_e_dimi": nomes == ["Jake", "Dimi"],
-		"selecao_troca_e_volta": selecao.inicial == "Jake" and selecao.apos_proximo == "Dimi" and selecao.apos_volta_completa == "Jake" and selecao.apos_anterior == "Dimi" and selecao.botoes_troca_visiveis,
+		"catalogo_jake_e_dimi": nomes.has("Jake") and nomes.has("Dimi"),
+		"selecao_troca_e_volta": selecao.inicial == "Jake" and selecao.apos_proximo == "Dimi" and selecao.apos_volta_completa == "Jake" and selecao.apos_anterior == nomes.back() and selecao.botoes_troca_visiveis,
 		"pista_usa_modelo_dimi": percurso.modelo_na_pista == "res://personagens/dimi/dimi_kart.glb",
 		"movimento_frenagem_re": float(percurso.avante.distancia) > 1.0 and float(percurso.re.velocidade) < 0.0 and float(percurso.re.deslocamento_ao_longo_da_frente) < 0.0 and absf(float(percurso.parado.velocidade)) < 0.01,
 		"direcao_dois_sentidos": float(percurso.curva_esquerda.giro_rad_s) > 0.0 and float(percurso.curva_direita.giro_rad_s) < 0.0,

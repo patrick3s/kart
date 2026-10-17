@@ -1,0 +1,17 @@
+ M documentacao/README.md
+ M jogo/LEIA-ME.md
+ M jogo/cenas/pista.tscn
+ M jogo/cenas/selecao_personagem.tscn
+ M jogo/ferramentas/construir_cenas.gd
+ M jogo/scripts/jogo.gd
+ M jogo/tarefas/T001-cabeca-sempre-oposta.md
+?? ambiente/
+?? jogo/ambiente/
+?? jogo/ferramentas/capturar_vistas_bryan.gd
+?? jogo/ferramentas/capturar_vistas_bryan.gd.uid
+?? jogo/ferramentas/inspecionar_importacao_bryan.gd
+?? jogo/ferramentas/inspecionar_importacao_bryan.gd.uid
+?? jogo/ferramentas/validar_mecanicas_bryan.gd
+?? jogo/ferramentas/validar_mecanicas_bryan.gd.uid
+?? jogo/personagens/bryan/
+?? personagens/P003_bryan/
